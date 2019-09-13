@@ -1,0 +1,108 @@
+---
+title: "From MSDial on"
+author: "Katherine Heal"
+date: "August 28, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dev = 'pdf')
+library(tidyverse)
+# test for git
+```
+
+#BMIS on the HILIC output from Skyline, save output in BMISReports Folder
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/BMIS_QEHILIC.R')
+BMISReport_HILIC <- BMIS(samp.key.file = "MetaData/Sample_key.csv",
+                   is.names.file = "MetaData/InternalStandardNames.csv",
+                   xcms.dat.pos.file = "RawOutput/HILICPos_IntegrationsBigPeaksWTargeted2.csv",
+                   xcms.dat.neg.file = "RawOutput/HILICNeg_IntegrationsBigPeaksWTargeted.csv",
+                   cut.off = 0.0,
+                   cut.off2 = 0.00 )
+ggsave("BMISReports/BMIS_IS_StandardsRep_HILIC.pdf", plot = BMISReport_HILIC[[1]], device = "pdf", width = 10, height = 10, units = "in")
+write_file(BMISReport_HILIC[[2]], "BMISReports/BMIS_Summary_HILIC.txt")
+ggsave("BMISReports/BMIS_IS_StandardsTest_Positive.pdf", plot = BMISReport_HILIC[[3]], device = "pdf", width = 10, height = 10, units = "in")
+write_csv(BMISReport_HILIC[[4]], "Intermediates/BMISd_Areas_long_HILIC.csv")
+rm(BMIS, BMISReport_HILIC)
+```
+
+#BMIS on the CyanoAq output from Skyline, save output in BMISReports Folder
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/BMIS_QECyano.R')
+BMISReport_Cyano <- BMIS(samp.key.file = "MetaData/Sample_key.csv",
+                   is.names.file = "MetaData/InternalStandardNames.csv",
+                   xcms.dat.file = "RawOutput/CyanoAq_IntegrationsBigPeaksWTargeted.csv",
+                   cut.off = 0.0,
+                   cut.off2 = 0.00 )
+ggsave("BMISReports/BMIS_IS_StandardsRep_Cyano.pdf", plot = BMISReport_Cyano[[1]], device = "pdf", width = 10, height = 10, units = "in")
+write_file(BMISReport_Cyano[[2]], "BMISReports/BMIS_Summary_Cyano.txt")
+ggsave("BMISReports/BMIS_IS_StandardsTest_Positive.pdf", plot = BMISReport_Cyano[[3]], device = "pdf", width = 10, height = 10, units = "in")
+write_csv(BMISReport_Cyano[[4]], "Intermediates/BMISd_Areas_long_Cyano.csv")
+rm(BMIS, BMISReport_Cyano)
+```
+
+#Combine and Tidy
+TO DO: Make a file with area, and MF info, not just this final name thingy.
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Combine_Clean.R')
+CombineReport <- Combine_and_Clean(cyano.dat.file = "Intermediates/BMISd_Areas_long_Cyano.csv" ,
+                  hilic.dat.file = "Intermediates/BMISd_Areas_long_HILIC.csv")
+write_csv(as.data.frame(CombineReport[[1]]), "Intermediates/Longdata.csv")
+write_csv(CombineReport[[2]], "Intermediates/WideArea.csv")
+write_csv(CombineReport[[3]], "Intermediates/WideRank.csv")
+write_csv(CombineReport[[4]], "Intermediates/WideRankPercentile.csv")
+
+IDReport <- ID_MFs(  id.file = "RawOutput/NoIsos_allFractions_VolNormed_BMISd_CVFiltered_xsetWIDE_wMS2_wIDs.csv",
+                  dat.file ="Intermediates/WideArea.csv",  
+                  id.manual.file = "RawOutput/MFs_match_wManual.csv")
+write_csv(CombineReport[[4]], "Intermediates/WideArea_ModID.csv")
+```
+
+#Quantify compounds we have IDd
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/Quantification.R')
+QuantificationReport <- quantify.metabs(
+  id.file = "RawOutput//NoIsos_allFractions_VolNormed_BMISd_CVFiltered_xsetWIDE_wMS2_wIDs.csv",
+  id.manual.file = "RawOutput/MFs_match_wManual.csv",
+  std.url = "https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/Ingalls_Lab_Standards.csv",
+  dat.hilicpos.file = "RawOutput/HILICPos_IntegrationsBigPeaksWTargeted2.csv",
+  dat.hilicneg.file =  "RawOutput/HILICNeg_IntegrationsBigPeaksWTargeted.csv",
+  dat.cyano.file = "RawOutput/CyanoAq_IntegrationsBigPeaksWTargeted.csv",
+  samp.key.file = "MetaData/Sample_key.csv",
+  dat.file = "Intermediates/Longdata.csv",
+  is.names.file = "MetaData/InternalStandardNames.csv", 
+  meta.data.file = "MetaData/SampInfo_wMetaData_withUTC.csv"
+)
+write_csv(QuantificationReport, "Intermediates/Quantified_LongDat.csv")
+```
+
+#Write out a file for CMAP export
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('SourceCode/CMAP_maker.R')
+
+cmap.results <- CMAPPER(quan.dat.file = "Intermediates/Quantified_LongDat.csv", metaG1.file = "MetaData/SampInfo_wMetaData_withUTC.csv")
+
+#write.csv(cmap.results[[1]], "Intermediates/G1_GradientsTargeted_forCMAP.csv")
+#write.csv(cmap.results[[2]], "Intermediates/G2_GradientsTargeted_forCMAP.csv")
+```
+
+
+
+
+
+
+TO DO: Add in data from the cultures!
+
+
+
+
+
+
+
+
+
+
+
+
+

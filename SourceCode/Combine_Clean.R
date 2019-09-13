@@ -1,0 +1,111 @@
+#Define all your inputs 
+#cyano.dat.file = "Intermediates/BMISd_Areas_long_Cyano.csv" 
+#hilic.dat.file = "Intermediates/BMISd_Areas_long_HILIC.csv" 
+#sampkey <- "MetaData/Sample_key.csv"
+#RSD_cut.off <- 0.5 #This is max RSD allowed in multiple injections of the pooled sample
+
+#Things to return 
+#Normed_Samp_datLong is a data frame with bionormed data of just the samples
+
+Combine_and_Clean <- function(cyano.dat.file, hilic.dat.file ){
+
+      library(tidyverse)
+  CombineReport <-list()
+  ##Import  longData, turn it into wide data, wide ranked data, wide ranked percentile.
+  dat1 <- read.csv(cyano.dat.file) %>% mutate(Column = "RP")
+  dat2 <- read.csv(hilic.dat.file) 
+  
+  dat <- rbind(dat1, dat2) %>%
+    mutate(SampID = paste(SampID, replicate, sep = "_")) %>%
+    filter(type == "Smp") %>%
+    mutate(Area = ifelse(is.na(Area), 0, Area))
+  
+  Columns <- unique(dat$Column)
+  column_list <- list(Columns)
+  for (j in (1:length(Columns))){
+    datsub <- dat %>%
+      filter(Column == Columns[j])
+    Samps <- unique(datsub$SampID)
+    dat_rank_list <- list()
+    for (i in (1:length(Samps))){
+      dat_rank_list[[i]] <- datsub %>%
+        filter(SampID == Samps[i]) %>%
+        mutate(Rank = dense_rank(desc(Area)),
+               RankPercent = (1-Rank/max(Rank)))}
+    column_list[[j]] <- do.call(rbind, dat_rank_list)
+  }
+  dat_rank_all <- do.call(rbind, column_list)
+######  write_csv(dat_rank_all, "Longdata.csv") #write out this output
+  CombineReport[[1]] <- dat_rank_all
+  
+  datWide_Area <- dat_rank_all  %>%
+    mutate(MassFeature_Column = paste(MassFeature, Column, sep = "_X_")) %>%
+    select(SampID,  MassFeature_Column, Area) %>%
+    spread(., SampID, Area) %>%
+    as.data.frame()
+  ######   write_csv(datWide_Area, "WideArea.csv")
+  CombineReport[[2]] <- datWide_Area
+  
+  
+  datWide_Rank  <- dat_rank_all  %>%
+    mutate(MassFeature_Column = paste(MassFeature, Column, sep = "_X_")) %>%
+    select(SampID, MassFeature_Column, Rank) %>%
+    spread(., SampID, Rank) %>%
+    as.data.frame()
+##  write_csv(datWide_Rank, "WideRank.csv")
+  CombineReport[[3]] <- datWide_Rank
+  
+  
+  datWide_RankPercent  <- dat_rank_all  %>%
+    mutate(MassFeature_Column = paste(MassFeature, Column, sep = "_X_")) %>%
+    select(SampID, MassFeature_Column, RankPercent) %>%
+    spread(., SampID, RankPercent) %>%
+    as.data.frame()
+  CombineReport[[4]] <- datWide_RankPercent
+ # write_csv(datWide_RankPercent, "WideRankPercentile.csv")
+  
+        
+ return(CombineReport) 
+}
+
+
+
+ID_MFs <- function(id.file, dat.file, id.manual.file ){
+  
+  IDsetc <- read.csv(id.file) %>%
+    select(MF_Frac, AvePoo:BestMatch)
+  
+  MFs <-  read.csv(dat.file) %>%
+    select(MassFeature_Column) %>%
+    separate(MassFeature_Column, into = c("MF_Frac", "Column"), sep = "_X_") %>%
+    left_join(IDsetc)
+  
+  MFs2 <- MFs %>%
+    select(MF_Frac:rt, BestMatch, Confidence, everything()) %>%
+    mutate(BestMatch = ifelse(str_detect(MF_Frac, "^I\\d"), as.character(BestMatch), as.character(MF_Frac))) %>%
+    mutate(Confidence = ifelse(str_detect(MF_Frac, "^I\\d"), Confidence, 1)) 
+  
+  #Edit them with the manual edits
+  MFs_Fix <- read_csv(id.manual.file) 
+  
+  MFs_Fix2 <-  MFs_Fix %>%
+    select(MF_Frac, Manual_Annote, Manual_Confidence) %>%
+    filter(!is.na(Manual_Annote))
+  
+  MFs3 <- MFs2 %>%
+    left_join(MFs_Fix2) %>%
+    mutate(BestMatch = ifelse(is.na(Manual_Annote), as.character(BestMatch), as.character(Manual_Annote))) %>%
+    mutate(Confidence = ifelse(is.na(Manual_Annote), Confidence, Manual_Confidence))
+  
+  datWide_RankPercent2 <- read.csv(dat.file) %>%
+    separate(MassFeature_Column, into = c("MF_Frac", "Column"), sep = "_X_") %>%
+    left_join(MFs3 %>% select(MF_Frac, BestMatch)) %>%
+    mutate(MF_Frac = ifelse(is.na(BestMatch), MF_Frac, BestMatch)) %>%
+    select(-BestMatch, -Column)
+  
+
+  return(datWide_RankPercent2)
+
+}
+  
+  
