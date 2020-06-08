@@ -1,0 +1,65 @@
+cluster_overlap,pval.01,pval.05,pval.1,count,pval
+MGL_a&Org_a,13,10,9,3,not sig
+MGL_a&Org_b,7,4,4,2,not sig
+MGL_a&Org_c,10,6,5,4,not sig
+MGL_a&Org_d,10,7,6,3,not sig
+MGL_a&Org_e,15,9,8,3,not sig
+MGL_a&Org_f,9,6,5,2,not sig
+MGL_a&Org_g,14,10,9,10,0.1
+MGL_a&Org_NA,13,11,10,10,not sig
+MGL_b&Org_a,22,18,17,25,0.01
+MGL_b&Org_b,11,7,6,3,not sig
+MGL_b&Org_c,13,10,10,8,not sig
+MGL_b&Org_d,17,12,11,8,not sig
+MGL_b&Org_e,21,17,16,11,not sig
+MGL_b&Org_f,13,10,9,8,not sig
+MGL_b&Org_g,24,18,17,10,not sig
+MGL_b&Org_NA,26,20,19,6,not sig
+MGL_c&Org_a,21,16,15,15,not sig
+MGL_c&Org_b,10,7,6,2,not sig
+MGL_c&Org_c,12,10,9,11,0.05
+MGL_c&Org_d,16,11,10,16,0.05
+MGL_c&Org_e,17,14,13,8,not sig
+MGL_c&Org_f,12,9,8,6,not sig
+MGL_c&Org_g,19,16,15,5,not sig
+MGL_c&Org_NA,23,18,17,5,not sig
+MGL_d&Org_a,19,14,13,7,not sig
+MGL_d&Org_b,9,6,5,2,not sig
+MGL_d&Org_c,12,9,8,3,not sig
+MGL_d&Org_d,14,10,9,6,not sig
+MGL_d&Org_e,18,13,12,21,0.01
+MGL_d&Org_f,12,9,8,6,not sig
+MGL_d&Org_g,18,15,14,8,not sig
+MGL_d&Org_NA,23,16,15,8,not sig
+MGL_e&Org_a,10,7,6,NA,NA
+MGL_e&Org_b,5,3,3,NA,NA
+MGL_e&Org_c,8,4,4,NA,NA
+MGL_e&Org_d,8,5,4,NA,NA
+MGL_e&Org_e,9,7,6,3,not sig
+MGL_e&Org_f,7,4,4,1,not sig
+MGL_e&Org_g,9,7,6,6,not sig
+MGL_e&Org_NA,11,7,7,13,0.01
+MGL_f&Org_a,4,2,2,NA,NA
+MGL_f&Org_b,2,1,1,1,not sig
+MGL_f&Org_c,3,1,1,NA,NA
+MGL_f&Org_d,3,2,1,NA,NA
+MGL_f&Org_e,3,2,2,NA,NA
+MGL_f&Org_f,4,1,1,NA,NA
+MGL_f&Org_g,4,2,2,2,not sig
+MGL_f&Org_NA,3,2,2,1,not sig
+MGL_g&Org_a,4,2,2,1,not sig
+MGL_g&Org_b,3,1,1,1,not sig
+MGL_g&Org_c,4,1,1,NA,NA
+MGL_g&Org_d,3,2,1,NA,NA
+MGL_g&Org_e,3,2,2,NA,NA
+MGL_g&Org_f,3,1,1,NA,NA
+MGL_g&Org_g,4,2,2,2,not sig
+MGL_g&Org_NA,3,2,2,NA,NA
+MGL_NA&Org_a,13,10,9,1,not sig
+MGL_NA&Org_b,6,4,4,6,0.05
+MGL_NA&Org_c,9,6,5,1,not sig
+MGL_NA&Org_d,10,7,6,NA,NA
+MGL_NA&Org_e,13,9,8,1,not sig
+MGL_NA&Org_f,8,6,5,3,not sig
+MGL_NA&Org_g,13,10,9,10,0.1
+MGL_NA&Org_NA,14,11,10,16,0.01

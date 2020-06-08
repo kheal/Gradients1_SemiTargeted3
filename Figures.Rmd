@@ -1,0 +1,91 @@
+---
+title: "Make your figures here"
+author: "Katherine Heal"
+date: "January 10 2020"
+output: html_document
+---
+#TO DO: fix the names!!
+#TO DO: check and remake with R 4.0
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+#Quantifiable compounds, Bar plots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#mol fraction C
+source('Figures/Code/BarPlots_molPerCent_C.R')
+remove(list = ls())
+
+#mol fraction N
+source('Figures/Code/BarPlots_molPerCent_N.R')
+remove(list = ls())
+
+#nmole C
+source('Figures/Code/BarPlots_nMolC.R')
+remove(list = ls())
+
+#nmol N
+source('Figures/Code/BarPlots_nMolN.R')
+remove(list = ls())
+
+```
+
+#Summary box plots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#nmol C
+source('Figures/Code/Summary_boxPlot.R')
+remove(list = ls())
+```
+
+#NMDS
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/NMDS_untargeted.R')
+remove(list = ls())
+detach("package:MASS", unload=TRUE)
+```
+
+#Mode plots for each of the sample sets
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/multi_panel_mode.R')
+remove(list = ls())
+
+source('Figures/Code/multi_panel_culture.R')
+remove(list = ls())
+```
+
+#Tile alluvial plot for KOK and orgs :) 
+Remake and reload
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source("Figures/Code/KOK_org_AlluvialPlot.R")
+remove(list = ls())
+```
+
+#PC plot 
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#PC plot
+source("Figures/Code/PCPN_latitude.R")
+```
+
+
+#Nonessential
+Pigments, lugols, and PC plots
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#HPLC plot (saved in prelim)
+source("Figures/Code/HPLC_latitude.R")
+
+#Lugols plot (saved in prelim)
+source("Figures/Code/Lugols_latitude.R")
+remove(list = ls())
+
+```
+
+
+
+
+
+
+#Mode plots for the clusters of compounds in the environmental samples
+#Mode plots for different sample sets
+
+#Alluvial plot with organisms and environmental samples
+

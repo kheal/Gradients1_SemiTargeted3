@@ -1,0 +1,176 @@
+---
+title: "Make a figure for each compound"
+author: "Katherine Heal"
+date: "January 10, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+library("vegan")
+library(tidyverse)
+library(cowplot)
+require(RColorBrewer)
+library(colorRamps)
+library(plyr)
+
+
+#Experiment <- "Gradients2016"
+#Location <- "~/Google_Drive/00_XCMS_Working/"
+#ExpDIR <-paste(Location, Experiment, sep = "", collapse = NULL)
+```
+
+#Get Transect data, MSTUS, extract top 20 peaks
+```{r, warning=FALSE, message=FALSE}
+#setwd(paste(ExpDIR, "/Combined/", sep =""))
+dat <- read_csv("/Users/katherineheal/Google_Drive/My Drive/00_XCMS_Working/Gradients_Reanalysis/Manual_Integrations/Quantified_LongDat.csv")
+dat2 <- dat %>%
+   select(BestMatch, SampID, molFractionC, nmolinEnviroave)
+
+#Get a logical order for the MFs, pull out only the top 20
+AllSmps_Ordered <- dat %>%
+  group_by(BestMatch) %>%
+  summarise(AveSmp = median(molFractionC, na.rm = T)) %>%
+  arrange(desc(AveSmp)) 
+  
+
+#Get metadata to plot from both Skyline and XCMS
+Metadatall <-  read_csv("/Users/katherineheal/Google_Drive/My Drive/00_XCMS_Working/Gradients_Reanalysis/Manual_Integrations/MetaData/SampInfo_wMetaData.csv")
+Metadat_rear <- Metadatall %>%
+  arrange(latitude)
+
+#Get data into a plottable shape
+AllSmps_long <- dat2 %>%
+  left_join(Metadatall %>% select(SampID, Station, Zone, Depth, Cruise, latitude)) %>%
+  mutate(SampID = factor(SampID, levels= c(Metadat_rear$SampID))) %>%
+  mutate(MF_Frac = factor(BestMatch, levels= c(AllSmps_Ordered$BestMatch))) %>%
+  filter(MF_Frac %in% AllSmps_Ordered$BestMatch)
+
+AllSmps_long_Summary <- AllSmps_long %>%
+  left_join(Metadatall %>% select(SampID, Station, Zone, Depth, Cruise, latitude)) %>%
+  group_by(Station, MF_Frac, Zone, Depth, Cruise) %>%
+  summarise(molFractionC = mean(as.numeric(molFractionC), na.rm = T),
+            latitude = mean(latitude))%>%
+  ungroup() %>%
+  mutate(Station = factor(Station, levels= c(unique(Metadat_rear$Station))  ))
+
+Compounds <- unique(AllSmps_long$BestMatch)
+
+###START LOOP HERE--------
+i=1
+###START LOOP HERE--------
+for (i in 1:length(Compounds)){
+#Time to plot it up Transect ------
+AllSmps_long_Tran <- AllSmps_long %>%
+  filter(Cruise == "KOK1606")
+
+b <- ggplot(AllSmps_long_Tran %>% filter(MF_Frac == Compounds[i]), aes(x = latitude, y = nmolinEnviroave, fill = MF_Frac))+
+  geom_point(stat = "identity", color = "black")+
+  labs(y= "nMoles C L-1", x = "Latitude",
+       title = Compounds[i])+
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  guides(fill=FALSE)
+
+c <- ggplot(AllSmps_long_Tran %>% filter(MF_Frac == Compounds[i]), aes(x = latitude, y = molFractionC*100, fill = MF_Frac))+
+  geom_point(stat = "identity", color = "black")+
+  labs(y= "% of C of quantified compounds", x = "Latitude")+
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  guides(fill=FALSE)
+
+d <- plot_grid(b, c, ncol = 1)
+
+#Plotting up the North Depth Profile -----
+AllSmps_long_nDP <- AllSmps_long %>%
+  filter(Cruise ==  "MGL1704") %>%
+  mutate(Station = as.character(Station)) %>%
+  unique()
+
+e <- ggplot(AllSmps_long_nDP %>% filter(MF_Frac == Compounds[i]), 
+            aes(x = as.numeric(Depth), y = nmolinEnviroave, fill = MF_Frac))+
+  scale_x_reverse() +
+  geom_point(stat = "identity", color = "black")+
+  labs(y= "nMoles C L-1", x = "Depth (m)", title = Compounds[i], subtitle = "North Depth Profile")+
+  guides(fill=FALSE) +
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  coord_flip() 
+
+f <- ggplot(AllSmps_long_nDP %>% filter(MF_Frac == Compounds[i]), 
+            aes(x = as.numeric(Depth), y =  molFractionC*100, fill = MF_Frac))+
+  scale_x_reverse() +
+  geom_point(stat = "identity", color = "black")+
+    labs(y= "% of C of quantified compounds", x = "Depth (m)")+
+  guides(fill=FALSE) +
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  coord_flip() 
+
+g <- plot_grid(e, f, ncol = 1)
+
+
+
+#Plotting up the Soth Depth Profile -----
+AllSmps_long_sDP <- AllSmps_long %>%
+  filter(Cruise ==  "KM1513") %>%
+  mutate(Station = as.character(Station)) %>%
+  unique()
+
+h <- ggplot(AllSmps_long_sDP %>% filter(MF_Frac == Compounds[i]), 
+            aes(x = as.numeric(Depth), y = nmolinEnviroave, fill = MF_Frac))+
+  scale_x_reverse() +
+  geom_point(stat = "identity", color = "black")+
+  labs(y= "nMoles C L-1", x = "Depth (m)", title = Compounds[i], subtitle = "South Depth Profile")+
+  guides(fill=FALSE) +
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  coord_flip() 
+
+j <- ggplot(AllSmps_long_sDP %>% filter(MF_Frac == Compounds[i]), 
+            aes(x = as.numeric(Depth), y =  molFractionC*100, fill = MF_Frac))+
+  scale_x_reverse() +
+  geom_point(stat = "identity", color = "black")+
+    labs(y= "% of C of quantified compounds", x = "Depth (m)")+
+  guides(fill=FALSE) +
+  theme(axis.title = element_text(size = 9),
+        axis.text = element_text(size = 8))+
+  coord_flip() 
+
+k <- plot_grid(h, j, ncol = 1)
+
+
+#Combine the plots 
+g_k <- plot_grid(k, g, ncol = 2)
+d_g_k <- plot_grid(d, g_k, ncol = 1, rel_heights = c(1.3, 1))
+
+save_plot(paste("Compounds/",Compounds[i], ".pdf", sep = ""), d_g_k, base_height = 11, base_width = 8.5)
+}
+```
+
+
+#Make a plot of Betaine only for Princeton talk
+```{r, warning=FALSE, message=FALSE}
+Homarinedat <- AllSmps_long %>%
+  filter(BestMatch == "Homarine") %>%
+  filter(Cruise == "KOK1606")%>%
+  mutate(latitude = ifelse(near(latitude, 23.59652, tol = 0.01), 23, latitude)) %>%
+  mutate(round_lat = round_any(latitude, accuracy = 1))%>%
+  group_by(round_lat, BestMatch) %>%
+  summarise(latitude = mean(latitude),
+            mean_nM = mean(nmolinEnviroave),
+            sd_nM = sd(nmolinEnviroave))
+
+
+g <- ggplot(dat = Homarinedat, aes(x = latitude, y = mean_nM)) +
+  geom_point(size = 4)+
+       geom_line(size = 1) +
+       geom_ribbon(aes(ymin = mean_nM - sd_nM,
+                       ymax = mean_nM + sd_nM), alpha = 0.3) + 
+  scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0)) +
+  ggtitle("Homarine") + ylab("nmole/L")
+
+
+g
+```
+
+

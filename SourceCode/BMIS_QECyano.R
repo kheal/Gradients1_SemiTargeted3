@@ -1,10 +1,10 @@
 
 #Define all your inputs here
- samp.key.file <- "MetaData/Sample_key.csv"
- is.names.file <- "MetaData/InternalStandardNames.csv"
- xcms.dat.file = "RawOutput/CyanoAq_IntegrationsBigPeaksWTargeted.csv"
- cut.off <- 0.0 
- cut.off2 <- 0.00 
+samp.key.file <- "MetaData/Sample_key.csv"
+is.names.file <- "MetaData/InternalStandardNames.csv"
+xcms.dat.file = "RawOutput/20200430_Check/CyanoAq_IntegrationsBigPeaksWTargeted.csv"
+cut.off <- 0.2
+cut.off2 <- 0.1
 
 #Things to return 
 #IS_inspectPlot (plot to make sure there aren't any internal standards we should kick out)
@@ -12,15 +12,8 @@
 #ISTest_plot (plot to evaluate if you cut off is appropriate)
 #BMIS_normalizedData (tibble with the info you actually want!)
 
-
-BMIS <- function(samp.key.file = "MetaData/Sample_key.csv",
-                 is.names.file = "MetaData/InternalStandardNames.csv",
-                 xcms.dat.file = "RawOutput/CyanoAq_IntegrationsBigPeaksWTargeted.csv",
-                 cut.off = 0.0,
-                 cut.off2 = 0.00 ) {
-  
-  library(ggplot2)
-  library(tidyverse)
+library(ggplot2)
+library(tidyverse)
   
 #Import data - set filenames within this chunk for xcms output, sample key, and ISdata
 IS_names <- read_csv(is.names.file)
@@ -73,7 +66,8 @@ xcms.long <- xcms.long %>%
            str_replace("170413_Poo_April11AqExtractsFull_",
                        "170410_Poo_April11AqExtracts_Full") %>%
            str_replace("170413_Poo_April11AqExtractsHalf_",
-                       "170410_Poo_April11AqExtracts_Half")) 
+                       "170410_Poo_April11AqExtracts_Half"))  %>%
+  mutate(Date = str_extract(Replicate.Name, "^\\d*"))
 
 IS.dat <- IS.dat %>%
   mutate(Replicate.Name = Replicate.Name %>%
@@ -81,14 +75,15 @@ IS.dat <- IS.dat %>%
            str_replace("170413_Poo_April11AqExtractsFull_",
                        "170410_Poo_April11AqExtracts_Full") %>%
            str_replace("170413_Poo_April11AqExtractsHalf_",
-                       "170410_Poo_April11AqExtracts_Half")) 
+                       "170410_Poo_April11AqExtracts_Half"))  %>%
+  mutate(Date = str_extract(Replicate.Name, "^\\d*"))
 
 #Calculate mean values for each IS----
 IS.means <- IS.dat %>% filter(!grepl("_Blk_", Replicate.Name)) %>%
   mutate(MassFeature = as.factor(MassFeature))%>%
-  group_by(MassFeature) %>%
-  summarise(ave = mean(as.numeric(Area)))
-
+  group_by(MassFeature, Date) %>%
+  summarise(ave = mean(as.numeric(Area)))  %>%
+  mutate(ave = ifelse(MassFeature == "Inj_vol", 1, ave))
 
 
 #Normalize to each internal Standard----
@@ -185,10 +180,8 @@ BMIS_normalizedData <- newpoodat %>% select(MassFeature, FinalBMIS, Orig_RSD, Fi
   
   
 BMISlist <- list(IS_inspectPlot, QuickReport, ISTest_plot, BMIS_normalizedData)
-  
-  return(invisible(BMISlist))
-  
-}
+rm(list=setdiff(ls(), c("BMISlist", "go")))
+
   
   
   

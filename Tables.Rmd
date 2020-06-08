@@ -1,0 +1,91 @@
+---
+title: "Make your tables here"
+author: "Katherine Heal"
+date: "January 10 2020"
+output: html_document
+---
+#TO DO: update these with better names for the compounds (two versions of names for all supplemental tables)
+#TO DO: make it so we can compile all the supplemental tables into one excel file
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(cowplot)
+library(here)
+```
+
+#Main text tables (LATEX files)
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Enviro Sample Descriptions
+source('Tables/Code/Sample_Descriptions.R')
+remove(list = ls())
+
+#Phyto Sample Descriptions 
+source('Tables/Code/Culture_descriptions.R')
+remove(list = ls())
+```
+
+
+#Supplemental Tables (CSVs)
+TO DO: make Full culture sample descriptions
+TO DO: comments dont work well, incorporate this information into the supplemental table descriptions
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+#Summary of quantification methods used
+source('Tables/Code/full_quan_methods_table.R')
+remove(list = ls())
+
+#Full quantified results
+source('Tables/Code/full_quan_results_table.R')
+remove(list = ls())
+
+#Full environmental sample descriptions
+source('Tables/Code/full_enviro_sample_descriptions.R')
+remove(list = ls())
+
+#Full culture sample descriptions
+#source('Tables/Code/full_enviro_sample_descriptions.R')
+remove(list = ls())
+
+#Summary of PC and quantifiable metabolites
+source('Tables/Code/total_quantmetab_and_PC.R')
+remove(list = ls())
+
+```
+
+#Merge all the csv files into one big xcel file here
+#TO DO: rename accordingly
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+library(data.table)  ## for fast fread() function
+library(XLConnect) #requires Java between 8 and 11
+
+folder <- "Tables/Manuscript_tables/SuppTables"
+
+f.out <- "Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx"
+
+## load in file
+wb <- loadWorkbook(f.out, create=TRUE)
+
+## get all files
+pattern.ext <- "\\.csv$"
+files <- dir(folder, full=TRUE, pattern=pattern.ext)
+
+## Grab the base file names, you can use them as the sheet names
+files.nms <- basename(files)
+files.nms <- gsub(pattern.ext, "", files.nms)
+
+## set the names to make them easier to grab
+names(files) <- files.nms
+
+for (nm in files.nms) {
+  ## ingest the CSV file
+  temp_DT <- fread(files[[nm]])
+
+  ## Create the sheet where the file will be outputed to 
+  createSheet(wb, name=nm)
+
+  ## output the csv contents
+  writeWorksheet(object=wb, data=temp_DT, sheet=nm, header=TRUE, rownames=NULL)
+}
+
+saveWorkbook(wb)
+remove(list = ls())
+```

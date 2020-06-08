@@ -1,28 +1,16 @@
+library(ggplot2)
+library(tidyverse)
+
 
 #Define all your inputs here
-# samp.key.file <- "Sample_key.csv"
-# is.names.file <- "InternalStandardNames.csv"
-# xcms.dat.pos.file <- "HILICPos_IntegrationsBigPeaksWTargeted2.csv"
-# xcms.dat.neg.file <- "HILICNeg_IntegrationsBigPeaksWTargeted.csv"
-# cut.off <- 0.0 
-# cut.off2 <- 0.00 
-
-#Things to return 
-#IS_inspectPlot (plot to make sure there aren't any internal standards we should kick out)
-#QuickReport (% that picked BMIS, with cut off values)
-#ISTest_plot (plot to evaluate if you cut off is appropriate)
-#BMIS_normalizedData (tibble with the info you actually want!)
+samp.key.file <- "MetaData/Sample_key.csv"
+is.names.file <- "MetaData/InternalStandardNames.csv"
+xcms.dat.pos.file <- "RawOutput/20200430_Check/HILICPos_IntegrationsBigPeaksWTargeted2.csv"
+xcms.dat.neg.file <- "RawOutput/20200430_Check/HILICNeg_IntegrationsBigPeaksWTargeted.csv" 
+cut.off <- 0.2
+cut.off2 <- 0.1
 
 
-BMIS <- function(samp.key.file = "MetaData/Sample_key.csv",
-                 is.names.file = "MetaData/InternalStandardNames.csv",
-                 xcms.dat.pos.file = "RawOutput/HILICPos_IntegrationsBigPeaksWTargeted2.csv",
-                 xcms.dat.neg.file = "RawOutput/HILICNeg_IntegrationsBigPeaksWTargeted.csv",
-                 cut.off = 0.0,
-                 cut.off2 = 0.00 ) {
-  
-  library(ggplot2)
-  library(tidyverse)
   
 #Import data - set filenames within this chunk for xcms output, sample key, and ISdata
 SampKey_all <- read_csv(samp.key.file) 
@@ -30,7 +18,7 @@ IS_names <- read_csv(is.names.file)
 xcms.dat_pos <- read_csv(xcms.dat.pos.file) %>% 
   mutate(Column = "HILICPos") %>% select(-Protein)
 xcms.dat_neg <- read_csv(xcms.dat.neg.file) %>% 
-  mutate(Column = "HILICNeg") 
+  mutate(Column = "HILICNeg") %>% select(-Protein)
 xcms.dat <- rbind(xcms.dat_pos, xcms.dat_neg) %>%
     filter(!str_detect(`Replicate Name`, "Blk")) %>%
     filter(!str_detect(`Replicate Name`, "Std")) %>%
@@ -69,7 +57,7 @@ IS_inspectPlot <- ggplot(IS.dat, aes(x=`Replicate Name`, y=Area)) +
         strip.text = element_text(size = 10))+
   ggtitle("IS Raw Areas")
 
-#Edit data so names match
+#Edit data so names match, separate out the date so we can get individual IS.means for each run batch
 IS.dat <- IS.dat %>% mutate(Replicate.Name = `Replicate Name` %>%
                               str_replace("-","."))  %>%
   select(Area, Replicate.Name, MassFeature, Column)
@@ -82,7 +70,8 @@ xcms.long <- xcms.long %>%
            str_replace("170410_Poo_April11AqExtractsFull_",
                        "170410_Poo_April11AqExtracts_Full") %>%
            str_replace("170410_Poo_April11AqExtractsHalf_",
-                       "170410_Poo_April11AqExtracts_Half")) 
+                       "170410_Poo_April11AqExtracts_Half"))  %>%
+  mutate(Date = str_extract(Replicate.Name, "^\\d*"))
 
 IS.dat <- IS.dat %>%
   mutate(Replicate.Name = Replicate.Name %>%
@@ -92,12 +81,16 @@ IS.dat <- IS.dat %>%
            str_replace("170410_Poo_April11AqExtractsHalf_",
                        "170410_Poo_April11AqExtracts_Half")) 
 
+IS.dat <- IS.dat %>%
+  mutate(Date = str_extract(Replicate.Name, "^\\d*"))
+  
+  
 #Calculate mean values for each IS----
 IS.means <- IS.dat %>% filter(!grepl("_Blk_", Replicate.Name)) %>%
   mutate(MassFeature = as.factor(MassFeature))%>%
-  group_by(MassFeature) %>%
-  summarise(ave = mean(as.numeric(Area)))
-
+  group_by(MassFeature, Date) %>%
+  summarise(ave = mean(as.numeric(Area))) %>%
+  mutate(ave = ifelse(MassFeature == "Inj_vol", 1, ave))
 
 
 #Normalize to each internal Standard----
@@ -122,9 +115,9 @@ mydata_new <- area.norm %>% separate(Replicate.Name,
   mutate(Run.Cmpd = paste(area.norm$Replicate.Name,area.norm$MassFeature))
   
   
-  #Find the B-MIS for each MassFeature----
-  #Look only the Pooled samples, to get a lowest RSD of the pooled possible (RSD_ofPoo), 
-  #then choose which IS reduces the RSD the most (Poo.Picked.IS) 
+#Find the B-MIS for each MassFeature----
+#Look only the Pooled samples, to get a lowest RSD of the pooled possible (RSD_ofPoo), 
+#then choose which IS reduces the RSD the most (Poo.Picked.IS) 
 poodat <- mydata_new %>%
   filter(type == "Poo")%>%
   group_by(SampID, MassFeature, MIS) %>%
@@ -148,9 +141,9 @@ poodat <- left_join(poodat, poodat %>%
   mutate(percentChange = del_RSD/Orig_RSD) %>%
   mutate(accept_MIS = (percentChange > cut.off & Orig_RSD > cut.off2)) 
   
-  #Change the BMIS to "Inj_vol" if the BMIS is not an acceptable -----
-  #Adds a column that has the BMIS, not just Poo.picked.IS
-  #Changes the finalBMIS to inject_volume if its no good
+#Change the BMIS to "Inj_vol" if the BMIS is not an acceptable -----
+#Adds a column that has the BMIS, not just Poo.picked.IS
+#Changes the finalBMIS to inject_volume if its no good
 fixedpoodat <- poodat %>%
   filter(MIS == Poo.Picked.IS)%>%
   mutate(FinalBMIS = ifelse((accept_MIS == "FALSE"), "Inj_vol", Poo.Picked.IS), 
@@ -184,20 +177,18 @@ ISTest_plot <- ggplot()+
     geom_point(dat = injectONlY_toPlot, aes(x = RSD_ofPoo, y = RSD_ofSmp), size = 3) +
     facet_wrap(~ MassFeature)
   
-  #Get all the data back - and keep only the MF-MIS match set for the BMIS----
-  #Add a column to the longdat that has important information from the FullDat_fixed, 
-  #then only return data that is normalized via B-MIS normalization
+#Get all the data back - and keep only the MF-MIS match set for the BMIS----
+#Add a column to the longdat that has important information from the FullDat_fixed, 
+#then only return data that is normalized via B-MIS normalization
 BMIS_normalizedData <- newpoodat %>% select(MassFeature, FinalBMIS, Orig_RSD, FinalRSD) %>%
     left_join(mydata_new %>% rename(FinalBMIS = MIS)) %>% unique() %>%
     filter(!MassFeature %in% IS.dat$MassFeature)
-  
-  
-  
+
 BMISlist <- list(IS_inspectPlot, QuickReport, ISTest_plot, BMIS_normalizedData)
-  
-  return(invisible(BMISlist))
-  
-}
-  
+
+#Removes all intermediate variables :)
+rm(list=setdiff(ls(), c("BMISlist")))
+
+
   
   

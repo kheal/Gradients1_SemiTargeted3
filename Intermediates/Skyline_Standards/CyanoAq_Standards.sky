@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<srm_settings format_version="19.1" software_version="Skyline-daily (64-bit) 19.0.9.190">
+  <settings_summary name="Default">
+    <peptide_settings>
+      <enzyme name="Trypsin" cut="KR" no_cut="P" sense="C" />
+      <digest_settings max_missed_cleavages="0" />
+      <peptide_prediction use_measured_rts="false" measured_rt_window="2" use_spectral_library_drift_times="false" spectral_library_drift_times_peak_width_calc_type="resolving_power" spectral_library_drift_times_resolving_power="0" spectral_library_drift_times_width_at_dt_zero="0" spectral_library_drift_times_width_at_dt_max="0" />
+      <peptide_filter start="25" min_length="8" max_length="25" auto_select="true">
+        <peptide_exclusions />
+      </peptide_filter>
+      <peptide_libraries pick="library" />
+      <peptide_modifications max_variable_mods="3" max_neutral_losses="1">
+        <static_modifications>
+          <static_modification name="Carbamidomethyl (C)" aminoacid="C" formula="H3C2NO" unimod_id="4" short_name="CAM" />
+        </static_modifications>
+        <heavy_modifications />
+      </peptide_modifications>
+    </peptide_settings>
+    <transition_settings>
+      <transition_prediction precursor_mass_type="Monoisotopic" fragment_mass_type="Monoisotopic" optimize_by="None">
+        <predict_collision_energy name="Thermo TSQ Vantage" step_size="1" step_count="5">
+          <regression_ce charge="2" slope="0.03" intercept="2.905" />
+          <regression_ce charge="3" slope="0.038" intercept="2.281" />
+        </predict_collision_energy>
+      </transition_prediction>
+      <transition_filter precursor_charges="2" product_charges="1" precursor_adducts="[M-3H],[M-2H],[M-H],[M-],[M+H],[M+],[M+2H],[M+3H]" product_adducts="[M-3],[M-2],[M-],[M+],[M+2],[M+3]" fragment_types="y" small_molecule_fragment_types="f" fragment_range_first="m/z &gt; precursor" fragment_range_last="3 ions" precursor_mz_window="0" auto_select="true">
+        <measured_ion name="N-terminal to Proline" cut="P" sense="N" min_length="3" />
+      </transition_filter>
+      <transition_libraries ion_match_tolerance="0.5" min_ion_count="0" ion_count="3" pick_from="all" />
+      <transition_integration integrate_all="true" />
+      <transition_instrument min_mz="50" max_mz="1500" mz_match_tolerance="0.055" />
+      <transition_full_scan precursor_isotopes="Count" precursor_isotope_filter="3" precursor_mass_analyzer="orbitrap" precursor_res="60000" precursor_res_mz="400">
+        <isotope_enrichments name="Default">
+          <atom_percent_enrichment symbol="H'">0.98</atom_percent_enrichment>
+          <atom_percent_enrichment symbol="C'">0.995</atom_percent_enrichment>
+          <atom_percent_enrichment symbol="N'">0.995</atom_percent_enrichment>
+          <atom_percent_enrichment symbol="O&quot;">0.99</atom_percent_enrichment>
+          <atom_percent_enrichment symbol="O'">0.99</atom_percent_enrichment>
+        </isotope_enrichments>
+      </transition_full_scan>
+    </transition_settings>
+    <data_settings document_guid="1b6661e8-ee6b-4e6f-a27c-ea4ee7647fde" />
+    <measured_results time_normal_area="true">
+      <replicate name="170413_Std_250nMStdsInH2O_1">
+        <sample_file id="_170413_Std_250nMStdsInH2O_1_f0" file_path="Y:\Google_Drive\My Drive\00_XCMS_Working\Gradients_Reanalysis\Manual_Integrations\CyanoAq_mzXML\170413_Std_250nMStdsInH2O_1.mzXML" sample_name="170413_Std_250nMStdsInH2O_1" modified_time="2018-08-13T13:56:16" tic_area="2547160832">
+          <instrument_info_list>
+            <instrument_info>
+              <model>Q Exactive</model>
+              <ionsource>electrospray ionization</ionsource>
+              <analyzer>quadrupole</analyzer>
+              <detector>inductive detector</detector>
+            </instrument_info>
+          </instrument_info_list>
+        </sample_file>
+      </replicate>
+      <replicate name="170425_Std_250nMStdsInH2O_1">
+        <sample_file id="_170425_Std_250nMStdsInH2O_1_f0" file_path="Y:\Google_Drive\My Drive\00_XCMS_Working\Gradients_Reanalysis\Manual_Integrations\CyanoAq_mzXML\170425_Std_250nMStdsInH2O_1.mzXML" sample_name="170425_Std_250nMStdsInH2O_1" modified_time="2017-05-01T09:47:16" tic_area="3999323648">
+          <instrument_info_list>
+            <instrument_info>
+              <model>Q Exactive</model>
+              <ionsource>electrospray ionization</ionsource>
+              <analyzer>quadrupole</analyzer>
+              <detector>inductive detector</detector>
+            </instrument_info>
+          </instrument_info_list>
+        </sample_file>
+      </replicate>
+      <replicate name="170425_Std_250nMStdsInH2O_2">
+        <sample_file id="_170425_Std_250nMStdsInH2O_2_f0" file_path="Y:\Google_Drive\My Drive\00_XCMS_Working\Gradients_Reanalysis\Manual_Integrations\CyanoAq_mzXML\170425_Std_250nMStdsInH2O_2.mzXML" sample_name="170425_Std_250nMStdsInH2O_2" modified_time="2017-05-01T09:47:40" tic_area="1461518976">
+          <instrument_info_list>
+            <instrument_info>
+              <model>Q Exactive</model>
+              <ionsource>electrospray ionization</ionsource>
+              <analyzer>quadrupole</analyzer>
+              <detector>inductive detector</detector>
+            </instrument_info>
+          </instrument_info_list>
+        </sample_file>
+      </replicate>
+      <replicate name="180716_Std_250nMStdsInH2O_3">
+        <sample_file id="_180716_Std_250nMStdsInH2O_3_f0" file_path="Y:\Google_Drive\My Drive\00_XCMS_Working\Gradients_Reanalysis\Manual_Integrations\CyanoAq_mzXML\180716_Std_250nMStdsInH2O_3.mzXML" sample_name="180716_Std_250nMStdsInH2O_3" modified_time="2018-07-20T13:10:06" tic_area="2294556160">
+          <instrument_info_list>
+            <instrument_info>
+              <model>Q Exactive</model>
+              <ionsource>electrospray ionization</ionsource>
+              <analyzer>quadrupole</analyzer>
+              <detector>inductive detector</detector>
+            </instrument_info>
+          </instrument_info_list>
+        </sample_file>
+      </replicate>
+      <replicate name="180716_Std_250nMStdsInMatrix_3">
+        <sample_file id="_180716_Std_250nMStdsInMatrix_3_f0" file_path="Y:\Google_Drive\My Drive\00_XCMS_Working\Gradients_Reanalysis\Manual_Integrations\CyanoAq_mzXML\180716_Std_250nMStdsInMatrix_3.mzXML" sample_name="180716_Std_250nMStdsInMatrix_3" modified_time="2018-07-20T13:49:30" tic_area="2581127424">
+          <instrument_info_list>
+            <instrument_info>
+              <model>Q Exactive</model>
+              <ionsource>electrospray ionization</ionsource>
+              <analyzer>quadrupole</analyzer>
+              <detector>inductive detector</detector>
+            </instrument_info>
+          </instrument_info_list>
+        </sample_file>
+      </replicate>
+    </measured_results>
+  </settings_summary>
+  <peptide_list label_name="molecules1" label_description="" websearch_status="X">
+    <molecule neutral_mass_average="124.04040257990947" neutral_mass_monoisotopic="124.04040257990947" custom_ion_name="Vitamin B3" avg_measured_retention_time="0.8720568">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.839593768" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.873438358" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="0.881203353" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.883021653" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.883026659" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="124.039854" collision_energy="6.626196" ion_formula="[M+]" neutral_mass_average="124.04040257990947" neutral_mass_monoisotopic="124.04040257990947" custom_ion_name="Vitamin B3">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.839593768" start_time="0.8059938" end_time="0.9291938" fwhm="0.03297334" area="12340933" background="361598.219" height="5308206.5" mass_error_ppm="-2.4" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.873438358" start_time="0.805555" end_time="0.9528933" fwhm="0.0612613559" area="103331840" background="581072.563" height="27649584" mass_error_ppm="-2.5" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="0.881203353" start_time="0.810403347" end_time="0.9579033" fwhm="0.0293494854" area="5.581206E+07" background="549006.5" height="23594436" mass_error_ppm="-2.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.883021653" start_time="0.8214216" end_time="0.9726216" fwhm="0.04707269" area="7.860015E+07" background="562083.6" height="26416652" mass_error_ppm="-3.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.883026659" start_time="0.832626641" end_time="0.950226665" fwhm="0.0339203477" area="6.929255E+07" background="594086.6" height="30854976" mass_error_ppm="-2" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="124.04040257990947" neutral_mass_monoisotopic="124.04040257990947" custom_ion_name="Vitamin B3">
+          <precursor_mz>124.039854</precursor_mz>
+          <product_mz>124.039854</product_mz>
+          <collision_energy>6.626196</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-2.4" retention_time="0.839593768" start_time="0.8059938" end_time="0.9291938" area="12340933" background="361598.219" height="5308206.5" fwhm="0.03297334" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-2.5" retention_time="0.873438358" start_time="0.805555" end_time="0.9528933" area="103331840" background="581072.563" height="27649584" fwhm="0.0612613559" truncated="false" identified="false" rank="1" points_across="29" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-2.6" retention_time="0.881203353" start_time="0.810403347" end_time="0.9579033" area="5.581206E+07" background="549006.5" height="23594436" fwhm="0.0293494854" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-3.3" retention_time="0.883021653" start_time="0.8214216" end_time="0.9726216" area="7.860015E+07" background="562083.6" height="26416652" fwhm="0.04707269" truncated="false" identified="false" rank="1" points_across="28" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-2" retention_time="0.883026659" start_time="0.832626641" end_time="0.950226665" area="6.929255E+07" background="594086.6" height="30854976" fwhm="0.0339203477" truncated="false" identified="false" rank="1" points_across="22" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="131.13021957990946" neutral_mass_monoisotopic="131.13021957990946" custom_ion_name="Agmatine" avg_measured_retention_time="1.17654741">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.1163938" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.681421638" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.731826663" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="131.129671" collision_energy="6.83889" ion_formula="[M+]" neutral_mass_average="131.13021957990946" neutral_mass_monoisotopic="131.13021957990946" custom_ion_name="Agmatine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.1163938" start_time="2.11079383" end_time="2.12759376" fwhm="0.008807042" area="1188.78467" background="0" height="2298.65332" mass_error_ppm="-0.1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.681421638" start_time="0.664621651" end_time="0.77662164" fwhm="0.016183136" area="27614534" background="357872.281" height="17914602" mass_error_ppm="-3.4" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.731826663" start_time="0.692626655" end_time="0.7710267" fwhm="0.0180796087" area="3760438.75" background="0" height="3021497.25" mass_error_ppm="-3.4" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="131.13021957990946" neutral_mass_monoisotopic="131.13021957990946" custom_ion_name="Agmatine">
+          <precursor_mz>131.129671</precursor_mz>
+          <product_mz>131.129671</product_mz>
+          <collision_energy>6.83889</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.1" retention_time="2.1163938" start_time="2.11079383" end_time="2.12759376" area="1188.78467" background="0" height="2298.65332" fwhm="0.008807042" truncated="false" identified="false" rank="1" points_across="3" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-3.4" retention_time="0.681421638" start_time="0.664621651" end_time="0.77662164" area="27614534" background="357872.281" height="17914602" fwhm="0.016183136" truncated="false" identified="false" rank="1" points_across="21" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-3.4" retention_time="0.731826663" start_time="0.692626655" end_time="0.7710267" area="3760438.75" background="0" height="3021497.25" fwhm="0.0180796087" truncated="false" identified="false" rank="1" points_across="16" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="137.04688457990946" neutral_mass_monoisotopic="137.04688457990946" custom_ion_name="Allopurinol" avg_measured_retention_time="1.19102418">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.30302167" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.0790267" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="137.046336" collision_energy="7.01639" ion_formula="[M+]" neutral_mass_average="137.04688457990946" neutral_mass_monoisotopic="137.04688457990946" custom_ion_name="Allopurinol">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.30302167" start_time="1.25262165" end_time="1.40382159" fwhm="0.0439965" area="10538931" background="81410.4844" height="3605852.25" mass_error_ppm="-3.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.0790267" start_time="1.01182663" end_time="1.18542659" fwhm="0.0347087644" area="14865106" background="184197.781" height="5507094" mass_error_ppm="-4" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="137.04688457990946" neutral_mass_monoisotopic="137.04688457990946" custom_ion_name="Allopurinol">
+          <precursor_mz>137.046336</precursor_mz>
+          <product_mz>137.046336</product_mz>
+          <collision_energy>7.01639</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-3.6" retention_time="1.30302167" start_time="1.25262165" end_time="1.40382159" area="10538931" background="81410.4844" height="3605852.25" fwhm="0.0439965" truncated="false" identified="false" rank="1" points_across="27" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-4" retention_time="1.0790267" start_time="1.01182663" end_time="1.18542659" area="14865106" background="184197.781" height="5507094" fwhm="0.0347087644" truncated="false" identified="false" rank="1" points_across="34" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="144.04885957990948" neutral_mass_monoisotopic="144.04885957990948" custom_ion_name="Sulfurol" avg_measured_retention_time="1.10710573">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.09719372" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.10208333" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.1054033" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.11262167" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.11822665" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="144.048311" collision_energy="7.226449" ion_formula="[M+]" neutral_mass_average="144.04885957990948" neutral_mass_monoisotopic="144.04885957990948" custom_ion_name="Sulfurol">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.09719372" start_time="1.05799377" end_time="1.19799376" fwhm="0.0331938" area="41103732" background="106286.258" height="16710609" mass_error_ppm="-3.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.10208333" start_time="1.06507" end_time="1.20838" fwhm="0.0336304978" area="351013344" background="1375396.13" height="145190128" mass_error_ppm="-3.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.1054033" start_time="1.07000339" end_time="1.21750331" fwhm="0.0347914957" area="1.803968E+08" background="2834299.25" height="7.246623E+07" mass_error_ppm="-3.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.11262167" start_time="1.07902169" end_time="1.22462165" fwhm="0.03345566" area="229305440" background="3952389" height="9.745833E+07" mass_error_ppm="-4.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.11822665" start_time="1.08462667" end_time="1.23022664" fwhm="0.03434702" area="236807968" background="2824424.5" height="99824824" mass_error_ppm="-4.3" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="144.04885957990948" neutral_mass_monoisotopic="144.04885957990948" custom_ion_name="Sulfurol">
+          <precursor_mz>144.048311</precursor_mz>
+          <product_mz>144.048311</product_mz>
+          <collision_energy>7.226449</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-3.3" retention_time="1.09719372" start_time="1.05799377" end_time="1.19799376" area="41103732" background="106286.258" height="16710609" fwhm="0.0331938" truncated="false" identified="false" rank="1" points_across="26" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-3.3" retention_time="1.10208333" start_time="1.06507" end_time="1.20838" area="351013344" background="1375396.13" height="145190128" fwhm="0.0336304978" truncated="false" identified="false" rank="1" points_across="28" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-3.8" retention_time="1.1054033" start_time="1.07000339" end_time="1.21750331" area="1.803968E+08" background="2834299.25" height="7.246623E+07" fwhm="0.0347914957" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-4.3" retention_time="1.11262167" start_time="1.07902169" end_time="1.22462165" area="229305440" background="3952389" height="9.745833E+07" fwhm="0.03345566" truncated="false" identified="false" rank="1" points_across="27" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-4.3" retention_time="1.11822665" start_time="1.08462667" end_time="1.23022664" area="236807968" background="2824424.5" height="99824824" fwhm="0.03434702" truncated="false" identified="false" rank="1" points_across="28" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="166.08735257990946" neutral_mass_monoisotopic="166.08735257990946" custom_ion_name="Phenylalanine" avg_measured_retention_time="3.055599">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.05159378" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.06175" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="3.06420326" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="3.04462171" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="3.05582666" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="166.086804" collision_energy="7.887604" ion_formula="[M+]" neutral_mass_average="166.08735257990946" neutral_mass_monoisotopic="166.08735257990946" custom_ion_name="Phenylalanine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.05159378" start_time="2.96759367" end_time="3.29799366" fwhm="0.06481024" area="1.100423E+08" background="1108624.63" height="21037988" mass_error_ppm="-2.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.06175" start_time="2.9759" end_time="3.25525" fwhm="0.07127274" area="699955136" background="5657433.5" height="145873232" mass_error_ppm="-3.4" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="3.06420326" start_time="2.98160338" end_time="3.22350335" fwhm="0.06437376" area="386601952" background="5325254" height="86141224" mass_error_ppm="-3.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="3.04462171" start_time="2.96622157" end_time="3.22942162" fwhm="0.0623619333" area="413548832" background="4576364.5" height="94416536" mass_error_ppm="-3.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="3.05582666" start_time="2.98302674" end_time="3.25182676" fwhm="0.05928424" area="405739648" background="6799017.5" height="9.751795E+07" mass_error_ppm="-4.3" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="166.08735257990946" neutral_mass_monoisotopic="166.08735257990946" custom_ion_name="Phenylalanine">
+          <precursor_mz>166.086804</precursor_mz>
+          <product_mz>166.086804</product_mz>
+          <collision_energy>7.887604</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-2.7" retention_time="3.05159378" start_time="2.96759367" end_time="3.29799366" area="1.100423E+08" background="1108624.63" height="21037988" fwhm="0.06481024" truncated="false" identified="false" rank="1" points_across="61" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-3.4" retention_time="3.06175" start_time="2.9759" end_time="3.25525" area="699955136" background="5657433.5" height="145873232" fwhm="0.07127274" truncated="false" identified="false" rank="1" points_across="53" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-3.2" retention_time="3.06420326" start_time="2.98160338" end_time="3.22350335" area="386601952" background="5325254" height="86141224" fwhm="0.06437376" truncated="false" identified="false" rank="1" points_across="42" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-3.7" retention_time="3.04462171" start_time="2.96622157" end_time="3.22942162" area="413548832" background="4576364.5" height="94416536" fwhm="0.0623619333" truncated="false" identified="false" rank="1" points_across="47" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-4.3" retention_time="3.05582666" start_time="2.98302674" end_time="3.25182676" area="405739648" background="6799017.5" height="9.751795E+07" fwhm="0.05928424" truncated="false" identified="false" rank="1" points_across="50" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="205.09825157990946" neutral_mass_monoisotopic="205.09825157990946" custom_ion_name="Tryptophan" avg_measured_retention_time="1.9337858">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.91479373" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.91808331" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.91960335" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.95822167" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.95822668" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="205.097703" collision_energy="9.057931" ion_formula="[M+]" neutral_mass_average="205.09825157990946" neutral_mass_monoisotopic="205.09825157990946" custom_ion_name="Tryptophan">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.91479373" start_time="1.84759378" end_time="2.043594" fwhm="0.0587619767" area="6478243.5" background="0" height="1681768.25" mass_error_ppm="-1.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.91808331" start_time="1.85355" end_time="2.0538" fwhm="0.0588671677" area="52250396" background="408247.2" height="13847435" mass_error_ppm="-1.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.91960335" start_time="1.86060333" end_time="2.06710339" fwhm="0.0542162061" area="17653848" background="62025.31" height="4858771" mass_error_ppm="-1.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.95822167" start_time="1.89662158" end_time="2.09262156" fwhm="0.05641128" area="27015534" background="216312.781" height="7142289.5" mass_error_ppm="-2.5" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.95822668" start_time="1.90222669" end_time="2.09262657" fwhm="0.05790988" area="5.29481E+07" background="615119.563" height="13945296" mass_error_ppm="-2.6" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="205.09825157990946" neutral_mass_monoisotopic="205.09825157990946" custom_ion_name="Tryptophan">
+          <precursor_mz>205.097703</precursor_mz>
+          <product_mz>205.097703</product_mz>
+          <collision_energy>9.057931</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-1.8" retention_time="1.91479373" start_time="1.84759378" end_time="2.043594" area="6478243.5" background="0" height="1681768.25" fwhm="0.0587619767" truncated="false" identified="false" rank="1" points_across="36" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-1.8" retention_time="1.91808331" start_time="1.85355" end_time="2.0538" area="52250396" background="408247.2" height="13847435" fwhm="0.0588671677" truncated="false" identified="false" rank="1" points_across="38" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-1.7" retention_time="1.91960335" start_time="1.86060333" end_time="2.06710339" area="17653848" background="62025.31" height="4858771" fwhm="0.0542162061" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-2.5" retention_time="1.95822167" start_time="1.89662158" end_time="2.09262156" area="27015534" background="216312.781" height="7142289.5" fwhm="0.05641128" truncated="false" identified="false" rank="1" points_across="34" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-2.6" retention_time="1.95822668" start_time="1.90222669" end_time="2.09262657" area="5.29481E+07" background="615119.563" height="13945296" fwhm="0.05790988" truncated="false" identified="false" rank="1" points_across="34" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="209.09316657990945" neutral_mass_monoisotopic="209.09316657990945" custom_ion_name="Kynurenine" avg_measured_retention_time="1.22920215">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.2147938" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.213765" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.22340333" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.24702168" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.24702668" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="209.092618" collision_energy="9.177779" ion_formula="[M+]" neutral_mass_average="209.09316657990945" neutral_mass_monoisotopic="209.09316657990945" custom_ion_name="Kynurenine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.2147938" start_time="1.15879381" end_time="1.33799374" fwhm="0.05613562" area="8517183" background="121146.133" height="2398802.5" mass_error_ppm="-1.5" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.213765" start_time="1.16551661" end_time="1.327235" fwhm="0.0485752262" area="51884416" background="490265.875" height="16409048" mass_error_ppm="-1.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.22340333" start_time="1.17030334" end_time="1.34140337" fwhm="0.0464529768" area="1.852389E+07" background="16570.9785" height="5959470" mass_error_ppm="-1.9" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.24702168" start_time="1.19102168" end_time="1.36462164" fwhm="0.049475994" area="31649546" background="128249.383" height="9544617" mass_error_ppm="-2.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.24702668" start_time="1.19662666" end_time="1.35902667" fwhm="0.0533264" area="2.04166E+07" background="63902.3438" height="5808191" mass_error_ppm="-2.3" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="209.09316657990945" neutral_mass_monoisotopic="209.09316657990945" custom_ion_name="Kynurenine">
+          <precursor_mz>209.092618</precursor_mz>
+          <product_mz>209.092618</product_mz>
+          <collision_energy>9.177779</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-1.5" retention_time="1.2147938" start_time="1.15879381" end_time="1.33799374" area="8517183" background="121146.133" height="2398802.5" fwhm="0.05613562" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-1.8" retention_time="1.213765" start_time="1.16551661" end_time="1.327235" area="51884416" background="490265.875" height="16409048" fwhm="0.0485752262" truncated="false" identified="false" rank="1" points_across="31" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-1.9" retention_time="1.22340333" start_time="1.17030334" end_time="1.34140337" area="1.852389E+07" background="16570.9785" height="5959470" fwhm="0.0464529768" truncated="false" identified="false" rank="1" points_across="27" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-2.2" retention_time="1.24702168" start_time="1.19102168" end_time="1.36462164" area="31649546" background="128249.383" height="9544617" fwhm="0.049475994" truncated="false" identified="false" rank="1" points_across="31" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-2.3" retention_time="1.24702668" start_time="1.19662666" end_time="1.35902667" area="2.04166E+07" background="63902.3438" height="5808191" fwhm="0.0533264" truncated="false" identified="false" rank="1" points_across="30" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="220.11904657990945" neutral_mass_monoisotopic="220.11904657990945" custom_ion_name="Vitamin B5" avg_measured_retention_time="1.81614912">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.78599381" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.7895" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.80160332" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.84622169" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.85742664" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="220.118498" collision_energy="9.508555" ion_formula="[M+]" neutral_mass_average="220.11904657990945" neutral_mass_monoisotopic="220.11904657990945" custom_ion_name="Vitamin B5">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.78599381" start_time="1.7355938" end_time="1.89239371" fwhm="0.0459612235" area="19424884" background="360163.844" height="6316695" mass_error_ppm="4" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.7895" start_time="1.74085" end_time="1.91273332" fwhm="0.0467488058" area="141380048" background="882437.438" height="4.361079E+07" mass_error_ppm="3.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.80160332" start_time="1.74850333" end_time="1.94320333" fwhm="0.0450941958" area="8.009277E+07" background="417480.281" height="25558834" mass_error_ppm="3.9" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.84622169" start_time="1.79582167" end_time="1.9750216" fwhm="0.0444146879" area="9.107125E+07" background="1284677.63" height="29917128" mass_error_ppm="3.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.85742664" start_time="1.80702662" end_time="1.9806267" fwhm="0.04291275" area="7.992225E+07" background="657909.8" height="27646686" mass_error_ppm="3.3" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="220.11904657990945" neutral_mass_monoisotopic="220.11904657990945" custom_ion_name="Vitamin B5">
+          <precursor_mz>220.118498</precursor_mz>
+          <product_mz>220.118498</product_mz>
+          <collision_energy>9.508555</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="4" retention_time="1.78599381" start_time="1.7355938" end_time="1.89239371" area="19424884" background="360163.844" height="6316695" fwhm="0.0459612235" truncated="false" identified="false" rank="1" points_across="28" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="3.6" retention_time="1.7895" start_time="1.74085" end_time="1.91273332" area="141380048" background="882437.438" height="4.361079E+07" fwhm="0.0467488058" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="3.9" retention_time="1.80160332" start_time="1.74850333" end_time="1.94320333" area="8.009277E+07" background="417480.281" height="25558834" fwhm="0.0450941958" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="3.3" retention_time="1.84622169" start_time="1.79582167" end_time="1.9750216" area="9.107125E+07" background="1284677.63" height="29917128" fwhm="0.0444146879" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="3.3" retention_time="1.85742664" start_time="1.80702662" end_time="1.9806267" area="7.992225E+07" background="657909.8" height="27646686" fwhm="0.04291275" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="252.11021357990947" neutral_mass_monoisotopic="252.11021357990947" custom_ion_name="Deoxyadenosine" avg_measured_retention_time="1.19102669">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.19102669" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="252.109665" collision_energy="10.46829" ion_formula="[M+]" neutral_mass_average="252.11021357990947" neutral_mass_monoisotopic="252.11021357990947" custom_ion_name="Deoxyadenosine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.19102669" start_time="1.14622664" end_time="1.31422663" fwhm="0.043861106" area="22385508" background="227735.016" height="7346422" mass_error_ppm="-2" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="252.11021357990947" neutral_mass_monoisotopic="252.11021357990947" custom_ion_name="Deoxyadenosine">
+          <precursor_mz>252.109665</precursor_mz>
+          <product_mz>252.109665</product_mz>
+          <collision_energy>10.46829</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-2" retention_time="1.19102669" start_time="1.14622664" end_time="1.31422663" area="22385508" background="227735.016" height="7346422" fwhm="0.043861106" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="290.13576057990946" neutral_mass_monoisotopic="290.13576057990946" custom_ion_name="Ophthalmic Acid" avg_measured_retention_time="9.54690552">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="9.530794" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="9.524683" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="9.530603" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="9.574222" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="9.574226" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="290.135212" collision_energy="11.609056" ion_formula="[M+]" neutral_mass_average="290.13576057990946" neutral_mass_monoisotopic="290.13576057990946" custom_ion_name="Ophthalmic Acid">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="9.530794" start_time="9.491593" end_time="9.631594" fwhm="0.03865159" area="863911.6" background="0" height="334539.844" mass_error_ppm="5.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="9.524683" start_time="9.4818" end_time="9.615967" fwhm="0.0335035063" area="3863755.25" background="57722.4023" height="1654871.88" mass_error_ppm="6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="9.530603" start_time="9.477504" end_time="9.660403" fwhm="0.0422919653" area="3599792.75" background="21686.7539" height="1293606" mass_error_ppm="6.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="9.574222" start_time="9.523822" end_time="9.719822" fwhm="0.04089787" area="4501921.5" background="50338.51" height="1622294.5" mass_error_ppm="6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="9.574226" start_time="9.518227" end_time="9.680627" fwhm="0.0439090878" area="4259052.5" background="50084.418" height="1413065.75" mass_error_ppm="5.6" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="290.13576057990946" neutral_mass_monoisotopic="290.13576057990946" custom_ion_name="Ophthalmic Acid">
+          <precursor_mz>290.135212</precursor_mz>
+          <product_mz>290.135212</product_mz>
+          <collision_energy>11.609056</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="5.7" retention_time="9.530794" start_time="9.491593" end_time="9.631594" area="863911.6" background="0" height="334539.844" fwhm="0.03865159" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="6" retention_time="9.524683" start_time="9.4818" end_time="9.615967" area="3863755.25" background="57722.4023" height="1654871.88" fwhm="0.0335035063" truncated="false" identified="false" rank="1" points_across="26" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="6.6" retention_time="9.530603" start_time="9.477504" end_time="9.660403" area="3599792.75" background="21686.7539" height="1293606" fwhm="0.0422919653" truncated="false" identified="false" rank="1" points_across="31" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="6" retention_time="9.574222" start_time="9.523822" end_time="9.719822" area="4501921.5" background="50338.51" height="1622294.5" fwhm="0.04089787" truncated="false" identified="false" rank="1" points_across="35" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="5.6" retention_time="9.574226" start_time="9.518227" end_time="9.680627" area="4259052.5" background="50084.418" height="1413065.75" fwhm="0.0439090878" truncated="false" identified="false" rank="1" points_across="29" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="298.09793557990946" neutral_mass_monoisotopic="298.09793557990946" custom_ion_name="Methylthioadenosine" avg_measured_retention_time="2.11594915">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.08279371" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.0969" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="2.10840344" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="2.14302158" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="2.14862657" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="298.097387" collision_energy="11.847922" ion_formula="[M+]" neutral_mass_average="298.09793557990946" neutral_mass_monoisotopic="298.09793557990946" custom_ion_name="Methylthioadenosine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.08279371" start_time="2.02679372" end_time="2.21159387" fwhm="0.0521658361" area="16388955" background="67431.34" height="4790341" mass_error_ppm="-1.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.0969" start_time="2.03745" end_time="2.21673322" fwhm="0.0494989939" area="120863120" background="483201.344" height="35948376" mass_error_ppm="-1.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="2.10840344" start_time="2.04940343" end_time="2.25000334" fwhm="0.0457946733" area="8.461604E+07" background="1223006.38" height="2.691358E+07" mass_error_ppm="-1.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="2.14302158" start_time="2.08142161" end_time="2.27742171" fwhm="0.04904456" area="9.161779E+07" background="1095610.88" height="27611506" mass_error_ppm="-2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="2.14862657" start_time="2.09262657" end_time="2.27182674" fwhm="0.0439090878" area="72829016" background="1355549.25" height="24500494" mass_error_ppm="-2.1" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="298.09793557990946" neutral_mass_monoisotopic="298.09793557990946" custom_ion_name="Methylthioadenosine">
+          <precursor_mz>298.097387</precursor_mz>
+          <product_mz>298.097387</product_mz>
+          <collision_energy>11.847922</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-1.6" retention_time="2.08279371" start_time="2.02679372" end_time="2.21159387" area="16388955" background="67431.34" height="4790341" fwhm="0.0521658361" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-1.6" retention_time="2.0969" start_time="2.03745" end_time="2.21673322" area="120863120" background="483201.344" height="35948376" fwhm="0.0494989939" truncated="false" identified="false" rank="1" points_across="34" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-1.8" retention_time="2.10840344" start_time="2.04940343" end_time="2.25000334" area="8.461604E+07" background="1223006.38" height="2.691358E+07" fwhm="0.0457946733" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-2" retention_time="2.14302158" start_time="2.08142161" end_time="2.27742171" area="9.161779E+07" background="1095610.88" height="27611506" fwhm="0.04904456" truncated="false" identified="false" rank="1" points_across="35" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-2.1" retention_time="2.14862657" start_time="2.09262657" end_time="2.27182674" area="72829016" background="1355549.25" height="24500494" fwhm="0.0439090878" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="377.14665957990945" neutral_mass_monoisotopic="377.14665957990945" custom_ion_name="Vitamin B2" avg_measured_retention_time="4.249406">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.227594" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.23318338" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="4.24420357" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="4.271022" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="4.27102661" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="377.146111" collision_energy="14.219383" ion_formula="[M+]" neutral_mass_average="377.14665957990945" neutral_mass_monoisotopic="377.14665957990945" custom_ion_name="Vitamin B2">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.227594" start_time="4.18279362" end_time="4.31159353" fwhm="0.0344307572" area="14370484" background="106275.391" height="6148098" mass_error_ppm="-1.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.23318338" start_time="4.18965" end_time="4.308533" fwhm="0.03469054" area="43759416" background="218019.2" height="18973646" mass_error_ppm="-1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="4.24420357" start_time="4.19700336" end_time="4.3386035" fwhm="0.0371653773" area="25541648" background="392556.156" height="10267599" mass_error_ppm="-0.9" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="4.271022" start_time="4.22622156" end_time="4.36062145" fwhm="0.03531772" area="35939804" background="252693.313" height="15306538" mass_error_ppm="-1.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="4.27102661" start_time="4.226227" end_time="4.36622667" fwhm="0.0342362747" area="35181868" background="355677.6" height="1.552294E+07" mass_error_ppm="-1" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="377.14665957990945" neutral_mass_monoisotopic="377.14665957990945" custom_ion_name="Vitamin B2">
+          <precursor_mz>377.146111</precursor_mz>
+          <product_mz>377.146111</product_mz>
+          <collision_energy>14.219383</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-1.2" retention_time="4.227594" start_time="4.18279362" end_time="4.31159353" area="14370484" background="106275.391" height="6148098" fwhm="0.0344307572" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-1" retention_time="4.23318338" start_time="4.18965" end_time="4.308533" area="43759416" background="218019.2" height="18973646" fwhm="0.03469054" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-0.9" retention_time="4.24420357" start_time="4.19700336" end_time="4.3386035" area="25541648" background="392556.156" height="10267599" fwhm="0.0371653773" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-1.6" retention_time="4.271022" start_time="4.22622156" end_time="4.36062145" area="35939804" background="252693.313" height="15306538" fwhm="0.03531772" truncated="false" identified="false" rank="1" points_across="24" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-1" retention_time="4.27102661" start_time="4.226227" end_time="4.36622667" area="35181868" background="355677.6" height="1.552294E+07" fwhm="0.0342362747" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="385.12996457990943" neutral_mass_monoisotopic="385.12996457990943" custom_ion_name="Adenosyl Homocysteine" avg_measured_retention_time="0.953692436">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.9291938" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.9476167" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="0.95200336" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.967021644" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.9726266" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="385.129416" collision_energy="14.458882" ion_formula="[M+]" neutral_mass_average="385.12996457990943" neutral_mass_monoisotopic="385.12996457990943" custom_ion_name="Adenosyl Homocysteine">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.9291938" start_time="0.884393752" end_time="1.04119372" fwhm="0.0301071964" area="4357314.5" background="11006.8193" height="2010079" mass_error_ppm="-0.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.9476167" start_time="0.915748358" end_time="1.02756667" fwhm="0.0269096587" area="1.712795E+07" background="204590.516" height="9182472" mass_error_ppm="-0.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="0.95200336" start_time="0.922503352" end_time="1.04050338" fwhm="0.0256007425" area="5945005.5" background="0" height="3340513.75" mass_error_ppm="-0.8" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.967021644" start_time="0.939021647" end_time="1.06782162" fwhm="0.0305401441" area="9094214" background="71088.96" height="4251526" mass_error_ppm="-1.1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.9726266" start_time="0.9446266" end_time="1.05662668" fwhm="0.0304480977" area="2871011.75" background="0" height="1377235" mass_error_ppm="-1.2" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="385.12996457990943" neutral_mass_monoisotopic="385.12996457990943" custom_ion_name="Adenosyl Homocysteine">
+          <precursor_mz>385.129416</precursor_mz>
+          <product_mz>385.129416</product_mz>
+          <collision_energy>14.458882</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.7" retention_time="0.9291938" start_time="0.884393752" end_time="1.04119372" area="4357314.5" background="11006.8193" height="2010079" fwhm="0.0301071964" truncated="false" identified="false" rank="1" points_across="28" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-0.6" retention_time="0.9476167" start_time="0.915748358" end_time="1.02756667" area="1.712795E+07" background="204590.516" height="9182472" fwhm="0.0269096587" truncated="false" identified="false" rank="1" points_across="22" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-0.8" retention_time="0.95200336" start_time="0.922503352" end_time="1.04050338" area="5945005.5" background="0" height="3340513.75" fwhm="0.0256007425" truncated="false" identified="false" rank="1" points_across="19" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-1.1" retention_time="0.967021644" start_time="0.939021647" end_time="1.06782162" area="9094214" background="71088.96" height="4251526" fwhm="0.0305401441" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-1.2" retention_time="0.9726266" start_time="0.9446266" end_time="1.05662668" area="2871011.75" background="0" height="1377235" fwhm="0.0304480977" truncated="false" identified="false" rank="1" points_across="22" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="613.16034157990953" neutral_mass_monoisotopic="613.16034157990953" custom_ion_name="Glutathione Disulfide" avg_measured_retention_time="0.762624145">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.7654216" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.75982666" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="613.159793" collision_energy="21.299794" ion_formula="[M+]" neutral_mass_average="613.16034157990953" neutral_mass_monoisotopic="613.16034157990953" custom_ion_name="Glutathione Disulfide">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="0.7654216" start_time="0.737421632" end_time="0.799021661" fwhm="0.0226180367" area="3896115.25" background="0" height="2521688.25" mass_error_ppm="-0.1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="0.75982666" start_time="0.597426653" end_time="1.03422666" fwhm="0.0143213337" area="410449.938" background="0" height="152992.125" mass_error_ppm="-0.8" truncated="0" identified="false" user_set="TRUE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="613.16034157990953" neutral_mass_monoisotopic="613.16034157990953" custom_ion_name="Glutathione Disulfide">
+          <precursor_mz>613.159793</precursor_mz>
+          <product_mz>613.159793</product_mz>
+          <collision_energy>21.299794</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-0.1" retention_time="0.7654216" start_time="0.737421632" end_time="0.799021661" area="3896115.25" background="0" height="2521688.25" fwhm="0.0226180367" truncated="false" identified="false" rank="1" points_across="11" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-0.8" retention_time="0.75982666" start_time="0.597426653" end_time="1.03422666" area="410449.938" background="0" height="152992.125" fwhm="0.0143213337" truncated="false" identified="false" rank="1" points_across="83" user_set="TRUE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="268.10476287990946" neutral_mass_monoisotopic="268.10476287990946" custom_ion_name="I268.1042R1.02_CyanoAq" avg_measured_retention_time="1.03767312">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.0243938" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.03292" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.03460336" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.0454216" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.0510267" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="268.104214" collision_energy="10.948126" ion_formula="[M+]" neutral_mass_average="268.10476287990946" neutral_mass_monoisotopic="268.10476287990946" custom_ion_name="I268.1042R1.02_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.0243938" start_time="0.9291938" end_time="1.14199376" fwhm="0.02943593" area="107474.5" background="75344.16" height="48734.5547" mass_error_ppm="-1" truncated="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="1.03292" start_time="0.995521665" end_time="1.10730672" fwhm="0.0356963277" area="1077395.88" background="0" height="502045.469" mass_error_ppm="0" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="1.03460336" start_time="0.9992033" end_time="1.0995034" fwhm="0.0291236788" area="884679.4" background="5258.483" height="436021.656" mass_error_ppm="0.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="1.0454216" start_time="1.0174216" end_time="1.12942159" fwhm="0.04113104" area="1459745" background="0" height="556515.9" mass_error_ppm="-0.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.0510267" start_time="1.01742661" end_time="1.13502669" fwhm="0.0312138461" area="45414436" background="334331.469" height="20843748" mass_error_ppm="-0.8" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="268.10476287990946" neutral_mass_monoisotopic="268.10476287990946" custom_ion_name="I268.1042R1.02_CyanoAq">
+          <precursor_mz>268.104214</precursor_mz>
+          <product_mz>268.104214</product_mz>
+          <collision_energy>10.948126</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-1" retention_time="1.0243938" start_time="0.9291938" end_time="1.14199376" area="107474.5" background="75344.16" height="48734.5547" fwhm="0.02943593" truncated="false" identified="false" rank="1" points_across="39" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="0" retention_time="1.03292" start_time="0.995521665" end_time="1.10730672" area="1077395.88" background="0" height="502045.469" fwhm="0.0356963277" truncated="false" identified="false" rank="1" points_across="22" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="0.2" retention_time="1.03460336" start_time="0.9992033" end_time="1.0995034" area="884679.4" background="5258.483" height="436021.656" fwhm="0.0291236788" truncated="false" identified="false" rank="1" points_across="16" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-0.3" retention_time="1.0454216" start_time="1.0174216" end_time="1.12942159" area="1459745" background="0" height="556515.9" fwhm="0.04113104" truncated="false" identified="false" rank="1" points_across="21" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-0.8" retention_time="1.0510267" start_time="1.01742661" end_time="1.13502669" area="45414436" background="334331.469" height="20843748" fwhm="0.0312138461" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="132.10264467990947" neutral_mass_monoisotopic="132.10264467990947" custom_ion_name="I132.1021R0.87_CyanoAq" avg_measured_retention_time="0.772393763">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.772393763" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="132.102096" collision_energy="6.868063" ion_formula="[M+]" neutral_mass_average="132.10264467990947" neutral_mass_monoisotopic="132.10264467990947" custom_ion_name="I132.1021R0.87_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="0.772393763" start_time="0.7275938" end_time="0.873193741" fwhm="0.0399058945" area="1304357.13" background="377234.6" height="496243.438" mass_error_ppm="-0.1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="132.10264467990947" neutral_mass_monoisotopic="132.10264467990947" custom_ion_name="I132.1021R0.87_CyanoAq">
+          <precursor_mz>132.102096</precursor_mz>
+          <product_mz>132.102096</product_mz>
+          <collision_energy>6.868063</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.1" retention_time="0.772393763" start_time="0.7275938" end_time="0.873193741" area="1304357.13" background="377234.6" height="496243.438" fwhm="0.0399058945" truncated="false" identified="false" rank="1" points_across="26" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" user_set="TRUE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="152.05729227990946" neutral_mass_monoisotopic="152.05729227990946" custom_ion_name="I152.0567R0.9_CyanoAq">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="152.056744" collision_energy="7.466702" ion_formula="[M+]" neutral_mass_average="152.05729227990946" neutral_mass_monoisotopic="152.05729227990946" custom_ion_name="I152.0567R0.9_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="152.05729227990946" neutral_mass_monoisotopic="152.05729227990946" custom_ion_name="I152.0567R0.9_CyanoAq">
+          <precursor_mz>152.056744</precursor_mz>
+          <product_mz>152.056744</product_mz>
+          <collision_energy>7.466702</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" user_set="TRUE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="136.06246887990946" neutral_mass_monoisotopic="136.06246887990946" custom_ion_name="I136.0619R0.89_CyanoAq">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="136.06192" collision_energy="6.986858" ion_formula="[M+]" neutral_mass_average="136.06246887990946" neutral_mass_monoisotopic="136.06246887990946" custom_ion_name="I136.0619R0.89_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="136.06246887990946" neutral_mass_monoisotopic="136.06246887990946" custom_ion_name="I136.0619R0.89_CyanoAq">
+          <precursor_mz>136.06192</precursor_mz>
+          <product_mz>136.06192</product_mz>
+          <collision_energy>6.986858</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" user_set="TRUE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="166.08693087990946" neutral_mass_monoisotopic="166.08693087990946" custom_ion_name="I166.0864R1.12_CyanoAq" avg_measured_retention_time="3.055599">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.05159378" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.06175" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="3.06420326" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="3.04462171" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="3.05582666" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="166.086382" collision_energy="7.887591" ion_formula="[M+]" neutral_mass_average="166.08693087990946" neutral_mass_monoisotopic="166.08693087990946" custom_ion_name="I166.0864R1.12_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.05159378" start_time="2.96759367" end_time="3.29799366" fwhm="0.06481024" area="1.100423E+08" background="1108624.63" height="21037988" mass_error_ppm="-0.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="3.06175" start_time="2.9759" end_time="3.25525" fwhm="0.07127274" area="699955136" background="5657433.5" height="145873232" mass_error_ppm="-0.9" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="3.06420326" start_time="2.98160338" end_time="3.22350335" fwhm="0.06437376" area="386601952" background="5325254" height="86141224" mass_error_ppm="-0.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="3.04462171" start_time="2.96622157" end_time="3.22942162" fwhm="0.0623619333" area="413548832" background="4576364.5" height="94416536" mass_error_ppm="-1.2" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="3.05582666" start_time="2.98302674" end_time="3.25182676" fwhm="0.05928424" area="405739648" background="6799017.5" height="9.751795E+07" mass_error_ppm="-1.8" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="166.08693087990946" neutral_mass_monoisotopic="166.08693087990946" custom_ion_name="I166.0864R1.12_CyanoAq">
+          <precursor_mz>166.086382</precursor_mz>
+          <product_mz>166.086382</product_mz>
+          <collision_energy>7.887591</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.2" retention_time="3.05159378" start_time="2.96759367" end_time="3.29799366" area="1.100423E+08" background="1108624.63" height="21037988" fwhm="0.06481024" truncated="false" identified="false" rank="1" points_across="61" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-0.9" retention_time="3.06175" start_time="2.9759" end_time="3.25525" area="699955136" background="5657433.5" height="145873232" fwhm="0.07127274" truncated="false" identified="false" rank="1" points_across="53" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-0.7" retention_time="3.06420326" start_time="2.98160338" end_time="3.22350335" area="386601952" background="5325254" height="86141224" fwhm="0.06437376" truncated="false" identified="false" rank="1" points_across="42" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-1.2" retention_time="3.04462171" start_time="2.96622157" end_time="3.22942162" area="413548832" background="4576364.5" height="94416536" fwhm="0.0623619333" truncated="false" identified="false" rank="1" points_across="47" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-1.8" retention_time="3.05582666" start_time="2.98302674" end_time="3.25182676" area="405739648" background="6799017.5" height="9.751795E+07" fwhm="0.05928424" truncated="false" identified="false" rank="1" points_across="50" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="252.10984927990947" neutral_mass_monoisotopic="252.10984927990947" custom_ion_name="I252.1093R1.15_CyanoAq" avg_measured_retention_time="1.19102669">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.19102669" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="252.109301" collision_energy="10.468279" ion_formula="[M+]" neutral_mass_average="252.10984927990947" neutral_mass_monoisotopic="252.10984927990947" custom_ion_name="I252.1093R1.15_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="1.19102669" start_time="1.14622664" end_time="1.31422663" fwhm="0.043861106" area="22385508" background="227735.016" height="7346422" mass_error_ppm="-0.6" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="252.10984927990947" neutral_mass_monoisotopic="252.10984927990947" custom_ion_name="I252.1093R1.15_CyanoAq">
+          <precursor_mz>252.109301</precursor_mz>
+          <product_mz>252.109301</product_mz>
+          <collision_energy>10.468279</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-0.6" retention_time="1.19102669" start_time="1.14622664" end_time="1.31422663" area="22385508" background="227735.016" height="7346422" fwhm="0.043861106" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="284.09972527990942" neutral_mass_monoisotopic="284.09972527990942" custom_ion_name="I284.0992R1.08_CyanoAq">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="284.099177" collision_energy="11.427975" ion_formula="[M+]" neutral_mass_average="284.09972527990942" neutral_mass_monoisotopic="284.09972527990942" custom_ion_name="I284.0992R1.08_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="0" height="0" identified="false" user_set="TRUE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="284.09972527990942" neutral_mass_monoisotopic="284.09972527990942" custom_ion_name="I284.0992R1.08_CyanoAq">
+          <precursor_mz>284.099177</precursor_mz>
+          <product_mz>284.099177</product_mz>
+          <collision_energy>11.427975</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" user_set="TRUE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" user_set="TRUE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" user_set="TRUE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="298.09761107990943" neutral_mass_monoisotopic="298.09761107990943" custom_ion_name="I298.0971R2.1_CyanoAq" avg_measured_retention_time="2.11594915">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.08279371" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.0969" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="2.10840344" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="2.14302158" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="2.14862657" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="298.097062" collision_energy="11.847912" ion_formula="[M+]" neutral_mass_average="298.09761107990943" neutral_mass_monoisotopic="298.09761107990943" custom_ion_name="I298.0971R2.1_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.08279371" start_time="2.02679372" end_time="2.21159387" fwhm="0.0521658361" area="16388955" background="67431.34" height="4790341" mass_error_ppm="-0.5" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="2.0969" start_time="2.03745" end_time="2.21673322" fwhm="0.0494989939" area="120863120" background="483201.344" height="35948376" mass_error_ppm="-0.6" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="2.10840344" start_time="2.04940343" end_time="2.25000334" fwhm="0.0457946733" area="8.461604E+07" background="1223006.38" height="2.691358E+07" mass_error_ppm="-0.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="2.14302158" start_time="2.08142161" end_time="2.27742171" fwhm="0.04904456" area="9.161779E+07" background="1095610.88" height="27611506" mass_error_ppm="-0.9" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="2.14862657" start_time="2.09262657" end_time="2.27182674" fwhm="0.0439090878" area="72829016" background="1355549.25" height="24500494" mass_error_ppm="-1" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="298.09761107990943" neutral_mass_monoisotopic="298.09761107990943" custom_ion_name="I298.0971R2.1_CyanoAq">
+          <precursor_mz>298.097062</precursor_mz>
+          <product_mz>298.097062</product_mz>
+          <collision_energy>11.847912</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.5" retention_time="2.08279371" start_time="2.02679372" end_time="2.21159387" area="16388955" background="67431.34" height="4790341" fwhm="0.0521658361" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-0.6" retention_time="2.0969" start_time="2.03745" end_time="2.21673322" area="120863120" background="483201.344" height="35948376" fwhm="0.0494989939" truncated="false" identified="false" rank="1" points_across="34" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-0.7" retention_time="2.10840344" start_time="2.04940343" end_time="2.25000334" area="8.461604E+07" background="1223006.38" height="2.691358E+07" fwhm="0.0457946733" truncated="false" identified="false" rank="1" points_across="33" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-0.9" retention_time="2.14302158" start_time="2.08142161" end_time="2.27742171" area="9.161779E+07" background="1095610.88" height="27611506" fwhm="0.04904456" truncated="false" identified="false" rank="1" points_across="35" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-1" retention_time="2.14862657" start_time="2.09262657" end_time="2.27182674" area="72829016" background="1355549.25" height="24500494" fwhm="0.0439090878" truncated="false" identified="false" rank="1" points_across="32" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+    <molecule neutral_mass_average="377.14644807990942" neutral_mass_monoisotopic="377.14644807990942" custom_ion_name="I377.1459R4.24_CyanoAq" avg_measured_retention_time="4.249406">
+      <peptide_results>
+        <peptide_result replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.227594" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.23318338" />
+        <peptide_result replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="4.24420357" />
+        <peptide_result replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="4.271022" />
+        <peptide_result replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="4.27102661" />
+      </peptide_results>
+      <precursor charge="1" precursor_mz="377.1459" collision_energy="14.219377" ion_formula="[M+]" neutral_mass_average="377.14644807990942" neutral_mass_monoisotopic="377.14644807990942" custom_ion_name="I377.1459R4.24_CyanoAq">
+        <precursor_results>
+          <precursor_peak replicate="170413_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.227594" start_time="4.18279362" end_time="4.31159353" fwhm="0.0344307572" area="14370484" background="106275.391" height="6148098" mass_error_ppm="-0.7" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_1" peak_count_ratio="1" retention_time="4.23318338" start_time="4.18965" end_time="4.308533" fwhm="0.03469054" area="43759416" background="218019.2" height="18973646" mass_error_ppm="-0.4" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="170425_Std_250nMStdsInH2O_2" peak_count_ratio="1" retention_time="4.24420357" start_time="4.19700336" end_time="4.3386035" fwhm="0.0371653773" area="25541648" background="392556.156" height="10267599" mass_error_ppm="-0.3" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInH2O_3" peak_count_ratio="1" retention_time="4.271022" start_time="4.22622156" end_time="4.36062145" fwhm="0.03531772" area="35939804" background="252693.313" height="15306538" mass_error_ppm="-1" truncated="0" identified="false" user_set="FALSE" />
+          <precursor_peak replicate="180716_Std_250nMStdsInMatrix_3" peak_count_ratio="1" retention_time="4.27102661" start_time="4.226227" end_time="4.36622667" fwhm="0.0342362747" area="35181868" background="355677.6" height="1.552294E+07" mass_error_ppm="-0.5" truncated="0" identified="false" user_set="FALSE" />
+        </precursor_results>
+        <transition fragment_type="precursor" ion_formula="[M+]" neutral_mass_average="377.14644807990942" neutral_mass_monoisotopic="377.14644807990942" custom_ion_name="I377.1459R4.24_CyanoAq">
+          <precursor_mz>377.1459</precursor_mz>
+          <product_mz>377.1459</product_mz>
+          <collision_energy>14.219377</collision_energy>
+          <transition_results>
+            <transition_peak replicate="170413_Std_250nMStdsInH2O_1" mass_error_ppm="-0.7" retention_time="4.227594" start_time="4.18279362" end_time="4.31159353" area="14370484" background="106275.391" height="6148098" fwhm="0.0344307572" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_1" mass_error_ppm="-0.4" retention_time="4.23318338" start_time="4.18965" end_time="4.308533" area="43759416" background="218019.2" height="18973646" fwhm="0.03469054" truncated="false" identified="false" rank="1" points_across="23" user_set="FALSE" />
+            <transition_peak replicate="170425_Std_250nMStdsInH2O_2" mass_error_ppm="-0.3" retention_time="4.24420357" start_time="4.19700336" end_time="4.3386035" area="25541648" background="392556.156" height="10267599" fwhm="0.0371653773" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInH2O_3" mass_error_ppm="-1" retention_time="4.271022" start_time="4.22622156" end_time="4.36062145" area="35939804" background="252693.313" height="15306538" fwhm="0.03531772" truncated="false" identified="false" rank="1" points_across="24" user_set="FALSE" />
+            <transition_peak replicate="180716_Std_250nMStdsInMatrix_3" mass_error_ppm="-0.5" retention_time="4.27102661" start_time="4.226227" end_time="4.36622667" area="35181868" background="355677.6" height="1.552294E+07" fwhm="0.0342362747" truncated="false" identified="false" rank="1" points_across="25" user_set="FALSE" />
+          </transition_results>
+        </transition>
+      </precursor>
+    </molecule>
+  </peptide_list>
+</srm_settings>

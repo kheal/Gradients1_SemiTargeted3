@@ -1,0 +1,20 @@
+﻿Column,z,MF_Frac,MassFeature_Column,Identification,MF_Frac_Matched,MassFeature_Column_Matched,Identification_Matched
+HILIC,1,I148.0968R8.21_HILICPos,I148.0968R8.21_HILIC_X_HILIC,4-Hydroxyisoleucine,I132.102R6.53_HILICPos,I132.102R6.53_HILIC_X_HILIC,Leucine
+HILIC,1,I204.1232R7.22_HILICPos,I204.1232R7.22_HILIC_X_HILIC,Acetyl-L-carnitine,Carnitine,Carnitine_X_HILIC,Carnitine
+RP,1,Agmatine,Agmatine_X_RP,Agmatine,I166.0864R1.12_CyanoAq,I166.0864R1.12_CyanoAq_X_RP,Phenylalanine
+RP,1,Allopurinol,Allopurinol_X_RP,Allopurinol,I166.0864R1.12_CyanoAq,I166.0864R1.12_CyanoAq_X_RP,Phenylalanine
+HILIC,1,I179.0048R7.02_HILICPos,I179.0048R7.02_HILIC_X_HILIC,Arsenobetaine,I118.0864R7.19_HILICPos,I118.0864R7.19_HILIC_X_HILIC,Betaine
+HILIC,1,beta-Alanine,beta-Alanine_X_HILIC,beta-Alanine,Alanine,Alanine_X_HILIC,Alanine
+HILIC,1,I160.0969R8.37_HILICPos,I160.0969R8.37_HILIC_X_HILIC,Betonicine,I118.0864R7.19_HILICPos,I118.0864R7.19_HILIC_X_HILIC,Betaine
+HILIC,1,Butyryl-L-carnitine,Butyryl-L-carnitine_X_HILIC,Butyryl-L-carnitine,Carnitine,Carnitine_X_HILIC,Carnitine
+HILIC,1,I252.1092R3.46_HILICPos,I252.1092R3.46_HILIC_X_HILIC,Deoxyadenosine,I284.0991R8.89_HILICPos,I284.0991R8.89_HILIC_X_HILIC,Guanosine
+HILIC,1,Dexpanthenol,Dexpanthenol_X_HILIC,Dexpanthenol,Serine,Serine_X_HILIC,Serine
+HILIC,1,I121.032R8.27_HILICPos,I121.032R8.27_HILIC_X_HILIC,Dimethylsulfonioacetate (DMS-Ac),DMSP_HILICPos,DMSP_HILIC_X_HILIC,DMSP
+HILIC,1,Glucosylglycerol,Glucosylglycerol_X_HILIC,Glucosylglycerol,Serine,Serine_X_HILIC,Serine
+RP,1,Glutathione Disulfide,Glutathione Disulfide_X_RP,Glutathione Disulfide,I166.0864R1.12_CyanoAq,I166.0864R1.12_CyanoAq_X_RP,Phenylalanine
+HILIC,1,Glycerophosphocholine,Glycerophosphocholine_X_HILIC,Glycerophosphocholine,I118.0864R7.19_HILICPos,I118.0864R7.19_HILIC_X_HILIC,Betaine
+HILIC,1,Gonyol,Gonyol_X_HILIC,Gonyol,DMSP_HILICPos,DMSP_HILIC_X_HILIC,DMSP
+HILIC,-1,Inosine,Inosine_X_HILIC,Inosine,Uridine,Uridine_X_HILIC,Uridine
+HILIC,-1,L-Pyroglutamic acid,L-Pyroglutamic acid_X_HILIC,L-Pyroglutamic acid,DHPS,DHPS_X_HILIC,DHPS
+HILIC,1,Propionyl-L-carnitine,Propionyl-L-carnitine_X_HILIC,Propionyl-L-carnitine,Carnitine,Carnitine_X_HILIC,Carnitine
+HILIC,1,I132.102R9.3_HILICPos,I132.102R9.3_HILIC_X_HILIC,Trimethylammonium Propionate (TMAP),I118.0864R7.19_HILICPos,I118.0864R7.19_HILIC_X_HILIC,Betaine

@@ -1,0 +1,514 @@
+Protein Name,Replicate Name,Precursor Ion Name,Retention Time,Area,Background,Height,Mass Error PPM,Protein
+molecules2,170410_Std_4uM_StdsInH2O_2,Alanine,11.38,46072744,2658818,3082040,0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Alanine,11.42,27098516,3569854,1690961,-0.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Alanine,10.73,25412424,2400227,1756463,0,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Alanine,10.73,29407800,1794524,3140099,0,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Alanine,10.94,50812200,1182761,4809488,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Alanine,10.64,29650164,959606,3347538,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Alanine,11.03,57907996,515306,6634602,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Alanine,11.06,22954912,431827,2839190,-0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,beta-Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,beta-Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,beta-Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,beta-Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,beta-Alanine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,beta-Alanine,10.99,18880046,1573940,2026780,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,beta-Alanine,11.77,17557374,3178837,1512374,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,beta-Alanine,11.66,66864088,2194007,6444540,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,beta-Alanine,11.79,92917808,4424861,7723129,-0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Sarcosine,10.58,91099888,963242,8236153,0,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Sarcosine,10.52,46396600,0,3668756,-0.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Sarcosine,10,43144532,683287,4688316,0,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Sarcosine,9.88,57451028,997756,6311779,0,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Sarcosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Sarcosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Sarcosine,10.51,8108654,0,977432,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Sarcosine,10.33,134028936,2362653,15776437,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Sarcosine,10.51,32212788,1152898,3969142,-0.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Serine,11.89,6126871,13641,405495,-1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Serine,11.79,2502614,0,147419,-1.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Serine,11.37,1272245,0,99460,-1.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Serine,10.99,2696101,0,147555,-1.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Serine,11.87,19305550,0,1267949,-1.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Serine,11.18,13597788,0,764109,-1.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Serine,12.02,19295190,0,2048109,-1.9,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Serine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Serine,12.02,3493589,0,353461,-1.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Hypotaurine,11.29,16698805,0,1080346,-1.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Hypotaurine,11.18,11847034,0,761657,-2.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Hypotaurine,10.81,9671134,0,751175,-1.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Hypotaurine,10.53,13056480,169806,1503698,-1.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Hypotaurine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Hypotaurine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Hypotaurine,11.55,1604763,0,118531,-2,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Hypotaurine,11.29,13871767,0,1159670,-1.9,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Hypotaurine,11.54,12425166,0,867776,-1.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Cytosine,7.38,2284796672,23175110,152797264,-2.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Cytosine,7.39,1936695552,19742034,121588968,-2.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Cytosine,6.72,1853549696,19646688,133636624,-2.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Cytosine,6.72,2556351744,20769738,179960864,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Cytosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Cytosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Cytosine,7,75914952,4443396,6651123,-2.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Cytosine,7.03,1511555328,19045944,112801320,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Cytosine,7,1414734592,65102676,110660336,-2.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Homoserine,11.46,70277584,1988242,4447979,-2.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Homoserine,11.34,40946040,248454,2402662,-3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Homoserine,10.84,37860328,128031,2503732,-2.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Homoserine,10.56,53201620,2119938,5001555,-2.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Homoserine,11.24,115244632,2963475,8104180,-2.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Homoserine,10.76,72231920,3318507,5520880,-2.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Homoserine,11.46,97945984,7104021,6844489,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Homoserine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Homoserine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Threonine,10.5,31078030,0,2713440,-2.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Threonine,10.33,16255755,0,1000676,-2.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Threonine,10.16,10139296,117127,948900,-2.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Threonine,9.83,20276852,352282,2020128,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Threonine,10.64,40471588,1323611,4456311,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Threonine,10.01,36683060,1172262,3587604,-3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Threonine,10.95,12527621,586264,2400311,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Threonine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Threonine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Vitamin B3,2.94,628507712,4737538,12440398,-2.8,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Vitamin B3,2.8,660080576,0,37771720,-3.8,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Vitamin B3,3.75,91059976,728433,3258331,-3.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Vitamin B3,3.48,272024352,2369526,7641865,-2.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Vitamin B3,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Vitamin B3,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Vitamin B3,4.45,17190616,4852175,521852,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Vitamin B3,4.14,1175433728,15147510,45124160,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Vitamin B3,4.41,1188650624,10845796,36084908,-3.7,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Creatine,11.4,2960033792,23763380,292363136,-4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Creatine,11.41,1817385344,13888490,167142768,-4.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Creatine,10.73,1716941440,18425178,159674144,-4.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Creatine,10.73,2219895040,30053666,227147152,-4.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Creatine,10.99,1650196864,19269508,169518512,-5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Creatine,10.99,1908539520,22538914,193672800,-4.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Creatine,11.03,1609523840,9138273,197132352,-4.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Creatine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Creatine,11.04,221439360,1624905,28511012,-3.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Asparagine,11.49,24825302,0,1303328,-3.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Asparagine,11.44,15930758,0,771085,-4.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Asparagine,11.01,14937669,0,833568,-3.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Asparagine,10.65,17392154,0,1213236,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Asparagine,11.5,34818244,0,2298283,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Asparagine,10.84,22043426,0,1716157,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Asparagine,11.74,32068380,146687,2881911,-3.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Asparagine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Asparagine,11.74,3663823,1578,328183,-2.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Ornithine,17.07,22119138,572355,1261090,-2.9,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Ornithine,16.8,8877775,0,495357,-3.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Ornithine,15.9,11397592,0,648998,-3.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Ornithine,15.68,9776336,0,559697,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Ornithine,15.94,67072688,1646803,2851848,-3.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Ornithine,15.83,13201490,0,691424,-3.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Ornithine,15.83,21258704,92857,833724,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Ornithine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Ornithine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Aspartic acid,12.06,3648189,6156,299543,-3.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Aspartic acid,12.39,1255121,0,103167,-3.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Aspartic acid,12.14,635383,0,63259,-3.8,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Aspartic acid,12.19,1273408,0,92777,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Aspartic acid,12.47,13049475,97047,1254471,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Aspartic acid,12.43,6167545,0,519887,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Aspartic acid,12.58,18569730,198,2343663,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Aspartic acid,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Aspartic acid,12.62,6146655,0,700886,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Adenine,5.46,4698151424,102842368,225125552,-4.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Adenine,5.49,4646830080,105164376,195505248,-5.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Adenine,4.61,2760685824,67868000,147571152,-4.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Adenine,4.56,4197049088,84629720,214873920,-4.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Adenine,4.75,3035399168,31911394,168561008,-4.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Adenine,4.78,2898967552,42162008,159133200,-4.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Adenine,4.78,2927195648,46437388,168521872,-4.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Adenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Adenine,4.7,253465728,18614404,8249048,-4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Glutamine,11.54,104160304,940244,6777585,-3.8,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Glutamine,11.34,49376576,537702,2569011,-4.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Glutamine,10.94,47029436,271459,3126336,-3.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Glutamine,10.56,74249656,0,6282126,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Glutamine,11.41,190423872,2508651,15054660,-4.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Glutamine,10.81,108428200,0,8373193,-4,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Glutamine,11.61,238810992,3702444,19872796,-4.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Glutamine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Glutamine,11.65,65672828,1855936,5970597,-3.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Lysine,18.92,17624056,1337937,974836,-3.7,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Lysine,18.59,11707810,0,569304,-4.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Lysine,17.65,14968009,232767,782223,-4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Lysine,17.53,12677053,23393,675838,-4.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Lysine,17.65,29319042,1238033,1299104,-4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Lysine,17.66,12646836,0,626100,-4.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Lysine,17.44,36633672,1553189,1478651,-4.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Lysine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Lysine,17.41,9103910,1044767,330449,-4.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Methionine,7.84,152615072,1845653,10186495,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Methionine,7.64,134388416,1685382,8643897,-4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Methionine,7.27,95926520,486661,6776401,-3.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Methionine,6.85,128867280,1817197,8096849,-3.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Methionine,7.75,171591920,1121658,11861902,-3.7,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Methionine,7.06,188149408,2096191,9459965,-3.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Methionine,7.71,187433008,506590,8884454,-3.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Methionine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Methionine,7.72,17836280,0,954615,-3.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Histidine,11.18,264033120,10995335,13679296,-2.9,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Histidine,11.19,84806728,6569998,4188375,-3.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Histidine,10.46,67694264,7275519,3627413,-3.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Histidine,10.26,171725696,2949393,10524988,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Histidine,10.94,263105312,4699760,10162001,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Histidine,10.49,120106272,5351744,6059587,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Histidine,11.06,230948352,1712384,12037089,-3.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Histidine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Histidine,11.1,24661472,136725,1313531,-2.7,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Carnitine,10.29,2116406272,18163936,191891360,-3.9,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Carnitine,10.33,1950454656,23931494,162169712,-4.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Carnitine,9.49,1555227008,16873932,135335312,-3.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Carnitine,9.49,1819196160,15179918,147678768,-3.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Carnitine,9.77,813362176,9212962,70697264,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Carnitine,9.76,871155904,10317573,73297672,-4,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Carnitine,9.93,922223744,12223328,47820132,-3.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Carnitine,9.75,109491056,0,9122802,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Carnitine,9.91,281416608,2164561,13342589,-3.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Methionine Sulfoxide,9.82,172453088,1847584,16098817,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Methionine Sulfoxide,9.55,100217152,0,6879244,-3.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Methionine Sulfoxide,9.52,68720832,0,5627694,-3.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Methionine Sulfoxide,9.01,103599704,0,7755102,-3,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Methionine Sulfoxide,10.1,185699552,3221183,17675922,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Methionine Sulfoxide,9.23,112962424,824441,7270627,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Methionine Sulfoxide,10.51,35844200,1078547,3783692,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Methionine Sulfoxide,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Methionine Sulfoxide,10.53,1086367,0,105598,-2.7,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Citrulline,12.44,88433752,920485,7378393,-2.8,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Citrulline,12.36,32589870,0,2475629,-3.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Citrulline,11.89,32462274,112969,2639649,-3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Citrulline,11.65,44844432,208857,3216667,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Citrulline,12.22,127990560,1910015,11992154,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Citrulline,11.86,52978596,292824,3564921,-3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Citrulline,12.3,114470640,1869892,13374672,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Citrulline,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Citrulline,12.31,1621960,0,179022,-2.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Gonyol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Gonyol,10.96,63110184,615218,9103349,-3.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Gonyol,10.9,119325872,1517833,11561821,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Gonyol,10.96,141120448,1492777,21362106,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Tyrosine,9.39,116823664,1408684,9879096,-2.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Tyrosine,9.22,95206744,207913,6882445,-3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Tyrosine,8.97,59879652,244968,5668292,-2.8,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Tyrosine,8.63,101843800,838297,9042059,-2.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Tyrosine,9.44,76381720,937122,7317100,-2.7,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Tyrosine,8.84,86636712,1025015,7472927,-2.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Tyrosine,9.82,95870960,0,5088205,-2.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Tyrosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Tyrosine,9.8,14878735,0,751942,-2.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,N(e)-Acetyl-Lysine,9.86,780728832,9843557,73021872,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,N(e)-Acetyl-Lysine,9.76,355706976,4089964,28282462,-3.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,N(e)-Acetyl-Lysine,9.06,242505072,3167860,20136852,-3.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,N(e)-Acetyl-Lysine,8.85,544370432,7597492,44159632,-3.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,N(e)-Acetyl-Lysine,9.47,590103424,7831929,51203188,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,N(e)-Acetyl-Lysine,9.1,440379264,6373871,32889756,-3.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,N(e)-Acetyl-Lysine,9.74,536291680,0,33004268,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,N(e)-Acetyl-Lysine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,N(e)-Acetyl-Lysine,8.72,2570288,0,180663,-3.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Dexpanthenol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Dexpanthenol,2.3,10404402,598430,2009342,-2.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Dexpanthenol,2.27,735430976,2749078,121408160,-3,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Dexpanthenol,2.3,802781632,685512,183354640,-3.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Kynurenine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Propionyl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Propionyl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Propionyl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Propionyl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Propionyl-L-carnitine,5.9,2101796736,19537166,53921076,-2.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Propionyl-L-carnitine,5.95,2355888128,24468576,60350972,-2.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Propionyl-L-carnitine,5.94,2011776640,26012186,59587172,-3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Propionyl-L-carnitine,5.93,42679020,648902,1142035,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Propionyl-L-carnitine,5.94,68626360,0,1996686,-2.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Cystathionine,13.37,36550952,149406,2662139,-2.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Cystathionine,13.41,21504076,0,1034022,-3.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Cystathionine,13.04,23000984,0,1396371,-2.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Cystathionine,12.83,26883522,0,1602201,-2.7,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Cystathionine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Cystathionine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Cystathionine,13.41,695858,0,70754,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Cystathionine,13.34,38656748,567068,2438003,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Cystathionine,13.43,32357670,90751,2409277,-2.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Butyryl-L-carnitine,4.61,4505798144,161637328,161691616,-3.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Butyryl-L-carnitine,4.66,4602696704,170088768,168053136,-3.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Butyryl-L-carnitine,4.58,6868875264,67681696,189523280,-3.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Butyryl-L-carnitine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Glucosylglycerol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Glucosylglycerol,10.34,852354,0,82820,-2.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Glucosylglycerol,9.94,4583606,0,480675,-1.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Glucosylglycerol,9.89,5112372,0,296136,-2.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Glycerophosphocholine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Glycerophosphocholine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Glycerophosphocholine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Glycerophosphocholine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Glycerophosphocholine,11.11,677631808,8255885,56791240,-2.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Glycerophosphocholine,11.12,235497872,2822959,21022332,-2.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Glycerophosphocholine,11.18,750643584,5601771,80144264,-2.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Glycerophosphocholine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Glycerophosphocholine,11.18,160099584,1937955,18204340,-2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Adenosine,5.27,1755703168,18128162,71943176,-2.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Adenosine,5.2,1785107840,16857732,64238968,-3.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Adenosine,4.38,1203805696,15243415,52612640,-2.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Adenosine,4.35,2065108736,28279408,75523344,-2.7,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Adenosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Adenosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Adenosine,4.48,35551260,0,1614822,-2.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Adenosine,4.55,1173779456,12907576,47861956,-2.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Adenosine,4.55,1107786752,16310480,46669200,-2.9,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Inosine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Inosine,7.94,2834288,0,174490,-1.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Inosine,7.77,89917496,1140191,6130602,-2.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Inosine,7.8,123990720,1488671,7535823,-2.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Argininosuccinic Acid,13.85,38752196,517568,3501827,-1.9,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Argininosuccinic Acid,13.94,18144908,0,1115852,-2.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Argininosuccinic Acid,13.7,20969994,0,1505161,-2.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Argininosuccinic Acid,13.58,18029294,0,1196956,-2.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Argininosuccinic Acid,14,60216580,612342,5238748,-2.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Argininosuccinic Acid,13.85,15024241,0,1078774,-2.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Argininosuccinic Acid,14.02,50849032,684249,4702737,-2.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Argininosuccinic Acid,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Argininosuccinic Acid,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Adenosyl Homocysteine,10.53,272961216,710606,15323572,-1.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Adenosyl Homocysteine,10.45,158922800,0,7203822,-2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Adenosyl Homocysteine,9.77,152798224,1573115,12320260,-1.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Adenosyl Homocysteine,9.41,299054240,3327777,24761544,-1.7,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Adenosyl Homocysteine,10.19,208294208,2820408,15362972,-2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Adenosyl Homocysteine,9.62,197292832,3998726,14306993,-1.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Adenosyl Homocysteine,10.48,49980388,0,4029623,-2.1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Adenosyl Homocysteine,8.38,3031912,0,277548,-7.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Adenosyl Homocysteine,8.41,3392814,0,296369,-7.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,Adenosyl Methionine,13.15,163720832,3056208,9433906,-1.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,Adenosyl Methionine,13.17,25330106,0,1272373,-1.9,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,Adenosyl Methionine,12.08,23766956,92685,1705716,-1.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,Adenosyl Methionine,12.09,32227750,230849,1896770,-1.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,Adenosyl Methionine,12.31,209618320,3566678,11529624,-1.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,Adenosyl Methionine,12.32,19622386,0,1161518,-1.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,Adenosyl Methionine,12.34,167251264,1416572,10345036,-1.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,Adenosyl Methionine,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,Adenosyl Methionine,12.31,2318620,0,141545,-1.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,DMSP_HILICPos,10.28,4254247424,52442632,393870368,-4.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,DMSP_HILICPos,10.31,3887036672,34715604,325818720,-4.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,DMSP_HILICPos,9.54,3723880960,35382136,322608736,-4.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,DMSP_HILICPos,9.53,3927208960,32750518,346055392,-4.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,DMSP_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,DMSP_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,DMSP_HILICPos,9.93,2819645440,18893644,154934352,-4.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,DMSP_HILICPos,9.82,1604063360,9780137,142881296,-4,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,DMSP_HILICPos,9.8,4378855424,33255400,237538112,-4.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I118.0864R7.19_HILICPos,7.91,9689072640,142106128,558805248,0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I118.0864R7.19_HILICPos,7.95,8001521664,70523600,462342560,-0.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I118.0864R7.19_HILICPos,7.15,6067260416,635828288,348329536,-0.2,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I118.0864R7.19_HILICPos,7.13,6477627904,710472832,354433472,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I118.0864R7.19_HILICPos,7.42,3190401536,298251360,198401952,0.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I118.0864R7.19_HILICPos,7.43,3800382720,288546784,220284816,0.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I118.0864R7.19_HILICPos,7.46,9913487360,319548448,607103680,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I118.0864R7.19_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I118.0864R7.19_HILICPos,7.45,7247890432,299510752,449470720,-0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I138.0549R5.35_HILICPos,6.28,557350848,6967601,26881550,0.7,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I138.0549R5.35_HILICPos,6.25,486069152,5792982,20291422,0.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I138.0549R5.35_HILICPos,5.34,263769808,1821736,11145702,0.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I138.0549R5.35_HILICPos,5.35,294284320,3575089,12783570,0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I138.0549R5.35_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I138.0549R5.35_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I138.0549R5.35_HILICPos,5.62,1667367680,15842773,76376384,0,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I138.0549R5.35_HILICPos,5.59,141566944,2722028,6527933,0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I138.0549R5.35_HILICPos,5.6,1844689408,14741256,83974096,0,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I132.102R9.3_HILICPos,9.66,1025773184,19659110,59754148,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I132.102R9.3_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I132.102R9.3_HILICPos,9.63,1084607104,20421274,67588232,0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I138.055R7.72_HILICPos,8.46,1451018240,16664085,104887984,-0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I138.055R7.72_HILICPos,8.52,1218857600,11735607,81433592,-0.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I138.055R7.72_HILICPos,7.7,778270848,7691811,52955016,-0.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I138.055R7.72_HILICPos,7.68,1032953728,8664692,72137848,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I138.055R7.72_HILICPos,7.97,403536544,6986723,30788328,-0.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I138.055R7.72_HILICPos,7.96,455033696,6882001,33896676,-0.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I138.055R7.72_HILICPos,8.02,986742656,17861420,70365824,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I138.055R7.72_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I138.055R7.72_HILICPos,7.96,628636288,13750260,45147900,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I121.032R8.27_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I121.032R8.27_HILICPos,8.56,330840544,1981376,26648292,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I121.032R8.27_HILICPos,8.55,1090749440,10020275,89673024,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I121.032R8.27_HILICPos,8.55,1639069056,16571459,132255664,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I132.102R6.53_HILICPos,7.53,285731904,239312112,9880176,0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I132.102R6.53_HILICPos,7.44,189033648,210482096,7038128,-0.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I132.102R6.53_HILICPos,7.13,206835680,203019936,6099668,-0.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I132.102R6.53_HILICPos,6.88,256822800,207705264,7996385,-0.1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I132.102R6.53_HILICPos,7.51,262103328,47123784,9101913,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I132.102R6.53_HILICPos,7.12,320893120,58708476,9376849,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I132.102R6.53_HILICPos,7.57,311918816,57297276,8634640,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I132.102R6.53_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I132.102R6.53_HILICPos,7.1,105232864,49765172,2535029,-0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I144.1019R6.44_HILICPos,7.32,2434011136,32745356,136785504,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I144.1019R6.44_HILICPos,7.38,2107069184,24933968,105975864,-1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I144.1019R6.44_HILICPos,6.4,1414079872,19666850,62407120,-0.8,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I144.1019R6.44_HILICPos,6.44,1481344000,21572236,64780432,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I144.1019R6.44_HILICPos,6.7,528540832,11900483,25162428,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I144.1019R6.44_HILICPos,6.7,578675968,12592480,26734460,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I144.1019R6.44_HILICPos,6.7,557463168,12146174,26520090,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I144.1019R6.44_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I144.1019R6.44_HILICPos,6.73,78749240,0,3562084,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I268.104R4.35_HILICPos,5.27,1755703168,18128162,71943176,-0.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I268.104R4.35_HILICPos,5.2,1785107840,16857732,64238968,-1.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I268.104R4.35_HILICPos,4.38,1203805696,15243415,52612640,-0.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I268.104R4.35_HILICPos,4.35,2065108736,28279408,75523344,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I268.104R4.35_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I268.104R4.35_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I268.104R4.35_HILICPos,4.48,35551260,0,1614822,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I268.104R4.35_HILICPos,4.55,1173779456,12907576,47861956,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I268.104R4.35_HILICPos,4.55,1107786752,16310480,46669200,-0.8,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I104.1074R10.68_HILICPos,14.4,3125662464,42969156,199589440,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I104.1074R10.68_HILICPos,14.83,2835489536,36390208,176568368,-0.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I104.1074R10.68_HILICPos,13.33,2820094208,26379022,154094816,-0.3,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I104.1074R10.68_HILICPos,14.43,2532677888,28771200,142848752,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I104.1074R10.68_HILICPos,12.68,1494079232,25798274,96100816,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I104.1074R10.68_HILICPos,14.78,1499641856,22845762,80342928,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I104.1074R10.68_HILICPos,10.76,1136271616,12998964,257590816,-0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I104.1074R10.68_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I104.1074R10.68_HILICPos,10.78,169904048,2167769,41866772,-0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I160.0969R8.37_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I160.0969R8.37_HILICPos,8.65,53005304,3701625,3873833,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I160.0969R8.37_HILICPos,8.61,2409618944,35862604,188968080,-0.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I160.0969R8.37_HILICPos,8.64,3109956608,39072996,240267840,-1.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I152.0567R8.12_HILICPos,8.65,176190752,2005863,13279069,-0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I152.0567R8.12_HILICPos,8.64,126993624,1494003,8833336,-0.6,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I152.0567R8.12_HILICPos,8.1,145236928,2135313,11916793,-0.4,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I152.0567R8.12_HILICPos,8.11,258997616,2763754,22412204,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I152.0567R8.12_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I152.0567R8.12_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I152.0567R8.12_HILICPos,8.39,113657240,1675281,8985366,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I152.0567R8.12_HILICPos,8.38,201363312,1428644,16005839,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I152.0567R8.12_HILICPos,8.39,266051376,4711109,22597468,-0.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I148.0968R8.21_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I148.0968R8.21_HILICPos,8.22,36705104,3946996,1453333,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I148.0968R8.21_HILICPos,8.76,96363968,5725727,5119786,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I148.0968R8.21_HILICPos,8.73,143009712,12056786,2905370,-0.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I116.0709R8.8_HILICPos,9.49,688795392,8074208,57300796,-0.5,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I116.0709R8.8_HILICPos,9.49,432635072,5295731,34076992,-0.8,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I116.0709R8.8_HILICPos,8.79,354721408,6881085,30234148,-0.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I116.0709R8.8_HILICPos,8.76,520825824,7881397,44781008,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I116.0709R8.8_HILICPos,9.08,653499776,9320541,59547024,-1,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I116.0709R8.8_HILICPos,9.01,614214848,5629579,51926876,-0.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I116.0709R8.8_HILICPos,9.12,739463872,8484797,45346128,-1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I116.0709R8.8_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I116.0709R8.8_HILICPos,9.09,205052464,3509343,12874666,-0.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I148.0605R12.12_HILICPos,11.73,34957476,11329,2321496,-0.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I148.0605R12.12_HILICPos,11.63,17374872,0,827577,-1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I148.0605R12.12_HILICPos,11.85,15544954,0,1267484,-0.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I148.0605R12.12_HILICPos,11.62,19710698,0,1286721,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I148.0605R12.12_HILICPos,12.22,42676152,526699,4221792,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I148.0605R12.12_HILICPos,11.93,22762890,310937,1775362,-0.2,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I148.0605R12.12_HILICPos,12.41,95353160,6304534,13590014,-0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I148.0605R12.12_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I148.0605R12.12_HILICPos,12.44,73605240,2431612,9490801,-0.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I252.1092R3.46_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I252.1092R3.46_HILICPos,3.63,4581349,0,203044,-0.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I252.1092R3.46_HILICPos,3.6,1339884672,14570812,49903644,-0.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I252.1092R3.46_HILICPos,3.57,1810445568,21697640,76135792,-1.1,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I143.0816R7.97_HILICPos,10.01,17667657728,134401408,1402107008,-1.6,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I143.0816R7.97_HILICPos,10.04,15666038784,100993768,1162145792,-2.1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I143.0816R7.97_HILICPos,9.22,14463700992,158660752,1132613760,-1.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I143.0816R7.97_HILICPos,9.22,15967839232,149751168,1191173760,-1.8,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I143.0816R7.97_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I143.0816R7.97_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I143.0816R7.97_HILICPos,8.69,258522032,19082588,9335569,-0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I143.0816R7.97_HILICPos,9.49,7805406208,95768472,665891968,-1.5,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I143.0816R7.97_HILICPos,9.55,7860160000,136773344,660929856,-1.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I204.1232R7.22_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I204.1232R7.22_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I204.1232R7.22_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I204.1232R7.22_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I204.1232R7.22_HILICPos,7.48,3039930112,38965548,149572512,-0.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I204.1232R7.22_HILICPos,7.45,3398483200,40886064,171078096,-0.9,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I204.1232R7.22_HILICPos,7.51,2897154304,38476316,165695856,-1,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I204.1232R7.22_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I204.1232R7.22_HILICPos,7.49,27935882,0,1470396,-0.2,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I179.0048R7.02_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I179.0048R7.02_HILICPos,7.26,7599290,0,527946,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I179.0048R7.02_HILICPos,7.24,1847862144,17884996,106803376,-0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I179.0048R7.02_HILICPos,7.32,2458655744,28487924,144446448,-0.8,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I175.119R17.83_HILICPos,19.52,96128432,1329735,5305068,0,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I175.119R17.83_HILICPos,19.16,40651144,0,2093840,-0.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I175.119R17.83_HILICPos,18.32,42770680,29021,2162271,-0.5,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I175.119R17.83_HILICPos,18.22,50468732,496170,2486856,-0.5,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I175.119R17.83_HILICPos,18.43,219368976,2479056,8945233,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I175.119R17.83_HILICPos,18.35,50502472,629523,2564320,-0.3,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I175.119R17.83_HILICPos,18.12,401316160,5619555,15195630,-0.7,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I175.119R17.83_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I175.119R17.83_HILICPos,18.14,173124432,2625654,6877596,-0.3,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_2,I284.0991R8.89_HILICPos,9.37,159240912,2314521,12325168,-0.4,molecules2
+molecules2,170410_Std_4uM_StdsInH2O_3,I284.0991R8.89_HILICPos,9.35,128681456,1283488,9625817,-1,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_1,I284.0991R8.89_HILICPos,8.88,93175648,327888,7318097,-0.7,molecules2
+molecules2,170419_Std_4uM_StdsInH2O_2,I284.0991R8.89_HILICPos,8.85,139090160,1644156,10788700,-0.6,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_1,I284.0991R8.89_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InH2O_2,I284.0991R8.89_HILICPos,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180702_Std_4uMStdsMix1InMatrix_1,I284.0991R8.89_HILICPos,9.17,395493,0,43852,-0.8,molecules2
+molecules2,180702_Std_4uMStdsMix2InH2O_1,I284.0991R8.89_HILICPos,9.15,123959016,1758065,10000672,-0.4,molecules2
+molecules2,180702_Std_4uMStdsMix2InMatrix_1,I284.0991R8.89_HILICPos,9.18,102287568,1114667,7857618,-0.6,molecules2

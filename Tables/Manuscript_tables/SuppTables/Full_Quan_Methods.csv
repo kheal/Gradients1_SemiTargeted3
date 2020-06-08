@@ -1,0 +1,127 @@
+Quantification method for each quantified metabolite in each sample set.  Proxy compound (when applicable) is the compound by which a relative response factor (RF) was calculated
+"","Compound","Quantification method","Proxy compound for relative RF","Environmental samples applied","Culture samples applied"
+"1","4-Hydroxyisoleucine","external RF and RF ratio",NA,"MGL1704",NA
+"2","4-Hydroxyisoleucine","relative RF and RF ratio","Leucine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"3","Acetyl-L-carnitine","external RF and RF ratio",NA,"MGL1704","3430"
+"4","Acetyl-L-carnitine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"5","Adenine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"6","Adenosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"7","Adenosyl Homocysteine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"8","Adenosyl Methionine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"9","Agmatine","external RF and RF ratio",NA,"MGL1704",NA
+"10","Agmatine","relative RF and RF ratio","Phenylalanine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"11","Alanine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"12","Alanine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"13","Allopurinol","external RF and RF ratio",NA,"MGL1704",NA
+"14","Allopurinol","relative RF and RF ratio","Phenylalanine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"15","Amino Propanesulfonic Acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"16","AMP","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"17","AMP","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"18","Arginine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"19","Argininosuccinic Acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"20","Argininosuccinic Acid","relative RF and RF ratio","Arginine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"21","Arsenobetaine","external RF and RF ratio",NA,"MGL1704",NA
+"22","Arsenobetaine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"23","Asparagine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"24","Aspartic acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"25","beta-Alanine","external RF and RF ratio",NA,"MGL1704",NA
+"26","beta-Alanine","relative RF and RF ratio","Alanine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"27","beta-Glutamic acid","relative RF and RF ratio","Glutamic acid","KM1513, KOK1606, MGL1704",NA
+"28","beta-Glutamic acid","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"29","Betaine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"30","Betonicine","external RF and RF ratio",NA,"MGL1704",NA
+"31","Betonicine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"32","Butyryl-L-carnitine","external RF and RF ratio",NA,"MGL1704","3430"
+"33","Butyryl-L-carnitine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"34","Carnitine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"35","Carnitine","relative RF and RF ratio","Betaine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"36","Choline","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"37","Citrulline","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"38","Citrulline","relative RF and RF ratio","Arginine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"39","Creatine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"40","Cystathionine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"41","Cysteic Acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"42","Cytidine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"43","Cytosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"44","Deoxyadenosine","external RF and RF ratio",NA,"MGL1704",NA
+"45","Deoxyadenosine","relative RF and RF ratio","Guanosine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"46","Dexpanthenol","external RF and RF ratio",NA,"MGL1704",NA
+"47","Dexpanthenol","relative RF and RF ratio","Serine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"48","DHPS","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"49","Dimethylsulfonioacetate (DMS-Ac)","external RF and RF ratio",NA,"MGL1704",NA
+"50","Dimethylsulfonioacetate (DMS-Ac)","relative RF and RF ratio","DMSP","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"51","DMSP","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"52","Ectoine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"53","Gluconic Acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"54","Glucosylglycerol","external RF and RF ratio",NA,"MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"55","Glucosylglycerol","relative RF and RF ratio","Serine","KM1513, KOK1606","7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"56","Glutamic acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"57","Glutamine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"58","Glutathione Disulfide","external RF and RF ratio",NA,"MGL1704",NA
+"59","Glutathione Disulfide","relative RF and RF ratio","Phenylalanine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"60","Glycerophosphocholine","external RF and RF ratio",NA,"MGL1704","3430"
+"61","Glycerophosphocholine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"62","Gonyol","external RF and RF ratio",NA,"MGL1704",NA
+"63","Gonyol","relative RF and RF ratio","DMSP","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"64","Guanine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"65","Guanosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"66","Histidine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"67","Histidine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"68","Homarine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"69","Homoserine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"70","Homoserine","relative RF and RF ratio","Threonine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"71","Inosine","external RF and RF ratio",NA,"MGL1704",NA
+"72","Inosine","relative RF and RF ratio","Uridine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"73","Isethionic Acid","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"74","Isethionic Acid","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"75","Kynurenine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"76","L-Pyroglutamic acid","external RF and RF ratio",NA,"MGL1704","3430"
+"77","L-Pyroglutamic acid","relative RF and RF ratio","DHPS","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"78","Leucine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"79","Leucine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"80","Lysine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"81","Malic Acid","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"82","Methionine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"83","Methionine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"84","Methionine Sulfoxide","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"85","Methionine Sulfoxide","relative RF and RF ratio","Methionine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"86","Methylthioadenosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"87","N-acetyltaurine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"88","N(e)-Acetyl-Lysine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"89","N(e)-Acetyl-Lysine","relative RF and RF ratio","Arginine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"90","NAD","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"91","Ornithine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"92","Ornithine","relative RF and RF ratio","Glutamine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"93","Phenylalanine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"94","Phenylalanine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"95","Proline","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"96","Proline","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"97","Propionyl-L-carnitine","external RF and RF ratio",NA,"MGL1704","3430"
+"98","Propionyl-L-carnitine","relative RF and RF ratio","Betaine","KM1513, KOK1606","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"99","Sarcosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"100","Serine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"101","Stachydrine hydrochloride","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"102","Stachydrine hydrochloride","relative RF and RF ratio","Proline",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"103","Sucrose","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"104","Sucrose","relative RF and RF ratio","Trehalose",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"105","Sulfolactic Acid","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"106","Sulfolactic Acid","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"107","Sulfurol","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"108","Taurine","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"109","Taurine","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"110","Threonine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"111","Thymidine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"112","Trehalose","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"113","Trigonelline","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
+"114","Trigonelline","relative RF and RF ratio","Homarine",NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"115","Trimethylammonium Propionate (TMAP)","relative RF and RF ratio","Betaine","KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"116","Tryptophan","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"117","Tryptophan","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"118","Tyrosine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"119","UDP-glucosamine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"120","Uracil","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"121","Uridine","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"122","Vitamin B2","isotopologue",NA,"KM1513, KOK1606, MGL1704",NA
+"123","Vitamin B2","external RF and RF ratio",NA,NA,"7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
+"124","Vitamin B3","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"125","Vitamin B5","external RF and RF ratio",NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"

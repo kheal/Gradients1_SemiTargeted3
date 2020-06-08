@@ -1,0 +1,109 @@
+MF_Frac,m.z,Column,z,Manual_Annote,Manual_Confidence,mz,rt,Confidence,BestMatch
+Adenine,136.06232,HILICPos,1,NA,NA,NA,NA,1,Adenine
+Adenosine,268.10458,HILICPos,1,NA,NA,NA,NA,1,Adenosine
+Adenosyl Homocysteine,385.129416,CyanoAq,1,NA,NA,NA,NA,1,Adenosyl Homocysteine
+Adenosyl Homocysteine,385.129416,HILICPos,1,NA,NA,NA,NA,1,Adenosyl Homocysteine
+Adenosyl Methionine,399.145066,HILICPos,1,NA,NA,NA,NA,1,Adenosyl Methionine
+Agmatine,131.129671,CyanoAq,1,NA,NA,NA,NA,1,Agmatine
+Alanine,90.055504,HILICPos,1,NA,NA,NA,NA,1,Alanine
+Allopurinol,137.046336,CyanoAq,1,NA,NA,NA,NA,1,Allopurinol
+Amino Propanesulfonic Acid,138.022491,HILICNeg,-1,NA,NA,NA,NA,1,Amino Propanesulfonic Acid
+Argininosuccinic Acid,291.13046,HILICPos,1,NA,NA,NA,NA,1,Argininosuccinic Acid
+Asparagine,133.061318,HILICPos,1,NA,NA,NA,NA,1,Asparagine
+Aspartic acid,134.045334,HILICPos,1,NA,NA,NA,NA,1,Aspartic acid
+beta-Alanine,90.055504,HILICPos,1,NA,NA,NA,NA,1,beta-Alanine
+Butyryl-L-carnitine,232.154884,HILICPos,1,NA,NA,NA,NA,1,Butyryl-L-carnitine
+Carnitine,162.113019,HILICPos,1,NA,NA,NA,NA,1,Carnitine
+Citrulline,176.103517,HILICPos,1,NA,NA,NA,NA,1,Citrulline
+Creatine,132.077302,HILICPos,1,NA,NA,NA,NA,1,Creatine
+Cystathionine,223.075255,HILICPos,1,NA,NA,NA,NA,1,Cystathionine
+Cysteic Acid,167.996671,HILICNeg,-1,NA,NA,NA,NA,1,Cysteic Acid
+Cytidine,242.077697,HILICNeg,-1,NA,NA,NA,NA,1,Cytidine
+Cytosine,112.051087,HILICPos,1,NA,NA,NA,NA,1,Cytosine
+Deoxyadenosine,252.109665,CyanoAq,1,NA,NA,NA,NA,1,Deoxyadenosine
+Dexpanthenol,206.139234,HILICPos,1,NA,NA,NA,NA,1,Dexpanthenol
+DHPS,155.001422,HILICNeg,-1,NA,NA,NA,NA,1,DHPS
+DMSP_HILICPos,NA,HILICPos,NA,DMSP,1,NA,NA,1,DMSP
+Gluconic Acid,195.05048,HILICNeg,-1,NA,NA,NA,NA,1,Gluconic Acid
+Glucosylglycerol,255.107995,HILICPos,1,NA,NA,NA,NA,1,Glucosylglycerol
+Glutamine,147.076968,HILICPos,1,NA,NA,NA,NA,1,Glutamine
+Glutathione Disulfide,613.159793,CyanoAq,1,NA,NA,NA,NA,1,Glutathione Disulfide
+Glycerophosphocholine,258.110652,HILICPos,1,NA,NA,NA,NA,1,Glycerophosphocholine
+Gonyol,179.074191,HILICPos,1,NA,NA,NA,NA,1,Gonyol
+Guanosine,282.083845,HILICNeg,-1,NA,NA,NA,NA,1,Guanosine
+Histidine,156.077302,HILICPos,1,NA,NA,NA,NA,1,Histidine
+Homoserine,120.066069,HILICPos,1,NA,NA,NA,NA,1,Homoserine
+Hypotaurine,110.027576,HILICPos,1,NA,NA,NA,NA,1,Hypotaurine
+Inosine,267.072946,HILICNeg,-1,NA,NA,NA,NA,1,Inosine
+Inosine,269.088596,HILICPos,1,NA,NA,NA,NA,1,Inosine
+Isethionic Acid,124.990857,HILICNeg,-1,NA,NA,NA,NA,1,Isethionic Acid
+Kynurenine,209.092618,CyanoAq,1,NA,NA,NA,NA,1,Kynurenine
+Kynurenine,209.092618,HILICPos,1,NA,NA,NA,NA,1,Kynurenine
+L-Pyroglutamic acid,128.034768,HILICNeg,-1,NA,NA,NA,NA,1,L-Pyroglutamic acid
+Lysine,147.113353,HILICPos,1,NA,NA,NA,NA,1,Lysine
+Malic Acid,133.0137,HILICNeg,-1,NA,NA,NA,NA,1,Malic Acid
+Methionine Sulfoxide,166.053791,HILICPos,1,NA,NA,NA,NA,1,Methionine Sulfoxide
+Methionine,150.058876,HILICPos,1,NA,NA,NA,NA,1,Methionine
+Methylthioadenosine,298.097387,CyanoAq,1,NA,NA,NA,NA,1,Methylthioadenosine
+N-acetyltaurine,166.017406,HILICNeg,-1,NA,NA,NA,NA,1,N-acetyltaurine
+N(e)-Acetyl-Lysine,189.123918,HILICPos,1,NA,NA,NA,NA,1,N(e)-Acetyl-Lysine
+NAD,662.101304,HILICNeg,-1,NA,NA,NA,NA,1,NAD
+Ophthalmic Acid,290.135212,CyanoAq,1,NA,NA,NA,NA,1,Ophthalmic Acid
+Ornithine,133.097703,HILICPos,1,NA,NA,NA,NA,1,Ornithine
+Phenylalanine,166.086804,CyanoAq,1,NA,NA,NA,NA,1,Phenylalanine
+Propionyl-L-carnitine,218.139234,HILICPos,1,NA,NA,NA,NA,1,Propionyl-L-carnitine
+Sarcosine,90.055504,HILICPos,1,NA,NA,NA,NA,1,Sarcosine
+Serine,106.050419,HILICPos,1,NA,NA,NA,NA,1,Serine
+Sucrose,341.10839,HILICNeg,-1,NA,NA,NA,NA,1,Sucrose
+Sulfolactic Acid,168.980687,HILICNeg,-1,NA,NA,NA,NA,1,Sulfolactic Acid
+Sulfurol,144.048311,CyanoAq,1,NA,NA,NA,NA,1,Sulfurol
+Threonine,120.066069,HILICPos,1,NA,NA,NA,NA,1,Threonine
+Thymidine,241.082448,HILICNeg,-1,NA,NA,NA,NA,1,Thymidine
+Trehalose,341.10839,HILICNeg,-1,NA,NA,NA,NA,1,Trehalose
+Tryptophan,205.097703,CyanoAq,1,NA,NA,NA,NA,1,Tryptophan
+Tyrosine,182.081719,HILICPos,1,NA,NA,NA,NA,1,Tyrosine
+Uracil,111.019453,HILICNeg,-1,NA,NA,NA,NA,1,Uracil
+Uridine,243.061713,HILICNeg,-1,NA,NA,NA,NA,1,Uridine
+Vitamin B2,377.146111,CyanoAq,1,NA,NA,NA,NA,1,Vitamin B2
+Vitamin B3,124.039854,CyanoAq,1,NA,NA,NA,NA,1,Vitamin B3
+Vitamin B3,124.039854,HILICPos,1,NA,NA,NA,NA,1,Vitamin B3
+Vitamin B5,220.118498,CyanoAq,1,NA,NA,NA,NA,1,Vitamin B5
+I118.0864R7.19_HILICPos,NA,HILICPos,NA,NA,NA,118.0863989,431.2936762,1,Betaine
+I138.0549R5.35_HILICPos,NA,HILICPos,NA,NA,NA,138.0548868,321.127119,1,Homarine
+I132.102R9.3_HILICPos,NA,HILICPos,NA,Trimethylammonium Propionate (TMAP),1,132.101973,558.184633,1,Trimethylammonium Propionate (TMAP)
+I138.055R7.72_HILICPos,NA,HILICPos,NA,NA,NA,138.054973,462.9418971,1,Trigonelline
+I121.032R8.27_HILICPos,NA,HILICPos,NA,Dimethylsulfonioacetate (DMS-Ac),1,121.0319755,496.2654472,1,Dimethylsulfonioacetate (DMS-Ac)
+I132.102R6.53_HILICPos,NA,HILICPos,NA,Leucine,1,132.102017,391.7549062,1,Leucine
+I144.1019R6.44_HILICPos,NA,HILICPos,NA,NA,NA,144.1019499,386.2657313,1,Stachydrine hydrochloride
+I268.104R4.35_HILICPos,NA,HILICPos,NA,Adenosine,1,268.1040173,260.8756447,1,Adenosine
+I104.1074R10.68_HILICPos,NA,HILICPos,NA,Choline,1,104.1073724,641.0484594,1,Choline
+I160.0969R8.37_HILICPos,NA,HILICPos,NA,Betonicine,1,160.096881,502.2138686,1,Betonicine
+I126.904R4.8_HILICNeg,NA,HILICNeg,NA,Iodine,1,126.9039935,287.951141,1,Iodine
+I152.0567R8.12_HILICPos,NA,HILICPos,NA,Guanine,1,152.0567341,487.3730565,1,Guanine
+I148.0968R8.21_HILICPos,NA,HILICPos,NA,4-Hydroxyisoleucine,1,148.0968289,492.3090337,1,4-Hydroxyisoleucine
+I116.0709R8.8_HILICPos,NA,HILICPos,NA,NA,NA,116.0709257,528.2851637,1,Proline
+I148.0605R12.12_HILICPos,NA,HILICPos,NA,NA,NA,148.0604571,727.2183115,1,Glutamic acid
+I252.1092R3.46_HILICPos,NA,HILICPos,NA,Deoxyadenosine,1,252.1091636,207.5733001,1,Deoxyadenosine
+I146.045R12.11_HILICNeg,NA,HILICNeg,NA,Glutamic acid,1,146.0449964,726.8171863,1,Glutamic acid
+I143.0816R7.97_HILICPos,NA,HILICPos,NA,Ectoine,1,143.0815933,478.4273219,1,Ectoine
+I204.1232R7.22_HILICPos,NA,HILICPos,NA,NA,NA,204.1231804,433.4715791,1,Acetyl-L-carnitine
+I179.0048R7.02_HILICPos,NA,HILICPos,NA,Arsenobetaine,1,179.0048127,421.0281658,1,Arsenobetaine
+I150.0413R8.14_HILICNeg,NA,HILICNeg,NA,NA,NA,150.0412713,488.3503046,1,Guanine
+I124.0064R10.88_HILICNeg,NA,HILICNeg,NA,NA,NA,124.006394,652.5603017,1,Taurine
+I268.1042R1.02_CyanoAq,NA,CyanoAq,NA,Adenosine,1,268.1042143,61.13833888,1,Adenosine
+I175.119R17.83_HILICPos,NA,HILICPos,NA,NA,NA,175.1190291,1069.967292,1,Arginine
+I130.0864R6.66_HILICNeg,NA,HILICNeg,NA,Leucine,1,130.0863537,399.6926658,1,Leucine
+I132.1021R0.87_CyanoAq,NA,CyanoAq,NA,Leucine,1,132.1020961,52.20045489,1,Leucine
+I152.0567R0.9_CyanoAq,NA,CyanoAq,NA,Guanine,1,152.0567437,54.01877041,1,Guanine
+I136.0619R0.89_CyanoAq,NA,CyanoAq,NA,Adenine,1,136.0619203,53.22192963,1,Adenine
+I116.0706R7.18_HILICNeg,NA,HILICNeg,NA,Betaine,1,116.0706385,430.8147745,1,Betaine
+I166.0864R1.12_CyanoAq,NA,CyanoAq,NA,NA,NA,166.0863823,67.38254579,1,Phenylalanine
+I128.0343R12.12_HILICNeg,NA,HILICNeg,NA,Glutamic acid,1,128.0343221,727.4667129,1,Glutamic acid
+I252.1093R1.15_CyanoAq,NA,CyanoAq,NA,Deoxyadenosine,1,252.1093007,68.82438779,1,Deoxyadenosine
+I136.0395R7.72_HILICNeg,NA,HILICNeg,NA,Trigonelline,1,136.0394565,463.1988397,1,Trigonelline
+I284.0991R8.89_HILICPos,NA,HILICPos,NA,Guanosine,1,284.0990577,533.6457598,1,Guanosine
+I346.0564R12.06_HILICNeg,NA,HILICNeg,NA,NA,NA,346.0564275,723.6659792,1,AMP
+I284.0992R1.08_CyanoAq,NA,CyanoAq,NA,Guanosine,1,284.0991767,64.8022314,1,Guanosine
+I606.0756R12.98_HILICNeg,NA,HILICNeg,NA,NA,NA,606.0756192,778.9529008,1,UDP-glucosamine
+I298.0971R2.1_CyanoAq,NA,CyanoAq,NA,NA,NA,298.0970625,125.7416991,1,Methylthioadenosine
+I377.1459R4.24_CyanoAq,NA,CyanoAq,NA,NA,NA,377.1458995,254.3509786,1,Vitamin B2

@@ -1,9 +1,13 @@
 {
-    "path" : "~/Google_Drive/My Drive/00_XCMS_Working/Gradients_Reanalysis/Manual_Integrations/DataProcessing/SourceCode",
-    "sortOrder" : [
+    "path": "~/Google_Drive/My Drive/00_XCMS_Working/Gradients_Reanalysis/Manual_Integrations/DataProcessing/SourceCode",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 4,
+            "ascending": false
+        },
+        {
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }

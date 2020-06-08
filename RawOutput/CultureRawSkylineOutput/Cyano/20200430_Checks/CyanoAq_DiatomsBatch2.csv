@@ -1,0 +1,1457 @@
+Protein Name,Replicate Name,Precursor Ion Name,Retention Time,Area,Background,Height,Mass Error PPM,Protein
+molecules1,180716_Blk_Blk0p2_1,I132.1021R0.87_CyanoAq,0.74,1142630,369081,245091,-1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I132.1021R0.87_CyanoAq,0.73,190214656,0,34964568,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I132.1021R0.87_CyanoAq,0.89,388614656,9235005,154719744,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I132.1021R0.87_CyanoAq,0.88,380188,64766,104967,-0.8,molecules1
+molecules1,170216_Smp_Pc55x_A,I132.1021R0.87_CyanoAq,0.88,30327212,407234,9285470,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I132.1021R0.87_CyanoAq,0.88,32959254,364258,10917154,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I132.1021R0.87_CyanoAq,0.88,21670560,215497,6848358,-0.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I132.1021R0.87_CyanoAq,0.88,224621,93170,49078,-0.7,molecules1
+molecules1,170216_Smp_Np_A,I132.1021R0.87_CyanoAq,0.88,92183064,1294116,27614442,-0.5,molecules1
+molecules1,170216_Smp_Np_C,I132.1021R0.87_CyanoAq,0.88,104121888,966050,34551716,-0.9,molecules1
+molecules1,170216_Smp_Np_F,I132.1021R0.87_CyanoAq,0.88,99455936,488925,33667548,-0.8,molecules1
+molecules1,170216_Smp_Pt_C,I132.1021R0.87_CyanoAq,0.88,177276592,1623971,50726164,-0.8,molecules1
+molecules1,170216_Smp_Pt_F,I132.1021R0.87_CyanoAq,0.88,185898080,1275870,52258464,-0.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I166.0864R1.12_CyanoAq,1.14,321646,0,136477,-1.7,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I166.0864R1.12_CyanoAq,1.13,53038320,512624,21104338,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I166.0864R1.12_CyanoAq,1.14,247024496,1723882,110058824,-0.8,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I166.0864R1.12_CyanoAq,1.13,109946,77608,44852,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I166.0864R1.12_CyanoAq,1.13,166384064,1861198,72227040,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I166.0864R1.12_CyanoAq,1.13,185306672,2030879,79550912,-0.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I166.0864R1.12_CyanoAq,1.13,95652408,1398607,42509692,-0.8,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I166.0864R1.12_CyanoAq,1.15,744322,98950,279269,-1,molecules1
+molecules1,170216_Smp_Np_A,I166.0864R1.12_CyanoAq,1.12,85241200,2981939,36418492,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I166.0864R1.12_CyanoAq,1.13,92027384,2110524,39162164,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I166.0864R1.12_CyanoAq,1.13,86943112,2386244,36955812,-0.7,molecules1
+molecules1,170216_Smp_Pt_C,I166.0864R1.12_CyanoAq,1.12,69154576,3205067,29062972,-0.6,molecules1
+molecules1,170216_Smp_Pt_F,I166.0864R1.12_CyanoAq,1.13,69201392,3221942,29137858,-0.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I268.1042R1.02_CyanoAq,1.03,44987,0,24892,-1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I268.1042R1.02_CyanoAq,1.05,32003674,354902,16641391,-0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I268.1042R1.02_CyanoAq,1.04,48731748,228116,25331158,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I268.1042R1.02_CyanoAq,1.01,1809,0,2641,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_A,I268.1042R1.02_CyanoAq,1.02,1765867,0,811461,0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I268.1042R1.02_CyanoAq,1.02,2557788,30808,1326190,0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I268.1042R1.02_CyanoAq,1.02,749314,0,373376,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I268.1042R1.02_CyanoAq,1.01,25014,0,15060,-1.6,molecules1
+molecules1,170216_Smp_Np_A,I268.1042R1.02_CyanoAq,1.02,13067119,28382,6646295,0,molecules1
+molecules1,170216_Smp_Np_C,I268.1042R1.02_CyanoAq,1.02,30007242,515610,14276895,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I268.1042R1.02_CyanoAq,1.02,14598118,47966,6396701,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I268.1042R1.02_CyanoAq,1.02,9074739,54906,4398708,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I268.1042R1.02_CyanoAq,1.02,7293420,48183,3770366,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I136.0619R0.89_CyanoAq,0.9,555333,0,355586,-1.1,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I136.0619R0.89_CyanoAq,0.92,17822804,503856,12308540,0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I136.0619R0.89_CyanoAq,0.91,33301234,388352,20511844,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I136.0619R0.89_CyanoAq,0.89,168023,379990,115527,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_A,I136.0619R0.89_CyanoAq,0.89,3557382,632744,2116655,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I136.0619R0.89_CyanoAq,0.89,3020119,851246,1803365,0,molecules1
+molecules1,170216_Smp_Pc55x_C,I136.0619R0.89_CyanoAq,0.88,3827788,759714,2361933,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I136.0619R0.89_CyanoAq,0.89,175119,305662,91659,-0.4,molecules1
+molecules1,170216_Smp_Np_A,I136.0619R0.89_CyanoAq,0.88,14380374,1402495,8102079,0.1,molecules1
+molecules1,170216_Smp_Np_C,I136.0619R0.89_CyanoAq,0.88,8352665,1283969,4645957,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I136.0619R0.89_CyanoAq,0.88,6525398,1328829,3525054,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I136.0619R0.89_CyanoAq,0.89,24838096,1979885,14395903,-0.6,molecules1
+molecules1,170216_Smp_Pt_F,I136.0619R0.89_CyanoAq,0.88,26798482,1947104,15606392,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I152.0567R0.9_CyanoAq,0.91,83686,0,57083,-0.6,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I152.0567R0.9_CyanoAq,0.93,83715096,988908,56152620,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I152.0567R0.9_CyanoAq,0.92,95796864,483332,54515372,0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I152.0567R0.9_CyanoAq,0.9,19362,0,11344,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_A,I152.0567R0.9_CyanoAq,0.9,353833,0,184402,0.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I152.0567R0.9_CyanoAq,0.9,335707,0,207075,0.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I152.0567R0.9_CyanoAq,0.9,401762,0,236881,0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I152.0567R0.9_CyanoAq,0.89,94319,0,57697,0.1,molecules1
+molecules1,170216_Smp_Np_A,I152.0567R0.9_CyanoAq,0.89,703135,0,339684,0.8,molecules1
+molecules1,170216_Smp_Np_C,I152.0567R0.9_CyanoAq,0.9,859684,0,507838,0.2,molecules1
+molecules1,170216_Smp_Np_F,I152.0567R0.9_CyanoAq,0.9,394161,0,210447,0.2,molecules1
+molecules1,170216_Smp_Pt_C,I152.0567R0.9_CyanoAq,0.9,148487,0,97180,0.3,molecules1
+molecules1,170216_Smp_Pt_F,I152.0567R0.9_CyanoAq,0.9,543629,48522,327396,0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I252.1093R1.15_CyanoAq,1.2,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I252.1093R1.15_CyanoAq,1.19,4314961,55427,1729736,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I252.1093R1.15_CyanoAq,1.18,3167056,0,1447926,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I252.1093R1.15_CyanoAq,1.16,1597,0,3137,-0.9,molecules1
+molecules1,170216_Smp_Pc55x_A,I252.1093R1.15_CyanoAq,1.16,7452,0,7828,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I252.1093R1.15_CyanoAq,1.15,6232,0,7246,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I252.1093R1.15_CyanoAq,1.14,11048,0,9704,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I252.1093R1.15_CyanoAq,1.15,19634,0,15193,-1.3,molecules1
+molecules1,170216_Smp_Np_A,I252.1093R1.15_CyanoAq,1.15,67173,0,34413,-0.3,molecules1
+molecules1,170216_Smp_Np_C,I252.1093R1.15_CyanoAq,1.14,54977,0,30468,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I252.1093R1.15_CyanoAq,1.16,8784,0,7587,-1.2,molecules1
+molecules1,170216_Smp_Pt_C,I252.1093R1.15_CyanoAq,1.16,43722,0,28703,-0.7,molecules1
+molecules1,170216_Smp_Pt_F,I252.1093R1.15_CyanoAq,1.16,47932,0,30253,-1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I261.1311R1.29_CyanoAq,1.31,1140316,0,502458,-1.1,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I261.1311R1.29_CyanoAq,1.33,8523734,0,3674310,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I261.1311R1.29_CyanoAq,1.32,2145588,0,912682,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I261.1311R1.29_CyanoAq,1.29,709673,0,271021,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I261.1311R1.29_CyanoAq,1.29,791756,0,321614,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I261.1311R1.29_CyanoAq,1.3,608829,0,228886,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I261.1311R1.29_CyanoAq,1.3,799355,0,316844,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I261.1311R1.29_CyanoAq,1.28,1639931,8531,667570,-1,molecules1
+molecules1,170216_Smp_Np_A,I261.1311R1.29_CyanoAq,1.29,1795309,29437,692639,0,molecules1
+molecules1,170216_Smp_Np_C,I261.1311R1.29_CyanoAq,1.29,1452456,0,562627,-0.4,molecules1
+molecules1,170216_Smp_Np_F,I261.1311R1.29_CyanoAq,1.29,704052,0,289165,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I261.1311R1.29_CyanoAq,1.29,570829,0,239220,-0.5,molecules1
+molecules1,170216_Smp_Pt_F,I261.1311R1.29_CyanoAq,1.3,933463,0,374587,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I221.0844R0.89_CyanoAq,0.94,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I221.0844R0.89_CyanoAq,0.91,679715,0,407305,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I221.0844R0.89_CyanoAq,0.91,2241850,0,1368305,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I221.0844R0.89_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I221.0844R0.89_CyanoAq,0.02,2453413,0,706383,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I221.0844R0.89_CyanoAq,0.03,2430868,0,762206,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I221.0844R0.89_CyanoAq,0.02,2322482,8812,705068,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I221.0844R0.89_CyanoAq,0.05,2506546,0,790570,-0.5,molecules1
+molecules1,170216_Smp_Np_A,I221.0844R0.89_CyanoAq,0.02,2704356,0,826781,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I221.0844R0.89_CyanoAq,0.03,2450873,3822,774816,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I221.0844R0.89_CyanoAq,0.04,2359368,0,747537,-0.5,molecules1
+molecules1,170216_Smp_Pt_C,I221.0844R0.89_CyanoAq,0.05,2490491,0,732865,-0.6,molecules1
+molecules1,170216_Smp_Pt_F,I221.0844R0.89_CyanoAq,0.02,2308893,0,686230,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I271.1291R0.87_CyanoAq,0.86,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I271.1291R0.87_CyanoAq,0.91,455759,0,406980,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I271.1291R0.87_CyanoAq,0.89,896244,0,940837,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I271.1291R0.87_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I271.1291R0.87_CyanoAq,8.12,117514,0,49758,4.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I271.1291R0.87_CyanoAq,8.12,121158,0,46165,4.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I271.1291R0.87_CyanoAq,8.98,74033,0,29447,5.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I271.1291R0.87_CyanoAq,17.99,117622,640,68352,3.8,molecules1
+molecules1,170216_Smp_Np_A,I271.1291R0.87_CyanoAq,17.97,36865,0,27694,3.3,molecules1
+molecules1,170216_Smp_Np_C,I271.1291R0.87_CyanoAq,7.01,10306,0,5599,0.9,molecules1
+molecules1,170216_Smp_Np_F,I271.1291R0.87_CyanoAq,0.09,8327,0,13593,3.4,molecules1
+molecules1,170216_Smp_Pt_C,I271.1291R0.87_CyanoAq,17.98,20256,0,25079,3.7,molecules1
+molecules1,170216_Smp_Pt_F,I271.1291R0.87_CyanoAq,0.78,9047,0,14389,-1.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I305.1573R1.6_CyanoAq,1.63,163316,0,61221,-1.2,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I305.1573R1.6_CyanoAq,1.63,3156448,41881,1125481,-0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I305.1573R1.6_CyanoAq,1.64,748694,9315,283301,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I305.1573R1.6_CyanoAq,1.6,191445,0,80088,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_A,I305.1573R1.6_CyanoAq,1.62,204502,0,78772,0,molecules1
+molecules1,170216_Smp_Pc55x_B,I305.1573R1.6_CyanoAq,1.62,170252,0,60451,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I305.1573R1.6_CyanoAq,1.62,182887,0,64268,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I305.1573R1.6_CyanoAq,1.61,411501,4723,139592,-0.9,molecules1
+molecules1,170216_Smp_Np_A,I305.1573R1.6_CyanoAq,1.6,345741,0,135521,-0.5,molecules1
+molecules1,170216_Smp_Np_C,I305.1573R1.6_CyanoAq,1.6,286559,0,109690,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I305.1573R1.6_CyanoAq,1.62,172533,0,59541,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I305.1573R1.6_CyanoAq,1.63,202809,0,85422,-0.1,molecules1
+molecules1,170216_Smp_Pt_F,I305.1573R1.6_CyanoAq,1.62,257377,0,99448,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I284.0992R1.08_CyanoAq,1.09,1961,0,4596,-2.1,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I284.0992R1.08_CyanoAq,1.1,3634106,0,1856416,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I284.0992R1.08_CyanoAq,1.11,1711990,0,869981,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I284.0992R1.08_CyanoAq,1.08,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I284.0992R1.08_CyanoAq,1.09,936662,0,426298,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I284.0992R1.08_CyanoAq,1.09,1152468,0,471970,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I284.0992R1.08_CyanoAq,1.08,673367,0,324716,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I284.0992R1.08_CyanoAq,1.08,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I284.0992R1.08_CyanoAq,1.08,11195842,0,4686459,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I284.0992R1.08_CyanoAq,1.08,10280469,0,4658212,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I284.0992R1.08_CyanoAq,1.08,18420092,77685,8355478,-0.7,molecules1
+molecules1,170216_Smp_Pt_C,I284.0992R1.08_CyanoAq,1.08,6260435,85525,2922143,-0.6,molecules1
+molecules1,170216_Smp_Pt_F,I284.0992R1.08_CyanoAq,1.08,4073604,0,1940928,-0.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I152.0568R1.08_CyanoAq,1.08,26722,0,17609,-1.4,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I152.0568R1.08_CyanoAq,1.34,2756095,438089,1305736,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I152.0568R1.08_CyanoAq,1.35,4849313,975043,2072206,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I152.0568R1.08_CyanoAq,1.13,10318,0,6574,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_A,I152.0568R1.08_CyanoAq,1.08,489222,0,226494,0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I152.0568R1.08_CyanoAq,1.09,575419,0,254217,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I152.0568R1.08_CyanoAq,1.08,392773,0,150828,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I152.0568R1.08_CyanoAq,0.89,94319,0,57697,-0.5,molecules1
+molecules1,170216_Smp_Np_A,I152.0568R1.08_CyanoAq,1.08,5791201,58532,2645886,0.1,molecules1
+molecules1,170216_Smp_Np_C,I152.0568R1.08_CyanoAq,1.08,5057967,0,2299775,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I152.0568R1.08_CyanoAq,1.08,9505109,56841,4309898,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I152.0568R1.08_CyanoAq,1.09,3165339,83598,1606556,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I152.0568R1.08_CyanoAq,1.08,2023945,0,907856,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I182.0674R1.17_CyanoAq,1.18,2925,0,6999,-5.8,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I182.0674R1.17_CyanoAq,1.21,4894745,63329,1912416,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I182.0674R1.17_CyanoAq,1.22,93200,0,48683,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I182.0674R1.17_CyanoAq,1.18,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I182.0674R1.17_CyanoAq,0.71,6197,0,10610,-2.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I182.0674R1.17_CyanoAq,0.51,1301,0,2548,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I182.0674R1.17_CyanoAq,1.55,1817,0,3880,2.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I182.0674R1.17_CyanoAq,0.58,7652,0,11195,-2.5,molecules1
+molecules1,170216_Smp_Np_A,I182.0674R1.17_CyanoAq,1.18,70639,0,33541,0.1,molecules1
+molecules1,170216_Smp_Np_C,I182.0674R1.17_CyanoAq,1.19,70222,0,36888,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I182.0674R1.17_CyanoAq,0.9,18175,0,18772,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I182.0674R1.17_CyanoAq,0.91,15231,0,19983,0.2,molecules1
+molecules1,170216_Smp_Pt_F,I182.0674R1.17_CyanoAq,0.88,7601,0,11601,0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I260.1131R1.01_CyanoAq,0.98,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I260.1131R1.01_CyanoAq,1.03,15888698,58586,8356813,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I260.1131R1.01_CyanoAq,1.03,4815986,0,2588471,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I260.1131R1.01_CyanoAq,1.04,19939,0,10749,6.7,molecules1
+molecules1,170216_Smp_Pc55x_A,I260.1131R1.01_CyanoAq,1.05,13570,0,12516,3.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I260.1131R1.01_CyanoAq,0.89,45280,0,41518,0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I260.1131R1.01_CyanoAq,0.83,13611,0,15993,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I260.1131R1.01_CyanoAq,1.06,21120,0,19416,2.8,molecules1
+molecules1,170216_Smp_Np_A,I260.1131R1.01_CyanoAq,1.83,78964,0,33609,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I260.1131R1.01_CyanoAq,1.82,77027,0,31857,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I260.1131R1.01_CyanoAq,1.82,86809,0,28816,0,molecules1
+molecules1,170216_Smp_Pt_C,I260.1131R1.01_CyanoAq,7.27,41024,0,11628,0.7,molecules1
+molecules1,170216_Smp_Pt_F,I260.1131R1.01_CyanoAq,1.86,46763,0,17974,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I268.1042R1.29_CyanoAq,1.2,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I268.1042R1.29_CyanoAq,1.34,1362017,88047,589371,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I268.1042R1.29_CyanoAq,1.35,2497028,114963,1124134,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I268.1042R1.29_CyanoAq,1.21,3231,0,4450,-1,molecules1
+molecules1,170216_Smp_Pc55x_A,I268.1042R1.29_CyanoAq,1.18,7228,7556,4744,-0.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I268.1042R1.29_CyanoAq,1.23,9498,33304,10484,-0.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I268.1042R1.29_CyanoAq,1.25,5526,18571,3767,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I268.1042R1.29_CyanoAq,1.29,4634,0,4821,-0.4,molecules1
+molecules1,170216_Smp_Np_A,I268.1042R1.29_CyanoAq,1.17,17268,51266,14706,0,molecules1
+molecules1,170216_Smp_Np_C,I268.1042R1.29_CyanoAq,1.26,5416,165826,8874,-0.4,molecules1
+molecules1,170216_Smp_Np_F,I268.1042R1.29_CyanoAq,1.18,32609,99917,26466,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I268.1042R1.29_CyanoAq,1.16,55516,0,29568,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I268.1042R1.29_CyanoAq,1.29,18940,40089,9284,-2.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I297.1885R5.9_CyanoAq,5.92,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I297.1885R5.9_CyanoAq,5.9,641116,0,186947,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I297.1885R5.9_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I297.1885R5.9_CyanoAq,5.79,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I297.1885R5.9_CyanoAq,6.45,817325,0,138012,-11.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I297.1885R5.9_CyanoAq,6.44,363858,401716,88715,-11.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I297.1885R5.9_CyanoAq,6.45,506040,3251,90956,-12,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I297.1885R5.9_CyanoAq,5.96,1050,0,2210,-3.9,molecules1
+molecules1,170216_Smp_Np_A,I297.1885R5.9_CyanoAq,5.8,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I297.1885R5.9_CyanoAq,5.67,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_F,I297.1885R5.9_CyanoAq,3.95,23221,0,16619,1.2,molecules1
+molecules1,170216_Smp_Pt_C,I297.1885R5.9_CyanoAq,4.11,90578,0,33890,-6.4,molecules1
+molecules1,170216_Smp_Pt_F,I297.1885R5.9_CyanoAq,4.12,37342,0,17413,-3.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,I203.1392R1.16_CyanoAq,1.02,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I203.1392R1.16_CyanoAq,1,9887220,0,904039,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I203.1392R1.16_CyanoAq,1.18,25404576,96325,3659019,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I203.1392R1.16_CyanoAq,1,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I203.1392R1.16_CyanoAq,0.88,868950,9633,550616,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I203.1392R1.16_CyanoAq,0.88,1026239,0,663058,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I203.1392R1.16_CyanoAq,0.88,462742,0,313494,-0.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I203.1392R1.16_CyanoAq,0.89,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I203.1392R1.16_CyanoAq,1.17,6278854,0,1142964,0.1,molecules1
+molecules1,170216_Smp_Np_C,I203.1392R1.16_CyanoAq,0.95,7376038,0,1425406,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I203.1392R1.16_CyanoAq,1.17,6248352,0,1095620,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I203.1392R1.16_CyanoAq,0.97,3269283,0,585669,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I203.1392R1.16_CyanoAq,0.96,3906112,14498,679061,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I162.0776R1.13_CyanoAq,1.17,2556,0,4906,-0.1,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I162.0776R1.13_CyanoAq,1.16,548266,0,259534,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I162.0776R1.13_CyanoAq,1.17,3721162,0,1418483,-0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I162.0776R1.13_CyanoAq,1.15,48409,0,20207,-7.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I162.0776R1.13_CyanoAq,1.18,7440,82137,16613,-9.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I162.0776R1.13_CyanoAq,1.23,140808,25713,32495,-8.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I162.0776R1.13_CyanoAq,1.2,27481,24017,16080,-8.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I162.0776R1.13_CyanoAq,1.2,8307,13217,11410,-8.8,molecules1
+molecules1,170216_Smp_Np_A,I162.0776R1.13_CyanoAq,0.88,298347,6580,139536,-8.4,molecules1
+molecules1,170216_Smp_Np_C,I162.0776R1.13_CyanoAq,0.74,3264147,0,1241173,-9,molecules1
+molecules1,170216_Smp_Np_F,I162.0776R1.13_CyanoAq,0.88,334701,20378,184631,-8.9,molecules1
+molecules1,170216_Smp_Pt_C,I162.0776R1.13_CyanoAq,0.78,471920,108094,143256,-8.6,molecules1
+molecules1,170216_Smp_Pt_F,I162.0776R1.13_CyanoAq,0.78,822499,0,157454,-8.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,I137.0459R1.2_CyanoAq,1.07,64463,0,33189,-1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I137.0459R1.2_CyanoAq,1.07,14114686,49734,6297997,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I137.0459R1.2_CyanoAq,1.07,73906744,512475,31469224,-0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I137.0459R1.2_CyanoAq,1.13,5033,0,4744,0.5,molecules1
+molecules1,170216_Smp_Pc55x_A,I137.0459R1.2_CyanoAq,1.06,1300274,0,350389,0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I137.0459R1.2_CyanoAq,1.03,1336595,0,406171,0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I137.0459R1.2_CyanoAq,1.03,1327545,1691,370790,-0.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I137.0459R1.2_CyanoAq,1.12,56054,38958,31377,-0.8,molecules1
+molecules1,170216_Smp_Np_A,I137.0459R1.2_CyanoAq,1.02,719994,0,319314,0.2,molecules1
+molecules1,170216_Smp_Np_C,I137.0459R1.2_CyanoAq,1.02,756223,0,282647,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I137.0459R1.2_CyanoAq,1.03,2059831,16089,857367,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I137.0459R1.2_CyanoAq,1.02,1612408,0,813378,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I137.0459R1.2_CyanoAq,1.02,1716051,0,853113,-0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I196.0831R1.52_CyanoAq,1.34,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I196.0831R1.52_CyanoAq,1.56,2820607,0,1303057,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I196.0831R1.52_CyanoAq,1.57,65170,0,27711,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I196.0831R1.52_CyanoAq,1.59,10803,2684,6041,7.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I196.0831R1.52_CyanoAq,5.39,132891,0,78080,-9.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I196.0831R1.52_CyanoAq,5.4,94703,0,52804,-7,molecules1
+molecules1,170216_Smp_Pc55x_C,I196.0831R1.52_CyanoAq,17.99,34684,0,30387,-0.8,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I196.0831R1.52_CyanoAq,0.07,41150,0,60250,-0.4,molecules1
+molecules1,170216_Smp_Np_A,I196.0831R1.52_CyanoAq,17.97,87050,0,74970,-0.4,molecules1
+molecules1,170216_Smp_Np_C,I196.0831R1.52_CyanoAq,17.96,29713,0,44173,-0.8,molecules1
+molecules1,170216_Smp_Np_F,I196.0831R1.52_CyanoAq,17.99,31260,0,24534,-1.1,molecules1
+molecules1,170216_Smp_Pt_C,I196.0831R1.52_CyanoAq,18,19855,0,28685,-0.7,molecules1
+molecules1,170216_Smp_Pt_F,I196.0831R1.52_CyanoAq,17.96,54636,0,63911,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I298.0971R2.1_CyanoAq,2.05,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I298.0971R2.1_CyanoAq,2.14,2365423,17713,823151,-0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I298.0971R2.1_CyanoAq,2.14,1132475,0,411178,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I298.0971R2.1_CyanoAq,2.09,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I298.0971R2.1_CyanoAq,2.11,675830,0,235174,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I298.0971R2.1_CyanoAq,2.1,786722,0,271253,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I298.0971R2.1_CyanoAq,2.1,568336,0,201252,-0.8,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I298.0971R2.1_CyanoAq,2.1,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I298.0971R2.1_CyanoAq,2.1,5449906,59542,1901365,-0.5,molecules1
+molecules1,170216_Smp_Np_C,I298.0971R2.1_CyanoAq,2.1,2726855,29916,986838,-0.6,molecules1
+molecules1,170216_Smp_Np_F,I298.0971R2.1_CyanoAq,2.1,1544972,60620,526304,-0.5,molecules1
+molecules1,170216_Smp_Pt_C,I298.0971R2.1_CyanoAq,2.11,5720102,299883,2025677,-0.7,molecules1
+molecules1,170216_Smp_Pt_F,I298.0971R2.1_CyanoAq,2.11,12168849,297687,4220649,-0.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I416.178R0.93_CyanoAq,0.98,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I416.178R0.93_CyanoAq,0.95,2898047,0,1582930,0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I416.178R0.93_CyanoAq,0.95,3799,0,9396,-0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I416.178R0.93_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I416.178R0.93_CyanoAq,1.34,23904,0,18988,-3.7,molecules1
+molecules1,170216_Smp_Pc55x_B,I416.178R0.93_CyanoAq,1.32,8191,0,12183,-2.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I416.178R0.93_CyanoAq,1.33,12246,0,11456,-3.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I416.178R0.93_CyanoAq,1.03,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I416.178R0.93_CyanoAq,4.89,4237,0,2831,4.1,molecules1
+molecules1,170216_Smp_Np_C,I416.178R0.93_CyanoAq,5.96,1637,0,3073,7,molecules1
+molecules1,170216_Smp_Np_F,I416.178R0.93_CyanoAq,1.86,1727,0,3350,4.3,molecules1
+molecules1,170216_Smp_Pt_C,I416.178R0.93_CyanoAq,4.49,1101,0,3209,0.2,molecules1
+molecules1,170216_Smp_Pt_F,I416.178R0.93_CyanoAq,1.46,1361,0,2483,1.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I347.1452R0.87_CyanoAq,0.91,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I347.1452R0.87_CyanoAq,0.86,3864398,0,1587786,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I347.1452R0.87_CyanoAq,0.89,7659071,375717,8818087,0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I347.1452R0.87_CyanoAq,0.79,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I347.1452R0.87_CyanoAq,0.69,195728,0,216851,-9.7,molecules1
+molecules1,170216_Smp_Pc55x_B,I347.1452R0.87_CyanoAq,0.69,223289,0,274516,-9.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I347.1452R0.87_CyanoAq,0.69,105855,0,121115,-9.8,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I347.1452R0.87_CyanoAq,0.93,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I347.1452R0.87_CyanoAq,0.68,4444709,0,2776339,-10.7,molecules1
+molecules1,170216_Smp_Np_C,I347.1452R0.87_CyanoAq,0.68,6402584,54018,4985205,-10.2,molecules1
+molecules1,170216_Smp_Np_F,I347.1452R0.87_CyanoAq,0.69,2281949,0,1268114,-10.5,molecules1
+molecules1,170216_Smp_Pt_C,I347.1452R0.87_CyanoAq,0.69,8472463,0,4104104,-10.4,molecules1
+molecules1,170216_Smp_Pt_F,I347.1452R0.87_CyanoAq,0.68,10906396,25375,5496221,-10.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I130.1592R4.02_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I130.1592R4.02_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I130.1592R4.02_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I130.1592R4.02_CyanoAq,17.59,875647,0,28495,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_A,I130.1592R4.02_CyanoAq,17.89,142640,0,23639,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I130.1592R4.02_CyanoAq,17.72,339392,0,26370,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I130.1592R4.02_CyanoAq,17.82,241696,0,26384,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I130.1592R4.02_CyanoAq,17.89,2118563,0,69181,-0.4,molecules1
+molecules1,170216_Smp_Np_A,I130.1592R4.02_CyanoAq,1.8,151390,9025,44935,0.3,molecules1
+molecules1,170216_Smp_Np_C,I130.1592R4.02_CyanoAq,1.8,708967,0,206774,0.1,molecules1
+molecules1,170216_Smp_Np_F,I130.1592R4.02_CyanoAq,17.86,357932,0,23969,-0.8,molecules1
+molecules1,170216_Smp_Pt_C,I130.1592R4.02_CyanoAq,1.81,182772,30697,57107,-0.1,molecules1
+molecules1,170216_Smp_Pt_F,I130.1592R4.02_CyanoAq,17.95,316290,0,23919,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I190.1439R0.83_CyanoAq,0.86,4105,0,6513,-0.8,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I190.1439R0.83_CyanoAq,0.82,114632,7731,65602,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I190.1439R0.83_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I190.1439R0.83_CyanoAq,0.78,6520,0,11265,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I190.1439R0.83_CyanoAq,1.06,15460,0,8315,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I190.1439R0.83_CyanoAq,1.05,25302,0,9677,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I190.1439R0.83_CyanoAq,1.06,21561,0,12158,-0.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I190.1439R0.83_CyanoAq,0.81,2070659,16384,801621,-0.6,molecules1
+molecules1,170216_Smp_Np_A,I190.1439R0.83_CyanoAq,0.82,1910315,0,727190,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I190.1439R0.83_CyanoAq,0.82,1636525,0,649828,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I190.1439R0.83_CyanoAq,1.06,14079,0,16241,-0.6,molecules1
+molecules1,170216_Smp_Pt_C,I190.1439R0.83_CyanoAq,0.48,10639,0,27314,-1,molecules1
+molecules1,170216_Smp_Pt_F,I190.1439R0.83_CyanoAq,0.83,1190499,0,424481,-0.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,I269.0882R1.02_CyanoAq,1.01,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I269.0882R1.02_CyanoAq,1.04,1059794,0,652358,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I269.0882R1.02_CyanoAq,1.05,5237140,15184,2982610,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I269.0882R1.02_CyanoAq,1.01,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I269.0882R1.02_CyanoAq,1.03,273667,0,132980,0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I269.0882R1.02_CyanoAq,1.02,313784,0,150839,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I269.0882R1.02_CyanoAq,1.03,293652,0,141728,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I269.0882R1.02_CyanoAq,1,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I269.0882R1.02_CyanoAq,1.02,296039,0,155264,0,molecules1
+molecules1,170216_Smp_Np_C,I269.0882R1.02_CyanoAq,1.03,231728,0,130183,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I269.0882R1.02_CyanoAq,1.03,692814,0,341340,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I269.0882R1.02_CyanoAq,1.03,618029,0,310020,-0.5,molecules1
+molecules1,170216_Smp_Pt_F,I269.0882R1.02_CyanoAq,1.02,716250,0,342001,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I152.1282R1.07_CyanoAq,1.08,770789,0,240654,-1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I152.1282R1.07_CyanoAq,1.09,4265,0,6890,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I152.1282R1.07_CyanoAq,1.09,295178,0,86676,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I152.1282R1.07_CyanoAq,1.08,208893,0,70249,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_A,I152.1282R1.07_CyanoAq,1.07,147138,0,57638,0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I152.1282R1.07_CyanoAq,1.08,126782,0,56626,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I152.1282R1.07_CyanoAq,1.07,147765,0,57212,-0.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I152.1282R1.07_CyanoAq,1.08,53519,0,27424,-0.7,molecules1
+molecules1,170216_Smp_Np_A,I152.1282R1.07_CyanoAq,1.07,210521,0,74186,0.3,molecules1
+molecules1,170216_Smp_Np_C,I152.1282R1.07_CyanoAq,1.04,142790,0,62532,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I152.1282R1.07_CyanoAq,1.07,121465,0,39978,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I152.1282R1.07_CyanoAq,1.07,104414,0,45879,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I152.1282R1.07_CyanoAq,1.08,144705,0,50815,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I340.2597R6.69_CyanoAq,6.7,3152,0,4584,0,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I340.2597R6.69_CyanoAq,6.68,74299,0,40851,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I340.2597R6.69_CyanoAq,6.72,18430,0,14237,-0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I340.2597R6.69_CyanoAq,6.94,23863,0,10445,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I340.2597R6.69_CyanoAq,6.95,48048,0,21386,0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I340.2597R6.69_CyanoAq,6.94,4074,0,3694,0.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I340.2597R6.69_CyanoAq,6.94,26497,0,16060,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I340.2597R6.69_CyanoAq,6.68,1255,0,2466,0.7,molecules1
+molecules1,170216_Smp_Np_A,I340.2597R6.69_CyanoAq,6.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I340.2597R6.69_CyanoAq,6.95,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_F,I340.2597R6.69_CyanoAq,6.25,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pt_C,I340.2597R6.69_CyanoAq,6.29,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I340.2597R6.69_CyanoAq,6.67,4711,0,3452,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I168.0517R1.05_CyanoAq,1.22,4630,0,9840,-2.1,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I168.0517R1.05_CyanoAq,1.07,3552855,0,1945746,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I168.0517R1.05_CyanoAq,1.08,573637,0,283905,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I168.0517R1.05_CyanoAq,1.14,10249,0,5721,-4.8,molecules1
+molecules1,170216_Smp_Pc55x_A,I168.0517R1.05_CyanoAq,0.83,71635,0,35598,-5.5,molecules1
+molecules1,170216_Smp_Pc55x_B,I168.0517R1.05_CyanoAq,0.89,38773,0,27853,-6.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I168.0517R1.05_CyanoAq,0.84,54178,0,34437,-7.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I168.0517R1.05_CyanoAq,1.21,13234,34199,15782,-9.6,molecules1
+molecules1,170216_Smp_Np_A,I168.0517R1.05_CyanoAq,7.77,77311,0,15669,-8.3,molecules1
+molecules1,170216_Smp_Np_C,I168.0517R1.05_CyanoAq,0.62,50335,0,62838,-3.2,molecules1
+molecules1,170216_Smp_Np_F,I168.0517R1.05_CyanoAq,7.77,28967,0,11618,-8.3,molecules1
+molecules1,170216_Smp_Pt_C,I168.0517R1.05_CyanoAq,6.52,29821,0,15364,-8.8,molecules1
+molecules1,170216_Smp_Pt_F,I168.0517R1.05_CyanoAq,0.59,41977,0,70945,-2.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I370.6952R2.68_CyanoAq,2.73,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I370.6952R2.68_CyanoAq,2.71,34093,0,16175,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I370.6952R2.68_CyanoAq,2.77,4469717,20025,962110,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I370.6952R2.68_CyanoAq,2.66,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I370.6952R2.68_CyanoAq,4.93,1975,0,3920,-10.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I370.6952R2.68_CyanoAq,4.93,3322,0,4869,-10.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I370.6952R2.68_CyanoAq,3.86,1300,0,2737,-11.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I370.6952R2.68_CyanoAq,2.75,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I370.6952R2.68_CyanoAq,4.29,15703,0,11743,-11.8,molecules1
+molecules1,170216_Smp_Np_C,I370.6952R2.68_CyanoAq,4.26,66483,0,30838,-10.9,molecules1
+molecules1,170216_Smp_Np_F,I370.6952R2.68_CyanoAq,4.22,4980,0,8782,-10.1,molecules1
+molecules1,170216_Smp_Pt_C,I370.6952R2.68_CyanoAq,4.93,23907,0,15648,-13.8,molecules1
+molecules1,170216_Smp_Pt_F,I370.6952R2.68_CyanoAq,4.83,18878,0,19429,-13,molecules1
+molecules1,180716_Blk_Blk0p2_1,I237.1235R1.65_CyanoAq,1.5,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I237.1235R1.65_CyanoAq,1.63,3252584,0,703756,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I237.1235R1.65_CyanoAq,1.68,7315607,25480,2340809,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I237.1235R1.65_CyanoAq,1.5,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I237.1235R1.65_CyanoAq,1.64,72882,0,26823,0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I237.1235R1.65_CyanoAq,1.63,91548,0,34112,0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I237.1235R1.65_CyanoAq,1.65,28399,0,14842,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I237.1235R1.65_CyanoAq,1.57,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I237.1235R1.65_CyanoAq,1.66,2498866,0,913656,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I237.1235R1.65_CyanoAq,1.66,1744715,0,669267,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I237.1235R1.65_CyanoAq,1.66,2840159,26175,965018,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I237.1235R1.65_CyanoAq,1.67,309988,0,113183,-0.2,molecules1
+molecules1,170216_Smp_Pt_F,I237.1235R1.65_CyanoAq,1.66,467760,0,165794,-0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I204.1596R0.89_CyanoAq,1.01,57440,0,21986,-1.2,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I204.1596R0.89_CyanoAq,0.92,275213,0,192972,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I204.1596R0.89_CyanoAq,0.91,1006594,0,604156,0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I204.1596R0.89_CyanoAq,1.13,5742,0,7283,-0.9,molecules1
+molecules1,170216_Smp_Pc55x_A,I204.1596R0.89_CyanoAq,3,4472,0,5122,-1.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I204.1596R0.89_CyanoAq,2.76,10950,0,19500,0,molecules1
+molecules1,170216_Smp_Pc55x_C,I204.1596R0.89_CyanoAq,0.32,12042,0,6783,-1.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I204.1596R0.89_CyanoAq,1.03,11668,0,7023,-2.1,molecules1
+molecules1,170216_Smp_Np_A,I204.1596R0.89_CyanoAq,1.34,37098,0,22442,-0.5,molecules1
+molecules1,170216_Smp_Np_C,I204.1596R0.89_CyanoAq,1.34,44581,0,20206,-0.8,molecules1
+molecules1,170216_Smp_Np_F,I204.1596R0.89_CyanoAq,1.34,28543,0,24516,-1.1,molecules1
+molecules1,170216_Smp_Pt_C,I204.1596R0.89_CyanoAq,1.35,19828,0,21829,-0.1,molecules1
+molecules1,170216_Smp_Pt_F,I204.1596R0.89_CyanoAq,1.43,46968,0,77986,-0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I279.1706R4.12_CyanoAq,3.95,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I279.1706R4.12_CyanoAq,4.06,3711943,0,532628,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I279.1706R4.12_CyanoAq,4.18,4355237,59939,715188,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I279.1706R4.12_CyanoAq,4.03,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I279.1706R4.12_CyanoAq,4.08,18244,0,10153,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I279.1706R4.12_CyanoAq,4.08,19231,0,10797,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I279.1706R4.12_CyanoAq,4.08,8381,0,6106,-0.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I279.1706R4.12_CyanoAq,3.96,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I279.1706R4.12_CyanoAq,4.16,2342278,0,371230,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I279.1706R4.12_CyanoAq,4.17,1924662,13464,362527,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I279.1706R4.12_CyanoAq,4.16,2773419,0,405445,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I279.1706R4.12_CyanoAq,4.08,746863,0,198291,-0.6,molecules1
+molecules1,170216_Smp_Pt_F,I279.1706R4.12_CyanoAq,4.08,571283,0,128036,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I377.1459R4.24_CyanoAq,4.03,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I377.1459R4.24_CyanoAq,4.25,344163,0,150916,0.8,molecules1
+molecules1,180716_Smp_S7E41D30_1,I377.1459R4.24_CyanoAq,4.28,131347,0,56065,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I377.1459R4.24_CyanoAq,4.03,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I377.1459R4.24_CyanoAq,4.26,45477,0,16810,0.7,molecules1
+molecules1,170216_Smp_Pc55x_B,I377.1459R4.24_CyanoAq,4.25,43758,0,17207,0,molecules1
+molecules1,170216_Smp_Pc55x_C,I377.1459R4.24_CyanoAq,4.25,18372,0,9411,-0.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I377.1459R4.24_CyanoAq,4.26,1009,0,1932,-2.3,molecules1
+molecules1,170216_Smp_Np_A,I377.1459R4.24_CyanoAq,4.25,223697,0,106299,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I377.1459R4.24_CyanoAq,4.25,594872,0,251469,0,molecules1
+molecules1,170216_Smp_Np_F,I377.1459R4.24_CyanoAq,4.26,224493,0,93598,-0.5,molecules1
+molecules1,170216_Smp_Pt_C,I377.1459R4.24_CyanoAq,4.26,22148,0,13812,0.1,molecules1
+molecules1,170216_Smp_Pt_F,I377.1459R4.24_CyanoAq,4.25,107460,0,51524,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I303.1553R0.89_CyanoAq,0.96,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I303.1553R0.89_CyanoAq,0.91,13454282,211190,9272944,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I303.1553R0.89_CyanoAq,0.91,7437148,96902,3609178,0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I303.1553R0.89_CyanoAq,0.97,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I303.1553R0.89_CyanoAq,7.88,19641492,567018,7317274,4.5,molecules1
+molecules1,170216_Smp_Pc55x_B,I303.1553R0.89_CyanoAq,7.87,18539020,679092,6530208,4.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I303.1553R0.89_CyanoAq,7.88,11287741,229967,4106733,4.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I303.1553R0.89_CyanoAq,0.95,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I303.1553R0.89_CyanoAq,4.08,48997,0,12925,-6,molecules1
+molecules1,170216_Smp_Np_C,I303.1553R0.89_CyanoAq,3.63,33420,0,11917,-5.5,molecules1
+molecules1,170216_Smp_Np_F,I303.1553R0.89_CyanoAq,4.13,34043,0,13622,-5.7,molecules1
+molecules1,170216_Smp_Pt_C,I303.1553R0.89_CyanoAq,17.98,53225,0,58959,3.4,molecules1
+molecules1,170216_Smp_Pt_F,I303.1553R0.89_CyanoAq,17.99,30718,0,23654,2.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I245.1588R2.3_CyanoAq,1.86,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I245.1588R2.3_CyanoAq,1.91,85906,0,35119,9.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I245.1588R2.3_CyanoAq,1.76,21275,0,8909,1.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I245.1588R2.3_CyanoAq,1.75,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I245.1588R2.3_CyanoAq,1.63,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I245.1588R2.3_CyanoAq,1.83,2992,0,6022,-2,molecules1
+molecules1,170216_Smp_Pc55x_C,I245.1588R2.3_CyanoAq,0.97,16381,0,21560,4.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I245.1588R2.3_CyanoAq,1.92,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I245.1588R2.3_CyanoAq,0.96,4905,0,7660,6.4,molecules1
+molecules1,170216_Smp_Np_C,I245.1588R2.3_CyanoAq,6.33,1067,0,2559,-1,molecules1
+molecules1,170216_Smp_Np_F,I245.1588R2.3_CyanoAq,17.98,7032,0,11628,0.5,molecules1
+molecules1,170216_Smp_Pt_C,I245.1588R2.3_CyanoAq,0.76,12005,0,39308,-12.1,molecules1
+molecules1,170216_Smp_Pt_F,I245.1588R2.3_CyanoAq,7.06,1382,0,2867,2.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I229.1549R0.89_CyanoAq,0.9,38610,0,40683,-0.8,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I229.1549R0.89_CyanoAq,0.91,71230,0,45000,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I229.1549R0.89_CyanoAq,0.91,954543,0,523718,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I229.1549R0.89_CyanoAq,0.88,8070,0,13498,-1.4,molecules1
+molecules1,170216_Smp_Pc55x_A,I229.1549R0.89_CyanoAq,0.88,37570,0,27849,0.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I229.1549R0.89_CyanoAq,0.87,26123,0,28224,0.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I229.1549R0.89_CyanoAq,0.88,16466,0,17924,-1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I229.1549R0.89_CyanoAq,0.88,50370,0,43962,-1.2,molecules1
+molecules1,170216_Smp_Np_A,I229.1549R0.89_CyanoAq,1.49,25014438,822549,6968833,-0.5,molecules1
+molecules1,170216_Smp_Np_C,I229.1549R0.89_CyanoAq,1.48,24177950,890880,6633577,-1,molecules1
+molecules1,170216_Smp_Np_F,I229.1549R0.89_CyanoAq,1.48,24232988,773367,6650967,-0.9,molecules1
+molecules1,170216_Smp_Pt_C,I229.1549R0.89_CyanoAq,0.9,170024,0,74444,-1,molecules1
+molecules1,170216_Smp_Pt_F,I229.1549R0.89_CyanoAq,0.89,212674,0,111080,-0.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I329.2073R2.82_CyanoAq,2.75,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I329.2073R2.82_CyanoAq,3.2,54927,0,20252,-3.7,molecules1
+molecules1,180716_Smp_S7E41D30_1,I329.2073R2.82_CyanoAq,2.87,641650,0,178750,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I329.2073R2.82_CyanoAq,2.73,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I329.2073R2.82_CyanoAq,11.71,38272,0,16337,11.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I329.2073R2.82_CyanoAq,11.72,54525,0,16347,12,molecules1
+molecules1,170216_Smp_Pc55x_C,I329.2073R2.82_CyanoAq,11.71,43533,0,14985,11.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I329.2073R2.82_CyanoAq,2.78,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I329.2073R2.82_CyanoAq,11.71,105035,0,32650,11.5,molecules1
+molecules1,170216_Smp_Np_C,I329.2073R2.82_CyanoAq,11.71,95117,0,46317,11.6,molecules1
+molecules1,170216_Smp_Np_F,I329.2073R2.82_CyanoAq,11.7,82142,0,26086,11,molecules1
+molecules1,170216_Smp_Pt_C,I329.2073R2.82_CyanoAq,11.71,80865,0,22492,11.1,molecules1
+molecules1,170216_Smp_Pt_F,I329.2073R2.82_CyanoAq,11.7,115670,0,27638,11.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I288.2032R0.91_CyanoAq,0.85,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I288.2032R0.91_CyanoAq,0.92,2487635,0,875770,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I288.2032R0.91_CyanoAq,0.94,3377802,0,1150624,0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I288.2032R0.91_CyanoAq,0.97,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I288.2032R0.91_CyanoAq,0.91,5629475,0,2273356,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I288.2032R0.91_CyanoAq,0.9,5375927,0,2160050,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I288.2032R0.91_CyanoAq,0.9,2576906,0,1017020,-0.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I288.2032R0.91_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I288.2032R0.91_CyanoAq,0.9,20663270,0,8457645,0.1,molecules1
+molecules1,170216_Smp_Np_C,I288.2032R0.91_CyanoAq,0.9,28328618,0,11267218,-0.6,molecules1
+molecules1,170216_Smp_Np_F,I288.2032R0.91_CyanoAq,0.9,12682958,10622,6048097,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I288.2032R0.91_CyanoAq,0.9,123197064,0,54501496,-0.9,molecules1
+molecules1,170216_Smp_Pt_F,I288.2032R0.91_CyanoAq,0.9,165514944,75755,68185432,-0.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I801.3309R6.22_CyanoAq,6.13,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I801.3309R6.22_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I801.3309R6.22_CyanoAq,6.26,1924652,0,991931,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I801.3309R6.22_CyanoAq,6.11,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I801.3309R6.22_CyanoAq,10.47,12051,0,3831,17.7,molecules1
+molecules1,170216_Smp_Pc55x_B,I801.3309R6.22_CyanoAq,10.92,8421,0,7148,16.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I801.3309R6.22_CyanoAq,7.19,1763,0,2809,-1.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I801.3309R6.22_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I801.3309R6.22_CyanoAq,0.58,27494,0,39208,-2.8,molecules1
+molecules1,170216_Smp_Np_C,I801.3309R6.22_CyanoAq,6.19,228136,0,92731,2.7,molecules1
+molecules1,170216_Smp_Np_F,I801.3309R6.22_CyanoAq,6.56,1564,0,3385,16.4,molecules1
+molecules1,170216_Smp_Pt_C,I801.3309R6.22_CyanoAq,4.41,1625,0,4837,21.3,molecules1
+molecules1,170216_Smp_Pt_F,I801.3309R6.22_CyanoAq,5.72,1595,0,4190,0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I375.2136R4.1_CyanoAq,4.01,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I375.2136R4.1_CyanoAq,4.1,34284,293,14313,1.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I375.2136R4.1_CyanoAq,4.14,1646980,0,568667,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I375.2136R4.1_CyanoAq,4.06,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I375.2136R4.1_CyanoAq,7.94,23462566,482845,7358211,1.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I375.2136R4.1_CyanoAq,7.94,24372950,329381,7215732,2.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I375.2136R4.1_CyanoAq,7.94,15437241,200647,5266020,1.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I375.2136R4.1_CyanoAq,4.02,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I375.2136R4.1_CyanoAq,4.08,1092734,0,460045,15,molecules1
+molecules1,170216_Smp_Np_C,I375.2136R4.1_CyanoAq,4.08,464646,0,193235,14.8,molecules1
+molecules1,170216_Smp_Np_F,I375.2136R4.1_CyanoAq,4.08,402798,0,153039,15,molecules1
+molecules1,170216_Smp_Pt_C,I375.2136R4.1_CyanoAq,4.2,10274,0,11512,-13.5,molecules1
+molecules1,170216_Smp_Pt_F,I375.2136R4.1_CyanoAq,4.22,27578,0,18183,-12.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I306.4913R3.77_CyanoAq,3.84,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I306.4913R3.77_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I306.4913R3.77_CyanoAq,3.86,1061291,0,189512,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I306.4913R3.77_CyanoAq,3.84,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I306.4913R3.77_CyanoAq,14.02,563,0,881,-4.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I306.4913R3.77_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I306.4913R3.77_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I306.4913R3.77_CyanoAq,2.79,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I306.4913R3.77_CyanoAq,0.62,15237,0,30691,-2.1,molecules1
+molecules1,170216_Smp_Np_C,I306.4913R3.77_CyanoAq,0.75,6803,0,18945,-8.2,molecules1
+molecules1,170216_Smp_Np_F,I306.4913R3.77_CyanoAq,11.44,694,0,1640,1.6,molecules1
+molecules1,170216_Smp_Pt_C,I306.4913R3.77_CyanoAq,2.3,50960,0,27144,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I306.4913R3.77_CyanoAq,2.29,40430,0,15899,0,molecules1
+molecules1,180716_Blk_Blk0p2_1,I381.1828R4.47_CyanoAq,4.39,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I381.1828R4.47_CyanoAq,4.37,0,0,0,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I381.1828R4.47_CyanoAq,4.51,4475829,23169,1857617,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I381.1828R4.47_CyanoAq,4.39,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I381.1828R4.47_CyanoAq,17.96,6035,0,9248,11,molecules1
+molecules1,170216_Smp_Pc55x_B,I381.1828R4.47_CyanoAq,11.08,13988,0,8538,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I381.1828R4.47_CyanoAq,16.03,2785,0,2833,8.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I381.1828R4.47_CyanoAq,4.41,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I381.1828R4.47_CyanoAq,1.36,136065,0,61228,-14.5,molecules1
+molecules1,170216_Smp_Np_C,I381.1828R4.47_CyanoAq,1.52,60058,0,26650,-14.6,molecules1
+molecules1,170216_Smp_Np_F,I381.1828R4.47_CyanoAq,1.36,88842,0,40776,-14.9,molecules1
+molecules1,170216_Smp_Pt_C,I381.1828R4.47_CyanoAq,6.29,14022,0,9707,15.3,molecules1
+molecules1,170216_Smp_Pt_F,I381.1828R4.47_CyanoAq,6.3,11522,0,4517,13.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I175.0789R1_CyanoAq,1.02,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I175.0789R1_CyanoAq,1.03,596793,0,348977,-0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I175.0789R1_CyanoAq,1.03,581821,0,288542,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I175.0789R1_CyanoAq,1.37,1839,0,4052,1,molecules1
+molecules1,170216_Smp_Pc55x_A,I175.0789R1_CyanoAq,1.49,1159,0,3042,0.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I175.0789R1_CyanoAq,4.62,1965,0,3302,-3.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I175.0789R1_CyanoAq,1.43,1431,0,3251,0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I175.0789R1_CyanoAq,1.03,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I175.0789R1_CyanoAq,1.7,346556,0,96277,3.5,molecules1
+molecules1,170216_Smp_Np_C,I175.0789R1_CyanoAq,1.72,34183,0,19934,3.2,molecules1
+molecules1,170216_Smp_Np_F,I175.0789R1_CyanoAq,1.72,2226,0,4328,1,molecules1
+molecules1,170216_Smp_Pt_C,I175.0789R1_CyanoAq,9.89,2177,0,6761,11,molecules1
+molecules1,170216_Smp_Pt_F,I175.0789R1_CyanoAq,1.72,29076,0,10885,3.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I511.2407R3.6_CyanoAq,3.15,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I511.2407R3.6_CyanoAq,3.61,24404,0,11940,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I511.2407R3.6_CyanoAq,3.66,1458553,0,467112,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I511.2407R3.6_CyanoAq,3.43,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I511.2407R3.6_CyanoAq,8.5,26793,0,13346,-6.5,molecules1
+molecules1,170216_Smp_Pc55x_B,I511.2407R3.6_CyanoAq,1.02,27594,0,45602,14.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I511.2407R3.6_CyanoAq,1,27462,0,29566,5.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I511.2407R3.6_CyanoAq,3.43,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I511.2407R3.6_CyanoAq,13.59,84097,0,18388,-7.8,molecules1
+molecules1,170216_Smp_Np_C,I511.2407R3.6_CyanoAq,9.08,111182,0,68760,-7.3,molecules1
+molecules1,170216_Smp_Np_F,I511.2407R3.6_CyanoAq,9.08,76113,0,44128,-6.1,molecules1
+molecules1,170216_Smp_Pt_C,I511.2407R3.6_CyanoAq,12.1,253242,0,55008,-8.3,molecules1
+molecules1,170216_Smp_Pt_F,I511.2407R3.6_CyanoAq,12.08,424035,7126,90252,-8.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I295.1291R1.78_CyanoAq,1.78,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I295.1291R1.78_CyanoAq,1.7,1686714,0,254233,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I295.1291R1.78_CyanoAq,1.85,1529785,0,309648,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I295.1291R1.78_CyanoAq,1.72,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I295.1291R1.78_CyanoAq,1.27,5633569,47868,1518815,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I295.1291R1.78_CyanoAq,1.28,7651591,44482,1992828,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I295.1291R1.78_CyanoAq,1.27,2841200,0,735453,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I295.1291R1.78_CyanoAq,1.79,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I295.1291R1.78_CyanoAq,1.81,348788,0,113872,-0.7,molecules1
+molecules1,170216_Smp_Np_C,I295.1291R1.78_CyanoAq,1.8,266281,0,93477,-0.9,molecules1
+molecules1,170216_Smp_Np_F,I295.1291R1.78_CyanoAq,1.8,345151,0,114051,-0.7,molecules1
+molecules1,170216_Smp_Pt_C,I295.1291R1.78_CyanoAq,1.81,122553,0,50972,-0.9,molecules1
+molecules1,170216_Smp_Pt_F,I295.1291R1.78_CyanoAq,1.81,172188,0,60898,-0.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I241.0297R0.89_CyanoAq,0.93,9567,2545,10108,-1.2,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I241.0297R0.89_CyanoAq,0.91,85064,0,42587,0.8,molecules1
+molecules1,180716_Smp_S7E41D30_1,I241.0297R0.89_CyanoAq,0.91,5683209,0,3673078,0.7,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I241.0297R0.89_CyanoAq,0.78,20539,8342,28117,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_A,I241.0297R0.89_CyanoAq,0.68,4101948,0,1229179,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I241.0297R0.89_CyanoAq,0.69,4820118,70583,1362234,-0.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I241.0297R0.89_CyanoAq,0.68,3715750,0,1102191,-0.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I241.0297R0.89_CyanoAq,0.68,84466,43834,52765,-1.5,molecules1
+molecules1,170216_Smp_Np_A,I241.0297R0.89_CyanoAq,0.69,73388,0,41821,-1.3,molecules1
+molecules1,170216_Smp_Np_C,I241.0297R0.89_CyanoAq,0.67,84316,0,44753,-0.9,molecules1
+molecules1,170216_Smp_Np_F,I241.0297R0.89_CyanoAq,0.68,90571,0,68799,-1.4,molecules1
+molecules1,170216_Smp_Pt_C,I241.0297R0.89_CyanoAq,0.67,118842,0,77939,-1.6,molecules1
+molecules1,170216_Smp_Pt_F,I241.0297R0.89_CyanoAq,0.7,81972,0,55920,-1.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I296.6058R1.22_CyanoAq,1.31,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I296.6058R1.22_CyanoAq,1.28,780655,0,251685,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I296.6058R1.22_CyanoAq,1.29,1157833,0,298945,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I296.6058R1.22_CyanoAq,1.27,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I296.6058R1.22_CyanoAq,5.7,2108,0,2974,-11.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I296.6058R1.22_CyanoAq,5.69,3535,0,4482,-9,molecules1
+molecules1,170216_Smp_Pc55x_C,I296.6058R1.22_CyanoAq,5.61,2179,0,3117,-8.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I296.6058R1.22_CyanoAq,1.28,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I296.6058R1.22_CyanoAq,9.59,25789,0,15305,10.1,molecules1
+molecules1,170216_Smp_Np_C,I296.6058R1.22_CyanoAq,9.6,17792,0,17188,8.9,molecules1
+molecules1,170216_Smp_Np_F,I296.6058R1.22_CyanoAq,9.08,3490,0,6318,7,molecules1
+molecules1,170216_Smp_Pt_C,I296.6058R1.22_CyanoAq,11.75,892,0,2571,-11.7,molecules1
+molecules1,170216_Smp_Pt_F,I296.6058R1.22_CyanoAq,0.64,26485,0,39131,3.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,I340.7615R6.69_CyanoAq,6.8,1442,0,3356,-0.7,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I340.7615R6.69_CyanoAq,6.68,22932,0,16489,-0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I340.7615R6.69_CyanoAq,6.71,1929,0,4793,-1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I340.7615R6.69_CyanoAq,6.94,1238,0,2063,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I340.7615R6.69_CyanoAq,6.93,10314,0,7980,-0.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I340.7615R6.69_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I340.7615R6.69_CyanoAq,6.94,5214,0,5670,0.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I340.7615R6.69_CyanoAq,6.73,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I340.7615R6.69_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I340.7615R6.69_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_F,I340.7615R6.69_CyanoAq,3.27,1180,0,1843,0.3,molecules1
+molecules1,170216_Smp_Pt_C,I340.7615R6.69_CyanoAq,6.93,7314,0,9357,0.2,molecules1
+molecules1,170216_Smp_Pt_F,I340.7615R6.69_CyanoAq,1.59,1301,0,3190,4.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I248.9764R0.9_CyanoAq,0.92,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I248.9764R0.9_CyanoAq,0.93,156075,0,139267,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I248.9764R0.9_CyanoAq,0.92,18629,0,21614,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I248.9764R0.9_CyanoAq,0.59,121252,0,175003,5.4,molecules1
+molecules1,170216_Smp_Pc55x_A,I248.9764R0.9_CyanoAq,0.6,52453,0,99584,8.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I248.9764R0.9_CyanoAq,0.59,37016,0,61405,4.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I248.9764R0.9_CyanoAq,12.43,805,0,1235,1.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I248.9764R0.9_CyanoAq,0.85,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I248.9764R0.9_CyanoAq,0.58,19801,0,28238,6.3,molecules1
+molecules1,170216_Smp_Np_C,I248.9764R0.9_CyanoAq,15.73,751,0,1643,-2.2,molecules1
+molecules1,170216_Smp_Np_F,I248.9764R0.9_CyanoAq,7.66,901,0,1855,2.8,molecules1
+molecules1,170216_Smp_Pt_C,I248.9764R0.9_CyanoAq,0.59,32379,0,106897,12.5,molecules1
+molecules1,170216_Smp_Pt_F,I248.9764R0.9_CyanoAq,4.05,864,0,2007,0.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I414.1624R0.94_CyanoAq,0.96,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I414.1624R0.94_CyanoAq,0.97,759439,0,457392,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I414.1624R0.94_CyanoAq,1.07,0,0,0,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I414.1624R0.94_CyanoAq,0.97,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I414.1624R0.94_CyanoAq,8.29,836616,122764,287783,-4.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I414.1624R0.94_CyanoAq,8.3,766601,62208,292858,-3.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I414.1624R0.94_CyanoAq,8.29,311807,0,112283,-4.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I414.1624R0.94_CyanoAq,0.95,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I414.1624R0.94_CyanoAq,4.95,362780,0,171155,14.1,molecules1
+molecules1,170216_Smp_Np_C,I414.1624R0.94_CyanoAq,4.96,23439,0,11607,11.8,molecules1
+molecules1,170216_Smp_Np_F,I414.1624R0.94_CyanoAq,17.44,6123,0,2507,-13.3,molecules1
+molecules1,170216_Smp_Pt_C,I414.1624R0.94_CyanoAq,17.71,5414,0,2203,-15.2,molecules1
+molecules1,170216_Smp_Pt_F,I414.1624R0.94_CyanoAq,4.95,256044,2298,123797,13.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I419.6799R6.47_CyanoAq,6.44,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I419.6799R6.47_CyanoAq,6.49,19714,0,10795,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I419.6799R6.47_CyanoAq,6.54,51056,0,24451,-0.6,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I419.6799R6.47_CyanoAq,6.5,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I419.6799R6.47_CyanoAq,8.91,1137,0,1968,2.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I419.6799R6.47_CyanoAq,8.91,1621,0,3015,2.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I419.6799R6.47_CyanoAq,6.23,1051,0,2590,-1.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I419.6799R6.47_CyanoAq,6.35,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I419.6799R6.47_CyanoAq,0.74,9720,0,17585,10.2,molecules1
+molecules1,170216_Smp_Np_C,I419.6799R6.47_CyanoAq,0.73,19102,0,32796,5.7,molecules1
+molecules1,170216_Smp_Np_F,I419.6799R6.47_CyanoAq,2.48,1310,0,2023,2.1,molecules1
+molecules1,170216_Smp_Pt_C,I419.6799R6.47_CyanoAq,3.39,5392,0,11152,-2.8,molecules1
+molecules1,170216_Smp_Pt_F,I419.6799R6.47_CyanoAq,3.4,4056,0,4873,-0.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I146.0601R1.92_CyanoAq,1.91,12795,0,5206,-0.9,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I146.0601R1.92_CyanoAq,1.94,864362,69707,244161,0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I146.0601R1.92_CyanoAq,1.97,2125177,10389,770759,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I146.0601R1.92_CyanoAq,1.83,11361,13390,5485,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_A,I146.0601R1.92_CyanoAq,1.94,5037745,87789,1613091,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_B,I146.0601R1.92_CyanoAq,1.94,5597362,91064,1739238,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I146.0601R1.92_CyanoAq,1.93,3154726,46887,956832,-0.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I146.0601R1.92_CyanoAq,1.87,7753,17787,4391,-0.8,molecules1
+molecules1,170216_Smp_Np_A,I146.0601R1.92_CyanoAq,1.93,721424,0,229254,0,molecules1
+molecules1,170216_Smp_Np_C,I146.0601R1.92_CyanoAq,1.94,722673,16053,211931,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I146.0601R1.92_CyanoAq,1.93,716160,38971,214447,0,molecules1
+molecules1,170216_Smp_Pt_C,I146.0601R1.92_CyanoAq,1.94,2617301,0,793151,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I146.0601R1.92_CyanoAq,1.93,2261680,75228,632792,-0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I459.2336R3.77_CyanoAq,3.9,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I459.2336R3.77_CyanoAq,4.04,6555,0,5492,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I459.2336R3.77_CyanoAq,3.86,696653,0,118219,-0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I459.2336R3.77_CyanoAq,3.78,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I459.2336R3.77_CyanoAq,0.6,119966,0,180029,-3.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I459.2336R3.77_CyanoAq,0.6,111258,0,113732,-4.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I459.2336R3.77_CyanoAq,0.59,35093,0,54210,-4.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I459.2336R3.77_CyanoAq,3.81,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I459.2336R3.77_CyanoAq,0.6,78989,0,139635,-5.5,molecules1
+molecules1,170216_Smp_Np_C,I459.2336R3.77_CyanoAq,4.87,89385,0,36751,6.2,molecules1
+molecules1,170216_Smp_Np_F,I459.2336R3.77_CyanoAq,4.78,47121,0,21514,-11.4,molecules1
+molecules1,170216_Smp_Pt_C,I459.2336R3.77_CyanoAq,11.48,60860,13923,22437,11.9,molecules1
+molecules1,170216_Smp_Pt_F,I459.2336R3.77_CyanoAq,11.49,67112,0,26286,11.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I285.6464R1_CyanoAq,0.93,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I285.6464R1_CyanoAq,1.03,689698,0,331353,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I285.6464R1_CyanoAq,1.03,1344708,0,641347,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I285.6464R1_CyanoAq,1.01,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I285.6464R1_CyanoAq,5.92,1192,0,2073,4.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I285.6464R1_CyanoAq,13.14,954,0,1645,-2.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I285.6464R1_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I285.6464R1_CyanoAq,0.95,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I285.6464R1_CyanoAq,13.13,1771,0,2203,-3.9,molecules1
+molecules1,170216_Smp_Np_C,I285.6464R1_CyanoAq,8.12,7668,0,4454,-0.6,molecules1
+molecules1,170216_Smp_Np_F,I285.6464R1_CyanoAq,13.14,11069,0,10018,-3.5,molecules1
+molecules1,170216_Smp_Pt_C,I285.6464R1_CyanoAq,13.14,22419,0,15041,-3.3,molecules1
+molecules1,170216_Smp_Pt_F,I285.6464R1_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Blk_Blk0p2_1,I404.7398R5.8_CyanoAq,5.88,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I404.7398R5.8_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I404.7398R5.8_CyanoAq,5.83,263956,0,109503,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I404.7398R5.8_CyanoAq,5.81,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I404.7398R5.8_CyanoAq,7.2,1011,0,2614,13,molecules1
+molecules1,170216_Smp_Pc55x_B,I404.7398R5.8_CyanoAq,8.67,965,0,1366,-6.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I404.7398R5.8_CyanoAq,12.95,595,0,1132,-2.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I404.7398R5.8_CyanoAq,5.71,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I404.7398R5.8_CyanoAq,4.18,41475,0,19217,11.5,molecules1
+molecules1,170216_Smp_Np_C,I404.7398R5.8_CyanoAq,4.17,20685,0,13758,12.8,molecules1
+molecules1,170216_Smp_Np_F,I404.7398R5.8_CyanoAq,4.17,30889,0,15728,12.5,molecules1
+molecules1,170216_Smp_Pt_C,I404.7398R5.8_CyanoAq,0.68,7293,0,23616,-16.3,molecules1
+molecules1,170216_Smp_Pt_F,I404.7398R5.8_CyanoAq,0.66,2770,0,5216,-11.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I299.1967R2.47_CyanoAq,2.45,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I299.1967R2.47_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I299.1967R2.47_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I299.1967R2.47_CyanoAq,2.44,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I299.1967R2.47_CyanoAq,9.59,21139762,1733946,8251913,12.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I299.1967R2.47_CyanoAq,9.59,22755652,2467504,8437647,12.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I299.1967R2.47_CyanoAq,9.59,13644573,1042680,5359686,12.8,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I299.1967R2.47_CyanoAq,2.18,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I299.1967R2.47_CyanoAq,8.87,208086,59991,44704,13.3,molecules1
+molecules1,170216_Smp_Np_C,I299.1967R2.47_CyanoAq,10.78,94512,0,27400,12.9,molecules1
+molecules1,170216_Smp_Np_F,I299.1967R2.47_CyanoAq,8.88,372249,2682,62065,12.6,molecules1
+molecules1,170216_Smp_Pt_C,I299.1967R2.47_CyanoAq,8.87,140062,0,43948,12.8,molecules1
+molecules1,170216_Smp_Pt_F,I299.1967R2.47_CyanoAq,7.95,97411,0,21628,13,molecules1
+molecules1,180716_Blk_Blk0p2_1,I345.6642R3.9_CyanoAq,4,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I345.6642R3.9_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I345.6642R3.9_CyanoAq,3.96,1000727,0,320347,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I345.6642R3.9_CyanoAq,3.96,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I345.6642R3.9_CyanoAq,9.12,1346,0,2648,-10.7,molecules1
+molecules1,170216_Smp_Pc55x_B,I345.6642R3.9_CyanoAq,0.89,4303,0,8032,-2.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I345.6642R3.9_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I345.6642R3.9_CyanoAq,3.98,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I345.6642R3.9_CyanoAq,5.94,6100,0,5106,-0.3,molecules1
+molecules1,170216_Smp_Np_C,I345.6642R3.9_CyanoAq,5.95,87617,0,48339,0.3,molecules1
+molecules1,170216_Smp_Np_F,I345.6642R3.9_CyanoAq,5.93,1034,0,2092,0.4,molecules1
+molecules1,170216_Smp_Pt_C,I345.6642R3.9_CyanoAq,3.6,1352,0,4034,8.4,molecules1
+molecules1,170216_Smp_Pt_F,I345.6642R3.9_CyanoAq,5.93,1949,0,3064,0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I311.1239R1.4_CyanoAq,1.41,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I311.1239R1.4_CyanoAq,1.36,691188,0,114232,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I311.1239R1.4_CyanoAq,1.43,966707,15092,278954,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I311.1239R1.4_CyanoAq,1.34,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I311.1239R1.4_CyanoAq,8.76,23921,0,16953,12,molecules1
+molecules1,170216_Smp_Pc55x_B,I311.1239R1.4_CyanoAq,8.75,25111,0,13691,11.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I311.1239R1.4_CyanoAq,6.06,11760,0,7001,3.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I311.1239R1.4_CyanoAq,1.3,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I311.1239R1.4_CyanoAq,1.39,114749,0,44839,-0.4,molecules1
+molecules1,170216_Smp_Np_C,I311.1239R1.4_CyanoAq,1.39,75887,0,36478,0,molecules1
+molecules1,170216_Smp_Np_F,I311.1239R1.4_CyanoAq,1.39,139051,0,54361,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I311.1239R1.4_CyanoAq,1.39,51859,0,32558,-0.5,molecules1
+molecules1,170216_Smp_Pt_F,I311.1239R1.4_CyanoAq,1.4,62472,0,32121,0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I345.0462R0.88_CyanoAq,0.97,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I345.0462R0.88_CyanoAq,0.91,498896,0,431412,0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I345.0462R0.88_CyanoAq,0.89,346596,0,358248,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I345.0462R0.88_CyanoAq,0.88,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I345.0462R0.88_CyanoAq,0.87,17960,0,10428,6.9,molecules1
+molecules1,170216_Smp_Pc55x_B,I345.0462R0.88_CyanoAq,0.87,56092,0,28202,9,molecules1
+molecules1,170216_Smp_Pc55x_C,I345.0462R0.88_CyanoAq,0.87,2734,0,6350,6.1,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I345.0462R0.88_CyanoAq,0.96,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I345.0462R0.88_CyanoAq,0.88,98088,0,81231,-0.4,molecules1
+molecules1,170216_Smp_Np_C,I345.0462R0.88_CyanoAq,0.83,10464,0,11725,5.3,molecules1
+molecules1,170216_Smp_Np_F,I345.0462R0.88_CyanoAq,0.88,18363,0,31769,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I345.0462R0.88_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I345.0462R0.88_CyanoAq,0.94,0,0,0,#N/A,molecules1
+molecules1,180716_Blk_Blk0p2_1,I325.1761R2.97_CyanoAq,2.91,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I325.1761R2.97_CyanoAq,2.99,659570,0,156129,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I325.1761R2.97_CyanoAq,3.08,226223,0,39236,-0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I325.1761R2.97_CyanoAq,2.94,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I325.1761R2.97_CyanoAq,9.82,100936,0,17317,11.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I325.1761R2.97_CyanoAq,9.82,125493,0,17017,11.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I325.1761R2.97_CyanoAq,10.2,27455,10027,11703,4.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I325.1761R2.97_CyanoAq,2.99,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I325.1761R2.97_CyanoAq,1.16,3715,0,5926,-6.1,molecules1
+molecules1,170216_Smp_Np_C,I325.1761R2.97_CyanoAq,9.91,2105,0,2837,7.5,molecules1
+molecules1,170216_Smp_Np_F,I325.1761R2.97_CyanoAq,1.6,2445,0,4404,-2.2,molecules1
+molecules1,170216_Smp_Pt_C,I325.1761R2.97_CyanoAq,1.28,7855,0,16572,-0.8,molecules1
+molecules1,170216_Smp_Pt_F,I325.1761R2.97_CyanoAq,5.08,3063,0,3649,-2.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I284.2193R6.29_CyanoAq,6.19,1741,0,4232,1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I284.2193R6.29_CyanoAq,6.28,2346,0,2298,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I284.2193R6.29_CyanoAq,6.32,6177,0,5395,0.6,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I284.2193R6.29_CyanoAq,6.34,928,0,1691,6.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I284.2193R6.29_CyanoAq,8.47,95378,0,33810,9.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I284.2193R6.29_CyanoAq,8.47,72867,0,29560,9.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I284.2193R6.29_CyanoAq,8.48,54942,0,23463,9.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I284.2193R6.29_CyanoAq,6.47,1413,0,2737,3.3,molecules1
+molecules1,170216_Smp_Np_A,I284.2193R6.29_CyanoAq,9.21,3173,0,3042,2.5,molecules1
+molecules1,170216_Smp_Np_C,I284.2193R6.29_CyanoAq,9.2,23116,0,12718,5.3,molecules1
+molecules1,170216_Smp_Np_F,I284.2193R6.29_CyanoAq,9.34,4606,0,4632,8.7,molecules1
+molecules1,170216_Smp_Pt_C,I284.2193R6.29_CyanoAq,9.51,1900,0,5740,8.7,molecules1
+molecules1,170216_Smp_Pt_F,I284.2193R6.29_CyanoAq,9.82,12646,0,5218,7.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I340.2597R6.93_CyanoAq,6.7,3152,0,4584,0,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I340.2597R6.93_CyanoAq,6.93,14208,0,9259,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I340.2597R6.93_CyanoAq,6.97,17210,0,10037,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I340.2597R6.93_CyanoAq,6.94,23863,0,10445,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I340.2597R6.93_CyanoAq,6.95,48048,0,21386,0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I340.2597R6.93_CyanoAq,6.94,4074,0,3694,0.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I340.2597R6.93_CyanoAq,6.94,26497,0,16060,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I340.2597R6.93_CyanoAq,6.68,1255,0,2466,0.7,molecules1
+molecules1,170216_Smp_Np_A,I340.2597R6.93_CyanoAq,4.58,36477,0,15626,0,molecules1
+molecules1,170216_Smp_Np_C,I340.2597R6.93_CyanoAq,4.58,28247,0,13711,0.2,molecules1
+molecules1,170216_Smp_Np_F,I340.2597R6.93_CyanoAq,9.72,7017,0,5567,-8.2,molecules1
+molecules1,170216_Smp_Pt_C,I340.2597R6.93_CyanoAq,10.49,236510,187970,48751,-10.1,molecules1
+molecules1,170216_Smp_Pt_F,I340.2597R6.93_CyanoAq,10.49,239929,293962,36930,-9.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I548.2723R4.91_CyanoAq,4.68,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I548.2723R4.91_CyanoAq,4.75,32124,0,17291,3.9,molecules1
+molecules1,180716_Smp_S7E41D30_1,I548.2723R4.91_CyanoAq,4.94,281650,0,128937,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I548.2723R4.91_CyanoAq,4.81,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I548.2723R4.91_CyanoAq,4.96,111183,9893,16471,-2.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I548.2723R4.91_CyanoAq,4.79,88143,25775,33481,-2.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I548.2723R4.91_CyanoAq,4.9,10507,22174,6515,-2.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I548.2723R4.91_CyanoAq,4.76,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I548.2723R4.91_CyanoAq,5.24,43950,0,23256,-0.3,molecules1
+molecules1,170216_Smp_Np_C,I548.2723R4.91_CyanoAq,5.25,47913,0,19494,0.2,molecules1
+molecules1,170216_Smp_Np_F,I548.2723R4.91_CyanoAq,5.24,123682,0,59785,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I548.2723R4.91_CyanoAq,5.57,1994788,0,285091,-0.2,molecules1
+molecules1,170216_Smp_Pt_F,I548.2723R4.91_CyanoAq,5.52,867525,0,112083,0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I470.2256R5.55_CyanoAq,5.66,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I470.2256R5.55_CyanoAq,5.68,13104,0,10921,14.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I470.2256R5.55_CyanoAq,5.65,274338,0,106721,-8.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I470.2256R5.55_CyanoAq,5.69,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I470.2256R5.55_CyanoAq,2.59,87022,0,24031,-4.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I470.2256R5.55_CyanoAq,2.58,82049,0,32667,-4,molecules1
+molecules1,170216_Smp_Pc55x_C,I470.2256R5.55_CyanoAq,2.6,53686,0,19666,-3.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I470.2256R5.55_CyanoAq,5.67,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I470.2256R5.55_CyanoAq,5.07,100812,0,45313,-7.5,molecules1
+molecules1,170216_Smp_Np_C,I470.2256R5.55_CyanoAq,5.07,143431,0,72630,-7.8,molecules1
+molecules1,170216_Smp_Np_F,I470.2256R5.55_CyanoAq,5.06,35539,0,22312,-8.1,molecules1
+molecules1,170216_Smp_Pt_C,I470.2256R5.55_CyanoAq,11.27,119108,0,41312,11.7,molecules1
+molecules1,170216_Smp_Pt_F,I470.2256R5.55_CyanoAq,11.3,107154,0,24124,11.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I679.5123R6.69_CyanoAq,6.75,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I679.5123R6.69_CyanoAq,6.68,14650,0,8686,-0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I679.5123R6.69_CyanoAq,6.97,1984,0,3396,-0.6,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I679.5123R6.69_CyanoAq,6.94,11554,0,8337,-0.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I679.5123R6.69_CyanoAq,6.94,33003,0,18939,0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I679.5123R6.69_CyanoAq,6.94,9496,0,11073,0.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I679.5123R6.69_CyanoAq,6.93,21152,0,13715,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I679.5123R6.69_CyanoAq,6.66,1130,0,2079,-9.5,molecules1
+molecules1,170216_Smp_Np_A,I679.5123R6.69_CyanoAq,14.49,62456,0,23707,1.3,molecules1
+molecules1,170216_Smp_Np_C,I679.5123R6.69_CyanoAq,14.42,61076,0,35114,0.9,molecules1
+molecules1,170216_Smp_Np_F,I679.5123R6.69_CyanoAq,14.42,75858,0,33370,1,molecules1
+molecules1,170216_Smp_Pt_C,I679.5123R6.69_CyanoAq,6.94,25681,0,18895,0.2,molecules1
+molecules1,170216_Smp_Pt_F,I679.5123R6.69_CyanoAq,0.36,2298,0,4351,-14.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I206.0675R2.59_CyanoAq,2.51,4461,0,3553,-4.2,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I206.0675R2.59_CyanoAq,2.6,157936,0,43323,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I206.0675R2.59_CyanoAq,2.67,296322,1310,75822,-0.7,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I206.0675R2.59_CyanoAq,2.53,8973,0,4353,-1.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I206.0675R2.59_CyanoAq,2.49,2783,0,2716,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I206.0675R2.59_CyanoAq,10.46,40082,3511,14995,-2.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I206.0675R2.59_CyanoAq,17.62,39597,15193,6837,-2.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I206.0675R2.59_CyanoAq,2.72,2801,0,3891,-1.1,molecules1
+molecules1,170216_Smp_Np_A,I206.0675R2.59_CyanoAq,0.67,362487,0,262188,2.6,molecules1
+molecules1,170216_Smp_Np_C,I206.0675R2.59_CyanoAq,0.67,860945,0,478525,2.4,molecules1
+molecules1,170216_Smp_Np_F,I206.0675R2.59_CyanoAq,0.68,59224,0,46000,2.1,molecules1
+molecules1,170216_Smp_Pt_C,I206.0675R2.59_CyanoAq,0.67,249812,0,242947,2.4,molecules1
+molecules1,170216_Smp_Pt_F,I206.0675R2.59_CyanoAq,0.67,206189,0,169823,2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I294.1814R1.08_CyanoAq,1.1,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I294.1814R1.08_CyanoAq,1.09,938791,0,330191,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I294.1814R1.08_CyanoAq,1.11,1092192,0,475861,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I294.1814R1.08_CyanoAq,1.23,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I294.1814R1.08_CyanoAq,1.08,179715,0,81569,0,molecules1
+molecules1,170216_Smp_Pc55x_B,I294.1814R1.08_CyanoAq,1.08,157448,0,74897,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I294.1814R1.08_CyanoAq,1.07,51599,0,27623,-0.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I294.1814R1.08_CyanoAq,1.13,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I294.1814R1.08_CyanoAq,1.07,746506,0,335707,0.2,molecules1
+molecules1,170216_Smp_Np_C,I294.1814R1.08_CyanoAq,1.08,771195,0,335414,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I294.1814R1.08_CyanoAq,1.07,449100,59332,203501,-0.5,molecules1
+molecules1,170216_Smp_Pt_C,I294.1814R1.08_CyanoAq,1.08,7723476,220476,3858743,-0.2,molecules1
+molecules1,170216_Smp_Pt_F,I294.1814R1.08_CyanoAq,1.07,9467926,186232,4153001,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I240.1092R0.94_CyanoAq,1.03,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I240.1092R0.94_CyanoAq,0.99,741087,0,245622,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I240.1092R0.94_CyanoAq,0.98,94388,0,52436,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I240.1092R0.94_CyanoAq,0.95,1755,0,4548,-11.5,molecules1
+molecules1,170216_Smp_Pc55x_A,I240.1092R0.94_CyanoAq,18,295144,0,159108,-1.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I240.1092R0.94_CyanoAq,17.99,257628,0,135715,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_C,I240.1092R0.94_CyanoAq,17.99,214620,0,156605,-0.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I240.1092R0.94_CyanoAq,1,1858,0,4835,-4.5,molecules1
+molecules1,170216_Smp_Np_A,I240.1092R0.94_CyanoAq,17.97,237446,0,143454,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I240.1092R0.94_CyanoAq,0.08,12101,0,23247,-1,molecules1
+molecules1,170216_Smp_Np_F,I240.1092R0.94_CyanoAq,1.24,11336,0,17069,-9.4,molecules1
+molecules1,170216_Smp_Pt_C,I240.1092R0.94_CyanoAq,18,239271,0,136465,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I240.1092R0.94_CyanoAq,0.08,7379,0,18502,-0.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I321.2427R9.33_CyanoAq,9.12,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I321.2427R9.33_CyanoAq,9.34,1997942,83283,704212,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I321.2427R9.33_CyanoAq,9.37,1818675,14895,629038,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I321.2427R9.33_CyanoAq,9.36,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I321.2427R9.33_CyanoAq,9.36,29622174,185124,11330891,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I321.2427R9.33_CyanoAq,9.36,18435990,107105,7031398,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I321.2427R9.33_CyanoAq,9.36,20978446,157800,8018991,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I321.2427R9.33_CyanoAq,9.31,7071,0,3792,-1,molecules1
+molecules1,170216_Smp_Np_A,I321.2427R9.33_CyanoAq,9.35,909394,10616,328300,-0.6,molecules1
+molecules1,170216_Smp_Np_C,I321.2427R9.33_CyanoAq,9.36,175409,0,68550,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I321.2427R9.33_CyanoAq,9.36,787807,0,290854,-0.7,molecules1
+molecules1,170216_Smp_Pt_C,I321.2427R9.33_CyanoAq,9.36,8034807,39504,2741524,-1,molecules1
+molecules1,170216_Smp_Pt_F,I321.2427R9.33_CyanoAq,9.35,39592912,243118,15081074,-1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I310.14R1.31_CyanoAq,1.25,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I310.14R1.31_CyanoAq,1.3,527256,0,120752,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I310.14R1.31_CyanoAq,1.35,1349586,0,448430,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I310.14R1.31_CyanoAq,1.21,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I310.14R1.31_CyanoAq,7.47,95438,0,40895,-1.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I310.14R1.31_CyanoAq,5.35,116368,0,53526,-9.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I310.14R1.31_CyanoAq,7.47,81127,0,32952,-2.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I310.14R1.31_CyanoAq,1.27,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I310.14R1.31_CyanoAq,1.32,406152,0,130116,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I310.14R1.31_CyanoAq,1.33,340927,0,100916,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I310.14R1.31_CyanoAq,1.31,548852,0,192611,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I310.14R1.31_CyanoAq,1.32,64561,0,28777,-0.2,molecules1
+molecules1,170216_Smp_Pt_F,I310.14R1.31_CyanoAq,1.33,49539,0,23151,0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I605.3175R6.37_CyanoAq,6.17,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I605.3175R6.37_CyanoAq,6.36,10537,0,8614,-2.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I605.3175R6.37_CyanoAq,6.41,1302869,0,516331,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I605.3175R6.37_CyanoAq,6.32,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I605.3175R6.37_CyanoAq,10.79,438466,0,135482,-9.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I605.3175R6.37_CyanoAq,10.79,142493,0,48594,-9.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I605.3175R6.37_CyanoAq,10.8,131995,0,53038,-10.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I605.3175R6.37_CyanoAq,6.4,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I605.3175R6.37_CyanoAq,5.62,21853,0,13489,6.2,molecules1
+molecules1,170216_Smp_Np_C,I605.3175R6.37_CyanoAq,0.6,153700,0,158193,-10.7,molecules1
+molecules1,170216_Smp_Np_F,I605.3175R6.37_CyanoAq,0.6,47723,0,101452,-3.4,molecules1
+molecules1,170216_Smp_Pt_C,I605.3175R6.37_CyanoAq,0.63,30002,0,98528,-15.7,molecules1
+molecules1,170216_Smp_Pt_F,I605.3175R6.37_CyanoAq,5.59,24103,0,13774,-7.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I802.3342R6.22_CyanoAq,6.34,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I802.3342R6.22_CyanoAq,6.16,0,0,0,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I802.3342R6.22_CyanoAq,6.26,760274,0,354850,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I802.3342R6.22_CyanoAq,6.29,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I802.3342R6.22_CyanoAq,9.55,2123,0,2000,7.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I802.3342R6.22_CyanoAq,10.79,2340,0,2639,11.8,molecules1
+molecules1,170216_Smp_Pc55x_C,I802.3342R6.22_CyanoAq,1.51,2119,0,3950,2.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I802.3342R6.22_CyanoAq,6.16,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I802.3342R6.22_CyanoAq,4.72,2461,0,3389,-9,molecules1
+molecules1,170216_Smp_Np_C,I802.3342R6.22_CyanoAq,6.19,78639,0,41246,2.8,molecules1
+molecules1,170216_Smp_Np_F,I802.3342R6.22_CyanoAq,3.43,1202,0,2765,18.6,molecules1
+molecules1,170216_Smp_Pt_C,I802.3342R6.22_CyanoAq,0.89,5538,0,17766,-12.7,molecules1
+molecules1,170216_Smp_Pt_F,I802.3342R6.22_CyanoAq,0.88,52854,0,40747,-11.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I575.1679R5.3_CyanoAq,5.51,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I575.1679R5.3_CyanoAq,5.3,19086,0,10639,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I575.1679R5.3_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I575.1679R5.3_CyanoAq,5.54,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I575.1679R5.3_CyanoAq,4.65,79990,0,29778,-4.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I575.1679R5.3_CyanoAq,4.65,91131,0,38034,-4,molecules1
+molecules1,170216_Smp_Pc55x_C,I575.1679R5.3_CyanoAq,4.65,58405,0,23761,-3.9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I575.1679R5.3_CyanoAq,5.42,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I575.1679R5.3_CyanoAq,9.1,55303,0,34959,5.2,molecules1
+molecules1,170216_Smp_Np_C,I575.1679R5.3_CyanoAq,9.11,53661,0,34979,5.8,molecules1
+molecules1,170216_Smp_Np_F,I575.1679R5.3_CyanoAq,9.09,144611,0,46727,5.1,molecules1
+molecules1,170216_Smp_Pt_C,I575.1679R5.3_CyanoAq,9.07,14138,0,16710,4.5,molecules1
+molecules1,170216_Smp_Pt_F,I575.1679R5.3_CyanoAq,8.94,1371,0,2531,-2.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I577.1657R5.3_CyanoAq,5.42,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I577.1657R5.3_CyanoAq,5.3,19976,0,14346,1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I577.1657R5.3_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I577.1657R5.3_CyanoAq,5.36,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I577.1657R5.3_CyanoAq,6.86,117810,0,31652,9.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I577.1657R5.3_CyanoAq,6.85,38248,0,12527,8.9,molecules1
+molecules1,170216_Smp_Pc55x_C,I577.1657R5.3_CyanoAq,6.86,53831,0,16733,9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I577.1657R5.3_CyanoAq,5.46,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I577.1657R5.3_CyanoAq,7.8,2334,0,3189,-7.4,molecules1
+molecules1,170216_Smp_Np_C,I577.1657R5.3_CyanoAq,4.25,8374,0,5751,-15.6,molecules1
+molecules1,170216_Smp_Np_F,I577.1657R5.3_CyanoAq,8.96,6572,0,6414,0.9,molecules1
+molecules1,170216_Smp_Pt_C,I577.1657R5.3_CyanoAq,0.6,48723,0,161013,10.6,molecules1
+molecules1,170216_Smp_Pt_F,I577.1657R5.3_CyanoAq,0.63,21790,0,44466,3.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I313.1548R4.98_CyanoAq,5.02,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I313.1548R4.98_CyanoAq,4.99,786000,0,279903,0.7,molecules1
+molecules1,180716_Smp_S7E41D30_1,I313.1548R4.98_CyanoAq,5.03,1060079,0,397373,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I313.1548R4.98_CyanoAq,5.02,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I313.1548R4.98_CyanoAq,5,10355,0,5042,0.8,molecules1
+molecules1,170216_Smp_Pc55x_B,I313.1548R4.98_CyanoAq,5,5510,0,9851,0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I313.1548R4.98_CyanoAq,5.03,1864,0,3472,0.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I313.1548R4.98_CyanoAq,5,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I313.1548R4.98_CyanoAq,5,322539,0,110115,0.2,molecules1
+molecules1,170216_Smp_Np_C,I313.1548R4.98_CyanoAq,5.01,241099,0,83122,0,molecules1
+molecules1,170216_Smp_Np_F,I313.1548R4.98_CyanoAq,5,432507,0,158282,0,molecules1
+molecules1,170216_Smp_Pt_C,I313.1548R4.98_CyanoAq,5,561937,0,206572,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I313.1548R4.98_CyanoAq,5,430927,0,144933,-0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I589.2805R5.44_CyanoAq,5.64,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I589.2805R5.44_CyanoAq,5.46,2578,0,5365,-0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I589.2805R5.44_CyanoAq,5.48,52258,0,26927,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I589.2805R5.44_CyanoAq,5.55,899,0,2033,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_A,I589.2805R5.44_CyanoAq,10.28,76487,0,14263,-4.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I589.2805R5.44_CyanoAq,10.29,42233,0,13504,-4.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I589.2805R5.44_CyanoAq,3.88,26259,0,10891,15.6,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I589.2805R5.44_CyanoAq,5.35,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I589.2805R5.44_CyanoAq,3.46,22264,0,10627,4.7,molecules1
+molecules1,170216_Smp_Np_C,I589.2805R5.44_CyanoAq,3.88,10689,0,13469,5.1,molecules1
+molecules1,170216_Smp_Np_F,I589.2805R5.44_CyanoAq,4.49,8859,0,7435,-3.1,molecules1
+molecules1,170216_Smp_Pt_C,I589.2805R5.44_CyanoAq,9.47,3358,0,10427,20.2,molecules1
+molecules1,170216_Smp_Pt_F,I589.2805R5.44_CyanoAq,3.66,13501,0,14089,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I567.4317R6.29_CyanoAq,6.32,2234,0,4620,-0.6,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I567.4317R6.29_CyanoAq,6.26,0,0,0,#N/A,molecules1
+molecules1,180716_Smp_S7E41D30_1,I567.4317R6.29_CyanoAq,6.32,7373,0,7005,-0.6,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I567.4317R6.29_CyanoAq,6.11,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I567.4317R6.29_CyanoAq,1.13,6165,0,11118,-4.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I567.4317R6.29_CyanoAq,1.13,7489,0,12257,-9.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I567.4317R6.29_CyanoAq,1.13,6531,0,7214,-9,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I567.4317R6.29_CyanoAq,6.29,1765,0,3417,0.3,molecules1
+molecules1,170216_Smp_Np_A,I567.4317R6.29_CyanoAq,14.63,71666,0,30544,-16.7,molecules1
+molecules1,170216_Smp_Np_C,I567.4317R6.29_CyanoAq,15.01,59860,0,42520,-13.2,molecules1
+molecules1,170216_Smp_Np_F,I567.4317R6.29_CyanoAq,15.01,29226,0,14427,-10.9,molecules1
+molecules1,170216_Smp_Pt_C,I567.4317R6.29_CyanoAq,14.88,77706,0,45761,-19.6,molecules1
+molecules1,170216_Smp_Pt_F,I567.4317R6.29_CyanoAq,15.92,17100,0,29089,-11.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I283.0872R1.5_CyanoAq,1.61,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I283.0872R1.5_CyanoAq,1.55,135714,0,63795,-0.6,molecules1
+molecules1,180716_Smp_S7E41D30_1,I283.0872R1.5_CyanoAq,1.57,109822,0,49055,0.5,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I283.0872R1.5_CyanoAq,1.5,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I283.0872R1.5_CyanoAq,0.89,26213,0,23969,5,molecules1
+molecules1,170216_Smp_Pc55x_B,I283.0872R1.5_CyanoAq,0.88,17096,0,15860,5.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I283.0872R1.5_CyanoAq,0.88,4046,0,11076,4.4,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I283.0872R1.5_CyanoAq,1.46,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I283.0872R1.5_CyanoAq,7.68,143179,0,45212,10.4,molecules1
+molecules1,170216_Smp_Np_C,I283.0872R1.5_CyanoAq,9.5,1180,0,2203,-3.4,molecules1
+molecules1,170216_Smp_Np_F,I283.0872R1.5_CyanoAq,1.07,16350,0,15937,10.8,molecules1
+molecules1,170216_Smp_Pt_C,I283.0872R1.5_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I283.0872R1.5_CyanoAq,7.73,10742,0,5071,9.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I346.1457R4.95_CyanoAq,5.08,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I346.1457R4.95_CyanoAq,5.02,1415,0,2956,3.7,molecules1
+molecules1,180716_Smp_S7E41D30_1,I346.1457R4.95_CyanoAq,5.01,1202295,0,520505,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I346.1457R4.95_CyanoAq,5.05,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I346.1457R4.95_CyanoAq,9.56,175418,0,57304,2.5,molecules1
+molecules1,170216_Smp_Pc55x_B,I346.1457R4.95_CyanoAq,9.56,128345,0,48740,2.3,molecules1
+molecules1,170216_Smp_Pc55x_C,I346.1457R4.95_CyanoAq,9.56,119199,0,49565,2.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I346.1457R4.95_CyanoAq,5.08,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I346.1457R4.95_CyanoAq,8.8,85463,0,33399,-1.4,molecules1
+molecules1,170216_Smp_Np_C,I346.1457R4.95_CyanoAq,8.8,119242,0,53705,-1.9,molecules1
+molecules1,170216_Smp_Np_F,I346.1457R4.95_CyanoAq,8.8,75586,0,33763,-2.4,molecules1
+molecules1,170216_Smp_Pt_C,I346.1457R4.95_CyanoAq,0.9,92752,0,52058,9.4,molecules1
+molecules1,170216_Smp_Pt_F,I346.1457R4.95_CyanoAq,10.94,644527,0,226584,2.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,I322.1877R1.19_CyanoAq,1.18,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I322.1877R1.19_CyanoAq,1.22,852941,0,279191,0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I322.1877R1.19_CyanoAq,1.24,706101,0,259308,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I322.1877R1.19_CyanoAq,1.23,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I322.1877R1.19_CyanoAq,1.19,997919,0,409854,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I322.1877R1.19_CyanoAq,1.18,1039298,0,402788,-0.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I322.1877R1.19_CyanoAq,1.19,419824,0,170470,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I322.1877R1.19_CyanoAq,1.22,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I322.1877R1.19_CyanoAq,1.19,8634375,41244,3517336,-0.1,molecules1
+molecules1,170216_Smp_Np_C,I322.1877R1.19_CyanoAq,1.18,14040812,156431,5244336,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I322.1877R1.19_CyanoAq,1.19,2981914,0,1242974,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I322.1877R1.19_CyanoAq,1.19,16574045,78917,6961016,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I322.1877R1.19_CyanoAq,1.19,22078570,185783,8122743,-0.6,molecules1
+molecules1,180716_Blk_Blk0p2_1,I424.2081R2.64_CyanoAq,2.49,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I424.2081R2.64_CyanoAq,2.63,41306,0,12262,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I424.2081R2.64_CyanoAq,2.7,332121,0,84138,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I424.2081R2.64_CyanoAq,2.42,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I424.2081R2.64_CyanoAq,2.59,106517,0,33332,5.3,molecules1
+molecules1,170216_Smp_Pc55x_B,I424.2081R2.64_CyanoAq,2.58,84975,0,24460,5.5,molecules1
+molecules1,170216_Smp_Pc55x_C,I424.2081R2.64_CyanoAq,2.57,31693,0,15788,5.3,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I424.2081R2.64_CyanoAq,2.31,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I424.2081R2.64_CyanoAq,2.68,7887,0,4458,0.2,molecules1
+molecules1,170216_Smp_Np_C,I424.2081R2.64_CyanoAq,2.67,13764,0,5558,-0.7,molecules1
+molecules1,170216_Smp_Np_F,I424.2081R2.64_CyanoAq,2.66,7215,0,5690,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I424.2081R2.64_CyanoAq,5.26,17605,0,10929,-15.2,molecules1
+molecules1,170216_Smp_Pt_F,I424.2081R2.64_CyanoAq,6.03,20453,0,14146,-8.8,molecules1
+molecules1,180716_Blk_Blk0p2_1,I263.1426R2.13_CyanoAq,2.22,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I263.1426R2.13_CyanoAq,2.11,985522,0,170736,-0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I263.1426R2.13_CyanoAq,2.16,844159,0,216910,-0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I263.1426R2.13_CyanoAq,2.22,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I263.1426R2.13_CyanoAq,3.06,2375,0,5052,-3.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I263.1426R2.13_CyanoAq,10.6,4262,0,4328,-7.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I263.1426R2.13_CyanoAq,0.57,4696,0,9160,-8.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I263.1426R2.13_CyanoAq,2.26,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I263.1426R2.13_CyanoAq,2.14,329201,0,87042,-2.2,molecules1
+molecules1,170216_Smp_Np_C,I263.1426R2.13_CyanoAq,2.15,233643,0,79670,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I263.1426R2.13_CyanoAq,2.14,283979,2819,111073,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I263.1426R2.13_CyanoAq,2.14,62929,0,32583,-0.9,molecules1
+molecules1,170216_Smp_Pt_F,I263.1426R2.13_CyanoAq,2.15,62068,0,30047,-0.5,molecules1
+molecules1,180716_Blk_Blk0p2_1,Allopurinol,1.07,64463,0,33189,-0.6,molecules1
+molecules1,170413_Smp_KM1513-15m_A,Allopurinol,1.23,1641451,81874,610988,1.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,Allopurinol,1.24,1860482,780780,860701,0.9,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,Allopurinol,1.23,12596,0,5722,0.4,molecules1
+molecules1,170216_Smp_Pc55x_A,Allopurinol,1.2,74843,0,28838,0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,Allopurinol,1.19,76685,0,27392,0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,Allopurinol,0.99,18964,79333,14786,0.1,molecules1
+molecules1,170216_Smp_Np_A,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_C,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_F,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_C,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,Allopurinol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Blk_Blk0p2_1,I137.0459R1.05_CyanoAq,1.07,64463,0,33189,-1.3,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I137.0459R1.05_CyanoAq,1.07,14114686,49734,6297997,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I137.0459R1.05_CyanoAq,1.07,73906744,512475,31469224,-0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I137.0459R1.05_CyanoAq,1.13,6109,0,4744,0.3,molecules1
+molecules1,170216_Smp_Pc55x_A,I137.0459R1.05_CyanoAq,1.06,1300274,0,350389,0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I137.0459R1.05_CyanoAq,1.03,1336595,0,406171,0.1,molecules1
+molecules1,170216_Smp_Pc55x_C,I137.0459R1.05_CyanoAq,1.03,1327545,1691,370790,-0.2,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I137.0459R1.05_CyanoAq,1.12,19647,63168,23195,-0.8,molecules1
+molecules1,170216_Smp_Np_A,I137.0459R1.05_CyanoAq,1.02,719994,0,319314,0.2,molecules1
+molecules1,170216_Smp_Np_C,I137.0459R1.05_CyanoAq,1.02,756223,0,282647,-0.2,molecules1
+molecules1,170216_Smp_Np_F,I137.0459R1.05_CyanoAq,1.03,2059831,16089,857367,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I137.0459R1.05_CyanoAq,1.02,1612408,0,813378,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I137.0459R1.05_CyanoAq,1.02,1716051,0,853113,-0.1,molecules1
+molecules1,180716_Blk_Blk0p2_1,I245.1861R2.33_CyanoAq,2.27,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I245.1861R2.33_CyanoAq,2.3,4487098,164326,824287,0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I245.1861R2.33_CyanoAq,2.36,7079253,134704,1971773,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I245.1861R2.33_CyanoAq,2.31,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I245.1861R2.33_CyanoAq,2.35,27251,0,16452,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I245.1861R2.33_CyanoAq,2.37,23108,0,7544,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_C,I245.1861R2.33_CyanoAq,2.35,24729,0,12381,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I245.1861R2.33_CyanoAq,2.24,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I245.1861R2.33_CyanoAq,2.34,943246,0,272694,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I245.1861R2.33_CyanoAq,2.34,1201175,0,375611,0,molecules1
+molecules1,170216_Smp_Np_F,I245.1861R2.33_CyanoAq,2.34,984310,0,275213,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I245.1861R2.33_CyanoAq,2.35,140551,0,53162,-0.3,molecules1
+molecules1,170216_Smp_Pt_F,I245.1861R2.33_CyanoAq,2.34,234838,0,68024,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I245.1862R2.58_CyanoAq,2.58,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I245.1862R2.58_CyanoAq,2.56,3527630,9148,674744,-0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I245.1862R2.58_CyanoAq,2.61,5500038,32926,1403857,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I245.1862R2.58_CyanoAq,2.52,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I245.1862R2.58_CyanoAq,2.61,30997,0,13575,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_B,I245.1862R2.58_CyanoAq,2.61,20794,0,12046,-1,molecules1
+molecules1,170216_Smp_Pc55x_C,I245.1862R2.58_CyanoAq,2.61,7991,0,8282,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I245.1862R2.58_CyanoAq,2.58,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I245.1862R2.58_CyanoAq,2.6,703544,0,193619,-0.6,molecules1
+molecules1,170216_Smp_Np_C,I245.1862R2.58_CyanoAq,2.6,874530,0,236198,-0.6,molecules1
+molecules1,170216_Smp_Np_F,I245.1862R2.58_CyanoAq,2.59,707995,0,185854,-0.7,molecules1
+molecules1,170216_Smp_Pt_C,I245.1862R2.58_CyanoAq,2.6,119251,0,40865,-0.8,molecules1
+molecules1,170216_Smp_Pt_F,I245.1862R2.58_CyanoAq,2.6,211140,0,64005,-0.7,molecules1
+molecules1,180716_Blk_Blk0p2_1,I285.1447R0.91_CyanoAq,0.89,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I285.1447R0.91_CyanoAq,0.93,12181830,0,5000054,0.3,molecules1
+molecules1,180716_Smp_S7E41D30_1,I285.1447R0.91_CyanoAq,0.93,21761216,0,8343585,0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I285.1447R0.91_CyanoAq,0.85,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I285.1447R0.91_CyanoAq,0.97,22183,0,21374,-1,molecules1
+molecules1,170216_Smp_Pc55x_B,I285.1447R0.91_CyanoAq,0.97,32876,0,26281,-0.7,molecules1
+molecules1,170216_Smp_Pc55x_C,I285.1447R0.91_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I285.1447R0.91_CyanoAq,0.88,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I285.1447R0.91_CyanoAq,0.92,4958,0,7638,0.3,molecules1
+molecules1,170216_Smp_Np_C,I285.1447R0.91_CyanoAq,1.13,2735,0,6296,0.3,molecules1
+molecules1,170216_Smp_Np_F,I285.1447R0.91_CyanoAq,0.93,2083,0,4876,-0.2,molecules1
+molecules1,170216_Smp_Pt_C,I285.1447R0.91_CyanoAq,0.88,4617,0,14717,-5.4,molecules1
+molecules1,170216_Smp_Pt_F,I285.1447R0.91_CyanoAq,0.87,9266,0,11412,-3.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I293.2113R9.66_CyanoAq,9.58,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I293.2113R9.66_CyanoAq,9.67,1955537,413031,668816,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I293.2113R9.66_CyanoAq,9.7,2635207,498665,980584,-0.4,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I293.2113R9.66_CyanoAq,9.62,3125,0,2547,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_A,I293.2113R9.66_CyanoAq,9.69,5993057,1011603,1846481,-0.4,molecules1
+molecules1,170216_Smp_Pc55x_B,I293.2113R9.66_CyanoAq,9.69,4777758,861319,1498724,-0.6,molecules1
+molecules1,170216_Smp_Pc55x_C,I293.2113R9.66_CyanoAq,9.69,5630112,811103,1669223,-0.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I293.2113R9.66_CyanoAq,9.61,29358,0,5866,-0.6,molecules1
+molecules1,170216_Smp_Np_A,I293.2113R9.66_CyanoAq,9.69,4347379,800350,1386927,-0.6,molecules1
+molecules1,170216_Smp_Np_C,I293.2113R9.66_CyanoAq,9.69,186273,33759,57155,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I293.2113R9.66_CyanoAq,9.69,1712354,399509,525521,-0.8,molecules1
+molecules1,170216_Smp_Pt_C,I293.2113R9.66_CyanoAq,9.69,84305488,22949822,24896426,-1.5,molecules1
+molecules1,170216_Smp_Pt_F,I293.2113R9.66_CyanoAq,9.68,85507568,22838196,28806502,-1.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I293.2112R9.77_CyanoAq,9.81,1286,0,3023,-0.2,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I293.2112R9.77_CyanoAq,9.78,1816984,257119,656892,0.5,molecules1
+molecules1,180716_Smp_S7E41D30_1,I293.2112R9.77_CyanoAq,9.81,2790060,281864,1036516,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I293.2112R9.77_CyanoAq,9.77,9185,0,3379,0,molecules1
+molecules1,170216_Smp_Pc55x_A,I293.2112R9.77_CyanoAq,9.81,6856507,921111,2192166,-0.2,molecules1
+molecules1,170216_Smp_Pc55x_B,I293.2112R9.77_CyanoAq,9.8,5920477,724147,1786572,0,molecules1
+molecules1,170216_Smp_Pc55x_C,I293.2112R9.77_CyanoAq,9.8,5476537,855737,1946669,-0.5,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I293.2112R9.77_CyanoAq,9.69,18945,0,5192,-0.4,molecules1
+molecules1,170216_Smp_Np_A,I293.2112R9.77_CyanoAq,9.8,5441386,797100,1800522,-0.3,molecules1
+molecules1,170216_Smp_Np_C,I293.2112R9.77_CyanoAq,9.81,214848,47124,73355,-0.1,molecules1
+molecules1,170216_Smp_Np_F,I293.2112R9.77_CyanoAq,9.81,2010635,356582,720839,-0.5,molecules1
+molecules1,170216_Smp_Pt_C,I293.2112R9.77_CyanoAq,9.8,94058144,12313957,29048438,-1.3,molecules1
+molecules1,170216_Smp_Pt_F,I293.2112R9.77_CyanoAq,9.79,116787560,16033207,34851248,-0.9,molecules1
+molecules1,180716_Blk_Blk0p2_1,I295.1655R2.58_CyanoAq,2.38,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I295.1655R2.58_CyanoAq,2.58,1102877,0,195643,-0.1,molecules1
+molecules1,180716_Smp_S7E41D30_1,I295.1655R2.58_CyanoAq,2.63,1986335,165644,449300,0,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I295.1655R2.58_CyanoAq,2.53,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I295.1655R2.58_CyanoAq,8.18,766598,54077,277771,13.1,molecules1
+molecules1,170216_Smp_Pc55x_B,I295.1655R2.58_CyanoAq,8.18,912566,179618,280881,13,molecules1
+molecules1,170216_Smp_Pc55x_C,I295.1655R2.58_CyanoAq,8.18,316912,42840,103300,12.7,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I295.1655R2.58_CyanoAq,2.41,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I295.1655R2.58_CyanoAq,2.61,419207,4660,84770,-0.4,molecules1
+molecules1,170216_Smp_Np_C,I295.1655R2.58_CyanoAq,2.6,443770,0,106918,-0.5,molecules1
+molecules1,170216_Smp_Np_F,I295.1655R2.58_CyanoAq,2.6,527758,0,102220,-0.4,molecules1
+molecules1,170216_Smp_Pt_C,I295.1655R2.58_CyanoAq,2.55,143055,0,34154,-0.7,molecules1
+molecules1,170216_Smp_Pt_F,I295.1655R2.58_CyanoAq,2.55,148001,0,27808,-0.4,molecules1
+molecules1,180716_Blk_Blk0p2_1,I295.1655R2.81_CyanoAq,2.55,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I295.1655R2.81_CyanoAq,2.8,812352,0,153233,-0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I295.1655R2.81_CyanoAq,2.87,1219857,137683,317474,-0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I295.1655R2.81_CyanoAq,2.77,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I295.1655R2.81_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I295.1655R2.81_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I295.1655R2.81_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I295.1655R2.81_CyanoAq,2.71,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I295.1655R2.81_CyanoAq,2.83,598900,0,159251,-0.4,molecules1
+molecules1,170216_Smp_Np_C,I295.1655R2.81_CyanoAq,2.83,385542,0,92504,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I295.1655R2.81_CyanoAq,2.83,650775,0,173629,-0.3,molecules1
+molecules1,170216_Smp_Pt_C,I295.1655R2.81_CyanoAq,2.85,317911,0,87737,-0.4,molecules1
+molecules1,170216_Smp_Pt_F,I295.1655R2.81_CyanoAq,2.83,295060,0,89216,-0.3,molecules1
+molecules1,180716_Blk_Blk0p2_1,I295.1654R2.4_CyanoAq,2.27,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I295.1654R2.4_CyanoAq,2.38,1080711,0,210883,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I295.1654R2.4_CyanoAq,2.45,1579814,0,440730,0.1,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I295.1654R2.4_CyanoAq,2.17,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I295.1654R2.4_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I295.1654R2.4_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I295.1654R2.4_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I295.1654R2.4_CyanoAq,2.22,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I295.1654R2.4_CyanoAq,2.41,830120,0,243964,-0.2,molecules1
+molecules1,170216_Smp_Np_C,I295.1654R2.4_CyanoAq,2.42,524328,0,152425,-0.3,molecules1
+molecules1,170216_Smp_Np_F,I295.1654R2.4_CyanoAq,2.41,1371166,10821,426379,-0.1,molecules1
+molecules1,170216_Smp_Pt_C,I295.1654R2.4_CyanoAq,2.43,59913,0,22734,0.1,molecules1
+molecules1,170216_Smp_Pt_F,I295.1654R2.4_CyanoAq,2.41,113133,0,35949,0.2,molecules1
+molecules1,180716_Blk_Blk0p2_1,I285.1447R1.14_CyanoAq,1.2,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I285.1447R1.14_CyanoAq,1.17,64413224,1093762,16815576,0,molecules1
+molecules1,180716_Smp_S7E41D30_1,I285.1447R1.14_CyanoAq,1.14,215648832,2030332,66191676,-0.7,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I285.1447R1.14_CyanoAq,1.1,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_F,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_C,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I285.1447R1.14_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Blk_Blk0p2_1,I329.1346R2.89_CyanoAq,2.81,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I329.1346R2.89_CyanoAq,2.9,522600,0,115870,-0.4,molecules1
+molecules1,180716_Smp_S7E41D30_1,I329.1346R2.89_CyanoAq,2.94,929925,0,239443,-0.3,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I329.1346R2.89_CyanoAq,2.62,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I329.1346R2.89_CyanoAq,3.88,2632,0,3567,-3.4,molecules1
+molecules1,170216_Smp_Np_F,I329.1346R2.89_CyanoAq,3.68,945,0,1737,-1.8,molecules1
+molecules1,170216_Smp_Pt_C,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I329.1346R2.89_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,180716_Blk_Blk0p2_1,I329.1347R0.88_CyanoAq,0.95,0,0,0,#N/A,molecules1
+molecules1,170413_Smp_KM1513-15m_A,I329.1347R0.88_CyanoAq,0.91,1573063,0,999306,0.2,molecules1
+molecules1,180716_Smp_S7E41D30_1,I329.1347R0.88_CyanoAq,0.9,9831211,368860,5266300,0.2,molecules1
+molecules1,170216_Blk_MediaBlk_Pc55x,I329.1347R0.88_CyanoAq,0.9,0,0,0,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_A,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_B,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pc55x_C,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,161110_Blk_MediaBlk_DiatomZ,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_A,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_C,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Np_F,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_C,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules1,170216_Smp_Pt_F,I329.1347R0.88_CyanoAq,#N/A,#N/A,#N/A,#N/A,#N/A,molecules1
+molecules2,180716_Blk_Blk0p2_1,Agmatine,0.86,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Agmatine,0.73,1493456,0,1327675,0.4,molecules2
+molecules2,180716_Smp_S7E41D30_1,Agmatine,0.71,37855,0,70084,-0.1,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Agmatine,0.71,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Pc55x_A,Agmatine,11.93,709,0,1357,2.8,molecules2
+molecules2,170216_Smp_Pc55x_B,Agmatine,3.67,1328,0,3232,1.3,molecules2
+molecules2,170216_Smp_Pc55x_C,Agmatine,1,2415,0,4195,-1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Agmatine,0.75,1334,0,2959,-1.6,molecules2
+molecules2,170216_Smp_Np_A,Agmatine,3.79,13676,0,25937,-0.3,molecules2
+molecules2,170216_Smp_Np_C,Agmatine,1.08,16632,0,21429,-0.4,molecules2
+molecules2,170216_Smp_Np_F,Agmatine,0.68,22984,0,21509,-0.1,molecules2
+molecules2,170216_Smp_Pt_C,Agmatine,0.68,52985,0,74097,-0.2,molecules2
+molecules2,170216_Smp_Pt_F,Agmatine,0.68,50058,0,70798,-0.2,molecules2
+molecules2,180716_Blk_Blk0p2_1,"Thiamine Hydrochloride, 13C3",0.72,3321061,18508,3108796,-0.8,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"Thiamine Hydrochloride, 13C3",0.8,2035171,0,1815036,1.2,molecules2
+molecules2,180716_Smp_S7E41D30_1,"Thiamine Hydrochloride, 13C3",0.74,162592,0,107246,0.3,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"Thiamine Hydrochloride, 13C3",0.62,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Pc55x_A,"Thiamine Hydrochloride, 13C3",17.96,5612,0,10617,1.3,molecules2
+molecules2,170216_Smp_Pc55x_B,"Thiamine Hydrochloride, 13C3",0.08,6591,0,10323,0.8,molecules2
+molecules2,170216_Smp_Pc55x_C,"Thiamine Hydrochloride, 13C3",17.99,16822,0,18273,-1.1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"Thiamine Hydrochloride, 13C3",0.64,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,"Thiamine Hydrochloride, 13C3",17.98,5968,0,10228,-1.2,molecules2
+molecules2,170216_Smp_Np_C,"Thiamine Hydrochloride, 13C3",18,8277,0,21217,-0.4,molecules2
+molecules2,170216_Smp_Np_F,"Thiamine Hydrochloride, 13C3",17.98,4864,0,10596,-0.5,molecules2
+molecules2,170216_Smp_Pt_C,"Thiamine Hydrochloride, 13C3",0.88,14592,0,16953,-2,molecules2
+molecules2,170216_Smp_Pt_F,"Thiamine Hydrochloride, 13C3",0.87,44420,0,53583,-2.1,molecules2
+molecules2,180716_Blk_Blk0p2_1,"Pyridoxal, D3",0.88,24081604,409216,18989558,-0.6,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"Pyridoxal, D3",0.89,5206144,27917,3737727,1.4,molecules2
+molecules2,180716_Smp_S7E41D30_1,"Pyridoxal, D3",0.88,15495921,190467,12346447,0.9,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"Pyridoxal, D3",0.85,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Pc55x_A,"Pyridoxal, D3",1.18,1825,0,5088,0.5,molecules2
+molecules2,170216_Smp_Pc55x_B,"Pyridoxal, D3",1.19,2029,0,3419,0.4,molecules2
+molecules2,170216_Smp_Pc55x_C,"Pyridoxal, D3",1.29,1493,0,4042,0.5,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"Pyridoxal, D3",0.76,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,"Pyridoxal, D3",1.5,19796,0,11521,1.8,molecules2
+molecules2,170216_Smp_Np_C,"Pyridoxal, D3",1.5,341357,0,117194,1.4,molecules2
+molecules2,170216_Smp_Np_F,"Pyridoxal, D3",1.5,6810,0,5467,0.8,molecules2
+molecules2,170216_Smp_Pt_C,"Pyridoxal, D3",0.81,19247,0,26483,-1.7,molecules2
+molecules2,170216_Smp_Pt_F,"Pyridoxal, D3",0.81,66663,0,30350,-1.5,molecules2
+molecules2,180716_Blk_Blk0p2_1,Vitamin B3,0.94,474,0,0,-0.1,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Vitamin B3,0.91,16964754,157219,15847391,3.4,molecules2
+molecules2,180716_Smp_S7E41D30_1,Vitamin B3,0.89,22784416,0,23309726,2.6,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Vitamin B3,0.88,135520,282613,38411,2.3,molecules2
+molecules2,170216_Smp_Pc55x_A,Vitamin B3,0.88,4216980,873567,2972145,2.2,molecules2
+molecules2,170216_Smp_Pc55x_B,Vitamin B3,0.87,5104061,1229981,3005510,2.3,molecules2
+molecules2,170216_Smp_Pc55x_C,Vitamin B3,0.88,2400016,703751,1632310,2,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Vitamin B3,0.88,60814,182431,61502,1.9,molecules2
+molecules2,170216_Smp_Np_A,Vitamin B3,0.87,936149,431195,549101,2.3,molecules2
+molecules2,170216_Smp_Np_C,Vitamin B3,0.87,265700,378284,184973,2.2,molecules2
+molecules2,170216_Smp_Np_F,Vitamin B3,0.87,351443,272431,202633,2.2,molecules2
+molecules2,170216_Smp_Pt_C,Vitamin B3,0.87,450443,231314,255763,2.1,molecules2
+molecules2,170216_Smp_Pt_F,Vitamin B3,0.87,2072990,0,811237,2.1,molecules2
+molecules2,180716_Blk_Blk0p2_1,Glutathione Disulfide,0.81,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Glutathione Disulfide,0.91,109070,0,95780,1.5,molecules2
+molecules2,180716_Smp_S7E41D30_1,Glutathione Disulfide,0.89,276075,0,224346,0.6,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Glutathione Disulfide,0.79,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Pc55x_A,Glutathione Disulfide,0.84,120187,0,49941,0,molecules2
+molecules2,170216_Smp_Pc55x_B,Glutathione Disulfide,0.82,101619,0,40848,-0.1,molecules2
+molecules2,170216_Smp_Pc55x_C,Glutathione Disulfide,0.82,98373,0,34297,-0.1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Glutathione Disulfide,0.81,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,Glutathione Disulfide,0.75,13212894,0,3741824,0.7,molecules2
+molecules2,170216_Smp_Np_C,Glutathione Disulfide,0.75,13428104,0,3284289,0.5,molecules2
+molecules2,170216_Smp_Np_F,Glutathione Disulfide,0.75,8735633,0,2058113,0.6,molecules2
+molecules2,170216_Smp_Pt_C,Glutathione Disulfide,0.76,14625833,0,3658752,0.2,molecules2
+molecules2,170216_Smp_Pt_F,Glutathione Disulfide,0.75,14557913,0,3453273,0.2,molecules2
+molecules2,180716_Blk_Blk0p2_1,Adenosyl Homocysteine,0.87,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Adenosyl Homocysteine,0.97,84888,0,66071,1.5,molecules2
+molecules2,180716_Smp_S7E41D30_1,Adenosyl Homocysteine,0.97,543162,0,272296,1.1,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Adenosyl Homocysteine,0.85,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Pc55x_A,Adenosyl Homocysteine,1.79,19994,0,16340,-7.6,molecules2
+molecules2,170216_Smp_Pc55x_B,Adenosyl Homocysteine,6.68,30573,0,16965,-6.8,molecules2
+molecules2,170216_Smp_Pc55x_C,Adenosyl Homocysteine,1.8,23984,0,12962,-7,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Adenosyl Homocysteine,0.84,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,Adenosyl Homocysteine,0.94,220291,0,129743,0.9,molecules2
+molecules2,170216_Smp_Np_C,Adenosyl Homocysteine,0.93,195068,0,112043,0.6,molecules2
+molecules2,170216_Smp_Np_F,Adenosyl Homocysteine,0.94,506314,0,242983,0.9,molecules2
+molecules2,170216_Smp_Pt_C,Adenosyl Homocysteine,0.94,447261,0,240127,0.7,molecules2
+molecules2,170216_Smp_Pt_F,Adenosyl Homocysteine,0.94,287574,0,161592,0.9,molecules2
+molecules2,180716_Blk_Blk0p2_1,Sulfurol,1.1,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Sulfurol,1.12,55789,0,29597,1.1,molecules2
+molecules2,180716_Smp_S7E41D30_1,Sulfurol,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Sulfurol,1.1,13502,0,10326,0.5,molecules2
+molecules2,170216_Smp_Pc55x_A,Sulfurol,1.1,61386,0,33727,0.7,molecules2
+molecules2,170216_Smp_Pc55x_B,Sulfurol,1.1,67380,0,38218,0.2,molecules2
+molecules2,170216_Smp_Pc55x_C,Sulfurol,1.09,49609,0,30410,0.4,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Sulfurol,1.09,7697,0,5326,-0.2,molecules2
+molecules2,170216_Smp_Np_A,Sulfurol,1.1,155968,0,77579,1,molecules2
+molecules2,170216_Smp_Np_C,Sulfurol,1.09,114739,0,52066,0.7,molecules2
+molecules2,170216_Smp_Np_F,Sulfurol,1.09,129657,0,61124,0.5,molecules2
+molecules2,170216_Smp_Pt_C,Sulfurol,1.1,127773,0,57440,0.5,molecules2
+molecules2,170216_Smp_Pt_F,Sulfurol,1.09,36312,0,25178,0.3,molecules2
+molecules2,180716_Blk_Blk0p2_1,Deoxyadenosine,1.19,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Deoxyadenosine,1.19,4314961,55427,1729736,2.3,molecules2
+molecules2,180716_Smp_S7E41D30_1,Deoxyadenosine,1.18,3167056,0,1447926,1.9,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Deoxyadenosine,1.16,1597,0,3137,-0.3,molecules2
+molecules2,170216_Smp_Pc55x_A,Deoxyadenosine,0.88,6180,0,12114,-0.6,molecules2
+molecules2,170216_Smp_Pc55x_B,Deoxyadenosine,0.89,21110,0,15441,-1.9,molecules2
+molecules2,170216_Smp_Pc55x_C,Deoxyadenosine,1.14,11048,0,9704,1.1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Deoxyadenosine,1.15,19634,0,15193,0.5,molecules2
+molecules2,170216_Smp_Np_A,Deoxyadenosine,1.15,67173,0,34413,1.7,molecules2
+molecules2,170216_Smp_Np_C,Deoxyadenosine,1.14,54977,0,30468,1.5,molecules2
+molecules2,170216_Smp_Np_F,Deoxyadenosine,1.26,39220,0,21898,1.4,molecules2
+molecules2,170216_Smp_Pt_C,Deoxyadenosine,1.16,43722,0,28703,1.3,molecules2
+molecules2,170216_Smp_Pt_F,Deoxyadenosine,1.16,47932,0,30253,0.9,molecules2
+molecules2,180716_Blk_Blk0p2_1,"L-Phenylalanine, D8",1.12,5027299,0,2504645,-0.9,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"L-Phenylalanine, D8",1.12,3020031,0,1164118,0.9,molecules2
+molecules2,180716_Smp_S7E41D30_1,"L-Phenylalanine, D8",1.13,4775231,0,2311727,0.3,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"L-Phenylalanine, D8",1.11,2631753,6656,1172155,0.6,molecules2
+molecules2,170216_Smp_Pc55x_A,"L-Phenylalanine, D8",1.11,2543299,18602,1136920,0.6,molecules2
+molecules2,170216_Smp_Pc55x_B,"L-Phenylalanine, D8",1.11,2505602,0,1157044,0.2,molecules2
+molecules2,170216_Smp_Pc55x_C,"L-Phenylalanine, D8",1.11,2643782,15720,1191515,0.1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"L-Phenylalanine, D8",1.11,3226862,0,1432665,-0.3,molecules2
+molecules2,170216_Smp_Np_A,"L-Phenylalanine, D8",1.11,2879329,0,1327054,0.8,molecules2
+molecules2,170216_Smp_Np_C,"L-Phenylalanine, D8",1.11,2961660,27309,1279293,0.4,molecules2
+molecules2,170216_Smp_Np_F,"L-Phenylalanine, D8",1.11,2491017,0,1122849,0.4,molecules2
+molecules2,170216_Smp_Pt_C,"L-Phenylalanine, D8",1.11,2255426,53344,1098709,0.1,molecules2
+molecules2,170216_Smp_Pt_F,"L-Phenylalanine, D8",1.11,2681514,284976,1146407,-0.2,molecules2
+molecules2,180716_Blk_Blk0p2_1,Vitamin B5,1.18,3513,0,6373,0.8,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Vitamin B5,#N/A,#N/A,#N/A,#N/A,#N/A,molecules2
+molecules2,180716_Smp_S7E41D30_1,Vitamin B5,1.16,613256,0,228352,0.7,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Vitamin B5,1.16,1862,0,3983,1.3,molecules2
+molecules2,170216_Smp_Pc55x_A,Vitamin B5,1.19,410701,0,141534,-0.5,molecules2
+molecules2,170216_Smp_Pc55x_B,Vitamin B5,1.18,518811,0,196342,-0.6,molecules2
+molecules2,170216_Smp_Pc55x_C,Vitamin B5,1.19,299810,0,132193,-0.5,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Vitamin B5,1.14,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,Vitamin B5,1.14,84939,0,60827,0.1,molecules2
+molecules2,170216_Smp_Np_C,Vitamin B5,1.14,122308,0,53987,-0.5,molecules2
+molecules2,170216_Smp_Np_F,Vitamin B5,1.14,66221,0,44189,-0.5,molecules2
+molecules2,170216_Smp_Pt_C,Vitamin B5,1.14,22671,0,24358,0.2,molecules2
+molecules2,170216_Smp_Pt_F,Vitamin B5,1.2,6635,0,11238,0.3,molecules2
+molecules2,180716_Blk_Blk0p2_1,Kynurenine,1.15,0,0,0,#N/A,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Kynurenine,1.24,52809,0,28139,2.1,molecules2
+molecules2,180716_Smp_S7E41D30_1,Kynurenine,1.19,8014,46124,15571,0.8,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Kynurenine,1.13,3300,0,6094,0.7,molecules2
+molecules2,170216_Smp_Pc55x_A,Kynurenine,1.22,729060,617,297549,0.9,molecules2
+molecules2,170216_Smp_Pc55x_B,Kynurenine,1.22,638606,0,226994,0.9,molecules2
+molecules2,170216_Smp_Pc55x_C,Kynurenine,1.22,439276,0,165832,1,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Kynurenine,1.11,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,Kynurenine,1.25,78189,0,23562,1.7,molecules2
+molecules2,170216_Smp_Np_C,Kynurenine,1.26,75424,0,26102,1.2,molecules2
+molecules2,170216_Smp_Np_F,Kynurenine,1.19,17560,0,8149,1.7,molecules2
+molecules2,170216_Smp_Pt_C,Kynurenine,1.25,1838,0,5612,2.4,molecules2
+molecules2,170216_Smp_Pt_F,Kynurenine,1.23,7391,18828,11234,1.5,molecules2
+molecules2,180716_Blk_Blk0p2_1,Tryptophan,1.97,47237,0,20945,-0.6,molecules2
+molecules2,170413_Smp_KM1513-15m_A,Tryptophan,1.94,16576774,196002,5178348,1.3,molecules2
+molecules2,180716_Smp_S7E41D30_1,Tryptophan,1.97,51297460,918428,18254634,0.7,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,Tryptophan,1.93,15995,0,7218,0.6,molecules2
+molecules2,170216_Smp_Pc55x_A,Tryptophan,1.94,91482528,1429217,30181580,0,molecules2
+molecules2,170216_Smp_Pc55x_B,Tryptophan,1.94,101545864,1466651,32958394,0.3,molecules2
+molecules2,170216_Smp_Pc55x_C,Tryptophan,1.93,58464972,493952,18632026,0.3,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,Tryptophan,1.94,14131,0,5152,0,molecules2
+molecules2,170216_Smp_Np_A,Tryptophan,1.93,13608160,87616,4352085,0.8,molecules2
+molecules2,170216_Smp_Np_C,Tryptophan,1.93,13058409,217027,4398523,0.7,molecules2
+molecules2,170216_Smp_Np_F,Tryptophan,1.93,13160190,131966,4435765,0.7,molecules2
+molecules2,170216_Smp_Pt_C,Tryptophan,1.95,42651252,682023,13772233,0.1,molecules2
+molecules2,170216_Smp_Pt_F,Tryptophan,1.94,38946760,162483,12687908,0.4,molecules2
+molecules2,180716_Blk_Blk0p2_1,"L-Tryptophan, D3",1.95,2490033,0,886252,-0.6,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"L-Tryptophan, D3",1.93,1919754,0,585645,0.6,molecules2
+molecules2,180716_Smp_S7E41D30_1,"L-Tryptophan, D3",1.96,2318591,13290,847872,0.2,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"L-Tryptophan, D3",1.93,875659,0,303477,-0.2,molecules2
+molecules2,170216_Smp_Pc55x_A,"L-Tryptophan, D3",1.93,1153020,4887,413051,-0.9,molecules2
+molecules2,170216_Smp_Pc55x_B,"L-Tryptophan, D3",1.93,990121,0,306975,-0.7,molecules2
+molecules2,170216_Smp_Pc55x_C,"L-Tryptophan, D3",1.93,1076342,0,387161,-0.6,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"L-Tryptophan, D3",1.91,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,"L-Tryptophan, D3",1.92,2343558,9124,757289,0,molecules2
+molecules2,170216_Smp_Np_C,"L-Tryptophan, D3",1.93,2386654,0,789827,0,molecules2
+molecules2,170216_Smp_Np_F,"L-Tryptophan, D3",1.93,1256623,0,434435,-0.2,molecules2
+molecules2,170216_Smp_Pt_C,"L-Tryptophan, D3",1.93,1099417,0,381230,-0.8,molecules2
+molecules2,170216_Smp_Pt_F,"L-Tryptophan, D3",1.93,1985568,0,668362,-0.3,molecules2
+molecules2,180716_Blk_Blk0p2_1,"Tryptamine Hydrochloride, D4",2.38,67662496,500299,21034362,-1.2,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"Tryptamine Hydrochloride, D4",2.37,18886854,191382,5637344,0.5,molecules2
+molecules2,180716_Smp_S7E41D30_1,"Tryptamine Hydrochloride, D4",2.38,45082676,448042,14183244,-0.1,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"Tryptamine Hydrochloride, D4",2.36,2818049,27104,814957,0,molecules2
+molecules2,170216_Smp_Pc55x_A,"Tryptamine Hydrochloride, D4",2.36,4582309,70558,1361097,0.1,molecules2
+molecules2,170216_Smp_Pc55x_B,"Tryptamine Hydrochloride, D4",2.36,3964066,0,1139222,0.3,molecules2
+molecules2,170216_Smp_Pc55x_C,"Tryptamine Hydrochloride, D4",2.35,3616522,49201,1087501,0,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"Tryptamine Hydrochloride, D4",2.35,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,"Tryptamine Hydrochloride, D4",2.35,6482737,100973,1859775,0.1,molecules2
+molecules2,170216_Smp_Np_C,"Tryptamine Hydrochloride, D4",2.36,8369035,81657,2339557,0.2,molecules2
+molecules2,170216_Smp_Np_F,"Tryptamine Hydrochloride, D4",2.35,4595396,57040,1339626,0.2,molecules2
+molecules2,170216_Smp_Pt_C,"Tryptamine Hydrochloride, D4",2.37,6698250,0,1887830,0.3,molecules2
+molecules2,170216_Smp_Pt_F,"Tryptamine Hydrochloride, D4",2.36,7889654,99139,2142271,0.1,molecules2
+molecules2,180716_Blk_Blk0p2_1,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.27,5968542,61725,2289651,-0.5,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.24,6269466,42013,2811289,1.4,molecules2
+molecules2,180716_Smp_S7E41D30_1,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.28,4044599,20742,1748941,0.7,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,3248564,32621,1342979,0.6,molecules2
+molecules2,170216_Smp_Pc55x_A,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.26,3715913,0,1434706,0.7,molecules2
+molecules2,170216_Smp_Pc55x_B,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,3746956,28024,1532767,0.6,molecules2
+molecules2,170216_Smp_Pc55x_C,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,3540536,37353,1473866,0.4,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.24,3836432,38966,1532574,0.1,molecules2
+molecules2,170216_Smp_Np_A,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,3785200,31429,1553321,0.6,molecules2
+molecules2,170216_Smp_Np_C,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,4587522,53654,1925595,0.6,molecules2
+molecules2,170216_Smp_Np_F,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.24,3592935,0,1417481,0.5,molecules2
+molecules2,170216_Smp_Pt_C,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.26,3243685,0,1261932,0.5,molecules2
+molecules2,170216_Smp_Pt_F,"Riboflavin-dioxopyrimidine, 13C4, 15N2",4.25,4027769,0,1589043,0.5,molecules2
+molecules2,180716_Blk_Blk0p2_1,"Indole 3 Acetic Acid, D5",4.99,5191125,69941,1615099,-1.5,molecules2
+molecules2,170413_Smp_KM1513-15m_A,"Indole 3 Acetic Acid, D5",4.93,16805230,42060,3179570,0.2,molecules2
+molecules2,180716_Smp_S7E41D30_1,"Indole 3 Acetic Acid, D5",4.99,15179409,164172,4497420,-0.5,molecules2
+molecules2,170216_Blk_MediaBlk_Pc55x,"Indole 3 Acetic Acid, D5",4.98,258406,0,73049,-1,molecules2
+molecules2,170216_Smp_Pc55x_A,"Indole 3 Acetic Acid, D5",4.98,674131,0,190386,-0.2,molecules2
+molecules2,170216_Smp_Pc55x_B,"Indole 3 Acetic Acid, D5",4.98,544515,0,133399,-0.2,molecules2
+molecules2,170216_Smp_Pc55x_C,"Indole 3 Acetic Acid, D5",5,407246,0,112892,-0.4,molecules2
+molecules2,161110_Blk_MediaBlk_DiatomZ,"Indole 3 Acetic Acid, D5",5.05,0,0,0,#N/A,molecules2
+molecules2,170216_Smp_Np_A,"Indole 3 Acetic Acid, D5",4.99,1313123,0,295012,-0.3,molecules2
+molecules2,170216_Smp_Np_C,"Indole 3 Acetic Acid, D5",4.98,1364678,0,333780,-0.5,molecules2
+molecules2,170216_Smp_Np_F,"Indole 3 Acetic Acid, D5",4.98,562609,0,150313,-0.4,molecules2
+molecules2,170216_Smp_Pt_C,"Indole 3 Acetic Acid, D5",5,453094,0,112927,-0.9,molecules2
+molecules2,170216_Smp_Pt_F,"Indole 3 Acetic Acid, D5",4.98,922108,0,268552,-0.6,molecules2

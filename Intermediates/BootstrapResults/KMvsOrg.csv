@@ -1,0 +1,41 @@
+cluster_overlap,pval.01,pval.05,pval.1,count,pval
+KM_a&Org_a,36,32,31,42,0.01
+KM_a&Org_b,15,12,11,9,not sig
+KM_a&Org_c,23,18,17,15,not sig
+KM_a&Org_d,25,21,21,19,not sig
+KM_a&Org_e,33,29,28,16,not sig
+KM_a&Org_f,21,17,17,12,not sig
+KM_a&Org_g,39,33,32,31,not sig
+KM_a&Org_NA,42,37,35,19,not sig
+KM_b&Org_a,24,18,17,9,not sig
+KM_b&Org_b,10,7,7,6,not sig
+KM_b&Org_c,14,11,10,12,0.05
+KM_b&Org_d,17,12,11,12,0.1
+KM_b&Org_e,25,17,16,17,0.1
+KM_b&Org_f,14,10,10,5,not sig
+KM_b&Org_g,23,18,17,10,not sig
+KM_b&Org_NA,26,20,19,10,not sig
+KM_c&Org_a,17,11,10,NA,NA
+KM_c&Org_b,8,5,4,1,not sig
+KM_c&Org_c,11,7,6,NA,NA
+KM_c&Org_d,14,8,7,2,not sig
+KM_c&Org_e,14,10,9,14,0.05
+KM_c&Org_f,9,7,6,9,0.05
+KM_c&Org_g,15,11,10,7,not sig
+KM_c&Org_NA,15,12,11,11,not sig
+KM_d&Org_a,7,5,4,NA,NA
+KM_d&Org_b,4,2,2,NA,NA
+KM_d&Org_c,6,3,3,NA,NA
+KM_d&Org_d,6,4,3,NA,NA
+KM_d&Org_e,7,5,4,NA,NA
+KM_d&Org_f,5,3,3,NA,NA
+KM_d&Org_g,7,5,4,2,not sig
+KM_d&Org_NA,8,5,5,13,0.01
+KM_NA&Org_a,6,4,3,1,not sig
+KM_NA&Org_b,4,2,2,1,not sig
+KM_NA&Org_c,4,3,2,NA,NA
+KM_NA&Org_d,5,3,3,NA,NA
+KM_NA&Org_e,6,4,3,NA,NA
+KM_NA&Org_f,5,3,2,NA,NA
+KM_NA&Org_g,6,4,3,3,not sig
+KM_NA&Org_NA,6,4,4,6,0.05
