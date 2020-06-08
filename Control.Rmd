@@ -7,7 +7,8 @@ output: html_document
 Git notes: 
 Push locally:
 git status #show what needs to pushed bc it was modified
-git remote add origin <https://github.com/kheal/Gradients1_SemiTargeted.git>
+git remote rm https://github.com/kheal/Gradients1_SemiTargeted.git
+git remote add origin https://github.com/kheal/Gradients1_SemiTargeted2.git
 git add 'filename' #use . for everything in the folder, this stages
 git commit -m "comment" #commits it to the local repo
 git push #pushes it to github
