@@ -4,12 +4,19 @@ author: "Katherine Heal"
 date: "August 28, 2019"
 output: html_document
 ---
-Gitnotes: 
+Git notes: 
+Push locally:
+git status #show what needs to pushed bc it was modified
+git remote add origin <https://github.com/kheal/Gradients1_SemiTargeted.git>
+git add 'filename' #use . for everything in the folder, this stages
+git commit -m "comment" #commits it to the local repo
+git push #pushes it to github
 
-NOTES:
+Organization notes:
 As of 05/14/20, Skyline files for environmental samples have been moved to within their respective folders containing the .mzxml files for ease of file location (i.e. Manual_Integrations/HILICPos); Output from Skyline integrations of environmental samples are placed into "Manual_Integrations/DataProcessing/RawOutput"
 All culture Skyline data are in rawDat files
 
+Analysis notes:
 TO DO: Quantification needs up take
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
