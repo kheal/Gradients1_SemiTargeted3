@@ -5,8 +5,12 @@ library(RColorBrewer)
 library(beyonce)
 library(RCurl)
 
-#TO DO: check order of magnitude
-#Make a double box plot like this: https://stackoverflow.com/questions/46068074/double-box-plots-in-ggplot2
+#TO DO: make two separate plots - one within ML, one below
+
+#TO DO: get a linear model for the relationship in Log/Log space
+#Relatively large uncertainties on independent variables in this study required the use of a maximum likelihood estimate method (York et al., 2004) incorporating bivariate analytical uncertainty for all linear regressions (York,1969; Reed, 1989; York et al., 2004; Cantrell, 2008; Thirumalai et al., 2011), which were performed using published MatlabTM code (Thirumalai et al., 2011). 
+
+#TO DO: separate (by color) by organism type
 
 #Name your files -----
 quandat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
@@ -26,8 +30,7 @@ meta.dat.enviro <- read_csv(field.meta.dat.filename) %>%
   select(SampID, Volume, PC_ave, Station_1, Cruise, Depth)
 
 meta.dat.culture <- read_csv(culture.meta.dat.filename) %>%
-  select(CultureID, BioVol_perFilter_uL, nmolC_filtered_final)
-
+  select(CultureID, BioVol_perFilter_uL, nmolC_filtered_final, Org_Type)
 
 #Load up the quan enviro data, get everything in nmol C / C, summarize by each station/depth-----
 dat <- read_csv(quandat.file) %>%
@@ -38,18 +41,17 @@ dat2 <- dat %>%
   select(Identification, SampID,  nmolCave, molFractionC, RankPercent ) %>%
   left_join(meta.dat.enviro) %>%
   filter(Cruise != "MGL1704") %>%
-  mutate(nmolmetab_perC = nmolCave*Volume/PC_ave, by = "SampID")
+  mutate(nmolmetab_perC = nmolCave/PC_ave, by = "SampID")
 dat3 <- dat2 %>%
   group_by(Station_1, Depth, Cruise, Identification) %>%
   summarise(nmolmetab_perC_enviro = mean(nmolmetab_perC, na.rm = T))
 dat4 <- dat3 %>%
   group_by(Identification) %>%
-  summarise(nmolmetab_perC_enviro_med = median(nmolmetab_perC_enviro, na.rm = T),
-            nmolmetab_perC_enviro_SD = sd(nmolmetab_perC_enviro, na.rm = T)) 
+  summarise(nmolmetab_perC_enviro_med = mean(nmolmetab_perC_enviro, na.rm = T),
+            nmolmetab_perC_enviro_max = max(nmolmetab_perC_enviro, na.rm = T), 
+            nmolmetab_perC_enviro_min = min(nmolmetab_perC_enviro, na.rm = T)) 
 
-
-
-#Load up the culture data, get everythign per C, summarize by each station/depth  ----
+#Load up the culture data, get everythin per C, summarize by each station/depth  ----
 dat2cul <- read_csv(culture.dat.long.filename) %>%
   left_join(stds.dat, by = "Identification") %>%
   select(-Identification) %>%
@@ -59,27 +61,62 @@ dat2cul <- read_csv(culture.dat.long.filename) %>%
   rename(CultureID  = ID_rep)
 dat3cul <- dat2cul  %>%
   left_join(meta.dat.culture, by = "CultureID") %>%
-  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final, by = "CultureID")
+  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final, by = "CultureID") 
 dat4cul <-  dat3cul %>%
+  group_by(CultureID, Identification, Org_Type) %>%
+  summarise(nmolmetab_perC_cul = mean(nmolmetab_perC, na.rm = T)) %>%
+  group_by(Identification, Org_Type) %>%
+  summarise(nmolmetab_perC_cul_med = median(nmolmetab_perC_cul, na.rm = T),
+            nmolmetab_perC_cul_max = ifelse(is.na(nmolmetab_perC_cul_med), NA, max(nmolmetab_perC_cul, na.rm = T)), 
+            nmolmetab_perC_cul_min = ifelse(is.na(nmolmetab_perC_cul_med), NA, min(nmolmetab_perC_cul, na.rm = T))) %>%
+  filter(!is.na(nmolmetab_perC_cul_med)) 
+dat5cul <-  dat3cul %>%
   group_by(CultureID, Identification) %>%
   summarise(nmolmetab_perC_cul = mean(nmolmetab_perC, na.rm = T)) %>%
   group_by(Identification) %>%
   summarise(nmolmetab_perC_cul_med = median(nmolmetab_perC_cul, na.rm = T),
-            nmolmetab_perC_cul_SD = sd(nmolmetab_perC_cul, na.rm = T)) %>%
-  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 10^-4, nmolmetab_perC_cul_med))
+            nmolmetab_perC_cul_max = ifelse(is.na(nmolmetab_perC_cul_med), NA, max(nmolmetab_perC_cul, na.rm = T)), 
+            nmolmetab_perC_cul_min = ifelse(is.na(nmolmetab_perC_cul_med), NA, min(nmolmetab_perC_cul, na.rm = T))) %>%
+  filter(!is.na(nmolmetab_perC_cul_med)) 
+
+
+#  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 10^-5, nmolmetab_perC_cul_med)) %>%
+#  mutate(NotObserved = ifelse(nmolmetab_perC_cul_med == 10^-5, "not observed", NA))
 
 #Smash together
 dat.combo <- dat4cul %>%
-  full_join(dat4, by = "Identification")
+  full_join(dat4, by = "Identification") %>%
+  mutate(nmolmetab_perC_cul_med_Log10 = log10(nmolmetab_perC_cul_med),
+         nmolmetab_perC_enviro_med_Log10 = log10(nmolmetab_perC_enviro_med))
 
-#Make a double box plot
-g <- ggplot(dat = dat.combo, aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, text = Identification)) +
+dat.combo2 <- dat5cul %>%
+  full_join(dat4, by = "Identification") %>%
+  mutate(field.cul.fc = nmolmetab_perC_cul_med/nmolmetab_perC_enviro_med)
+
+#Make a plot of each of individual org_types vs ugC, with colors and lines
+g <- ggplot(dat = dat.combo, 
+          aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, color = Org_Type, fill = Org_Type)) +
   geom_point() +
-  geom_errorbar(aes(ymin = nmolmetab_perC_enviro_med - nmolmetab_perC_enviro_SD,
-                    ymax = nmolmetab_perC_enviro_med + nmolmetab_perC_enviro_SD)) + 
-  geom_errorbarh(aes(xmin = nmolmetab_perC_cul_med - nmolmetab_perC_cul_SD,
-                    xmax = nmolmetab_perC_cul_med + nmolmetab_perC_cul_SD)) + 
+  geom_smooth(method="lm", se=FALSE)+
   scale_x_log10()+
   scale_y_log10()
+
 g
+
+#Make a plot of all together
+g2 <- ggplot(dat = dat.combo2, 
+            aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, label =  Identification, 
+                color = field.cul.fc < 5^-2 | field.cul.fc > 10)) +
+   geom_errorbar(aes(ymin = nmolmetab_perC_enviro_min,
+                    ymax = nmolmetab_perC_enviro_max), alpha = 0.3) +
+   geom_errorbarh(aes(xmin = nmolmetab_perC_cul_min,
+                     xmax = nmolmetab_perC_cul_max), alpha = 0.3) +
+  geom_point() +
+  geom_abline()+
+  scale_x_log10()+
+  scale_y_log10()
+
+g2
+
+ggplotly()
 
