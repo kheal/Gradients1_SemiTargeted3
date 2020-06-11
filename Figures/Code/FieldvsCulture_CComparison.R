@@ -106,7 +106,7 @@ g
 #Make a plot of all together
 g2 <- ggplot(dat = dat.combo2, 
             aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, label =  Identification, 
-                color = field.cul.fc < 5^-2 | field.cul.fc > 10)) +
+                color = field.cul.fc < .1 | field.cul.fc > 10)) +
    geom_errorbar(aes(ymin = nmolmetab_perC_enviro_min,
                     ymax = nmolmetab_perC_enviro_max), alpha = 0.3) +
    geom_errorbarh(aes(xmin = nmolmetab_perC_cul_min,
@@ -118,5 +118,9 @@ g2 <- ggplot(dat = dat.combo2,
 
 g2
 
+#save it out
+save_plot("Figures/Preliminary/ugCperugC.pdf", g2, base_height = 6, base_width = 10, units = "in")
+
+#for exploration
 ggplotly()
 

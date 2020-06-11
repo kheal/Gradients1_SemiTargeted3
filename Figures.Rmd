@@ -64,7 +64,35 @@ remove(list = ls())
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #PC plot
 source("Figures/Code/PCPN_latitude.R")
+remove(list = ls())
 ```
+
+#Plot of ug/ug C field vs 
+Still very prelim
+```{r}
+source("Figures/Code/FieldvsCulture_CComparison.R")
+remove(list = ls())
+```
+
+#Plot homarine and trigonolline
+Still very prelim
+```{r}
+source("Figures/Code/Homarine.R")
+remove(list = ls())
+```
+
+#Plot of stacked bars in cultures
+Still very prelim, writes out some to presentations
+```{r}
+source("Figures/Code/Orgs_stackedbars.R")
+remove(list = ls())
+```
+
+
+
+
+
+
 
 
 #Nonessential
