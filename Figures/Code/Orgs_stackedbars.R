@@ -4,7 +4,7 @@ library(here)
 dat.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
 Meta.dat.file <- "MetaData/CultureMetaData.csv"
 
-#TO DO: Lots of work to do in here...
+#TO DO: Color top 5 of each 
 
 #Get quan data in shape to plot
 dat <- read_csv(dat.filename)
@@ -33,29 +33,50 @@ order.of.org <- order.of.org.df$ID
 dat.mean.molefraction$ID <- factor(dat.mean.molefraction$ID, 
                                           levels = (order.of.org))
 
+#Get good compounds to highlight (top 5 of each )
+compounds.to.highlight <- list()
+for (i in 1:21) { 
+  org = order.of.org[i]
+  compounds.to.highlight[[i]] <- dat.mean %>% 
+    filter(ID == org) %>%
+    arrange(desc(intracell_conc_umolCL)) %>%
+    head(5)
+  }
+compounds.to.highlight2 <- do.call(rbind, compounds.to.highlight) %>%
+  ungroup() %>%
+  select(Identification) %>% 
+  unique()
+
 #Get good compound order
 order.of.compounds <- dat.mean %>% ungroup %>% 
   group_by(Identification) %>%
   summarise(intracell_conc_umolCL = mean(intracell_conc_umolCL, na.rm = TRUE)) %>%
   arrange(desc(intracell_conc_umolCL))
 
-dat.mean.molefraction$Identification <- factor(dat.mean.molefraction$Identification, 
-                                   levels = (order.of.compounds$Identification))
-
-compounds.to.highlight <- head(order.of.compounds$Identification, 10)
-
-dat.mean.molefraction.withcolors <- dat.mean.molefraction %>%
-  mutate(color = ifelse(Identification %in% compounds.to.highlight, Identification, "Other"))
 
 #Plot to highlight top 19 in the samples?
 #pal <- c("#9B445D", rep("grey", 84))
-pal <- c(colorRampPalette(brewer.pal(9,"Dark2"))(20)[1:19], rep("grey", 84))
+pal <- c(colorRampPalette(brewer.pal(12,"Set3"))(25)[1:25])
+id.pal.df <- data.frame(compounds.to.highlight2$Identification, pal)
+colnames(id.pal.df) <- c("Identification", "colors.avail")
 
-b.all <- ggplot(dat.mean.molefraction.withcolors, aes(x = ID, y = molfraction, fill = Identification))+
-  geom_bar(stat = "identity", color = "black", size = 0.2)+
-  # geom_bar(stat = "identity", color = "black", size = 0.2, aes(fill = color))+
+dat.mean.molefraction.withcolors <- dat.mean.molefraction %>% 
+  left_join(id.pal.df, by = "Identification") %>%
+  mutate(color.to.plot = ifelse(Identification %in% compounds.to.highlight2$Identification, colors.avail, "white"))
+
+dat.mean.molefraction.withcolors$Identification <- factor(dat.mean.molefraction.withcolors$Identification, 
+                                               levels = (order.of.compounds$Identification))
+
+pal.to.plot <- dat.mean.molefraction.withcolors %>%
+  select(Identification, color.to.plot) %>%
+  unique() %>%
+  arrange(Identification)
+
+b.all <- ggplot()+
+  geom_bar(stat = "identity", data = dat.mean.molefraction.withcolors, 
+           aes(x = ID, y = molfraction, fill = Identification), color = "black", size = 0.2)+
   scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
-  scale_fill_manual(values = pal)+
+  scale_fill_manual(values = pal.to.plot$color.to.plot)+
   labs(y= "mol fraction C")+
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6),
