@@ -36,6 +36,26 @@ meta.dat.culture <- read_csv(culture.meta.dat.filename) %>%
 #Load up chromat data -----
 chromat.dat <- read_csv(chromat.filename, skip = 1)
 
+#Load up culture data ----
+cult.dat <- read_csv(culture.dat.long.filename)
+cul.dat2 <- cult.dat %>%
+  filter(Identification %in% cmpds) %>%
+  select(Identification, CultureID_short, Org_Name:Org_Type_Specific, intracell_conc_umolL) %>%
+  mutate(intracell_conc_umolL = ifelse(is.na(intracell_conc_umolL), 0, intracell_conc_umolL)) %>%
+  group_by(Identification, CultureID_short, Org_Name, Org_Type, Org_Type_Specific) %>%
+  summarise(intracell_conc_mmolL = mean(intracell_conc_umolL)/1000,
+            intracell_conc_mmolL_sd = sd(intracell_conc_umolL)/1000)
+
+order.of.org.df <- cul.dat2 %>% ungroup %>% 
+  select(Org_Name, Org_Type, Org_Type_Specific, CultureID_short) %>%
+  unique() %>% arrange(Org_Type, Org_Type_Specific)
+
+order.of.org <- order.of.org.df$Org_Name
+
+cul.dat2$Org_Name <- factor(cul.dat2$Org_Name, 
+                                   levels = (order.of.org))
+
+
 #Load up the quan enviro data-----
 dat <- read_csv(quandat.file) %>%
   left_join(stds.dat, by = "Identification") %>%
@@ -130,7 +150,7 @@ g.chromat <- ggplot(data =chromat.dat2,
   scale_color_manual(values = c("grey30", "grey60"))+
   labs(y= "Intensity", x = "Retention Time (minutes)") +
   annotate("text", x = c(6.3,8.5), y = c(2.2E8,6E7), label = c("homarine","trigonelline"), 
-           fontface = "italic", size = 3)+
+           fontface = "italic", size = 2.5)+
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6),
         legend.position = c(0.1, 0.8),
@@ -138,6 +158,24 @@ g.chromat <- ggplot(data =chromat.dat2,
         legend.text = element_text(size = 7))
 g.chromat
 
+
+#Get plot of homarine and trig in organisms------
+g.cul <- ggplot(data = cul.dat2 %>%
+                  mutate(intracell_conc_mmolL = 
+                           ifelse(Identification == cmpds[1], intracell_conc_mmolL, intracell_conc_mmolL*100)),
+                aes(y = Org_Name, x = intracell_conc_mmolL, fill = Identification)) +
+  geom_bar(stat= "identity", position = "dodge")+
+  scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), expand = c(0, 0), limits = c(0, 5E2),
+                     breaks = c(0, 1E2, 2E2, 3E2,  4E2))+
+  scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
+  labs(x= "mM intracellular Homarine") +
+  theme(axis.title.x = element_text(size = 7),
+        axis.title.y = element_blank(),
+        axis.text.x = element_text(size = 4),
+        axis.text.y = element_text(size = 6),
+        legend.position = "none")
+  
+g.cul
 
 #Combine all the plots -----
 g.combo <- plot_grid(g.dptransect, g.dpnorth, g.dpsouth, ncol = 3, rel_widths = c(2,1,1), labels = c("A", "B", "C"))
@@ -151,7 +189,8 @@ g.combo2 <- ggdraw(g.combo) +
   draw_image(molecule_file2, x = 0.2, y = 0.8, hjust = 1, vjust = 1, width = 0.13, height = 0.2)
 g.combo2
 
-g.combo3 <- plot_grid(g.combo2, g.chromat, ncol = 1, labels = c("", "D"))
-g.combo3
+g.combo3 <- plot_grid(g.chromat, g.cul, ncol = 2, rel_widths = c(1,1.6), labels = c("D", "E"))
+g.combo4 <- plot_grid(g.combo2, g.combo3, ncol = 1, labels = c("", ""))
+g.combo4
 
-save_plot("Figures/Preliminary/Homarine.pdf", g.combo2, base_height = 8, base_width = 6, units = "in")
+save_plot("Figures/Manuscript_figures/Homarine.pdf", g.combo4, base_height = 5, base_width = 6.5, units = "in")
