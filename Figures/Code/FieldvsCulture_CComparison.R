@@ -4,6 +4,7 @@ theme_set(theme_cowplot())
 library(RColorBrewer)
 library(beyonce)
 library(RCurl)
+library(ggrepel)
 
 #TO DO: make two separate plots - one within ML, one below
 
@@ -91,7 +92,8 @@ dat.combo <- dat4cul %>%
 
 dat.combo2 <- dat5cul %>%
   full_join(dat4, by = "Identification") %>%
-  mutate(field.cul.fc = nmolmetab_perC_cul_med/nmolmetab_perC_enviro_med)
+  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 1E-5, nmolmetab_perC_cul_med)) %>%
+  mutate(field.cul.fc = nmolmetab_perC_cul_med/nmolmetab_perC_enviro_med) 
 
 #Make a plot of each of individual org_types vs ugC, with colors and lines
 g <- ggplot(dat = dat.combo, 
@@ -103,7 +105,7 @@ g <- ggplot(dat = dat.combo,
 
 g
 
-#Make a plot of all together
+#Make a plot of all together------
 g2 <- ggplot(dat = dat.combo2, 
             aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, label =  Identification, 
                 color = field.cul.fc < .1 | field.cul.fc > 10)) +
@@ -112,14 +114,22 @@ g2 <- ggplot(dat = dat.combo2,
    geom_errorbarh(aes(xmin = nmolmetab_perC_cul_min,
                      xmax = nmolmetab_perC_cul_max), alpha = 0.3) +
   geom_point() +
+  geom_text_repel(dat = dat.combo2 %>% filter(field.cul.fc < .1 | field.cul.fc > 10), 
+            aes( x =nmolmetab_perC_cul_med, 
+                 y = nmolmetab_perC_enviro_med, label =  Identification ), size = 2.5)+
   geom_abline()+
   scale_x_log10()+
-  scale_y_log10()
+  scale_y_log10()+
+  scale_color_manual(values =c("grey", "black"),)+
+  labs(y= "nmol metabolite / umol C (environment)", x = "nmol metabolite / umol C (cultures)") +
+  theme(axis.title = element_text(size = 7),
+        axis.text = element_text(size = 6),
+        legend.position = "none")
 
 g2
 
 #save it out
-save_plot("Figures/Preliminary/ugCperugC.pdf", g2, base_height = 6, base_width = 10, units = "in")
+save_plot("Figures/Preliminary/ugCperugC.pdf", g2, base_height = 4, base_width = 6, units = "in")
 
 #for exploration
 ggplotly()

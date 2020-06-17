@@ -83,6 +83,7 @@ b.all <- ggplot()+
         legend.position="bottom",
         axis.title = element_text(size = 7),
         axis.text = element_text(size = 6))
+
 b.all
 ggsave("Figures/Preliminary/stackedbar_org.pdf", b.all, width = 8, height = 6, units = "in")
 
