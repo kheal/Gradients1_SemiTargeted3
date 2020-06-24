@@ -9,32 +9,45 @@ library(here)
 library(RColorBrewer)
 
 #Name inputs-----
-PA.file <- "Intermediates/PA_table_forK.csv"
+dat.file <- "Intermediates/Culture_Intermediates/combined_long_cultures.csv"
+meta.dat.file <- "MetaData/CultureMetaData.csv"
 
-#Read in PA dat, mudge to get into a matrix, toss any compounds that weren't seen ever, make NAs 0s ----
-PA.dat <- read_csv(PA.file) 
-wide.matrix<- PA.dat %>% dplyr::select(-Organism, -Domain, -Group) %>% as.matrix()
-row.names(wide.matrix) <- PA.dat$Organism
-wide.matrix <- t(wide.matrix)
-meta.dat <- PA.dat %>% dplyr::select(Organism, Domain, Group)
+#Read in long dat, toss 32ppt samples, mudge to get into a matrix, toss any compounds that weren't seen ever, make NAs 0s ----
+meta.dat <- read_csv(meta.dat.file) %>%
+  rename(ID_rep = CultureID)
 
-#Run NMDS, extract point location
-nmds.raw<-metaMDS(t(wide.matrix), distance='euclidean', k=2, autotransform=FALSE, wascores = FALSE, noshare = FALSE, trymax=999)
+long.dat <- read_csv(dat.file) 
+wide.dat <- long.dat %>%
+  pivot_wider(id_cols = MassFeature_Column, names_from = ID_rep, values_from = LogBioArea)
+wide.matrix<- wide.dat %>% dplyr::select(-MassFeature_Column) %>% as.matrix()
+row.names(wide.matrix) <- wide.dat$MassFeature_Column
+compound.all.zeros <- wide.dat %>%
+  dplyr::select(MassFeature_Column) %>%
+  mutate(total = rowSums(wide.matrix, na.rm = TRUE)) %>%
+  filter(total > 0)
+wide.matrix.2 <- wide.matrix[compound.all.zeros$MassFeature_Column, ]
+wide.matrix.2[is.na(wide.matrix.2)] <- 0
+
+#Run NMDS with only row standaridation, extract point location
+#Stress is (nearly) zero: you may have insufficient data; samples are too different :(
+wide.matrix.2.raw <- data.stand((wide.matrix.2), method='max', margin='row', plot=F)
+nmds.raw<-metaMDS(t(wide.matrix.2.raw), distance='euclidean', k=2, autotransform=FALSE, wascores = FALSE, noshare = FALSE, trymax=999)
 monte.pvalue.raw <-nmds.monte(t(wide.matrix), distance='euclidean', k=2, autotransform=FALSE, trymax=20)
 monte.pvalue.result.raw <- monte.pvalue.raw[[2]]
 print(paste(monte.pvalue.result.raw, "= pvalue of nmds"))
 pointlocation.nmds.raw <- nmds.raw[['points']] %>% as.data.frame() %>%
-  mutate(Organism = rownames(nmds.raw[['points']])) %>%
-  left_join(meta.dat, by = "Organism") 
-
+  mutate(ID_rep = rownames(nmds.raw[['points']])) %>%
+  left_join(meta.dat, by = "ID_rep") 
 
 #Plot out the point location for the raw NMDS----
-pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
-d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2, group = Group,
-                                              colour = Group,
-                                              fill = Group))+
-  geom_point(position = position_jitter(width = 0.05, height = 0.05), size = 3) +
- scale_fill_manual(values = pal)+
+pal <- c(colorRampPalette(brewer.pal(7,"Dark2"))(7)[1:7])
+d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2, 
+                                              colour = Org_Type_Specific,
+                                              fill = Org_Type_Specific, label = Org_Name))+
+  geom_point(size = 3) +
+  geom_polygon(aes(group = CultureID_short, color = Org_Type_Specific, fill= Org_Type_Specific), 
+               alpha = 0.2) +
+  scale_fill_manual(values = pal)+
   scale_color_manual(values = pal)+
   annotate("text", x = -3.4, y = 2.8, 
            label = paste0("Stress = ", 
@@ -51,5 +64,6 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2, group = G
         legend.box.background = element_rect(colour = "black"))
 
 d.raw  
+
 print(d.raw)
-save_plot("Figures/Preliminary/NMDS_PA.pdf", d.raw, base_height = 6, base_width = 6)
+save_plot("Figures/Preliminary/NMDS_Organisms.pdf", d.raw, base_height = 6, base_width = 6)
