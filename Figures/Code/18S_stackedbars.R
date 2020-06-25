@@ -60,7 +60,7 @@ b.all <- ggplot()+
  # scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
   scale_fill_manual(values = pal)+
   facet_grid(rows = vars(`size-fraction`))+
-  labs(y= "mol fraction C")+
+  labs(y= "relative abundance", x = "latitude")+
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6),
         legend.position="bottom",
