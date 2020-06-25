@@ -1,9 +1,32 @@
 library(tidyverse)
+library(cowplot)
+theme_set(theme_cowplot())
 library(here)
 library(plotly)
+library(RColorBrewer)
+
+#Set filenames (output of 18S_exploration)
+otu.table.results.filename <- "Intermediates/18S/OTU_table.csv"
+tax.table.results.filename <- "Intermediates/18S/tax_table.csv"
+meta.dat.filename <- "Intermediates/18S/metadat_table.csv"
+
+
+
+
+
+
+
+
+
+
+
 
 #TO DO: assign names like in the HMMR plots - right now the names are a mess with all 9 levels
+#TO DO: filter out Osptists, this is normal and fine
+#TO DO: filter out a few samples based on counts - plot as total to see if there are any that should be filtered out
+
 dat.filename <- "Intermediates/18S/pr3-dada2_level-9.csv"
+#This was downloaded from https://view.qiime2.org/ from the pr2-dada2 ASV results
 
 #Get quan data in shape to plot
 dat <- read_csv(dat.filename)
@@ -19,7 +42,7 @@ dat.long.2 <- dat.long %>%
                           "level.5", "level.6", "level.7", "level.8", "level.9"), sep = ";", remove = FALSE) %>%
   filter(latitude != 28.13)
 
-#Re-assign names that make more sense
+#Re-assign names that make more sense - this works with the pr3-dada2_level-9 data but not sure if its flexible with other OTU outputs
 dat.long.3 <- dat.long.2 %>%
   mutate(Org_plot = ifelse(level.3 == "Dinoflagellata", "Dinoflagellata", NA)) %>%
   mutate(Org_plot = ifelse(level.2 == "Alveolata" & level.3 != "Dinoflagellata", "non-Dino Alveolate", Org_plot)) %>%
@@ -52,7 +75,7 @@ dat.order <- dat.long.4 %>%
 dat.long.4$Org_plot <- factor(dat.long.4$Org_plot, levels = dat.order$Org_plot)
 
 #Make a bar plot, separated by size fraction
-pal <- c(colorRampPalette(brewer.pal(7,"Dark2"))(15)[1:15])
+pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(10)[1:10])
 
 b.all <- ggplot()+
   geom_bar(stat = "identity", data = dat.long.4, position = "fill",
