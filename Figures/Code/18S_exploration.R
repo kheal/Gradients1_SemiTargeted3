@@ -20,7 +20,9 @@ physeq<-qza_to_phyloseq(
 
 #Munging to get the data into a workable shape for putting into the 18S_stackedbars
 otu.table.results <- physeq@otu_table@.Data %>% as.data.frame()
-tax.table.results <- physeq@tax_table@.Data %>% as.data.frame()
+otu.table.results <- otu.table.results %>% mutate(taxon.id = row.names(otu.table.results))
+tax.table.results <- physeq@tax_table@.Data %>% as.data.frame() 
+tax.table.results <- tax.table.results %>% mutate(taxon.id = row.names(tax.table.results))
 
 #Writing data that can easily be plotted in 18S_stackedbars.R
 write_csv(otu.table.results, "Intermediates/18S/OTU_table.csv")
