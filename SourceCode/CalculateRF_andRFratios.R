@@ -2,9 +2,9 @@ library(tidyverse)
 library(RCurl)
 
 #Set your datafiles----
-stds.file1 <- "RawOutput/Stds/HILIC_Pos_Stds_Normal_Skyline.csv"
-stds.file3 <- "RawOutput/Stds/HILIC_NEG_Stds.csv"
-stds.file4 <- "RawOutput/Stds/RP_Stds.csv"
+stds.file1 <- "RawOutput/Stds/HILIC_Pos_Stds_Normal_Skyline_withAOA.csv"
+stds.file3 <- "RawOutput/Stds/HILIC_NEG_Stds_with_AOA.csv"
+stds.file4 <- "RawOutput/Stds/RP_Stds_with_AOA.csv"
 mf.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 stds.info <- "https://raw.githubusercontent.com/kheal/Example_Untargeted_Metabolomics_Workflow/master/Ingalls_Lab_Standards.csv"
 RF.matcher.file <- "MetaData/RFs_relativeRFmatcher.csv"
@@ -13,7 +13,8 @@ RF.matcher.file <- "MetaData/RFs_relativeRFmatcher.csv"
 #Connect the standards runs
 stds.dat.HILICPos <- read_csv(stds.file1) %>%
   mutate(Column = "HILIC",
-         z = 1)
+         z = 1) %>%
+  mutate(`Precursor Ion Name` = `Precursor Ion Name` %>% str_replace(., "Beta_GlutamicAcid", "beta-Glutamic acid"))
   
 stds.dat.HILICNeg <- read_csv(stds.file3) %>%
   mutate(Column = "HILIC",
@@ -36,7 +37,6 @@ stds.dat.combo2 <- stds.dat.combo %>%
          RunID = `Replicate Name`) %>%
   left_join(mf.dat, by = c("Identification", "Column", "z")) %>%
   select(MassFeature_Column, Identification, RunID, Area, Column, z) 
-
 
 #Get dates, dump matrix samples, get mixes if applicable
 stds.dat.combo3 <- stds.dat.combo2 %>%

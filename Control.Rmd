@@ -4,19 +4,14 @@ author: "Katherine Heal"
 date: "August 28, 2019"
 output: html_document
 ---
-Git notes: 
-Push locally:
-git status #show what needs to pushed bc it was modified
-git add 'filename' #use . for everything in the folder, this stages
-git commit -m "comment" #commits it to the local repo
-git push #pushes it to github
-
 Organization notes:
 As of 05/14/20, Skyline files for environmental samples have been moved to within their respective folders containing the .mzxml files for ease of file location (i.e. Manual_Integrations/HILICPos); Output from Skyline integrations of environmental samples are placed into "Manual_Integrations/DataProcessing/RawOutput"
 All culture Skyline data are in rawDat files
 
 Analysis notes:
-TO DO: Quantification needs up take
+AOA cell counts are just holder for now - everything needs to be rerun when those numbers are better
+Cluster with or without AOA?  If without, we need to dump those cultures during the k-means calculations
+
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
 library(cowplot)
@@ -73,14 +68,11 @@ combo.wide <- left_join(dat.file, culture.file)
 write_csv(combo.wide, "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv")
 
 remove(list = ls())
-
 ```
 
 #Quantify compounds that we are able to
 #TO DO: adjust quantifications for cultures with ISs when appropriate
-TO DO: change beta-Glutamic acid name (from Beta_GlutamicAcid), make sure it gets quantified in all the cultures and all the field samples
-TO DO: make sure all the AOA get 
-
+TO DO: rerun once AOA have better cell count numbers
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')

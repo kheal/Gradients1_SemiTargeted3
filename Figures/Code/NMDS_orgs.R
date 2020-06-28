@@ -40,7 +40,7 @@ pointlocation.nmds.raw <- nmds.raw[['points']] %>% as.data.frame() %>%
   left_join(meta.dat, by = "ID_rep") 
 
 #Plot out the point location for the raw NMDS----
-pal <- c(colorRampPalette(brewer.pal(7,"Dark2"))(7)[1:7])
+pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
 d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2, 
                                               colour = Org_Type_Specific,
                                               fill = Org_Type_Specific, label = Org_Name))+
@@ -52,7 +52,7 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2,
   annotate("text", x = -3.4, y = 2.8, 
            label = paste0("Stress = ", 
                           round(nmds.raw[['stress']], digits = 2), 
-                          "\n p = ", 
+                          "\n p < ", 
                           round(monte.pvalue.result.raw, digits = 3)), size = 2.2)+
     theme(axis.title.x = element_text(size = 7),
         axis.title.y = element_text(size = 7),
@@ -60,10 +60,9 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2,
         axis.text.x = element_text(size = 6),
         legend.text = element_text(size = 6),
         legend.title = element_blank(),
-        legend.background = element_blank(),
-        legend.box.background = element_rect(colour = "black"))
+        legend.background = element_blank())
 
 d.raw  
 
 print(d.raw)
-save_plot("Figures/Preliminary/NMDS_Organisms.pdf", d.raw, base_height = 6, base_width = 6)
+save_plot("Figures/Preliminary/NMDS_Organisms.pdf", d.raw, base_height = 5, base_width = 6)
