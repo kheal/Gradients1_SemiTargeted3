@@ -10,6 +10,7 @@ output: html_document
 library(tidyverse)
 ```
 
+
 #Quantifiable compounds, Bar plots
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #mol fraction C
