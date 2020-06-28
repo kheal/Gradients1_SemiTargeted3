@@ -11,10 +11,10 @@ library(here)
 
 #Name your inputs
 meta.dat.file <- "MetaData/SampInfo_wMetaData_withUTC.csv"
-numberofclusters.KOK <- 8 
+numberofclusters.KOK <- 7 
 numberofclusters.KM <- 4  #8 or 9 are also good
 numberofclusters.MGL <- 7   
-numberofclusters.org <- 7
+numberofclusters.org <- 11
 combo.wide.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 
 #Mudge data to make it usable-----
@@ -101,8 +101,8 @@ datwidestd.noNA.KOK.wclusters <- datwidestd.noNA.KOK %>%
   left_join(clusterIDs.KOK) %>%
   left_join(meta.dat %>% select(SampID, latitude))
 
-cluster <- c(1, 2, 4 ,3, 5, 6, 7, 8)
-cluster_letters <- c("a", "b", "c", "d", "e", "f", "g", "h") 
+cluster <- c(1, 2, 4 ,3, 5, 6, 7)
+cluster_letters <- c("a", "b", "c", "d", "e", "f", "g") 
 KOK.mode.matcher <- cbind(cluster, cluster_letters) %>% as_tibble() %>% mutate(cluster = as.numeric(cluster))
 datwidestd.noNA.KOK.wclusters <- left_join(datwidestd.noNA.KOK.wclusters, KOK.mode.matcher, by = "cluster") 
 
@@ -228,8 +228,8 @@ datwidestd.orgs.noNA.wclusters <- datwidestd.noNA.Org %>%
   mutate(SampID = SampID %>% str_replace("\\.", "\\-")) %>%
   left_join(clusterIDs.org) 
 
-cluster <- c(1,2,3,6,7,5,4)
-cluster_letters <- c("a", "b", "c", "d", "e", "f", "g") 
+cluster <- c(1,2,3,6,7,5,4, 8, 9, 10, 11)
+cluster_letters <- c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k") 
 Org.mode.matcher <- cbind(cluster, cluster_letters) %>% as_tibble() %>% mutate(cluster = as.numeric(cluster))
 datwidestd.orgs.noNA.wclusters <- left_join(datwidestd.orgs.noNA.wclusters, Org.mode.matcher)
 

@@ -90,6 +90,8 @@ remove(list = ls())
 #Cluster the mass features using a K-means approach 
 Assign each MF:dataset a cluster, save out cluster diagnostics for each sample set.  
 Bootstrap the clusters to see if there is overexpressed overlap between clusters
+TO DO: add a "significant under-overlap variable" 
+TO DO: will probably need to mudge with the letters etc
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #To reorganize the clusters, rename them within this file
 source("SourceCode/clustering_all_seperate.R") 

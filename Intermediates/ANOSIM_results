@@ -1,4 +1,4 @@
 Variable Tested,ANOSIM statistic,p-value
-NPSG vs NPTZ,0.316,0.005
-North vs South transect,0.092,0.04
-Day vs Night,0.042,0.092
+NPSG vs NPTZ,0.316,0.004
+North vs South transect,0.092,0.031
+Day vs Night,0.042,0.082

@@ -7,7 +7,7 @@ library(RCurl)
 
 #Name your files -----
 quandat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
-culture.dat.long.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
+culture.dat.long.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
 culture.meta.dat.filename <- "MetaData/CultureMetaData.csv"
 
 #Get list of better names
@@ -92,7 +92,7 @@ CultureSumm <- dat2cul %>%
 
 CombinedSumm <- bind_rows(EnviroSumm, CultureSumm) %>% bind_rows(EnviroSumm_deep) %>%
   mutate(Type = factor(Type, levels = c("Environmental", "Culture"))) %>%
-  mutate(Type_specific = factor(Type_specific, levels = c("Surface", "Subsurface" , "Cyanobacteria","Diatom", "Dinoflagellate", "Haptophyte","Prasinophyte"  )))
+  mutate(Type_specific = factor(Type_specific, levels = c("Surface", "Subsurface" , "Cyanobacteria","Diatom", "Dinoflagellate", "Haptophyte","Prasinophyte", "Archaea"  )))
 
 #Make a box plot of the range of concentrations in surface particles
 pal <- rev(beyonce_palette(41, 11, type = "continuous"))

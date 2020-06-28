@@ -67,8 +67,8 @@ Org.MF.dat.quan <- Org.MF.dat %>%
 
 
 #Plot up a dot plot------
-pal <- park_palette("Redwoods", 5)
-pal2 <- c(pal[5], pal[2:4], pal[1])
+pal <- c(park_palette("Redwoods", 5))
+pal2 <- c(pal[5], pal[2:4], pal[1], "deepskyblue4")
 g.boxplot <- ggplot(data = dat.mean, aes(x = factor(Org_Type), std_area)) +
   geom_dotplot(binaxis='y', stackdir='center', dotsize=.8, binwidth = 0.02, aes(fill = Org_Type, colour =Org_Type ), alpha = 0.7)+
   geom_jitter(data = dat.zeros, aes(x = factor(Org_Type), y = std_area,  fill = Org_Type, colour =Org_Type ),

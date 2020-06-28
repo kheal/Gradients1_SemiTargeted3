@@ -31,7 +31,7 @@ remove(list = ls())
 
 ```
 
-#Summary box plots
+#Summary box plot
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #nmol C
 source('Figures/Code/Summary_boxPlot.R')
@@ -42,7 +42,7 @@ remove(list = ls())
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('Figures/Code/NMDS_untargeted.R')
 remove(list = ls())
-detach("package:MASS", unload=TRUE)
+detach("package:vegan", unload=TRUE)
 ```
 
 #Mode plots for each of the sample sets
@@ -55,7 +55,7 @@ remove(list = ls())
 ```
 
 #Tile alluvial plot for KOK and orgs :) 
-Remake and reload
+TO DO: fix up the colors
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source("Figures/Code/KOK_org_AlluvialPlot.R")
 remove(list = ls())
