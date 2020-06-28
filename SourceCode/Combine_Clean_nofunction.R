@@ -49,15 +49,17 @@ dat.hilic <- read.csv(hilic.dat.file)
 dat <- rbind(dat.cyano, dat.hilic) %>%
   mutate(SampID = paste(SampID, replicate, sep = "_")) %>%
   filter(type == "Smp") %>%
-  mutate(Area = ifelse(is.na(Area), 0, Area))
-  meta.dat <- read_csv(meta.dat.file) %>% select(SampID, Volume)
+  mutate(Area = ifelse(is.na(Area), 0, Area)) %>%
+  mutate(MassFeature = MassFeature %>% str_replace(., "Beta_GlutamicAcid", "beta-Glutamic acid"))
+
+meta.dat <- read_csv(meta.dat.file) %>% select(SampID, Volume)
   
-#Dump bad MFs and bad samples here----
+#Dump bad MFs and bad samples here, change the name for beta-Glutamic acid name (from Beta_GlutamicAcid) here----
 dat.dumped <- dat %>%
   mutate(MassFeature_Column = paste(MassFeature, Column, sep = "_X_")) %>%
   filter(!str_detect(SampID, "S2C1" )) %>%
   filter(!MassFeature_Column %in% repeats.to.dump) 
-  
+
 dat.dumped <- dat.dumped %>% left_join(meta.dat) %>%
     mutate(Adjusted_Area_VolNormed = Adjusted_Area/Volume)
   

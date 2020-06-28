@@ -25,6 +25,7 @@ library(here)
 ```
 
 #QC and tidy up culture samples
+TO DO: Adjust and rerun with real (not just holder) cell counts for the AOA
 Run the QC for each fraction, combine and make tidy to compare with environmental samples
 ```{r, message=FALSE, error=FALSE, warning=FALSE, }
 source("SourceCode/QC_HILICPos_Cultures.R")
@@ -77,6 +78,9 @@ remove(list = ls())
 
 #Quantify compounds that we are able to
 #TO DO: adjust quantifications for cultures with ISs when appropriate
+TO DO: change beta-Glutamic acid name (from Beta_GlutamicAcid), make sure it gets quantified in all the cultures and all the field samples
+TO DO: make sure all the AOA get 
+
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')

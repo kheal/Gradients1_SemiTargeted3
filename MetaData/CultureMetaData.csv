@@ -59,3 +59,6 @@ To_C,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,12.20459,Thalassiosira oc
 Tp_A,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,4.40222,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,73370383.33,9878.836631,"White, modeled, same size as Syn"
 Tp_E,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,3.13927,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,52321200,10056.8408,"White, modeled, same size as Syn"
 Tp_F,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,6.36368,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,106061280,10238.65512,"White, modeled, same size as Syn"
+Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.1,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"251,553,166",2.777785546,Stand in for AOA
+Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.1,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"217,620,000",0.832041179,Stand in for AOA
+Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.1,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"219,701,954",1.906909827,Stand in for AOA

@@ -6,7 +6,7 @@ library(tidyverse)
 Datfile1 <- "RawOutput/CultureRawSkylineOutput/HILICPos/20200430_DoubleCheck/HILICPos_CyanosBatch.csv"
 Datfile2 <- "RawOutput/CultureRawSkylineOutput/HILICPos/20200430_DoubleCheck/HILICPos_DiatomBatch1.csv"
 Datfile3 <- "RawOutput/CultureRawSkylineOutput/HILICPos/20200430_DoubleCheck/HILICPos_DiatomBatch2.csv"
-Datfile4 <- "RawOutput/CultureRawSkylineOutput/HILICPos/20200430_DoubleCheck/HILICPos_Dinos-Greens_Batch.csv"
+Datfile4 <- "RawOutput/CultureRawSkylineOutput/HILICPos/20200430_DoubleCheck/HILICPos_Dinos-Greens-AOA_Batch.csv"
 
 #Read in a csv that has which samples go to which blanks
 BlankMatcherFile <- "MetaData/Samps_with_Blanks_HILIC_Cultures.csv"

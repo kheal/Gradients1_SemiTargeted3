@@ -6,7 +6,7 @@ library(tidyverse)
 Datfile1 <- "RawOutput/CultureRawSkylineOutput/Cyano/20200430_Checks/CyanoAq_CyanosBatch.csv"
 Datfile2 <- "RawOutput/CultureRawSkylineOutput/Cyano/20200430_Checks/CyanoAq_DiatomsBatch1.csv"
 Datfile3 <- "RawOutput/CultureRawSkylineOutput/Cyano/20200430_Checks/CyanoAq_DiatomsBatch2.csv"
-Datfile4 <- "RawOutput/CultureRawSkylineOutput/Cyano/20200430_Checks/CyanoAq_Dinos-Greens_Batch.csv"
+Datfile4 <- "RawOutput/CultureRawSkylineOutput/Cyano/20200430_Checks/CyanoAq_Dinos-Greens-AOA_Batch.csv"
 
 #Read in a csv that has which samples go to which blanks
 BlankMatcherFile <- "MetaData/Samps_with_Blanks_RP_Cultures.csv"

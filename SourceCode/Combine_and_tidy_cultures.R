@@ -18,12 +18,15 @@ dat.HILIPos <- read_csv(dat.file2, skip = 1) %>%
 dat.RP <- read_csv(dat.file3, skip = 1)  %>%
   mutate(MassFeature_Column = paste(Precursor.Ion.Name, "RP", sep = "_X_"))
 
-# Combine.  
+# Combine, mod the name of the AOA samples (to Nmar), change the name of Beta_GlutamicAcid to match standards list
 dat1 <- dat.HILICNeg %>%
   rbind(dat.HILIPos) %>%
   rbind(dat.RP) %>%
   select(Replicate.Name, Precursor.Ion.Name, MassFeature_Column, QC_area) %>%
-  mutate(Replicate.Name = Replicate.Name %>% str_replace_all(., "P5-5", "P55"))
+  mutate(Replicate.Name = Replicate.Name %>% str_replace_all(., "P5-5", "P55")) %>%
+  mutate(Replicate.Name = Replicate.Name %>% str_replace_all(., "_Exp_", "_Nmar_")) %>%
+  mutate(Precursor.Ion.Name = Precursor.Ion.Name %>% str_replace_all(., "Beta_GlutamicAcid", "beta-Glutamic acid")) %>%
+  mutate(MassFeature_Column = MassFeature_Column %>% str_replace_all(., "Beta_GlutamicAcid", "beta-Glutamic acid"))
 
 #Meta Dat
 meta.dat <- read_csv(meta.dat.file) %>% rename(ID_rep = CultureID) %>%

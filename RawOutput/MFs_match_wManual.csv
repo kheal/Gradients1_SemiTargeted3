@@ -1,5 +1,5 @@
 MF_Frac,Column,AvePoo,AveBlank,AveSmp,mz,rt,BestMatch,Confidence,Manual_Annote,Manual_Confidence,MS2dat1,MS2dat2,MS2dat3,MS2dat4,RT,Adduct,IsotopeMatch,MassFeature,pcgroup,IonType,Charge,MassOfM,IsoGroup,mzOfI,TargetMatches,ppmMatches,RTdiffMatches,KeggMatches,Keggppm,KeggNames,MS2,MassBankMatch,MassBankppm,MassBankCosine1
-Beta_GlutamicAcid,HILICPos,NA,NA,NA,NA,NA,beta-Glutamic acid,1,,,,,,,,,,,,,,,,,,,,,,,,,,
+beta-Glutamic acid,HILICPos,NA,NA,NA,NA,NA,beta-Glutamic acid,1,,,,,,,,,,,,,,,,,,,,,,,,,,
 Adenine,HILICPos,NA,NA,NA,NA,NA,Adenine,1,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Adenosine,HILICPos,NA,NA,NA,NA,NA,Adenosine,1,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Adenosyl Homocysteine,CyanoAq,NA,NA,NA,NA,NA,Adenosyl Homocysteine,1,,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
