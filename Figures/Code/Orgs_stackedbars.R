@@ -1,5 +1,6 @@
 library(tidyverse)
 library(here)
+library(RColorBrewer)
 
 dat.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
 Meta.dat.file <- "MetaData/CultureMetaData.csv"
@@ -40,7 +41,7 @@ for (i in 1:21) {
   compounds.to.highlight[[i]] <- dat.mean %>% 
     filter(ID == org) %>%
     arrange(desc(intracell_conc_umolCL)) %>%
-    head(5)
+    head(2)
   }
 compounds.to.highlight2 <- do.call(rbind, compounds.to.highlight) %>%
   ungroup() %>%
@@ -56,7 +57,7 @@ order.of.compounds <- dat.mean %>% ungroup %>%
 
 #Plot to highlight top 19 in the samples?
 #pal <- c("#9B445D", rep("grey", 84))
-pal <- c(colorRampPalette(brewer.pal(12,"Set3"))(25)[1:25])
+pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:16])
 id.pal.df <- data.frame(compounds.to.highlight2$Identification, pal)
 colnames(id.pal.df) <- c("Identification", "colors.avail")
 
