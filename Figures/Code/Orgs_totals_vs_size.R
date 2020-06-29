@@ -14,12 +14,12 @@ meta.dat <- read_csv(Meta.dat.file)
 
 dat.mean <- dat %>% ungroup () %>%
   group_by(Identification, ID, Org_Name, Org_Type_Specific, Org_Type) %>%
-  mutate(intracell_conc_umolCL = ifelse(is.na(intracell_conc_umolCL), 0 , intracell_conc_umolCL)) %>%
-  summarise(intracell_conc_umolCL = mean(intracell_conc_umolCL))
+  mutate(intracell_conc_umolL = ifelse(is.na(intracell_conc_umolL), 0 , intracell_conc_umolL)) %>%
+  summarise(intracell_conc_umolCL = mean(intracell_conc_umolL))
 
 dat.total <- dat.mean %>%
   group_by(ID) %>%
-  summarise(Total_nmolCMeasured = sum(intracell_conc_umolCL)) 
+  summarise(Total_mmol_L_intracell = sum(intracell_conc_umolCL)/1000) 
 
 meta.dat.short <- meta.dat %>% 
   select(CultureID_short, Cell_size_um3, Org_Type, Org_Type_Specific) %>% 
@@ -42,7 +42,7 @@ dat.total.2$ID <- factor(dat.total.2$ID,
 #Plot it up as stacked bars
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
 g.total.bars <- ggplot(data = dat.total.2, aes(x = ID, 
-                                               y = Total_nmolCMeasured,
+                                               y = Total_mmol_L_intracell,
                                                fill = Org_Type_Specific)) +
   geom_bar(stat = "identity")+
   scale_fill_manual(values = pal)
@@ -52,7 +52,7 @@ g.total.bars
 #Plot it up as vs cell size
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
 g.total.scatter <- ggplot(data = dat.total.2, aes(x = Cell_size_um3, 
-                                               y = Total_nmolCMeasured,
+                                               y = Total_mmol_L_intracell,
                                                fill = Org_Type_Specific, color = Org_Type_Specific)) +
   geom_point(size = 4)+
   scale_fill_manual(values = pal)+
