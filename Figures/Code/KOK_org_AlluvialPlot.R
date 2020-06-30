@@ -211,7 +211,7 @@ g.tile.org
 
 #Make another tile plot to smash together with colored names-----
 pal <- park_palette("Redwoods", 5)
-pal2 <- c(pal[5], pal[2:4], pal[1])
+pal2 <- c("deepskyblue4", pal[5], pal[2:4], pal[1])
 g.tile.org.key <- ggplot(data = order.of.org.df, aes(x = factor(CultureID_short), y = 1, fill = Org_Type), colour = "black") +
   geom_tile() +
   geom_text(aes(label = CultureID_short), angle = -90, size = 1.7, fontface = "italic")+

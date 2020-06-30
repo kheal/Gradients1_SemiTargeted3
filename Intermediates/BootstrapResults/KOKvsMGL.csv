@@ -1,57 +1,57 @@
 cluster_overlap,pval.01,pval.05,pval.1,count,pval
-KOK_a&MGL_a,44,38,37,43,0.05
-KOK_a&MGL_b,38,34,32,33,0.1
-KOK_a&MGL_c,36,30,29,15,not sig
+KOK_a&MGL_a,44,39,37,43,0.05
+KOK_a&MGL_b,39,34,32,33,0.1
+KOK_a&MGL_c,36,31,29,15,not sig
 KOK_a&MGL_d,24,20,19,20,0.1
 KOK_a&MGL_e,4,3,3,3,not sig
 KOK_a&MGL_f,4,3,3,NA,NA
-KOK_a&MGL_g,17,13,12,2,not sig
-KOK_a&MGL_NA,28,20,19,11,not sig
-KOK_b&MGL_a,26,21,20,19,not sig
+KOK_a&MGL_g,16,13,12,2,not sig
+KOK_a&MGL_NA,23,20,19,11,not sig
+KOK_b&MGL_a,30,20,19,19,not sig
 KOK_b&MGL_b,22,18,17,4,not sig
-KOK_b&MGL_c,24,17,16,20,0.05
-KOK_b&MGL_d,16,11,10,8,not sig
-KOK_b&MGL_e,4,2,2,NA,NA
+KOK_b&MGL_c,22,17,15,20,0.05
+KOK_b&MGL_d,14,11,10,8,not sig
+KOK_b&MGL_e,3,2,2,NA,NA
 KOK_b&MGL_f,4,2,2,1,not sig
-KOK_b&MGL_g,11,8,7,4,not sig
-KOK_b&MGL_NA,16,11,10,5,not sig
+KOK_b&MGL_g,10,8,7,4,not sig
+KOK_b&MGL_NA,14,11,11,5,not sig
 KOK_c&MGL_a,15,11,10,2,not sig
-KOK_c&MGL_b,14,10,9,10,0.1
-KOK_c&MGL_c,15,9,8,9,0.1
-KOK_c&MGL_d,8,6,6,1,not sig
+KOK_c&MGL_b,12,10,9,10,0.1
+KOK_c&MGL_c,12,9,8,9,0.1
+KOK_c&MGL_d,10,6,6,1,not sig
 KOK_c&MGL_e,3,1,1,NA,NA
 KOK_c&MGL_f,3,1,1,NA,NA
-KOK_c&MGL_g,7,5,4,3,not sig
-KOK_c&MGL_NA,9,6,6,4,not sig
-KOK_d&MGL_a,20,16,15,7,not sig
-KOK_d&MGL_b,18,14,13,18,0.05
-KOK_d&MGL_c,18,13,12,8,not sig
-KOK_d&MGL_d,11,9,8,5,not sig
-KOK_d&MGL_e,3,2,2,NA,NA
-KOK_d&MGL_f,4,2,2,1,not sig
+KOK_c&MGL_g,7,4,4,3,not sig
+KOK_c&MGL_NA,9,7,6,4,not sig
+KOK_d&MGL_a,21,16,15,7,not sig
+KOK_d&MGL_b,17,14,13,18,0.01
+KOK_d&MGL_c,17,13,12,8,not sig
+KOK_d&MGL_d,13,9,8,5,not sig
+KOK_d&MGL_e,3,2,1,NA,NA
+KOK_d&MGL_f,4,2,1,1,not sig
 KOK_d&MGL_g,9,6,5,3,not sig
-KOK_d&MGL_NA,12,9,8,3,not sig
-KOK_e&MGL_a,7,5,5,7,0.05
-KOK_e&MGL_b,7,5,4,1,not sig
-KOK_e&MGL_c,7,5,4,2,not sig
-KOK_e&MGL_d,7,3,3,NA,NA
+KOK_d&MGL_NA,13,9,8,3,not sig
+KOK_e&MGL_a,8,5,5,7,0.05
+KOK_e&MGL_b,6,5,4,1,not sig
+KOK_e&MGL_c,7,4,4,2,not sig
+KOK_e&MGL_d,5,3,3,NA,NA
 KOK_e&MGL_e,2,1,1,NA,NA
 KOK_e&MGL_f,2,1,1,NA,NA
 KOK_e&MGL_g,4,2,2,NA,NA
-KOK_e&MGL_NA,5,3,3,1,not sig
+KOK_e&MGL_NA,6,3,3,1,not sig
 KOK_f&MGL_a,9,6,6,NA,NA
 KOK_f&MGL_b,8,6,5,1,not sig
-KOK_f&MGL_c,8,5,5,4,not sig
+KOK_f&MGL_c,7,5,5,4,not sig
 KOK_f&MGL_d,6,4,3,NA,NA
-KOK_f&MGL_e,3,1,1,NA,NA
-KOK_f&MGL_f,2,1,1,NA,NA
+KOK_f&MGL_e,2,1,1,NA,NA
+KOK_f&MGL_f,3,1,1,NA,NA
 KOK_f&MGL_g,5,3,2,9,0.01
-KOK_f&MGL_NA,8,4,3,NA,NA
-KOK_g&MGL_a,14,10,10,1,not sig
-KOK_g&MGL_b,16,9,8,1,not sig
-KOK_g&MGL_c,12,9,8,3,not sig
-KOK_g&MGL_d,8,6,5,3,not sig
-KOK_g&MGL_e,2,1,1,1,not sig
+KOK_f&MGL_NA,6,4,3,NA,NA
+KOK_g&MGL_a,17,10,9,1,not sig
+KOK_g&MGL_b,12,9,9,1,not sig
+KOK_g&MGL_c,11,9,8,3,not sig
+KOK_g&MGL_d,10,6,5,3,not sig
+KOK_g&MGL_e,3,1,1,1,not sig
 KOK_g&MGL_f,3,1,1,2,0.05
-KOK_g&MGL_g,8,4,4,2,not sig
+KOK_g&MGL_g,7,4,4,2,not sig
 KOK_g&MGL_NA,10,6,5,14,0.01

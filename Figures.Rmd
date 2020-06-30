@@ -40,11 +40,17 @@ source('Figures/Code/Summary_boxPlot.R')
 remove(list = ls())
 ```
 
-#NMDS
+#NMDS for KOK samples and for organisms!
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('Figures/Code/NMDS_untargeted.R')
 remove(list = ls())
 detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
+
+
+source('Figures/Code/NMDS_orgs.R')
+detach("package:vegan", unload=TRUE)
+detach("package:MASS", unload=TRUE)
 ```
 
 #Mode plots for each of the sample sets
@@ -72,7 +78,8 @@ remove(list = ls())
 
 #Plot of ug/ug C field vs 
 Still very prelim
-```{r}
+#TO DO: check if Nmar data are being included
+```{r, error = FALSE, warning=FALSE, message=FALSE}
 source("Figures/Code/FieldvsCulture_CComparison.R")
 remove(list = ls())
 ```

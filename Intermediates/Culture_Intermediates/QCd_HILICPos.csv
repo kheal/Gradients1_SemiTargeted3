@@ -1,4 +1,4 @@
-Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak: 40000. RT flexibility: 2.5. Blank can be this fraction of a sample: 5. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2020-06-30 09:49:47. 
+Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak: 40000. RT flexibility: 2.5. Blank can be this fraction of a sample: 5. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2020-06-30 11:35:37. 
 "","Replicate.Name","Precursor.Ion.Name","Retention.Time","Area","Background","Height","Mass.Error.PPM","SNFlag","ppmFlag","areaminFlag","RT_ref","RTFlag","Blank.Area","BlankFlag","Flags","QC_area"
 "1","161114_Smp_7803_B","I130.05R12.12_HILICPos",12.28,1678457344,61833532,"132158240",-1.3,NA,NA,NA,12.4,NA,15440,NA,"",1678457344
 "2","161114_Smp_7803_F","I130.05R12.12_HILICPos",12.28,2264670208,75510456,"168213824",-1.4,NA,NA,NA,12.4,NA,15440,NA,"",2264670208
@@ -2812,25 +2812,25 @@ Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak:
 "2810","170821_Smp_Nat_A","Inosine",11.4,1250122,0,"120101",-5.6,NA,NA,NA,8.055,"RTFlag",3404,NA,"RTFlag, ",NA
 "2811","170821_Smp_Nat_B","Inosine",11.38,1542119,0,"150657",-5.7,NA,NA,NA,8.055,"RTFlag",3404,NA,"RTFlag, ",NA
 "2812","170821_Smp_Nat_C","Inosine",11.32,1645120,0,"143333",-5.5,NA,NA,NA,8.055,"RTFlag",3404,NA,"RTFlag, ",NA
-"2813","161114_Smp_7803_B","Beta_GlutamicAcid",11.92,582823,0,"104805",-1.4,NA,NA,NA,11.97,NA,53078,NA,"",582823
-"2814","161114_Smp_7803_F","Beta_GlutamicAcid",11.86,375965,205566,"77895",-1.2,"SNFlag",NA,NA,11.97,NA,53078,NA,"SNFlag, ",NA
-"2815","161114_Smp_8102_A","Beta_GlutamicAcid",11.84,546235,2799,"110988",-1.5,NA,NA,NA,11.97,NA,53078,NA,"",546235
-"2816","161114_Smp_8102_F","Beta_GlutamicAcid",11.48,158943,32108,"21034",-2.1,NA,NA,NA,11.97,NA,53078,"BlankFlag","BlankFlag",NA
-"2817","161114_Smp_8501_B","Beta_GlutamicAcid",11.61,64873,108366,"20935",-0.6,"SNFlag",NA,NA,11.97,NA,198321,"BlankFlag","SNFlag, BlankFlag",NA
-"2818","161114_Smp_8501_C","Beta_GlutamicAcid",11.8,5425,102793,"3198",-1.2,"SNFlag",NA,"areaminFlag",11.97,NA,198321,"BlankFlag","SNFlag, areaminFlag, BlankFlag",NA
-"2819","161114_Smp_8501_D","Beta_GlutamicAcid",11.75,26069,4306,"9281",0,NA,NA,"areaminFlag",11.97,NA,198321,"BlankFlag","areaminFlag, BlankFlag",NA
-"2820","161114_Smp_MED4_D","Beta_GlutamicAcid",11.48,10315,68774,"6436",-1.7,"SNFlag",NA,"areaminFlag",11.97,NA,53078,"BlankFlag","SNFlag, areaminFlag, BlankFlag",NA
-"2821","161114_Smp_MED4_E","Beta_GlutamicAcid",11.86,93534,691356,"41257",-0.5,"SNFlag",NA,NA,11.97,NA,53078,"BlankFlag","SNFlag, BlankFlag",NA
-"2822","161114_Smp_MED4_F","Beta_GlutamicAcid",11.52,284,615501,"0",-1.6,"SNFlag",NA,"areaminFlag",11.97,NA,53078,"BlankFlag","SNFlag, areaminFlag, BlankFlag",NA
-"2823","170821_Smp_1314P_A","Beta_GlutamicAcid",11.38,378065,1645971,"40679",2.7,"SNFlag",NA,NA,11.97,NA,98563,"BlankFlag","SNFlag, BlankFlag",NA
-"2824","170821_Smp_1314P_B","Beta_GlutamicAcid",11.55,45567,807262,"8865",2.4,"SNFlag",NA,NA,11.97,NA,98563,"BlankFlag","SNFlag, BlankFlag",NA
-"2825","170821_Smp_1314P_C","Beta_GlutamicAcid",11.55,166033,888574,"25452",3.1,"SNFlag",NA,NA,11.97,NA,98563,"BlankFlag","SNFlag, BlankFlag",NA
-"2826","170821_Smp_As9601_A","Beta_GlutamicAcid",11.42,308056,1000272,"63634",1.1,"SNFlag",NA,NA,11.97,NA,74613,"BlankFlag","SNFlag, BlankFlag",NA
-"2827","170821_Smp_As9601_B","Beta_GlutamicAcid",11.5,86413,1083844,"22326",2,"SNFlag",NA,NA,11.97,NA,74613,"BlankFlag","SNFlag, BlankFlag",NA
-"2828","170821_Smp_As9601_C","Beta_GlutamicAcid",11.35,402514,903628,"61132",-0.3,"SNFlag",NA,NA,11.97,NA,74613,NA,"SNFlag, ",NA
-"2829","170821_Smp_Nat_A","Beta_GlutamicAcid",11.51,160535,780355,"23715",1,"SNFlag",NA,NA,11.97,NA,556879,"BlankFlag","SNFlag, BlankFlag",NA
-"2830","170821_Smp_Nat_B","Beta_GlutamicAcid",11.51,117461,878556,"20372",2.1,"SNFlag",NA,NA,11.97,NA,556879,"BlankFlag","SNFlag, BlankFlag",NA
-"2831","170821_Smp_Nat_C","Beta_GlutamicAcid",11.47,40506,1015629,"14136",0.9,"SNFlag",NA,NA,11.97,NA,556879,"BlankFlag","SNFlag, BlankFlag",NA
+"2813","161114_Smp_7803_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2814","161114_Smp_7803_F","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2815","161114_Smp_8102_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2816","161114_Smp_8102_F","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2817","161114_Smp_8501_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,198321,NA,"",NA
+"2818","161114_Smp_8501_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,198321,NA,"",NA
+"2819","161114_Smp_8501_D","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,198321,NA,"",NA
+"2820","161114_Smp_MED4_D","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2821","161114_Smp_MED4_E","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2822","161114_Smp_MED4_F","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,53078,NA,"",NA
+"2823","170821_Smp_1314P_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,98563,NA,"",NA
+"2824","170821_Smp_1314P_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,98563,NA,"",NA
+"2825","170821_Smp_1314P_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,98563,NA,"",NA
+"2826","170821_Smp_As9601_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,74613,NA,"",NA
+"2827","170821_Smp_As9601_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,74613,NA,"",NA
+"2828","170821_Smp_As9601_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,74613,NA,"",NA
+"2829","170821_Smp_Nat_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,6532490,NA,"",NA
+"2830","170821_Smp_Nat_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,6532490,NA,"",NA
+"2831","170821_Smp_Nat_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,6532490,NA,"",NA
 "2832","161114_Smp_7803_B","Sarcosine",10.67,5851620,24566,"490529",1,NA,NA,NA,10.715,NA,1549259,"BlankFlag","BlankFlag",NA
 "2833","161114_Smp_7803_F","Sarcosine",10.67,12071272,1211558,"1195228",1,NA,NA,NA,10.715,NA,1549259,NA,"",12071272
 "2834","161114_Smp_8102_A","Sarcosine",10.67,14056275,692304,"1649290",0.7,NA,NA,NA,10.715,NA,1549259,NA,"",14056275
@@ -5350,21 +5350,21 @@ Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak:
 "5348","161107_Smp_Tp_A","Inosine",8.14,138896,0,"34748",-1.2,NA,NA,NA,8.055,NA,0,NA,"",138896
 "5349","161107_Smp_Tp_E","Inosine",8.11,67078,0,"64976",-0.4,NA,NA,NA,8.055,NA,0,NA,"",67078
 "5350","161107_Smp_Tp_F","Inosine",NA,NA,NA,"#N/A",NA,NA,NA,NA,8.055,NA,0,NA,"",NA
-"5351","161107_Smp_Cy_A","Beta_GlutamicAcid",11.58,2258918,479735,"596941",-1.1,NA,NA,NA,11.97,NA,462735,"BlankFlag","BlankFlag",NA
-"5352","161107_Smp_Cy_B","Beta_GlutamicAcid",11.69,9503798,453128,"1607767",-1,NA,NA,NA,11.97,NA,462735,NA,"",9503798
-"5353","161107_Smp_Cy_C","Beta_GlutamicAcid",11.57,1878360,284055,"463670",-1.6,NA,NA,NA,11.97,NA,462735,"BlankFlag","BlankFlag",NA
-"5354","161107_Smp_2090_A","Beta_GlutamicAcid",11.77,1105525,81800,"215366",-1,NA,NA,NA,11.97,NA,465655,"BlankFlag","BlankFlag",NA
-"5355","161107_Smp_2090_B","Beta_GlutamicAcid",11.52,789351,206754,"85563",-1.3,NA,NA,NA,11.97,NA,465655,"BlankFlag","BlankFlag",NA
-"5356","161107_Smp_2090_C","Beta_GlutamicAcid",11.74,443939,0,"49155",-1.9,NA,NA,NA,11.97,NA,465655,"BlankFlag","BlankFlag",NA
-"5357","161107_Smp_371_A","Beta_GlutamicAcid",11.46,336392,16182,"63667",-2.7,NA,NA,NA,11.97,NA,93227,"BlankFlag","BlankFlag",NA
-"5358","161107_Smp_371_B","Beta_GlutamicAcid",11.57,795681,0,"107973",-1.7,NA,NA,NA,11.97,NA,93227,NA,"",795681
-"5359","161107_Smp_371_C","Beta_GlutamicAcid",11.43,167991,46707,"46143",-2.1,NA,NA,NA,11.97,NA,93227,"BlankFlag","BlankFlag",NA
-"5360","161107_Smp_To_A","Beta_GlutamicAcid",11.69,188191,189160,"52897",-2.6,"SNFlag",NA,NA,11.97,NA,525387,"BlankFlag","SNFlag, BlankFlag",NA
-"5361","161107_Smp_To_B","Beta_GlutamicAcid",11.69,118886,70398,"32056",-1.7,"SNFlag",NA,NA,11.97,NA,525387,"BlankFlag","SNFlag, BlankFlag",NA
-"5362","161107_Smp_To_C","Beta_GlutamicAcid",11.49,548507,324350,"106494",-2.4,"SNFlag",NA,NA,11.97,NA,525387,"BlankFlag","SNFlag, BlankFlag",NA
-"5363","161107_Smp_Tp_A","Beta_GlutamicAcid",11.62,4267834,215826,"461178",-1.9,NA,NA,NA,11.97,NA,744052,NA,"",4267834
-"5364","161107_Smp_Tp_E","Beta_GlutamicAcid",11.55,766166,302560,"101714",-1.8,"SNFlag",NA,NA,11.97,NA,744052,"BlankFlag","SNFlag, BlankFlag",NA
-"5365","161107_Smp_Tp_F","Beta_GlutamicAcid",11.56,1068451,225339,"126043",-1.9,NA,NA,NA,11.97,NA,744052,"BlankFlag","BlankFlag",NA
+"5351","161107_Smp_Cy_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,462735,NA,"",NA
+"5352","161107_Smp_Cy_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,462735,NA,"",NA
+"5353","161107_Smp_Cy_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,462735,NA,"",NA
+"5354","161107_Smp_2090_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,465655,NA,"",NA
+"5355","161107_Smp_2090_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,465655,NA,"",NA
+"5356","161107_Smp_2090_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,465655,NA,"",NA
+"5357","161107_Smp_371_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,93227,NA,"",NA
+"5358","161107_Smp_371_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,93227,NA,"",NA
+"5359","161107_Smp_371_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,93227,NA,"",NA
+"5360","161107_Smp_To_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,525387,NA,"",NA
+"5361","161107_Smp_To_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,525387,NA,"",NA
+"5362","161107_Smp_To_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,525387,NA,"",NA
+"5363","161107_Smp_Tp_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"5364","161107_Smp_Tp_E","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"5365","161107_Smp_Tp_F","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
 "5366","161107_Smp_Cy_A","Sarcosine",10.62,4915740,0,"513343",0.5,NA,NA,NA,10.715,NA,213272,NA,"",4915740
 "5367","161107_Smp_Cy_B","Sarcosine",10.61,4155241,0,"376143",0.6,NA,NA,NA,10.715,NA,213272,NA,"",4155241
 "5368","161107_Smp_Cy_C","Sarcosine",10.62,4771983,0,"448189",0.5,NA,NA,NA,10.715,NA,213272,NA,"",4771983
@@ -6688,14 +6688,14 @@ Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak:
 "6686","170213_Smp_Np_F","Inosine",8.07,12061387,0,"710837",-0.4,NA,NA,NA,8.055,NA,0,NA,"",12061387
 "6687","170213_Smp_Pt_C","Inosine",8.05,2561126,0,"437616",-6.1,NA,"ppmFlag",NA,8.055,NA,0,NA,"ppmFlag, ",NA
 "6688","170213_Smp_Pt_F_rerun","Inosine",8.16,1748136,0,"266273",-5.2,NA,NA,NA,8.055,NA,0,NA,"",1748136
-"6689","170213_Smp_Pc55x_A","Beta_GlutamicAcid",11.06,1166679,0,"43064",-2.4,NA,NA,NA,11.97,NA,1822183,"BlankFlag","BlankFlag",NA
-"6690","170213_Smp_Pc55x_B","Beta_GlutamicAcid",10.73,1080747,51663,"43154",-2.1,NA,NA,NA,11.97,NA,1822183,"BlankFlag","BlankFlag",NA
-"6691","170213_Smp_Pc55x_C","Beta_GlutamicAcid",10.59,51273,976798,"15802",-1.5,"SNFlag",NA,NA,11.97,NA,1822183,"BlankFlag","SNFlag, BlankFlag",NA
-"6692","170213_Smp_Np_A_rerun","Beta_GlutamicAcid",11.24,849725,0,"56661",-1.4,NA,NA,NA,11.97,NA,744052,"BlankFlag","BlankFlag",NA
-"6693","170213_Smp_Np_C_rerun","Beta_GlutamicAcid",11.27,1532193,0,"71791",-1.3,NA,NA,NA,11.97,NA,744052,"BlankFlag","BlankFlag",NA
-"6694","170213_Smp_Np_F","Beta_GlutamicAcid",11.23,642102,335129,"66387",-1.6,"SNFlag",NA,NA,11.97,NA,744052,"BlankFlag","SNFlag, BlankFlag",NA
-"6695","170213_Smp_Pt_C","Beta_GlutamicAcid",10.82,1355688,0,"95514",-1.5,NA,NA,NA,11.97,NA,744052,"BlankFlag","BlankFlag",NA
-"6696","170213_Smp_Pt_F_rerun","Beta_GlutamicAcid",10.84,878661,0,"71604",-1.2,NA,NA,NA,11.97,NA,744052,"BlankFlag","BlankFlag",NA
+"6689","170213_Smp_Pc55x_A","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,1822183,NA,"",NA
+"6690","170213_Smp_Pc55x_B","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,1822183,NA,"",NA
+"6691","170213_Smp_Pc55x_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,1822183,NA,"",NA
+"6692","170213_Smp_Np_A_rerun","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"6693","170213_Smp_Np_C_rerun","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"6694","170213_Smp_Np_F","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"6695","170213_Smp_Pt_C","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
+"6696","170213_Smp_Pt_F_rerun","Beta_GlutamicAcid",NA,NA,NA,"#N/A",NA,NA,NA,NA,11.97,NA,744052,NA,"",NA
 "6697","170213_Smp_Pc55x_A","Alanine",11.13,10271972,1482937,"1187577",5.4,NA,NA,NA,11.19,NA,313602,NA,"",10271972
 "6698","170213_Smp_Pc55x_B","Alanine",11.13,10226362,1409191,"1163447",5.6,NA,NA,NA,11.19,NA,313602,NA,"",10226362
 "6699","170213_Smp_Pc55x_C","Alanine",11.13,7191132,1980288,"706734",6.1,NA,"ppmFlag",NA,11.19,NA,313602,NA,"ppmFlag, ",NA
