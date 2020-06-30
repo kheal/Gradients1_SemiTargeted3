@@ -1,6 +1,7 @@
 #Helpful websites: https://briatte.github.io/ggnet/ , https://kateto.net/network-visualization , https://cran.r-project.org/web/packages/ggnetwork/vignettes/ggnetwork.html
 #https://igraph.discourse.group/t/error-with-igraph-layout/228/6
 #might need an older version of igraph
+source("Figures/Code/SampleMap.R")
 
 library(tidyverse) 
 library(ggplot2) 
@@ -9,15 +10,15 @@ library(igraph)
 library(intergraph)
 library(ggnetwork)
 library(cowplot)
+theme_set(theme_cowplot())
 library(here)
-library(ghibli)
-library(dutchmasters)
-library(wesanderson)
 library(vroom)
+library(ggraph)
 options(readr.num_columns = 0)
 
 #TO DO: don't plot modes that only have a few mass features in it
-#TO DO: shapes that correspond to the # of mass features in each group
+#TO DO: figure out a way to put on the organism's plots here?
+#TO DO: add keys straight to the plots
 
 #File names
 MGL.dat.file <- "Intermediates/MGL_wide_stand_withclusters.csv"
@@ -35,13 +36,19 @@ Meta.dat <- read_csv(Meta.dat.file)
 MF.dat <- read_csv(MF.dat.file)
 bootstrap.results <- vroom(bootstrap.files)
 
+#Set colors-----
+MGL.color <- "#A65141"
+KM.color <- "#80A0C7"
+KOK.color <- "#DCA258"
+Org.color <- "#00295D"
+
 
 #Make some mode plots-----
 #munge data for MGL mode plot -----
 MGL.dat.ave.mode <- MGL.dat %>%
   group_by(cluster, cluster_letters, Depth) %>%
-  summarise(mean_std_area = as.numeric(mean(std_area)),
-            stdev_std_area = as.numeric(sd(std_area)),
+  summarise(mean_std_area = as.numeric(mean(std_area, na.rm = TRUE)),
+            stdev_std_area = as.numeric(sd(std_area, na.rm = TRUE)),
             max_area = max(std_area),
             min_area = min(std_area)) %>%
   ungroup() %>%
@@ -66,12 +73,11 @@ pal.MGL <- c(colorRampPalette(dutchmasters$pearl_earring)(MGL.cols.needed))
 g.mode.MGL <- ggplot()+
   geom_ribbon(data = MGL.dat.ave.mode, aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
                                            ymax = ifelse(mean_std_area + stdev_std_area < 1, mean_std_area + stdev_std_area, 1),
-                                           x = Depth, fill = cluster_letters)) +
+                                           x = Depth), fill = MGL.color) +
   geom_text(data = MGL.count, aes(x = 100, y = 0.5, 
                                   label = cluster_letters), size = 4, fontface = "italic")+
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 1), expand = c(0,0), breaks = c(0, 0.25, 0.5, 0.75, 1.0))+
   scale_x_reverse() +
-  scale_fill_manual(values = pal.MGL)+
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Depth (m)") +
@@ -101,8 +107,8 @@ KM.dat.MF.ave <- KM.dat %>%
 
 KM.dat.ave.mode <- KM.dat %>%
   group_by(cluster,cluster_letters, Depth) %>%
-  summarise(mean_std_area = as.numeric(mean(std_area)),
-            stdev_std_area = as.numeric(sd(std_area))) %>%
+  summarise(mean_std_area = as.numeric(mean(std_area, na.rm = TRUE)),
+            stdev_std_area = as.numeric(sd(std_area, na.rm = TRUE))) %>%
   ungroup() %>%
   left_join(KM.dat.rep.number) %>%
   mutate(mean_std_area = mean_std_area * 1,
@@ -132,12 +138,11 @@ g.mode.KM <- ggplot()+
                                 mean_std_area - stdev_std_area, 0),
                   ymax = ifelse(mean_std_area + stdev_std_area < .4,
                                 mean_std_area + stdev_std_area, .4),
-                  x = Depth, fill = cluster_letters)) +
+                  x = Depth), fill =  KM.color) +
   geom_text(data = KM.count%>% filter(cluster_letters != "g"), aes(x = 50, y = 0.25, 
                                                                     label = cluster_letters), size = 4, fontface = "italic")+
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, .45), expand = c(0,0), breaks = c(0, 0.2, 0.4))+
   scale_x_reverse() +
-  scale_fill_manual(values = pal.KM)+
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 1) +
   xlab("Depth (m)") +
@@ -164,8 +169,8 @@ KOK.dat.MF.ave <- KOK.dat %>%
 KOK.dat.ave.mode <- KOK.dat %>%
   left_join(Meta.dat %>% select(SampID, Station_1))%>%
   group_by(cluster, cluster_letters, Station_1) %>%
-  summarise(mean_std_area = as.numeric(mean(std_area)),
-            stdev_std_area = as.numeric(sd(std_area)),
+  summarise(mean_std_area = as.numeric(mean(std_area, na.rm = TRUE)),
+            stdev_std_area = as.numeric(sd(std_area, na.rm = TRUE)),
             max_area = max(std_area),
             min_area = min(std_area),
             latitude = round(mean(latitude), digits = 1)) %>%
@@ -194,13 +199,12 @@ g.mode.KOK <- ggplot()+
               aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
                                           ymax = ifelse(mean_std_area + stdev_std_area < 0.22, 
                                                         mean_std_area + stdev_std_area, 0.22),
-                                          x = latitude, fill = cluster_letters), alpha = 0.8) +
+                                          x = latitude), fill = KOK.color) +
   geom_text(data = KOK.count, 
             aes(x = 27, y = .15, label = cluster_letters), size = 4, fontface = "italic")+
 
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), expand = c(0,0), breaks = c(0, 0.1, 0.2))+
   facet_wrap(cluster_letters ~ ., ncol = 2) +
-  scale_fill_manual(values = pal.KOK)+
   xlab("Latitude") +
   ylab("Standardized peak area")+
   theme(strip.background = element_blank(), 
@@ -212,15 +216,8 @@ g.mode.KOK <- ggplot()+
         legend.position = "none")
 g.mode.KOK
 
-modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.5))
+modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.5), labels = c("A", "B", "C"))
 modes.combined
-
-
-
-
-
-
-
 
 
 
@@ -230,7 +227,7 @@ edges.dat <- bootstrap.results %>%
   separate(cluster_overlap, into = c("node1", "node2"), sep = "&") %>%
   mutate(weight = ifelse(is.na(count), 0, count)) %>%
   mutate(pval = as.numeric(pval),
-         significant = pval < 0.11) %>%
+         significant = pval < 0.09) %>%
   select(node1, node2, weight, significant) %>%
   filter(significant == TRUE)
 
@@ -238,25 +235,29 @@ node.dat <- edges.dat %>% select(node1, weight) %>%
   rbind(edges.dat %>% select(node2, weight) %>% rename(node1 = node2)) %>%
   group_by(node1) %>%
   summarise(count = sum(weight)) %>%
-  separate(node1, into = c("dataset", "cluster"), sep = "_", remove = FALSE)
+  separate(node1, into = c("dataset", "cluster"), sep = "_", remove = FALSE) %>%
+  mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" ))
 
 #make an igraph object
 net <- graph_from_data_frame(d=edges.dat, vertices=node.dat, directed=FALSE) 
 
-#Barely working from here
-#set colors of nodes, and shapes of nodes, size of node
-#colrs <- c("gray50", "tomato", "gold", "cornflowerblue")
-V(net)$color <- colrs[as.factor(V(net)$dataset)]
-shaps <- c("square", "circle", "triangle", "diamond")
-V(net)$shapes <- shaps[as.factor(V(net)$dataset)]
-V(net)$size <- V(net)$count/10
-
-plot(net)
-
-library(ggraph)
-ggraph(net, layout="kk") +
-  geom_edge_fan(color="gray50") + 
+#plot up the network
+g.net <- ggraph(net, layout = 'kk') + #gem, dh, graphopt, fr, kk, lgl all look decent
+  geom_edge_fan(color="gray80", aes()) + 
   geom_node_point(aes(color = dataset,
-                      shape = dataset), size = 4) +
-  geom_node_text(aes(label = cluster), size=3, color="black", repel=T) +
-  theme_void()
+                      shape = dataset, 
+                      size = count)) +
+  geom_node_text(aes(label = cluster), size=3, color="black", repel=T, fontface = "italic") +
+  scale_color_manual(values = c(KM.color, KOK.color, MGL.color, Org.color))+
+  scale_shape_manual(values = c(15,16,17,18))+
+  theme(legend.position = "none")
+g.net
+
+#load the map?
+nodes.with.map <- plot_grid(KOK.map, g.net, ncol = 2, rel_widths = c(1, 2), labels = c("D", "E"))
+
+modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
+modes.with.nodes
+
+save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+

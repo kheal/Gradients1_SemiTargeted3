@@ -30,8 +30,8 @@ stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
 meta.dat.enviro <- read_csv(field.meta.dat.filename) %>%
   select(SampID, Volume, PC_ave, Station_1, Cruise, Depth, latitude)
 
-meta.dat.culture <- read_csv(culture.meta.dat.filename) %>%
-  select(CultureID, BioVol_perFilter_uL, nmolC_filtered_final, Org_Type)
+meta.dat.culture <- read_csv(culture.meta.dat.filename)%>%
+  select(CultureID, CultureID_short, BioVol_perFilter_uL, nmolC_filtered_final, Org_Type, Species)
 
 #Load up chromat data -----
 chromat.dat <- read_csv(chromat.filename, skip = 1)
@@ -160,14 +160,30 @@ g.chromat
 
 
 #Get plot of homarine and trig in organisms------
-g.cul <- ggplot(data = cul.dat2 %>%
+#Munge data to get rid of orgs that we never saw these compounds in, get just species name
+good.orgs <- cul.dat2 %>%
+  group_by(Org_Name) %>%
+  summarise(intracell_conc_mmolL_sum = sum(intracell_conc_mmolL, na.rm = FALSE)) %>%
+  filter(intracell_conc_mmolL_sum>0)
+cul.dat3 <- cul.dat2 %>%
+  filter(Org_Name %in% good.orgs$Org_Name) %>%
+  left_join(meta.dat.culture %>% select(CultureID_short, Species), by = "CultureID_short") %>%
+  arrange(Org_Type_Specific)
+cul.dat3$Species <- factor(cul.dat3$Species, 
+                            levels = (unique(cul.dat3$Species)))
+
+g.cul <- ggplot(data = cul.dat3 %>%
+                  mutate(intracell_conc_mmolL = 
+                           ifelse(intracell_conc_mmolL == 0, NA, intracell_conc_mmolL)) %>%
                   mutate(intracell_conc_mmolL = 
                            ifelse(Identification == cmpds[1], intracell_conc_mmolL, intracell_conc_mmolL*100)),
                 aes(y = Org_Name, x = intracell_conc_mmolL, fill = Identification)) +
   geom_bar(stat= "identity", position = "dodge")+
+#  geom_point(position = position_dodge(width = 0.2))+
   scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), expand = c(0, 0), limits = c(0, 5E2),
                      breaks = c(0, 1E2, 2E2, 3E2,  4E2))+
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
+#  scale_x_log10( sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"))+
   labs(x= "mM intracellular Homarine") +
   theme(axis.title.x = element_text(size = 7),
         axis.title.y = element_blank(),

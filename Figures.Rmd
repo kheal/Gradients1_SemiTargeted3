@@ -86,6 +86,7 @@ remove(list = ls())
 
 #Plot homarine and trigonolline
 Still very prelim
+#TO DO: make it so the organisms' contributions are
 ```{r}
 source("Figures/Code/Homarine.R")
 remove(list = ls())
