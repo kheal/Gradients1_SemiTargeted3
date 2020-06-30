@@ -1,36 +1,36 @@
 cluster_overlap,pval.01,pval.05,pval.1,count,pval
-KOK_a&KM_a,81,73,71,93,0.01
-KOK_a&KM_b,45,39,37,20,not sig
-KOK_a&KM_c,25,23,22,7,not sig
-KOK_a&KM_d,12,9,8,1,not sig
-KOK_a&KM_NA,10,7,6,6,not sig
-KOK_b&KM_a,41,37,36,26,not sig
+KOK_a&KM_a,79,73,72,93,0.01
+KOK_a&KM_b,47,40,38,20,not sig
+KOK_a&KM_c,28,23,22,7,not sig
+KOK_a&KM_d,11,9,9,1,not sig
+KOK_a&KM_NA,10,7,7,6,not sig
+KOK_b&KM_a,44,37,36,26,not sig
 KOK_b&KM_b,25,21,20,18,not sig
-KOK_b&KM_c,16,13,12,17,0.01
-KOK_b&KM_d,8,5,5,NA,NA
-KOK_b&KM_NA,7,5,4,NA,NA
-KOK_c&KM_a,22,19,18,9,not sig
-KOK_c&KM_b,14,11,11,9,not sig
-KOK_c&KM_c,11,7,7,8,0.05
-KOK_c&KM_d,6,3,3,NA,NA
-KOK_c&KM_NA,6,3,2,3,0.1
-KOK_d&KM_a,34,28,27,17,not sig
-KOK_d&KM_b,21,16,15,23,0.01
-KOK_d&KM_c,15,10,9,1,not sig
-KOK_d&KM_d,7,4,4,3,not sig
+KOK_b&KM_c,18,13,12,17,0.05
+KOK_b&KM_d,9,6,5,NA,NA
+KOK_b&KM_NA,7,4,4,NA,NA
+KOK_c&KM_a,23,19,18,9,not sig
+KOK_c&KM_b,18,11,10,9,not sig
+KOK_c&KM_c,11,7,6,8,0.05
+KOK_c&KM_d,6,4,3,NA,NA
+KOK_c&KM_NA,5,3,2,3,0.1
+KOK_d&KM_a,32,28,27,17,not sig
+KOK_d&KM_b,20,16,15,23,0.01
+KOK_d&KM_c,13,10,9,1,not sig
+KOK_d&KM_d,7,5,4,3,not sig
 KOK_d&KM_NA,6,4,3,1,not sig
 KOK_e&KM_a,10,8,8,7,not sig
 KOK_e&KM_b,8,5,5,3,not sig
-KOK_e&KM_c,6,3,3,NA,NA
-KOK_e&KM_d,3,2,1,1,not sig
-KOK_e&KM_NA,3,2,1,NA,NA
+KOK_e&KM_c,6,4,3,NA,NA
+KOK_e&KM_d,4,2,1,1,not sig
+KOK_e&KM_NA,4,2,1,NA,NA
 KOK_f&KM_a,13,10,10,2,not sig
 KOK_f&KM_b,9,6,6,NA,NA
 KOK_f&KM_c,7,4,4,2,not sig
 KOK_f&KM_d,4,2,2,10,0.01
-KOK_f&KM_NA,4,2,1,NA,NA
-KOK_g&KM_a,21,18,17,9,not sig
+KOK_f&KM_NA,3,2,1,NA,NA
+KOK_g&KM_a,23,18,17,9,not sig
 KOK_g&KM_b,14,11,10,8,not sig
 KOK_g&KM_c,10,7,6,9,0.05
 KOK_g&KM_d,5,3,3,NA,NA
-KOK_g&KM_NA,5,3,2,1,not sig
+KOK_g&KM_NA,4,3,2,1,not sig

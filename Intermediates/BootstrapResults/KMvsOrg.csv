@@ -1,61 +1,41 @@
 cluster_overlap,pval.01,pval.05,pval.1,count,pval
-KM_a&Org_a,31,27,26,36,0.01
-KM_a&Org_b,16,13,12,11,not sig
-KM_a&Org_c,15,12,12,11,not sig
-KM_a&Org_d,20,15,14,9,not sig
-KM_a&Org_e,13,10,10,9,not sig
-KM_a&Org_f,39,33,33,33,not sig
-KM_a&Org_g,16,12,12,9,not sig
-KM_a&Org_h,20,17,16,10,not sig
-KM_a&Org_i,18,15,14,8,not sig
-KM_a&Org_j,11,9,8,7,not sig
-KM_a&Org_k,11,9,8,2,not sig
-KM_a&Org_NA,43,36,35,18,not sig
-KM_b&Org_a,19,15,15,6,not sig
-KM_b&Org_b,11,8,7,5,not sig
-KM_b&Org_c,11,8,7,6,not sig
-KM_b&Org_d,12,9,8,11,0.05
-KM_b&Org_e,9,6,6,5,not sig
-KM_b&Org_f,26,19,18,9,not sig
-KM_b&Org_g,10,7,7,8,0.05
-KM_b&Org_h,14,10,9,8,not sig
-KM_b&Org_i,14,9,8,5,not sig
-KM_b&Org_j,8,6,5,5,not sig
-KM_b&Org_k,8,6,5,3,not sig
-KM_b&Org_NA,26,20,19,10,not sig
-KM_c&Org_a,15,9,9,NA,NA
-KM_c&Org_b,8,5,4,1,not sig
-KM_c&Org_c,8,5,4,NA,NA
-KM_c&Org_d,9,6,5,2,not sig
-KM_c&Org_e,6,4,4,NA,NA
-KM_c&Org_f,15,12,11,7,not sig
-KM_c&Org_g,8,5,4,NA,NA
-KM_c&Org_h,9,6,6,7,0.05
-KM_c&Org_i,9,6,5,9,0.05
-KM_c&Org_j,6,4,3,NA,NA
-KM_c&Org_k,6,4,3,7,0.01
-KM_c&Org_NA,15,12,11,11,not sig
-KM_d&Org_a,7,4,4,NA,NA
-KM_d&Org_b,4,2,2,NA,NA
-KM_d&Org_c,4,3,2,NA,NA
-KM_d&Org_d,6,3,2,NA,NA
-KM_d&Org_e,4,2,2,NA,NA
-KM_d&Org_f,7,5,5,2,not sig
-KM_d&Org_g,4,2,2,NA,NA
-KM_d&Org_h,5,3,2,NA,NA
-KM_d&Org_i,5,3,2,NA,NA
-KM_d&Org_j,3,2,2,NA,NA
-KM_d&Org_k,4,2,2,NA,NA
+KM_a&Org_a,34,29,27,37,0.01
+KM_a&Org_b,17,14,13,12,not sig
+KM_a&Org_c,21,17,16,15,not sig
+KM_a&Org_d,41,35,34,34,not sig
+KM_a&Org_e,30,25,24,20,not sig
+KM_a&Org_f,32,28,27,15,not sig
+KM_a&Org_g,21,17,17,12,not sig
+KM_a&Org_NA,40,36,34,18,not sig
+KM_b&Org_a,20,16,15,7,not sig
+KM_b&Org_b,11,8,8,6,not sig
+KM_b&Org_c,13,10,9,10,0.1
+KM_b&Org_d,24,19,18,11,not sig
+KM_b&Org_e,20,15,14,17,0.05
+KM_b&Org_f,21,16,15,15,not sig
+KM_b&Org_g,15,11,10,5,not sig
+KM_b&Org_NA,24,20,19,10,not sig
+KM_c&Org_a,15,10,9,NA,NA
+KM_c&Org_b,8,5,5,1,not sig
+KM_c&Org_c,9,6,5,NA,NA
+KM_c&Org_d,18,12,11,7,not sig
+KM_c&Org_e,13,9,8,2,not sig
+KM_c&Org_f,13,10,9,14,0.01
+KM_c&Org_g,10,7,6,9,0.05
+KM_c&Org_NA,16,12,11,11,not sig
+KM_d&Org_a,8,4,4,NA,NA
+KM_d&Org_b,5,3,2,NA,NA
+KM_d&Org_c,5,3,3,NA,NA
+KM_d&Org_d,8,5,5,2,not sig
+KM_d&Org_e,6,4,3,NA,NA
+KM_d&Org_f,7,4,4,NA,NA
+KM_d&Org_g,5,3,3,NA,NA
 KM_d&Org_NA,8,5,5,13,0.01
-KM_NA&Org_a,6,3,3,NA,NA
+KM_NA&Org_a,6,4,3,1,not sig
 KM_NA&Org_b,4,2,2,1,not sig
-KM_NA&Org_c,4,2,2,1,not sig
-KM_NA&Org_d,5,2,2,NA,NA
-KM_NA&Org_e,4,2,1,NA,NA
-KM_NA&Org_f,7,4,3,3,not sig
-KM_NA&Org_g,6,2,2,NA,NA
-KM_NA&Org_h,4,3,2,NA,NA
-KM_NA&Org_i,4,2,2,NA,NA
-KM_NA&Org_j,3,1,1,NA,NA
-KM_NA&Org_k,3,1,1,NA,NA
-KM_NA&Org_NA,6,4,4,6,0.05
+KM_NA&Org_c,5,2,2,NA,NA
+KM_NA&Org_d,6,4,4,3,not sig
+KM_NA&Org_e,6,3,3,NA,NA
+KM_NA&Org_f,5,3,3,NA,NA
+KM_NA&Org_g,5,2,2,NA,NA
+KM_NA&Org_NA,7,4,4,6,0.05
