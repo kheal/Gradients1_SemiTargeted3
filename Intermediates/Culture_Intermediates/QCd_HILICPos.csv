@@ -1,4 +1,4 @@
-Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak: 40000. RT flexibility: 2.5. Blank can be this fraction of a sample: 5. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2020-06-28 13:09:35. 
+Hello! Welcome to the world of QE Quality Control! Minimum area for a real peak: 40000. RT flexibility: 2.5. Blank can be this fraction of a sample: 5. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2020-06-30 09:49:47. 
 "","Replicate.Name","Precursor.Ion.Name","Retention.Time","Area","Background","Height","Mass.Error.PPM","SNFlag","ppmFlag","areaminFlag","RT_ref","RTFlag","Blank.Area","BlankFlag","Flags","QC_area"
 "1","161114_Smp_7803_B","I130.05R12.12_HILICPos",12.28,1678457344,61833532,"132158240",-1.3,NA,NA,NA,12.4,NA,15440,NA,"",1678457344
 "2","161114_Smp_7803_F","I130.05R12.12_HILICPos",12.28,2264670208,75510456,"168213824",-1.4,NA,NA,NA,12.4,NA,15440,NA,"",2264670208

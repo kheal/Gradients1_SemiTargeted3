@@ -4,8 +4,10 @@ author: "Katherine Heal"
 date: "January 10 2020"
 output: html_document
 ---
-#TO DO: fix the names!!
-#TO DO: check and remake with R 4.0
+Figures for Gradients 1.0 metabolomics manuscript and associated presentations
+
+TO DO: fix the names!!
+
 ```{r setup, include=FALSE}
 library(tidyverse)
 ```

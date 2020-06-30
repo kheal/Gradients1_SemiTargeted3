@@ -12,6 +12,8 @@ Analysis notes:
 AOA cell counts are just holder for now - everything needs to be rerun when those numbers are better
 Cluster with or without AOA?  If without, we need to dump those cultures during the k-means calculations
 
+Hello!
+
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
 library(cowplot)
@@ -20,7 +22,7 @@ library(here)
 ```
 
 #QC and tidy up culture samples
-TO DO: Adjust and rerun with real (not just holder) cell counts for the AOA
+TO DO: Adjust and rerun with real (not just holder data) cell counts for the AOA
 Run the QC for each fraction, combine and make tidy to compare with environmental samples
 ```{r, message=FALSE, error=FALSE, warning=FALSE, }
 source("SourceCode/QC_HILICPos_Cultures.R")
@@ -91,7 +93,7 @@ remove(list = ls())
 Assign each MF:dataset a cluster, save out cluster diagnostics for each sample set.  
 Bootstrap the clusters to see if there is overexpressed overlap between clusters
 TO DO: add a "significant under-overlap variable" 
-TO DO: will probably need to mudge with the letters etc
+TO DO: clean up cluster letters
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #To reorganize the clusters, rename them within this file
 source("SourceCode/clustering_all_seperate.R") 
