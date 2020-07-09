@@ -17,8 +17,6 @@ library(ggraph)
 options(readr.num_columns = 0)
 
 #TO DO: don't plot modes that only have a few mass features in it
-#TO DO: figure out a way to put on the organism's plots here?
-#TO DO: add keys straight to the plots
 
 #File names
 MGL.dat.file <- "Intermediates/MGL_wide_stand_withclusters.csv"
@@ -66,18 +64,27 @@ MGL.count.id <- MGL.dat %>%  left_join(MF.dat %>% select(MassFeature_Column, Con
   group_by(cluster_letters) %>% summarise(n = n())
 
 MGL.count <- left_join(MGL.count, MGL.count.id) %>%
-  mutate(n = ifelse(is.na(n), 0, n))
+  mutate(n = ifelse(is.na(n), 0, n)) 
+
+MGL.dat.ave.mode.2 <- MGL.dat.ave.mode %>%
+  left_join(MGL.count, by = "cluster_letters") %>%
+  filter(MF.percent > 5)
+
 #make the MGL mode plot -----
-MGL.cols.needed <- length(unique(MGL.dat.ave.mode$cluster_letters))
-pal.MGL <- c(colorRampPalette(dutchmasters$pearl_earring)(MGL.cols.needed))
 g.mode.MGL <- ggplot()+
-  geom_ribbon(data = MGL.dat.ave.mode, aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
-                                           ymax = ifelse(mean_std_area + stdev_std_area < 1, mean_std_area + stdev_std_area, 1),
+  geom_ribbon(data = MGL.dat.ave.mode.2, 
+              aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
+                                           ymax = ifelse(mean_std_area + stdev_std_area < 1, 
+                                                         mean_std_area + stdev_std_area, 1),
                                            x = Depth), fill = MGL.color) +
-  geom_text(data = MGL.count, aes(x = 100, y = 0.5, 
-                                  label = cluster_letters), size = 4, fontface = "italic")+
-  scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 1), expand = c(0,0), breaks = c(0, 0.25, 0.5, 0.75, 1.0))+
-  scale_x_reverse() +
+  geom_text(data = MGL.count %>% filter(MF.percent > 5), 
+            aes(x = 100, y = 0.5, label = cluster_letters), size = 4, fontface = "italic")+
+  geom_text(data = MGL.count %>% filter(MF.percent > 5), 
+            aes(x = 150, y = 0.5, 
+                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
+  scale_y_continuous(sec.axis = dup_axis(), 
+                     limits = c(0, 1.1), expand = c(0,0), breaks = c(0,  0.5,  1.0))+
+  scale_x_reverse(limits = c(260,0), expand = c(0,0), breaks = c(0, 100, 200)) +
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Depth (m)") +
@@ -85,9 +92,12 @@ g.mode.MGL <- ggplot()+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
+        axis.title.x.top  = element_text(size = 8),
+        axis.title.x.bottom  = element_blank(),
         axis.title.x = element_text(size = 8),
         axis.text.y = element_text(size = 7),
-        axis.text.x = element_text(size = 7),
+        axis.text.x.bottom = element_blank(),
+        axis.text.x.top = element_text(size = 7),
         legend.position = "none")
 g.mode.MGL
 
@@ -139,10 +149,13 @@ g.mode.KM <- ggplot()+
                   ymax = ifelse(mean_std_area + stdev_std_area < .4,
                                 mean_std_area + stdev_std_area, .4),
                   x = Depth), fill =  KM.color) +
-  geom_text(data = KM.count%>% filter(cluster_letters != "g"), aes(x = 50, y = 0.25, 
-                                                                    label = cluster_letters), size = 4, fontface = "italic")+
+  geom_text(data = KM.count, 
+            aes(x = 50, y = 0.25, label = cluster_letters), size = 4, fontface = "italic")+
+  geom_text(data = KM.count, 
+            aes(x = 85, y = 0.25, 
+                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, .45), expand = c(0,0), breaks = c(0, 0.2, 0.4))+
-  scale_x_reverse() +
+  scale_x_reverse(limits = c(126,0), expand = c(0,0), breaks = c(0, 50, 100)) +
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 1) +
   xlab("Depth (m)") +
@@ -150,9 +163,12 @@ g.mode.KM <- ggplot()+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
+        axis.title.x.top  = element_text(size = 8),
+        axis.title.x.bottom  = element_blank(),
         axis.title.x = element_text(size = 8),
         axis.text.y = element_text(size = 7),
-        axis.text.x = element_text(size = 7),
+        axis.text.x.bottom = element_blank(),
+        axis.text.x.top = element_text(size = 7),
         legend.position = "none")
 
 g.mode.KM
@@ -201,22 +217,26 @@ g.mode.KOK <- ggplot()+
                                                         mean_std_area + stdev_std_area, 0.22),
                                           x = latitude), fill = KOK.color) +
   geom_text(data = KOK.count, 
-            aes(x = 27, y = .15, label = cluster_letters), size = 4, fontface = "italic")+
-
-  scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), expand = c(0,0), breaks = c(0, 0.1, 0.2))+
+            aes(x = 30, y = .15, label = cluster_letters), size = 4, fontface = "italic")+
+  geom_text(data = KOK.count, 
+            aes(x = 30, y = 0.07, 
+                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
+    scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), expand = c(0,0), breaks = c(0, 0.1, 0.2))+
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Latitude") +
   ylab("Standardized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
-        axis.title.y = element_text(size = 8),
+        axis.title.y.left = element_text(size = 8),
+        axis.title.y.right = element_blank(),
         axis.title.x = element_text(size = 8),
-        axis.text.y = element_text(size = 7),
+        axis.text.y.left = element_text(size = 7),
+        axis.text.y.right = element_blank(),
         axis.text.x = element_text(size = 7),
         legend.position = "none")
 g.mode.KOK
 
-modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.5), labels = c("A", "B", "C"))
+modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.7), labels = c("A", "B", "C"))
 modes.combined
 
 
@@ -238,11 +258,22 @@ node.dat <- edges.dat %>% select(node1, weight) %>%
   separate(node1, into = c("dataset", "cluster"), sep = "_", remove = FALSE) %>%
   mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" ))
 
+big.nodes <- node.dat %>%
+  filter(count > 15)
+
+edges.dat.2 <- edges.dat %>%
+  filter(node1 %in% big.nodes$node1) %>%
+  filter(node2 %in% big.nodes$node1)
+
+node.dat.2 <- node.dat %>%
+  filter(node1 %in% big.nodes$node1) 
+
 #make an igraph object
-net <- graph_from_data_frame(d=edges.dat, vertices=node.dat, directed=FALSE) 
+net <- graph_from_data_frame(d=edges.dat.2, vertices=node.dat.2, directed=FALSE) 
 
 #plot up the network
-g.net <- ggraph(net, layout = 'kk') + #gem, dh, graphopt, fr, kk, lgl all look decent
+set.seed(16)
+g.net <- ggraph(net, layout = 'dh') + #gem, dh, graphopt, fr, kk, lgl all look decent
   geom_edge_fan(color="gray80", aes()) + 
   geom_node_point(aes(color = dataset,
                       shape = dataset, 

@@ -73,8 +73,10 @@ KOK.map<-
         aspect.ratio=3,
         plot.margin = margin(0, .1, 0, .1, "cm")) +
   labs(fill = c(expression(paste("Chla \n(mg/m"^"3", ")")))) + 
-  annotate("text", x = -159.9, y = 28, label = "NPSG", size = 2.5) +
-  annotate("text", x = -159.9, y = 35, label = "NPTZ", size = 2.5) 
+  annotate("text", x = -159.9, y = 28, label = "NPSG", size = 2.3) +
+  annotate("text", x = -159.9, y = 35, label = "NPTZ", size = 2.3) +
+  annotate("text", x = -157, y = 41, label = "NPTZ \ndepth profile", size = 2.3) +
+  annotate("text", x = -156, y = 23.3, label = "NPSG\ndepth profile", size = 2.3) 
 KOK.map
 
 rm(list=setdiff(ls(), c("g.mode.KOK", "g.mode.KM", "g.mode.MGL", "g.MGL.ctd", "g.KM.ctd", "g.tile.KM", "g.tile.MGL", "g.tile.KOK", "g.KOK.ctd", "g.cmps.KOK", "g.cmps.MGL", "g.cmps.KM", "KOK.map")))
