@@ -47,7 +47,7 @@ d <- ggplot(data = dat.long.surface.summary, aes(x =latitude_round, y =  ngperLa
  # geom_line(size = 2)+
   geom_ribbon(aes(ymax = ngperLave+ngperLngsd, ymin =ngperLave-ngperLngsd, fill = pigment ), alpha = 0.5)+
   facet_wrap(~ pigment, scales = "free")
-
+d
 #Plot as pigment/Chla over space
 dat.long.surface.chla <- dat.long.surface %>%
   filter(pigment =="Chla") %>% mutate(Chla = ngperL) %>% select(-pigment, -ngperL)
