@@ -16,7 +16,7 @@ library(vroom)
 library(ggraph)
 options(readr.num_columns = 0)
 
-#TO DO: don't plot modes that only have a few mass features in it
+#TO DO: add clouds with description
 
 #File names
 MGL.dat.file <- "Intermediates/MGL_wide_stand_withclusters.csv"
@@ -35,9 +35,9 @@ MF.dat <- read_csv(MF.dat.file)
 bootstrap.results <- vroom(bootstrap.files)
 
 #Set colors-----
-MGL.color <- "#A65141"
+MGL.color <- "#DCA258"
 KM.color <- "#80A0C7"
-KOK.color <- "#DCA258"
+KOK.color <- "brown4"
 Org.color <- "#00295D"
 
 

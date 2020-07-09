@@ -104,8 +104,8 @@ g.tile.KOK <- ggplot(dat = KOK.dat.long.med %>%
   annotate("point", x = 4.5, y = 0, fill = "black", shape =24, size = 3)+
   scale_fill_gradient2(low="cornsilk1", mid="brown4", high="brown4",
                        midpoint=.08, limits = c(0, .12), na.value = "grey80", breaks = c(0.0, 0.04, 0.08, 0.12))  +
-  scale_colour_manual(values=c("grey80")) +  
-  guides(colour=guide_legend("not \nobserved", override.aes=list(fill="grey80")))+
+  scale_colour_manual(values=c("grey90")) +  
+  guides(colour=guide_legend("not \nobserved", override.aes=list(fill="grey90")))+
   theme(axis.text.x = element_text(angle=-60, hjust=0, size = 6),
         axis.line.y = element_blank(),
         axis.title.y = element_blank(),
@@ -180,16 +180,16 @@ names(org.cluster.labs) <- c("a", "b", "c", "d", "e", "f", "g", "not observed")
 
 not.observe.label <-  data.frame(text.x = 18,text.y = 5,lab = "not observed", cluster_letters = factor("not observed",levels = names(org.cluster.labs)))
 
-g.tile.org <- ggplot(data = orgs.dat.long.med, aes(x = factor(CultureID_short), y = MassFeature_Column, fill = std_area, colour = "")) +
+g.tile.org <- ggplot(data = orgs.dat.long.med %>% filter(CultureID_short != "Nmar"), aes(x = factor(CultureID_short), y = MassFeature_Column, fill = std_area, colour = "")) +
   geom_tile(fill = NA) +
   geom_tile(colour = NA) +
   facet_grid(cluster_letters ~ ., scales="free_y", space="free_y", labeller = labeller(cluster_letters = org.cluster.labs))+
   geom_hline(data= lindat, aes(yintercept=x), col="black", size = 0.5) +
   geom_text(data = not.observe.label, inherit.aes = FALSE, aes(x = text.x, y =text.y, label = lab), fontface = "italic", size = 2)+
-  scale_fill_gradient2(low="slateblue4", mid="cornsilk1", high="darkolivegreen",
-                       midpoint=0, limits = c(0.0, 1), na.value = "grey80", breaks = c(0.0, 0.5, 1.0))+
+  scale_fill_gradient2(low="slateblue4", mid="cornsilk1", high="#00295D",
+                       midpoint=0, limits = c(0.0, 1), na.value = "grey90", breaks = c(0.0, 0.5, 1.0))+
   scale_colour_manual(values=c("grey80")) +  
-  guides(colour=guide_legend("not \nobserved", override.aes=list(fill="grey80")))+
+  guides(colour=guide_legend("not \nobserved", override.aes=list(fill="grey90")))+
   theme(axis.line.y = element_blank(),
         axis.title = element_blank(),
         axis.ticks = element_blank(), 
@@ -211,11 +211,12 @@ g.tile.org
 
 #Make another tile plot to smash together with colored names-----
 pal <- park_palette("Redwoods", 5)
-pal2 <- c("deepskyblue4", pal[5], pal[2:4], pal[1])
-g.tile.org.key <- ggplot(data = order.of.org.df, aes(x = factor(CultureID_short), y = 1, fill = Org_Type), colour = "black") +
+#pal2 <- c("deepskyblue4", pal[5], pal[2:4], pal[1])
+g.tile.org.key <- ggplot(data = order.of.org.df %>% filter(CultureID_short != "Nmar"), 
+                         aes(x = factor(CultureID_short), y = 1, fill = Org_Type), colour = "black") +
   geom_tile() +
   geom_text(aes(label = CultureID_short), angle = -90, size = 1.7, fontface = "italic")+
-  scale_fill_manual(values = pal2)+
+  scale_fill_manual(values = pal)+
   xlab("Organisms (colored by broad classification)")+
   theme(axis.line.y = element_blank(),
         axis.line = element_blank(),
