@@ -87,11 +87,4 @@ mesh.KOK.PC.new.names <- mesh.KOK.PC %>%
          Latitude = latitude.x, 
          `Depth (m)` = Depth)
   
-
-#Write out appropriate comment
-comment <- "Total quantifiable metabolites as a fraction of the particulate carbon and nitrogen pools.  All measurements are mean (standard deviation), except when n= 1.  Standard deviations of calculations (percentages) are propogated. "
-
-con <- file("Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv", open="wt")
-writeLines(paste(comment), con)
-write.csv( mesh.KOK.PC.new.names, con)
-close(con)
+write_csv( mesh.KOK.PC.new.names, "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv")

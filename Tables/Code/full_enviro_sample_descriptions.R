@@ -1,9 +1,3 @@
-# %TO DO: make supplmental Table of full description of samples
-# \begin{table}[ht]
-# \centering
-# \caption{\label{FullEnviroSampleDescriptions} Full sample descriptions for environmental samples} 
-# \end{table}
-
 library(tidyverse)
 
 #Read in your dat files
@@ -13,7 +7,6 @@ dat.namematcher.filename <- "Intermediates/WideArea_withIDinfo_withCultureLogBio
 #Check out data
 dat <- read_csv(dat.filename)
 dat.names <- read_csv(dat.namematcher.filename)
-
 
 #Clean it up
 dat.clean <- dat %>%
@@ -25,13 +18,8 @@ dat.clean <- dat %>%
          `Depth (m)` = Depth,
          `Time (UTC)` = UTC_real,
          `Sampling Method` = SampType,
-         `Volume (L)` = Volume) %>%
+         `Volume (L)` = Volume, 
+          `Dilution factor` = Dilution_Factor) %>%
   filter(`Sample ID` %in% colnames(dat.names))
 
-#Write out appropriate comment
-comment <- "Sample descriptions for individual environmental samples collected and anlayzed"
-
-con <- file("Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv", open="wt")
-writeLines(paste(comment), con)
-write.csv( dat.clean, con)
-close(con)
+write_csv( dat.clean, "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv")
