@@ -1,12 +1,16 @@
-#TO DO: make table that is the known compounds and which assignments they live in.
+#TO DO: add MS2s
 library(tidyverse)
 
 #Read in your dat files
 dat.filename <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
+dat.ms2.filename <- "RawOutput/NoIsos_allFractions_VolNormed_BMISd_CVFiltered_xsetWIDE_wMS2_wIDs.csv"
 MGL.clusterfilename  <- "Intermediates/MGL_wide_stand_withclusters.csv"
 KM.clusterfilename <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.clusterfilename <- "Intermediates/KOK_wide_stand_withclusters.csv"
 Org.clusterfilename <- "Intermediates/organs_wide_stand_withclusters.csv"
+
+#Check out MS2 data
+dat.ms2 <- read_csv(dat.ms2.filename)
 
 #Check out data
 dat <- read_csv(dat.filename) %>%

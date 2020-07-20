@@ -52,7 +52,19 @@ remove(list = ls())
 source('Tables/Code/full_enviro_sample_descriptions.R')
 remove(list = ls())
 
+#Summary of quantification methods used
+source('Tables/Code/full_quan_methods_table.R')
+remove(list = ls())
+
+#All mass features and normalized peak areas
+source('Tables/Code/full_EnviroCulture_PeakArea_results.R')
+remove(list = ls())
+
+
 ####Checked up to here
+
+
+
 
 
 #Summary of quantification methods used
@@ -81,7 +93,8 @@ supp.tables <-
   c("Tables/Manuscript_tables/SuppTables/Culture_descriptions_full.csv",
     "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv",
     "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv",
-    "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv")
+    "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv",
+    "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv")
 
 files.nms <- basename(supp.tables) %>% str_remove(".csv")
 

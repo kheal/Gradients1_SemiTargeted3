@@ -62,6 +62,7 @@ rm(BMISlist)
 ```
 
 #Combine and Tidy environmental data, add in culture data
+#TO DO: add in MS2 data to the wide area etc....
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Combine_Clean_nofunction.R')
 
@@ -70,6 +71,8 @@ dat.file <- read_csv("Intermediates/WideArea_withIDinfo.csv")
 culture.file <- read_csv("Intermediates/Culture_Intermediates/combined_wide_LogBioArea.csv")
 combo.wide <- left_join(dat.file, culture.file)
 write_csv(combo.wide, "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv")
+
+source('SourceCode/get_MS2s.R')
 
 remove(list = ls())
 ```
