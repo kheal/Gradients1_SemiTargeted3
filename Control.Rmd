@@ -62,7 +62,6 @@ rm(BMISlist)
 ```
 
 #Combine and Tidy environmental data, add in culture data
-#TO DO: add in MS2 data to the wide area etc....
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Combine_Clean_nofunction.R')
 

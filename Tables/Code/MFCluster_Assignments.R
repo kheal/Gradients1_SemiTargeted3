@@ -3,7 +3,7 @@ library(tidyverse)
 
 #Read in your dat files
 dat.filename <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
-dat.ms2.filename <- "RawOutput/NoIsos_allFractions_VolNormed_BMISd_CVFiltered_xsetWIDE_wMS2_wIDs.csv"
+dat.ms2.filename <- "Intermediates/MF_info_withMS2s.csv"
 MGL.clusterfilename  <- "Intermediates/MGL_wide_stand_withclusters.csv"
 KM.clusterfilename <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.clusterfilename <- "Intermediates/KOK_wide_stand_withclusters.csv"
