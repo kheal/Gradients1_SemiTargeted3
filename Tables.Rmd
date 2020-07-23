@@ -60,6 +60,10 @@ remove(list = ls())
 source('Tables/Code/full_EnviroCulture_PeakArea_results.R')
 remove(list = ls())
 
+#Full quantified results
+source('Tables/Code/full_quan_enviro_results_table.R')
+remove(list = ls())
+
 
 ####Checked up to here
 
@@ -94,7 +98,8 @@ supp.tables <-
     "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv",
     "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv",
     "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv",
-    "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv")
+    "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv", 
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv")
 
 files.nms <- basename(supp.tables) %>% str_remove(".csv")
 

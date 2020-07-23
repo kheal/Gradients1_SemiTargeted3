@@ -157,4 +157,4 @@ dat.all.2 <- dat.all %>%
   select(MassFeature_Column:z) %>%
   left_join(dat.ms2.all.2, by = c("MassFeature_Column", "mz", "rt") )
 
-write_csv(dat.all.2, "MF_info_withMS2s.csv")
+write_csv(dat.all.2, "Intermediates/MF_info_withMS2s.csv")

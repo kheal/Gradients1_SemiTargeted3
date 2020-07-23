@@ -36,6 +36,8 @@ dat.combo <- dat %>%
   arrange(mz) %>%
   arrange(Column) %>%
   arrange(z)
-  
 
-write_csv(dat.combo, "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv")
+dat.combo.MS2 <- dat.combo %>%
+  left_join(dat.ms2, by = c("MassFeature_Column", "Identification", "Confidence", "mz", "rt", "Column", "z"))
+
+write_csv(dat.combo.MS2, "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv")
