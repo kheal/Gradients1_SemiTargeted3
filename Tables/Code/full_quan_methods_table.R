@@ -67,10 +67,4 @@ dat.clean <- dat.enivro.clean %>%
          `Culture samples applied` = Sample_set_Cultures) %>%
   arrange(Compound)
 
-#Write out appropriate comment
-comment <- "Quantification method for each quantified metabolite in each sample set.  Proxy compound (when applicable) is the compound by which a relative response factor (RF) was calculated"
-
-con <- file("Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv", open="wt")
-writeLines(paste(comment), con)
-write.csv(dat.clean, con)
-close(con)
+write_csv(dat.clean, "Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv")

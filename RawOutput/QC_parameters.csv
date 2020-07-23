@@ -1,0 +1,11 @@
+﻿Parameter,Value,Analytical Set up
+minimum signal:noise of individual peak,3,HILIC
+ppm flexibility,6 ppm,HILIC
+minimum area of peak,40000,HILIC
+rention time flexibility,2.5 (minutes),HILIC
+minimum sample:blank ratio,5,HILIC
+minimum signal:noise of individual peak,10,RP
+ppm flexibility,4 ppm,RP
+minimum area of peak,40000,RP
+rention time flexibility,0.2 (minutes),RP
+minimum sample:blank ratio,5,RP

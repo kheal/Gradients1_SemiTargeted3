@@ -10,7 +10,7 @@ dat.names <- read_csv(dat.namematcher.filename)
 
 #Clean it up
 dat.clean <- dat %>%
-  select(SampID,  cruise, latitude, longitude, Depth, UTC_real, SampType, Volume) %>%
+  select(SampID,  cruise, latitude, longitude, Depth, UTC_real, SampType, Volume, Dilution_Factor) %>%
   rename(`Sample ID` = SampID,
          `Cruise ID` = cruise,
          Latitude = latitude, 

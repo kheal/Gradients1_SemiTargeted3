@@ -33,8 +33,6 @@ remove(list = ls())
 
 
 #Supplemental Tables (CSVs)
-TO DO: make Full culture sample descriptions
-TO DO: comments dont work well, incorporate this information into the supplemental table descriptions
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Full culture sample descriptions
 source('Tables/Code/Culture_descriptions_full.R')
@@ -60,10 +58,17 @@ remove(list = ls())
 source('Tables/Code/full_EnviroCulture_PeakArea_results.R')
 remove(list = ls())
 
-#Full quantified results
+#Full quantified results for enviro samples
 source('Tables/Code/full_quan_enviro_results_table.R')
 remove(list = ls())
 
+#Full quantified results for culture samples
+source('Tables/Code/full_quan_culture_results_table.R')
+remove(list = ls())
+
+#Summary of quantification methods used
+source('Tables/Code/full_quan_methods_table.R')
+remove(list = ls())
 
 ####Checked up to here
 
@@ -71,13 +76,8 @@ remove(list = ls())
 
 
 
-#Summary of quantification methods used
-source('Tables/Code/full_quan_methods_table.R')
-remove(list = ls())
 
-#Full quantified results
-source('Tables/Code/full_quan_results_table.R')
-remove(list = ls())
+
 
 
 
@@ -99,9 +99,17 @@ supp.tables <-
     "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv",
     "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv",
     "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv", 
-    "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv")
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv",
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Culture_Results.csv",
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv",
+    "RawOutput/QC_parameters.csv")
 
-files.nms <- basename(supp.tables) %>% str_remove(".csv")
+files.nms <- basename(supp.tables) %>% str_remove(".csv") %>%
+  str_remove("Tables/Manuscript_tables/SuppTables/") %>%
+  str_remove("RawOutput/")
+
+files.nms.2 <- files.nms %>% as.data.frame() %>%
+  mutate(try = paste0("Table S", row_number()+3))
 
 f.out <- "Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx"
 wb <- loadWorkbook(f.out, create=TRUE)
