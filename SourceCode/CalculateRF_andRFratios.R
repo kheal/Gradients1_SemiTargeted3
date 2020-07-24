@@ -33,7 +33,7 @@ stds.dat.combo <- rbind(stds.dat.HILICPos, stds.dat.HILICNeg)%>%
 mf.dat <- read_csv(mf.file) %>% select(MassFeature_Column, Identification, Column, z, mz)
 
 stds.dat.combo2 <- stds.dat.combo %>%
-  rename(Identification = `Precursor Ion Name`,
+  dplyr::rename(Identification = `Precursor Ion Name`,
          RunID = `Replicate Name`) %>%
   left_join(mf.dat, by = c("Identification", "Column", "z")) %>%
   select(MassFeature_Column, Identification, RunID, Area, Column, z) 

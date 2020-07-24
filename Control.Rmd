@@ -61,7 +61,7 @@ write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_Cyano.csv")
 rm(BMISlist)
 ```
 
-#Combine and Tidy environmental data, add in culture data
+#Combine and Tidy environmental data, add in culture data, grab MS2 data
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Combine_Clean_nofunction.R')
 
@@ -70,15 +70,24 @@ dat.file <- read_csv("Intermediates/WideArea_withIDinfo.csv")
 culture.file <- read_csv("Intermediates/Culture_Intermediates/combined_wide_LogBioArea.csv")
 combo.wide <- left_join(dat.file, culture.file)
 write_csv(combo.wide, "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv")
+remove(list = ls())
+```
 
+#Grab MS2 data
+This isn't working through the rmd file, but works fine as an .R script
+Takes a while and isn't necessary to run unless the specific Mass Features have changed
+```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/get_MS2s.R')
+detach("package:xcms", unload=TRUE)
+detach("package:MSnbase", unload=TRUE)
+detach("package:S4Vectors", unload=TRUE)
 
 remove(list = ls())
 ```
 
 #Quantify compounds that we are able to
 #TO DO: adjust quantifications for cultures with ISs when appropriate
-TO DO: rerun once AOA have better cell count numbers
+
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')

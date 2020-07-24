@@ -4,7 +4,7 @@ library(tidyverse)
 library(RCurl)
 
 #Read in your dat files
-dat.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
+dat.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
 
 #Get better names for standards
 std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
@@ -19,7 +19,6 @@ dat <- read_csv(dat.filename)
 
 #Make it wide
 dat.wide <- dat %>%
-  unique() %>%
   filter(!is.na(Identification))%>%
   select(Identification, ID_rep, intracell_conc_umolL) %>%
   spread(key = ID_rep, value = intracell_conc_umolL) %>%

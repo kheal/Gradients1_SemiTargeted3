@@ -1,7 +1,7 @@
 Sample ID,Species,Strain,Broad taxon,Short ID,Biovolume filtered,Reconstitution volume,injection volume (HILIC),injection volume (RP),nmol C filtered,C estimation method
-Nmar_1,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,0.1,400,2,NA,2.777785546,Stand in for AOA
-Nmar_2,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,0.1,400,2,NA,0.832041179,Stand in for AOA
-Nmar_3,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,0.1,400,2,NA,1.906909827,Stand in for AOA
+Nmar_1,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,5236400,400,2,NA,494000000,Stand in for AOA
+Nmar_2,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,4791200,400,2,NA,0.832041179,Stand in for AOA
+Nmar_3,Nitrosopumilus maritimus,SCM1,Archaea,Nmar,1420400,400,2,NA,1.906909827,Stand in for AOA
 8501_B,Crocosphaera watsonii,8501,Cyanobacteria,8501,3.711258,400,2,NA,42250.12476,"Mendel-Deuer, estimate"
 8501_C,Crocosphaera watsonii,8501,Cyanobacteria,8501,5.351031818,400,2,NA,38861.64358,"Mendel-Deuer, estimate"
 8501_D,Crocosphaera watsonii,8501,Cyanobacteria,8501,3.515528571,400,2,NA,133534.0977,"White, direct"
