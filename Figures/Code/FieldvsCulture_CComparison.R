@@ -7,16 +7,12 @@ library(RCurl)
 library(ggrepel)
 
 #TO DO: make two separate plots - one within ML, one below
-
-#TO DO: get a linear model for the relationship in Log/Log space
-#Relatively large uncertainties on independent variables in this study required the use of a maximum likelihood estimate method (York et al., 2004) incorporating bivariate analytical uncertainty for all linear regressions (York,1969; Reed, 1989; York et al., 2004; Cantrell, 2008; Thirumalai et al., 2011), which were performed using published MatlabTM code (Thirumalai et al., 2011). 
-
-#TO DO: separate (by color) by organism type
+#TD DO: get rid of Nmar data (not enough surface!)
 
 #Name your files -----
 quandat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
-culture.dat.long.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
-culture.meta.dat.filename <- "MetaData/CultureMetaData_Ccalcs.csv"
+culture.dat.long.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
+culture.meta.dat.filename <- "MetaData/CultureMetaData.csv"
 field.meta.dat.filename <- "MetaData/SampInfo_wMetaData_withUTC.csv"
 
 #Get list of better names
@@ -37,12 +33,12 @@ meta.dat.culture <- read_csv(culture.meta.dat.filename) %>%
 dat <- read_csv(quandat.file) %>%
   left_join(stds.dat, by = "Identification") %>%
   select(-Identification) %>%
-  rename(Identification = BestMatch)
+  rename(Identification = BestMatch) 
 dat2 <- dat %>%
   select(Identification, SampID,  nmolCave, molFractionC, RankPercent ) %>%
   left_join(meta.dat.enviro) %>%
-  filter(Cruise != "MGL1704") %>%
-  mutate(nmolmetab_perC = nmolCave/PC_ave, by = "SampID")
+  mutate(nmolmetab_perC = nmolCave/PC_ave, by = "SampID") %>%
+  filter(Depth < 31)
 dat3 <- dat2 %>%
   group_by(Station_1, Depth, Cruise, Identification) %>%
   summarise(nmolmetab_perC_enviro = mean(nmolmetab_perC, na.rm = T))
@@ -59,7 +55,8 @@ dat2cul <- read_csv(culture.dat.long.filename) %>%
   rename(Identification = BestMatch)%>%
   select(Identification, MassFeature_Column,ID_rep, PresAbs, intracell_conc_umolCL) %>%
   filter(!is.na(Identification)) %>%
-  rename(CultureID  = ID_rep)
+  rename(CultureID  = ID_rep) %>%
+  filter(!str_detect(CultureID, "Nmar"))
 dat3cul <- dat2cul  %>%
   left_join(meta.dat.culture, by = "CultureID") %>%
   mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final, by = "CultureID") 
@@ -92,18 +89,9 @@ dat.combo <- dat4cul %>%
 
 dat.combo2 <- dat5cul %>%
   full_join(dat4, by = "Identification") %>%
-  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 1E-5, nmolmetab_perC_cul_med)) %>%
+  mutate(Detected = ifelse(is.na(nmolmetab_perC_cul_med), "not detected", "detected")) %>%
+  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 4E-5, nmolmetab_perC_cul_med)) %>%
   mutate(field.cul.fc = nmolmetab_perC_cul_med/nmolmetab_perC_enviro_med) 
-
-#Make a plot of each of individual org_types vs ugC, with colors and lines
-g <- ggplot(dat = dat.combo, 
-          aes(x = nmolmetab_perC_cul_med, y = nmolmetab_perC_enviro_med, color = Org_Type, fill = Org_Type)) +
-  geom_point() +
-  geom_smooth(method="lm", se=FALSE)+
-  scale_x_log10()+
-  scale_y_log10()
-
-g
 
 #Make a plot of all together------
 g2 <- ggplot(dat = dat.combo2, 
@@ -113,23 +101,24 @@ g2 <- ggplot(dat = dat.combo2,
                     ymax = nmolmetab_perC_enviro_max), alpha = 0.3) +
    geom_errorbarh(aes(xmin = nmolmetab_perC_cul_min,
                      xmax = nmolmetab_perC_cul_max), alpha = 0.3) +
-  geom_point() +
+  geom_point(aes(shape = Detected), fill = "white") +
+  scale_shape_manual(values = c(16, 21))+
   geom_text_repel(dat = dat.combo2 %>% filter(field.cul.fc < .1 | field.cul.fc > 10), 
             aes( x =nmolmetab_perC_cul_med, 
-                 y = nmolmetab_perC_enviro_med, label =  Identification ), size = 2.5)+
+                 y = nmolmetab_perC_enviro_med, label =  Identification ), size = 2.5, fontface = "bold")+
   geom_abline()+
   scale_x_log10()+
   scale_y_log10()+
   scale_color_manual(values =c("grey", "black"),)+
-  labs(y= "nmol metabolite / umol C (environment)", x = "nmol metabolite / umol C (cultures)") +
+  labs(y= "nmol metabolite / umol C (environment)", x = "nmol metabolite / umol C (phytoplankton)") +
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6),
-        legend.position = "none")
-
+        legend.position = "none")+
+  coord_cartesian(ylim=c(4E-5, 2E1), xlim=c(3E-5, 1E2))
 g2
 
 #save it out
-save_plot("Figures/Preliminary/ugCperugC.pdf", g2, base_height = 4, base_width = 6, units = "in")
+save_plot("Figures/Manuscript_figures/ugCperugC.pdf", g2, base_height = 4, base_width = 6, units = "in")
 
 #for exploration
 #ggplotly()
