@@ -11,7 +11,8 @@ std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/mas
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
   rename(Identification = Compound.Name_old,
          `Compound name in figures` = Compound.Name_figure,
-         `Complete compound name` = Compound.Name) 
+         `Complete compound name` = Compound.Name) %>%
+  select(`Compound name in figures`, `Complete compound name`, Identification) %>% unique()
 
 #Check out data
 dat <- read_csv(dat.filename)
