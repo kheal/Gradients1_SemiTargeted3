@@ -99,6 +99,13 @@ source("Figures/Code/Orgs_stackedbars.R")
 remove(list = ls())
 ```
 
+#Plot of DSS-3 growth curves
+```{r}
+source("Figures/Code/DSS3_growthcurves.R")
+remove(list = ls())
+
+```
+
 
 
 
