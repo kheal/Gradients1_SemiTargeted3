@@ -1,5 +1,6 @@
 library(tidyverse)
 library(RCurl)
+#Make  mutate(nmolmetab_perC = nmolCave/PC_ave, by = "SampID") so we can use in the ugC/C figure
 
 #Set your datafiles----
 dat.file1 <- "Intermediates/Longdata.csv" #This has all versions of areas
@@ -27,6 +28,8 @@ dat <- read_csv(dat.file1) %>%
 #Attach information about the RP volume if needed
 meta.dat <- read_csv(meta.file) %>%  
   select(SampID, Dilution_Factor, RP_stdVolpersmpVol)
+meta.dat2 <- read_csv(meta.file) %>%  
+  select(SampID, PC_ave) 
 
 dat <- dat %>%
   left_join(meta.dat, by = "SampID")
@@ -108,8 +111,12 @@ dat.with.Quan3 <- dat.with.Quan2 %>%
   mutate(molFractionC = nmolCave/totalCmeasured_nM, 
          molFractionN = nmolNave/totalNmeasured_nM)
 
+dat.with.Quan4  <- dat.with.Quan3 %>%
+  left_join(meta.dat2, by = "SampID") %>%
+  mutate(nmolmetab_perC = nmolCave/PC_ave)
+
 #Summarize and make wide -------
-quanDatSum <- dat.with.Quan3 %>%
+quanDatSum <- dat.with.Quan4 %>%
   group_by(MassFeature_Column, Identification) %>%
   summarise(nmolEnviromed = median(nmolinEnviroave, na.rm  = T),
             nmolEnviromin = min(nmolinEnviroave, na.rm  = T),
@@ -125,14 +132,13 @@ quanDatSum <- dat.with.Quan3 %>%
             molFractionmax = max(molFractionC, na.rm = T)) %>%
   arrange(desc(molFractionmed))
 
-quanDatWide <- dat.with.Quan3 %>%
+quanDatWide <- dat.with.Quan4 %>%
   select(Identification, SampID, molFractionC) %>%
   spread(data = ., value = molFractionC, key = SampID)
 
 
-
 #Write it out :)------
-write_csv(dat.with.Quan3, "Intermediates/Quantified_LongDat_Enviro.csv")
+write_csv(dat.with.Quan4, "Intermediates/Quantified_LongDat_Enviro.csv")
 write_csv(quanDatSum, "Intermediates/Quantified_MFSummary_Enviro.csv")
 
   

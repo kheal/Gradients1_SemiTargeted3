@@ -59,6 +59,6 @@ To_C,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,12.20459,Thalassiosira oc
 Tp_A,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,4.40222,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,73370383.33,9878.836631,"White, modeled, same size as Syn",60
 Tp_E,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,3.13927,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,52321200,10056.8408,"White, modeled, same size as Syn",60
 Tp_F,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,6.36368,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,106061280,10238.65512,"White, modeled, same size as Syn",60
-Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,5236400,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"49,400,000",41.16666667,"Volume from Konneke et al. 2005, Carbon from Wei",0.18
-Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,4791200,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"45,200,000",37.66666667,"Volume from Konneke et al. 2005, Carbon from Wei",0.106
-Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,1420400,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"13,400,000",11.16666667,"Volume from Konneke et al. 2005, Carbon from Wei",0.106
+Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.0011362,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"49,400,000",41.16666667,"Volume from Urakawa et al. 2011, Carbon from Zhang et al. 2020",0.023
+Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.0010396,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"45,200,000",37.66666667,"Volume from Urakawa et al. 2011, Carbon from Zhang et al. 2020",0.023
+Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.0009982,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"43,400,000",36.16666667,"Volume from Urakawa et al. 2011, Carbon from Zhang et al. 2020",0.023

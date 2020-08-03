@@ -73,7 +73,7 @@ write_csv(combo.wide, "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.c
 remove(list = ls())
 ```
 
-#Grab MS2 data
+#Grab MS2 data to report
 This isn't working through the rmd file, but works fine as an .R script
 Takes a while and isn't necessary to run unless the specific Mass Features have changed
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
@@ -87,7 +87,6 @@ remove(list = ls())
 
 #Quantify compounds that we are able to
 #TO DO: adjust quantifications for cultures with ISs when appropriate
-
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')

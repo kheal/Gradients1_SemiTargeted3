@@ -4,6 +4,8 @@ library(RCurl)
 #TO DO: maybe replace the ones with have with internal standards, would take a lot more work
 #TO DO: make summaries like the old one so we can put it on the summary box plot
 #TO DO: add in carbon estimates per cell so we can get %
+#   mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final, by = "CultureID") 
+
 
 #Set your datafiles
 dat.file1 <- "Intermediates/Culture_Intermediates/combined_long_cultures.csv" 
@@ -25,7 +27,12 @@ dat <- read_csv(dat.file1) %>%
   filter(MassFeature_Column %in% RFs$MassFeature_Column) 
 
 #Attach information about the RP volume if needed
-meta.dat <- read_csv(meta.file) %>% rename(ID_rep = CultureID) %>% select(ID_rep, RP_stdVolpersmpVol, `Cells filtered`)
+meta.dat <- read_csv(meta.file) %>% 
+  rename(ID_rep = CultureID) %>% 
+  select(ID_rep, RP_stdVolpersmpVol, `Cells filtered`)
+meta.dat2 <- read_csv(meta.file) %>% 
+  rename(ID_rep = CultureID) %>%  
+  select(ID_rep, nmolC_filtered_final) 
 
 dat <- dat %>%
   left_join(meta.dat, by = "ID_rep")
@@ -73,7 +80,11 @@ dat.with.Quan3 <- dat.with.Quan2 %>%
   mutate(molFractionC = intracell_conc_umolCL/totalCmeasured_uM, 
          molFractionN = intracell_conc_umolNL/totalNmeasured_uM)
 
-quanDatSum <- dat.with.Quan3 %>%
+dat.with.Quan4 <- dat.with.Quan3 %>% 
+  left_join(meta.dat2, by = "ID_rep") %>%
+  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final) 
+
+quanDatSum <- dat.with.Quan4 %>%
   group_by(MassFeature_Column, Identification) %>%
   summarise(umol.intracell.med = median(intracell_conc_umolL, na.rm  = T),
             umol.intracell.min = min(intracell_conc_umolL, na.rm  = T),
@@ -89,12 +100,16 @@ quanDatSum <- dat.with.Quan3 %>%
             molFractionmax = max(molFractionC, na.rm = T)) %>%
   arrange(desc(molFractionmed))
 
-quanDatWide <- dat.with.Quan3 %>%
+quanDatWide <- dat.with.Quan4 %>%
   select(Identification, ID_rep, molFractionC) %>%
   spread(data = ., value = molFractionC, key = ID_rep)
 
+#Exploring for specific numbers
+explore <- dat.with.Quan3 %>%
+  filter(str_detect(Org_Type, "aptophyte")) %>%
+  filter(str_detect(Identification, "Homarine"))
 
 #Write it out :)------
-write_csv(dat.with.Quan3, "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv")
+write_csv(dat.with.Quan4, "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv")
 write_csv(quanDatSum, "Intermediates/Culture_Intermediates/Quantified_MFSummary_cultures.csv")
 
