@@ -35,9 +35,8 @@ dat <- read_csv(quandat.file) %>%
   select(-Identification) %>%
   rename(Identification = BestMatch) 
 dat2 <- dat %>%
-  select(Identification, SampID,  nmolCave, molFractionC, RankPercent ) %>%
-  left_join(meta.dat.enviro) %>%
-  mutate(nmolmetab_perC = nmolCave/PC_ave, by = "SampID") %>%
+  select(Identification, SampID,  nmolCave, molFractionC, RankPercent, nmolmetab_perC) %>%
+  left_join(meta.dat.enviro, by = "SampID") %>%
   filter(Depth < 31)
 dat3 <- dat2 %>%
   group_by(Station_1, Depth, Cruise, Identification) %>%
@@ -53,13 +52,12 @@ dat2cul <- read_csv(culture.dat.long.filename) %>%
   left_join(stds.dat, by = "Identification") %>%
   select(-Identification) %>%
   rename(Identification = BestMatch)%>%
-  select(Identification, MassFeature_Column,ID_rep, PresAbs, intracell_conc_umolCL) %>%
+  select(Identification, MassFeature_Column,ID_rep, PresAbs, intracell_conc_umolCL, nmolmetab_perC) %>%
   filter(!is.na(Identification)) %>%
   rename(CultureID  = ID_rep) %>%
   filter(!str_detect(CultureID, "Nmar"))
 dat3cul <- dat2cul  %>%
-  left_join(meta.dat.culture, by = "CultureID") %>%
-  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final, by = "CultureID") 
+  left_join(meta.dat.culture, by = "CultureID") 
 dat4cul <-  dat3cul %>%
   group_by(CultureID, Identification, Org_Type) %>%
   summarise(nmolmetab_perC_cul = mean(nmolmetab_perC, na.rm = T)) %>%
@@ -76,10 +74,6 @@ dat5cul <-  dat3cul %>%
             nmolmetab_perC_cul_max = ifelse(is.na(nmolmetab_perC_cul_med), NA, max(nmolmetab_perC_cul, na.rm = T)), 
             nmolmetab_perC_cul_min = ifelse(is.na(nmolmetab_perC_cul_med), NA, min(nmolmetab_perC_cul, na.rm = T))) %>%
   filter(!is.na(nmolmetab_perC_cul_med)) 
-
-
-#  mutate(nmolmetab_perC_cul_med = ifelse(is.na(nmolmetab_perC_cul_med), 10^-5, nmolmetab_perC_cul_med)) %>%
-#  mutate(NotObserved = ifelse(nmolmetab_perC_cul_med == 10^-5, "not observed", NA))
 
 #Smash together
 dat.combo <- dat4cul %>%
