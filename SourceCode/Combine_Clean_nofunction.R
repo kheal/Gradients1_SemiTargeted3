@@ -29,7 +29,8 @@ repeats.to.dump <- c("Adenosyl Homocysteine_X_RP",
                      "I155.0815R6.1_HILICPos_X_HILICPos",
                      "I137.0459R1.2_CyanoAq_X_RP", 
                      "I136.0619R0.89_CyanoAq_X_RP", 
-                     "I268.1042R1.02_CyanoAq_X_RP")
+                     "I268.1042R1.02_CyanoAq_X_RP", 
+                     "I340.7615R6.69_CyanoAq_X_RP")
 
 
 # Define all your inputs 

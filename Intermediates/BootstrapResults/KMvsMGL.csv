@@ -1,41 +1,36 @@
 cluster_overlap,pval.01,pval.05,pval.1,count,pval
-KM_a&MGL_a,53,47,46,64,0.01
-KM_a&MGL_b,47,42,40,28,not sig
-KM_a&MGL_c,41,37,36,14,not sig
-KM_a&MGL_d,28,24,23,33,0.01
-KM_a&MGL_e,4,4,3,4,0.1
-KM_a&MGL_f,4,4,3,1,not sig
-KM_a&MGL_g,21,16,15,2,not sig
-KM_a&MGL_NA,28,24,24,17,not sig
-KM_b&MGL_a,33,26,25,11,not sig
-KM_b&MGL_b,28,23,22,31,0.01
-KM_b&MGL_c,25,21,20,28,0.01
-KM_b&MGL_d,21,14,13,1,not sig
-KM_b&MGL_e,4,3,2,NA,NA
-KM_b&MGL_f,4,3,2,2,not sig
-KM_b&MGL_g,16,9,9,2,not sig
-KM_b&MGL_NA,19,14,13,6,not sig
-KM_c&MGL_a,20,16,15,2,not sig
-KM_c&MGL_b,18,14,13,8,not sig
-KM_c&MGL_c,16,13,12,16,0.05
-KM_c&MGL_d,12,8,8,2,not sig
-KM_c&MGL_e,4,2,2,NA,NA
-KM_c&MGL_f,3,2,1,1,not sig
-KM_c&MGL_g,10,6,5,6,0.1
-KM_c&MGL_NA,12,9,8,9,0.1
-KM_d&MGL_a,10,7,6,NA,NA
-KM_d&MGL_b,11,6,5,NA,NA
-KM_d&MGL_c,9,6,5,2,not sig
-KM_d&MGL_d,6,4,3,NA,NA
+KM_a&MGL_a,39,35,33,44,0.01
+KM_a&MGL_b,48,41,40,42,0.05
+KM_a&MGL_c,37,33,31,14,not sig
+KM_a&MGL_d,34,30,29,17,not sig
+KM_a&MGL_e,4,4,3,1,not sig
+KM_a&MGL_f,39,35,34,31,not sig
+KM_a&MGL_NA,28,25,24,19,not sig
+KM_b&MGL_a,25,17,17,6,not sig
+KM_b&MGL_b,25,21,20,16,not sig
+KM_b&MGL_c,23,17,16,22,0.05
+KM_b&MGL_d,21,16,15,22,0.01
+KM_b&MGL_e,4,2,2,2,not sig
+KM_b&MGL_f,22,18,17,3,not sig
+KM_b&MGL_NA,18,13,12,4,not sig
+KM_c&MGL_a,17,11,10,2,not sig
+KM_c&MGL_b,17,13,12,6,not sig
+KM_c&MGL_c,16,11,10,12,0.05
+KM_c&MGL_d,14,10,10,6,not sig
+KM_c&MGL_e,3,2,2,1,not sig
+KM_c&MGL_f,15,12,11,8,not sig
+KM_c&MGL_NA,11,9,8,9,0.1
+KM_d&MGL_a,9,5,4,NA,NA
+KM_d&MGL_b,8,6,5,NA,NA
+KM_d&MGL_c,7,5,4,3,not sig
+KM_d&MGL_d,7,5,4,NA,NA
 KM_d&MGL_e,2,1,1,NA,NA
-KM_d&MGL_f,2,1,1,NA,NA
-KM_d&MGL_g,5,3,2,12,0.01
-KM_d&MGL_NA,7,4,4,1,not sig
-KM_NA&MGL_a,8,5,5,2,not sig
-KM_NA&MGL_b,7,5,4,1,not sig
-KM_NA&MGL_c,9,4,4,1,not sig
-KM_NA&MGL_d,6,3,3,1,not sig
+KM_d&MGL_f,8,5,5,11,0.01
+KM_d&MGL_NA,5,4,3,1,not sig
+KM_NA&MGL_a,7,4,4,2,not sig
+KM_NA&MGL_b,7,4,4,1,not sig
+KM_NA&MGL_c,6,4,4,NA,NA
+KM_NA&MGL_d,6,4,3,1,not sig
 KM_NA&MGL_e,2,1,1,NA,NA
-KM_NA&MGL_f,2,1,1,NA,NA
-KM_NA&MGL_g,5,2,2,1,not sig
-KM_NA&MGL_NA,5,3,3,5,0.05
+KM_NA&MGL_f,6,4,4,2,not sig
+KM_NA&MGL_NA,6,3,3,5,0.05

@@ -68,7 +68,7 @@ MGL.count <- left_join(MGL.count, MGL.count.id) %>%
 
 MGL.dat.ave.mode.2 <- MGL.dat.ave.mode %>%
   left_join(MGL.count, by = "cluster_letters") %>%
-  filter(MF.percent > 5)
+  filter(MF.percent > 5) 
 
 #make the MGL mode plot -----
 g.mode.MGL <- ggplot()+
@@ -259,7 +259,7 @@ node.dat <- edges.dat %>% select(node1, weight) %>%
   mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" ))
 
 big.nodes <- node.dat %>%
-  filter(count > 15)
+  filter(count > 5)
 
 edges.dat.2 <- edges.dat %>%
   filter(node1 %in% big.nodes$node1) %>%
@@ -272,8 +272,8 @@ node.dat.2 <- node.dat %>%
 net <- graph_from_data_frame(d=edges.dat.2, vertices=node.dat.2, directed=FALSE) 
 
 #plot up the network
-set.seed(16)
-g.net <- ggraph(net, layout = 'dh') + #gem, dh, graphopt, fr, kk, lgl all look decent
+set.seed(12)
+g.net <- ggraph(net, layout = 'fr') + #gem, dh, graphopt, fr, kk, lgl all look decent
   geom_edge_fan(color="gray80", aes()) + 
   geom_node_point(aes(color = dataset,
                       shape = dataset, 
@@ -290,5 +290,5 @@ nodes.with.map <- plot_grid(KOK.map, g.net, ncol = 2, rel_widths = c(1, 2), labe
 modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
 modes.with.nodes
 
-save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+save_plot("Figures/Manuscript_figures/Modes_Nodes_Map2.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
 

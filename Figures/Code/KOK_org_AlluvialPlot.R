@@ -1,14 +1,12 @@
 #TO DO: fix all the joining by errors
 #TO DO: check KOK tile plot, why doesn't it match perfectly to the g.clus?
-
 library(tidyverse)
-library(scales)
 library(cowplot)
 theme_set(theme_cowplot())
 library(here)
 library(ggalluvial)
 library(nationalparkcolors)
-library(patchwork)
+#library(patchwork)
 
 options(readr.num_columns = 0)
 
@@ -28,7 +26,7 @@ lindat <- tibble(f=as.factor("1"), x=c(-1,1)*Inf)
 
 #Read in your files-----
 KOK.dat.long <- read_csv(KOK.dat.wide.std.file)
-Org.dat.long <- read_csv(org.dat.wide.std.file)
+Org.dat.long <- read_csv(org.dat.wide.std.file) 
 meta.culture.dat <- read_csv(meta.dat.culture.filename)
 bootstrap.dat <- read_csv(bootstrap.file)
 
@@ -50,21 +48,28 @@ clusters.combined.KOK.org <- KOK.dat.long %>% select(MassFeature_Column, cluster
 clusters.combined.KOK.org.2 <- clusters.combined.KOK.org %>%
   mutate(cluster.KOK = paste0("KOK_", cluster.KOK))
 
+clusters.combined.KOK.org.3 <- clusters.combined.KOK.org.2 %>%
+  select(Freq, cluster.KOK, cluster.org, psig) %>% as.data.frame()
 
 #Make the alluvial plot------
+#at some point, this worked, now its not :(
 gclus<- ggplot(data = clusters.combined.KOK.org.2,
                aes(y = Freq, axis1 = cluster.KOK, axis2 = cluster.org)) +
-  geom_alluvium(aes(alpha = psig), fill = "black", width = 1/12,  lode.guidance = "forward") +
-  geom_stratum(width = 1/12, fill = "grey", color = "black") +
- # geom_text(stat = "stratum", infer.label = TRUE)+
-  scale_x_discrete(limits = c("KOK1606_clusters", "Organism_clusters"), expand = c(0, 0)) +
-  scale_y_discrete(expand = c(0, 0)) +
+  geom_alluvium(aes(alpha = psig), 
+                fill = "black", width = 1/12,  lode.guidance = "forward") +
+ #  geom_stratum(width = 1/12, fill = "grey", color = "black") +
+  scale_x_discrete(limits = c("KOK1606_clusters", "Organism_clusters"), 
+                   expand = c(0, 0)) +
+#  scale_y_discrete(limits = c(0, 1)) +
   scale_alpha_manual(values = c("0.1",  "1"))+
   scale_fill_brewer(type = "qual", palette = "Set1") +
   theme(axis.title = element_blank(),
         axis.ticks = element_blank(), 
         axis.text = element_blank(),
-        legend.position = "none")
+        axis.line = element_blank(),
+        legend.position = "none") +
+  coord_cartesian(ylim=c(15,299), xlim=c(0.95,2.05))
+
 gclus
 
 #Tidy the data for tile plots - the mass features in KOK dat----
@@ -127,6 +132,7 @@ g.tile.KOK <- ggplot(dat = KOK.dat.long.med %>%
   labs(x ="Latitude", y = "Mass Feature", fill = "Standardized \n peak area")
 g.tile.KOK
 
+test <- KOK.dat.long.med %>% filter(is.na(cluster_letters))
 
 
 #Tidy data for tile plot (organisms)-----
@@ -231,7 +237,7 @@ g.tile.org.key
 
 
 #Try to put the plots together!-----
-g.clus.2 <- gclus + theme(plot.margin = margin(0, -.05, 1.6, -.05, "cm")) #trbl change bottom to match better!
+g.clus.2 <- gclus + theme(plot.margin = margin(0, -.5, 1.6, -.2, "cm")) #trbl change bottom to match better!
 
 g.tile.org.combo <- plot_grid(g.tile.org, g.tile.org.key, 
                               align = "v", axis = "lr",
@@ -249,7 +255,7 @@ g.all <- plot_grid(g.left.two, g.tile.org.combo,
 g.all
 
 
-save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial.pdf", g.all, base_height = 16, base_width = 16, units="cm")
+save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial2.pdf", g.all, base_height = 16, base_width = 16, units="cm")
 
 
 

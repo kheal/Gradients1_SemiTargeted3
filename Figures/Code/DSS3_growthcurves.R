@@ -92,7 +92,7 @@ g <- ggplot(dat = dat_averaged_toPlot, aes(x = averageTime, y = AveOD, fill = ID
        fill= "Carbon source") +
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6),
-       # legend.title = element_blank(),
+        legend.title =  element_text(size = 7),
         legend.text = element_text(size = 6))
 
 g

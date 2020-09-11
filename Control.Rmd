@@ -6,13 +6,10 @@ output: html_document
 ---
 Organization notes:
 As of 05/14/20, Skyline files for environmental samples have been moved to within their respective folders containing the .mzxml files for ease of file location (i.e. Manual_Integrations/HILICPos); Output from Skyline integrations of environmental samples are placed into "Manual_Integrations/DataProcessing/RawOutput"
-All culture Skyline data are in rawDat files
+All culture Skyline data are in rawDat folders
 
 Analysis notes:
-AOA cell counts are just holder for now - everything needs to be rerun when those numbers are better
 Cluster with or without AOA?  If without, we need to dump those cultures during the k-means calculations
-
-Hello!
 
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
@@ -104,16 +101,25 @@ remove(list = ls())
 #Cluster the mass features using a K-means approach 
 Assign each MF:dataset a cluster, save out cluster diagnostics for each sample set.  
 Bootstrap the clusters to see if there is overexpressed overlap between clusters
-TO DO: add a "significant under-overlap variable" 
-TO DO: clean up cluster letters
+TO DO: add a "significant under-overlap variable"?
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
-#To reorganize the clusters, rename them within this file
+#seeds are set so should be reproducible
 source("SourceCode/clustering_all_seperate.R") 
+remove(list = ls())
+
+#To reorganize the clusters, rename them within this file
+source("SourceCode/cluster_cleaner.R")
 remove(list = ls())
 
 source("SourceCode/bootstrap_clusters.R")
 remove(list = ls())
 ```
+
+#Clean up the cluster results
+TO DO: Identify meta-clusters and ID mass features that are part of meta-clusters
+```{r}
+```
+
 
 #Get basic stats for results section
 ```{r, error = FALSE, warning=FALSE, message=FALSE}

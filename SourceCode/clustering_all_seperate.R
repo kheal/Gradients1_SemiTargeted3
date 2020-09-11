@@ -11,10 +11,10 @@ library(here)
 
 #Name your inputs
 meta.dat.file <- "MetaData/SampInfo_wMetaData_withUTC.csv"
-numberofclusters.KOK <- 7 
-numberofclusters.KM <- 4  #8 or 9 are also good
+numberofclusters.KOK <- 7 #or 4 
+numberofclusters.KM <- 4  
 numberofclusters.MGL <- 7   
-numberofclusters.org <- 7
+numberofclusters.org <- 7 #5 also ok
 combo.wide.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 
 #Mudge data to make it usable-----
@@ -87,6 +87,7 @@ scree.plot.2.KOK.combined <- plot_grid(scree.plot.KOK, scree.plot.2.KOK, ncol=1)
 save_plot("Intermediates/KMeans_reports/KOK_Kmeans.pdf", scree.plot.2.KOK.combined)
 
 #Cluster with perscribed number of clusters (set as an input)
+set.seed(58)
 datclu.clara.KOK <- clara(datwidestd.noNA.KOK, k = numberofclusters.KOK, metric = "euclidean", samples = 1000, sampsize = nrow(datwidestd.noNA.KOK)) 
 
 #Add cluster info to the wide dataframe info
@@ -123,6 +124,7 @@ scree.plot.2.KM.combined <- plot_grid(scree.plot.KM, scree.plot.2.KM, ncol=1)
 save_plot("Intermediates/KMeans_reports/KM_Kmeans.pdf", scree.plot.2.KM.combined)
 
 #Cluster with perscribed number of clusters (set as an input)
+set.seed(102)
 datclu.clara.KM <- clara(datwidestd.noNA.KM, k = numberofclusters.KM, metric = "euclidean", samples = 100, sampsize = nrow(datwidestd.noNA.KM)) 
 
 #Make a heatmap
@@ -162,6 +164,7 @@ save_plot("Intermediates/KMeans_reports/MGL_Kmeans.pdf", scree.plot.2.MGL.combin
 
 
 #Cluster with perscribed number of clusters (set as an input)
+set.seed(12)
 datclu.clara.MGL <- clara(datwidestd.noNA.MGL, k = numberofclusters.MGL, metric = "euclidean", samples = 100, sampsize = nrow(datwidestd.noNA.MGL)) 
 
 #Make a heatmap
@@ -183,7 +186,7 @@ cluster_letters <- c("a", "b", "c", "d", "e", "f", "g")
 MGL.mode.matcher <- cbind(cluster, cluster_letters) %>% as.tibble() %>% mutate(cluster = as.numeric(cluster))
 datwidestd.noNA.MGL.wclusters <- left_join(datwidestd.noNA.MGL.wclusters, MGL.mode.matcher)
 
-write_csv(datwidestd.noNA.MGL.wclusters, "Intermediates/MGL_wide_stand_withclusters.csv")
+write_csv(datwidestd.noNA.MGL.wclusters, "Intermediates/MGL_wide_stand_withclusters_tofix.csv")
 
 #Cluster by organism------
 Org.wide.matrix<- combo.wide %>% select(-c(enviro.names)) %>% as.data.frame() %>%
@@ -203,7 +206,7 @@ rownames(datwidestd.noNA.Org) <- Org.names
 # Try to make an ordered similarity matrix in order to pick out groups from it.
 datwidestd.euclid.Org <- vegdist(datwidestd.noNA.Org, method="euclidean") #This one is faster
 
-# This step  gives some hints to how many clusters we should use - higher average silhoutte width the better!! Looks like for KOK either 5 or 10 clusters is best.  I'll go with 5 for now.
+# This step  gives some hints to how many clusters we should use - higher average silhoutte width the better!! 
 scree.dat.Org <- nhclus.scree(datwidestd.euclid.Org, max.k=50) %>% as.data.frame()
 scree.plot.Org <- ggplot(dat =scree.dat.Org, aes(x = `no. clusters`, y = `ave silhouette width`)) +
   geom_point() +  geom_line() + geom_vline(xintercept = numberofclusters.org) 
@@ -214,6 +217,7 @@ save_plot("Intermediates/KMeans_reports/Org_Kmeans.pdf", scree.plot.2.Org.combin
 
 
 #Cluster with perscribed number of clusters (set as an input)
+set.seed(92)
 datclu.clara.org <- clara(datwidestd.noNA.Org, k = numberofclusters.org, metric = "euclidean", samples = 100, sampsize = nrow(datwidestd.noNA.Org)) 
 
 clusterIDs.org <- datclu.clara.org$clustering %>% as.data.frame() %>%
@@ -234,5 +238,5 @@ Org.mode.matcher <- cbind(cluster, cluster_letters) %>% as_tibble() %>% mutate(c
 datwidestd.orgs.noNA.wclusters <- left_join(datwidestd.orgs.noNA.wclusters, Org.mode.matcher)
 
 
-write_csv(datwidestd.orgs.noNA.wclusters, "Intermediates/organs_wide_stand_withclusters.csv")
+write_csv(datwidestd.orgs.noNA.wclusters, "Intermediates/organs_wide_stand_withclusters_tofix.csv")
 
