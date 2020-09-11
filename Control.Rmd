@@ -9,7 +9,7 @@ As of 05/14/20, Skyline files for environmental samples have been moved to withi
 All culture Skyline data are in rawDat folders
 
 Analysis notes:
-Cluster with or without AOA?  If without, we need to dump those cultures during the k-means calculations
+
 
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
@@ -19,11 +19,9 @@ library(here)
 ```
 
 #QC and tidy up culture samples
-TO DO: Adjust and rerun with real (not just holder data) cell counts for the AOA
 Run the QC for each fraction, combine and make tidy to compare with environmental samples
 ```{r, message=FALSE, error=FALSE, warning=FALSE, }
 source("SourceCode/QC_HILICPos_Cultures.R")
-
 remove(list = ls())
 
 source("SourceCode/QC_HILICNeg_Cultures.R")
@@ -46,7 +44,6 @@ write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_HILIC.csv")
 rm(BMISlist)
 ```
 
-
 #BMIS on the CyanoAq output from Skyline, save output in BMISReports Folder, remove the intermediate output
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/BMIS_QECyano.R')
@@ -58,7 +55,7 @@ write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_Cyano.csv")
 rm(BMISlist)
 ```
 
-#Combine and Tidy environmental data, add in culture data, grab MS2 data
+#Combine and Tidy environmental data, add in culture data
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Combine_Clean_nofunction.R')
 
@@ -83,7 +80,6 @@ remove(list = ls())
 ```
 
 #Quantify compounds that we are able to
-#TO DO: adjust quantifications for cultures with ISs when appropriate
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')
@@ -116,8 +112,9 @@ remove(list = ls())
 ```
 
 #Clean up the cluster results
-TO DO: Identify meta-clusters and ID mass features that are part of meta-clusters
 ```{r}
+source("SourceCode/metaClusterNamer.R")
+remove(list = ls())
 ```
 
 

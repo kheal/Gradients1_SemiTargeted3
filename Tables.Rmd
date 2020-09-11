@@ -27,10 +27,7 @@ remove(list = ls())
 #Phyto Sample Descriptions 
 source('Tables/Code/Enviro_Description.R')
 remove(list = ls())
-
-
 ```
-
 
 #Supplemental Tables (CSVs)
 ```{r, error = FALSE, warning=FALSE, message=FALSE}

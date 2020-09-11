@@ -1,4 +1,3 @@
-#TO DO: add MS2s
 library(tidyverse)
 
 #Read in your dat files
@@ -8,6 +7,7 @@ MGL.clusterfilename  <- "Intermediates/MGL_wide_stand_withclusters.csv"
 KM.clusterfilename <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.clusterfilename <- "Intermediates/KOK_wide_stand_withclusters.csv"
 Org.clusterfilename <- "Intermediates/organs_wide_stand_withclusters.csv"
+Metacluster.filename <- "Intermediates/metacluster_assignments.csv"
 
 #Check out MS2 data
 dat.ms2 <- read_csv(dat.ms2.filename)
@@ -27,12 +27,14 @@ KOK.dat <- read_csv(KOK.clusterfilename) %>%
 Org.dat <- read_csv(Org.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique()%>%
   rename(`Culture cluster` = cluster_letters)
+metacluster.dat <- read_csv(Metacluster.filename)
 
 dat.combo <- dat %>%
   left_join(MGL.dat, by = "MassFeature_Column") %>%
   left_join(KM.dat, by = "MassFeature_Column") %>%
   left_join(KOK.dat, by = "MassFeature_Column") %>%
   left_join(Org.dat, by = "MassFeature_Column") %>%
+  left_join(metacluster.dat, by = "MassFeature_Column")%>%
   arrange(mz) %>%
   arrange(Column) %>%
   arrange(z)
