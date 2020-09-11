@@ -27,9 +27,9 @@ MF.dat.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 bootstrap.files <- list.files("Intermediates/BootstrapResults/", full.names = TRUE)
 
 #Load files
-MGL.dat <- read_csv(MGL.dat.file) #Only 280 compounds
-KM.dat <- read_csv(KM.dat.file) #307 compounds
-KOK.dat <- read_csv(KOK.dat.file) #Only 318 compounds
+MGL.dat <- read_csv(MGL.dat.file) 
+KM.dat <- read_csv(KM.dat.file) 
+KOK.dat <- read_csv(KOK.dat.file) 
 Meta.dat <- read_csv(Meta.dat.file)
 MF.dat <- read_csv(MF.dat.file)
 bootstrap.results <- vroom(bootstrap.files)
@@ -272,23 +272,39 @@ node.dat.2 <- node.dat %>%
 net <- graph_from_data_frame(d=edges.dat.2, vertices=node.dat.2, directed=FALSE) 
 
 #plot up the network
-set.seed(12)
+set.seed(33)
 g.net <- ggraph(net, layout = 'fr') + #gem, dh, graphopt, fr, kk, lgl all look decent
-  geom_edge_fan(color="gray80", aes()) + 
+  geom_edge_fan(color="gray60", aes()) + 
   geom_node_point(aes(color = dataset,
-                      shape = dataset, 
-                      size = count)) +
-  geom_node_text(aes(label = cluster), size=3, color="black", repel=T, fontface = "italic") +
-  scale_color_manual(values = c(KM.color, KOK.color, MGL.color, Org.color))+
-  scale_shape_manual(values = c(15,16,17,18))+
-  theme(legend.position = "none")
+                      shape = dataset), size = 3)+
+  geom_node_text(aes(label = cluster), size=2, color="black", repel=T, fontface = "italic") +
+  scale_color_manual(values = c(KM.color, KOK.color, MGL.color, Org.color), labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
+  scale_shape_manual(values = c(15,16,17,18), labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
+  theme(legend.position = c(0.1, 0.1), 
+        legend.title = element_blank(),
+        legend.text = element_text(size = 7))
 g.net
 
+cloud.file.1 <- "Figures/Annotations/Cloud1.pdf"
+cloud.file.2 <- "Figures/Annotations/Cloud2.pdf"
+cloud.file.3 <- "Figures/Annotations/Cloud3.pdf"
+
+g.net.2 <- ggdraw() +
+  draw_image(cloud.file.1,  x = 0.36, y = -.20, scale = .15) + #cloud for core metabs
+  draw_image(cloud.file.3,  x = -.04, y =0.17, scale = .3) + #cloud for dino metabs
+  draw_image(cloud.file.1,  x = -.37, y = 0.27, scale = .35) + #cloud for rare metabs
+  draw_plot(g.net)+
+  draw_label("Core \nMetabolites", x = 0.65, y = 0.3, hjust = 0, fontface = "bold", size = 8) +
+  draw_label("Rare \nMetabolites", x = 0.15, y = 0.6, hjust = 0, fontface = "bold", size = 8) +
+  draw_label("Dinoflagellate-\nassociated \nMetabolites", x = 0.5, y = 0.75, hjust = 0, fontface = "bold", size = 8) 
+g.net.2
+
+
 #load the map?
-nodes.with.map <- plot_grid(KOK.map, g.net, ncol = 2, rel_widths = c(1, 2), labels = c("D", "E"))
+nodes.with.map <- plot_grid(KOK.map, g.net.2, ncol = 2, rel_widths = c(1, 2), labels = c("D", "E"))
 
 modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
 modes.with.nodes
 
-save_plot("Figures/Manuscript_figures/Modes_Nodes_Map2.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
 

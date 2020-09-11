@@ -86,7 +86,7 @@ scree.plot.2.KOK <- ggplot(dat =scree.dat.KOK, aes(x = `no. clusters`, y = `sum 
 scree.plot.2.KOK.combined <- plot_grid(scree.plot.KOK, scree.plot.2.KOK, ncol=1)
 save_plot("Intermediates/KMeans_reports/KOK_Kmeans.pdf", scree.plot.2.KOK.combined)
 
-#Cluster with perscribed number of clusters (set as an input)
+#Cluster with prescribed number of clusters (set as an input)
 set.seed(58)
 datclu.clara.KOK <- clara(datwidestd.noNA.KOK, k = numberofclusters.KOK, metric = "euclidean", samples = 1000, sampsize = nrow(datwidestd.noNA.KOK)) 
 

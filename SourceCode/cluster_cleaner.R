@@ -21,7 +21,7 @@ write_csv(Org.dat, "Intermediates/organs_wide_stand_withclusters.csv")
 
 #Rename MGL cluster names in MF file 
 old.clusters <- c("a", "b", "c", "d", "e", "f", "g")
-new.clusters <- c("a", "b", "c", "f", "d", "e", "f")
+new.clusters <- c("a", "b", "c", "g", "d", "e", "f")
 org.cluster.namer <-  data.frame(old.clusters,new.clusters)
 names(org.cluster.namer) <- c("cluster_letters", "cluster_letters_new")
 MGL.dat.og <- read_csv(MGL.clusterfilename)

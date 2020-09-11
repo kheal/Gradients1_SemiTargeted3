@@ -31,15 +31,15 @@ meta.culture.dat <- read_csv(meta.dat.culture.filename)
 bootstrap.dat <- read_csv(bootstrap.file)
 
 #Create alluvial plot from bootstrap output--------
-clusters.combined.KOK.org <- KOK.dat.long %>% select(MassFeature_Column, cluster_letters) %>%
+clusters.combined.KOK.org <- KOK.dat.long %>% select(MassFeature_Column, cluster_letters)%>%
   rename(cluster.KOK = cluster_letters) %>% unique() %>%
   left_join(Org.dat.long %>% select(MassFeature_Column, cluster_letters) %>%
-              rename(cluster.org = cluster_letters) %>% unique(), by = "MassFeature_Column") %>%
+              rename(cluster.org = cluster_letters) %>% unique(), by = "MassFeature_Column")%>%
   group_by(cluster.KOK, cluster.org) %>%
   summarise(Freq = n()) %>% ungroup() %>%
   mutate(cluster.org = ifelse(is.na(cluster.org), "NA", cluster.org)) %>%
   mutate(cluster_overlap = paste0("KOK_", cluster.KOK, "&", "Org_", cluster.org)) %>%
-  mutate(cluster_overlap = cluster_overlap %>% str_replace("Org_NA", "NA")) %>%
+ # mutate(cluster_overlap = cluster_overlap %>% str_replace("Org_NA", "NA")) %>%
   left_join(bootstrap.dat, by = "cluster_overlap") %>%
   mutate(cluster.org = ifelse(cluster.org == "NA", "not \nobserved", cluster.org)) %>%
   mutate(psig = ifelse(pval == "0.01" | pval == "0.05" | pval == "0.1", "sig", "not sig")) %>%
@@ -255,7 +255,7 @@ g.all <- plot_grid(g.left.two, g.tile.org.combo,
 g.all
 
 
-save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial2.pdf", g.all, base_height = 16, base_width = 16, units="cm")
+save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial.pdf", g.all, base_height = 16, base_width = 16, units="cm")
 
 
 
