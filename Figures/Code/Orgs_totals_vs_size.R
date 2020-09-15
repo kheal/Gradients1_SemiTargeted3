@@ -42,22 +42,24 @@ dat.total.2$ID <- factor(dat.total.2$ID,
 #Plot it up as stacked bars
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
 g.total.bars <- ggplot(data = dat.total.2, aes(x = ID, 
-                                               y = Total_mmol_L_intracell,
+                                               y = Total_mmol_L_intracell/1000,
                                                fill = Org_Type_Specific)) +
   geom_bar(stat = "identity")+
-  scale_fill_manual(values = pal)
+  scale_fill_manual(values = pal) +
+  labs(y = "total M concentration")
   
 g.total.bars
 
 #Plot it up as vs cell size
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(8)[1:8])
 g.total.scatter <- ggplot(data = dat.total.2, aes(x = Cell_size_um3, 
-                                               y = Total_mmol_L_intracell,
+                                               y = Total_mmol_L_intracell/1000,
                                                fill = Org_Type_Specific, color = Org_Type_Specific)) +
   geom_point(size = 4)+
   scale_fill_manual(values = pal)+
   scale_color_manual(values = pal)+
   scale_x_log10()+
-  scale_y_log10()
+  scale_y_log10()+
+  labs(y = "total M concentration")
 
 g.total.scatter

@@ -80,6 +80,7 @@ remove(list = ls())
 ```
 
 #Quantify compounds that we are able to
+#TO DO: Check NMar results, these look bonkers!!
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')
