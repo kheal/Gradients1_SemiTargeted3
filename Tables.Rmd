@@ -4,9 +4,6 @@ author: "Katherine Heal"
 date: "January 10 2020"
 output: html_document
 ---
-#TO DO: update these with better names for the compounds (two versions of names for all supplemental tables)
-#TO DO: make it so we can compile all the supplemental tables into one excel file
-#TO DO: add more supplemental tables
 
 ```{r setup, include=FALSE}
 library(tidyverse)

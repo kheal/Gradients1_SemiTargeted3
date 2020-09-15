@@ -6,6 +6,7 @@ MGL.dat.file <- "Intermediates/MGL_wide_stand_withclusters.csv"
 KM.dat.file <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.dat.file <- "Intermediates/KOK_wide_stand_withclusters.csv"
 Org.dat.file <- "Intermediates/organs_wide_stand_withclusters.csv"
+MF.dat.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 
 #Read in your dat files
 MGL.dat <- read_csv(MGL.dat.file) %>% select(MassFeature_Column, cluster_letters) %>%
@@ -16,6 +17,7 @@ KOK.dat <- read_csv(KOK.dat.file) %>% select(MassFeature_Column, cluster_letters
   rename(KOK_clusters = cluster_letters) %>% unique()
 Org.dat <- read_csv(Org.dat.file) %>% select(MassFeature_Column, cluster_letters) %>%
   rename(Org_clusters = cluster_letters) %>% unique()
+MF.dat <- read_csv(MF.dat.file)
 
 #Smash them together
 combo.dat <- KOK.dat %>%

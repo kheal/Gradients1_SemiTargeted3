@@ -27,7 +27,8 @@ KOK.dat <- read_csv(KOK.clusterfilename) %>%
 Org.dat <- read_csv(Org.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique()%>%
   rename(`Culture cluster` = cluster_letters)
-metacluster.dat <- read_csv(Metacluster.filename)
+metacluster.dat <- read_csv(Metacluster.filename) %>% select(MassFeature_Column, MetaClusterAssignment) %>%
+  rename(`Metacluster assignment` = MetaClusterAssignment)
 
 dat.combo <- dat %>%
   left_join(MGL.dat, by = "MassFeature_Column") %>%
