@@ -8,7 +8,9 @@ KM.dat.file <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.dat.file <- "Intermediates/KOK_wide_stand_withclusters.csv"
 Org.dat.file <- "Intermediates/organs_wide_stand_withclusters.csv"
 Quan.dat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
+Quan.dat.file <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
 Meta.dat.file <- "MetaData/SampInfo_wMetaData_withUTC.csv"
+meta.dat.culture.file <- "MetaData/CultureMetaData.csv"
 PC.dat.file <- "MetaData/PCPN/KOK1606_PCPN_UW_Preliminary_OSU_KRH.csv"
 
 #Number of "quality mass features"----
@@ -99,4 +101,34 @@ g.pn <- ggplot() +
 
 print(g.pn)
 
+#Homarine calculations-----
+meta.dat.culture <- read_csv(meta.dat.culture.file)
+quan_dat_cultures <- read_csv(Quan.dat.file) %>%
+  filter(Identification == "Homarine") %>%
+ # select(Identification, ID_rep, Org_Name, Org_Type, C, Org_Type_Specific,nmolmetab_perC) %>%
+  mutate(moleFractionHomarine = nmolmetab_perC/1000*100)
 
+quan_dat_cultures2 <- quan_dat_cultures %>%
+  rename(CultureID  = ID_rep) %>%
+  left_join(meta.dat.culture, by = "CultureID") 
+
+
+
+
+
+dat4cul <-  dat3cul %>%
+  group_by(CultureID, Identification, Org_Type) %>%
+  summarise(nmolmetab_perC_cul = mean(nmolmetab_perC, na.rm = T)) %>%
+  group_by(Identification, Org_Type) %>%
+  summarise(nmolmetab_perC_cul_med = median(nmolmetab_perC_cul, na.rm = T),
+            nmolmetab_perC_cul_max = ifelse(is.na(nmolmetab_perC_cul_med), NA, max(nmolmetab_perC_cul, na.rm = T)), 
+            nmolmetab_perC_cul_min = ifelse(is.na(nmolmetab_perC_cul_med), NA, min(nmolmetab_perC_cul, na.rm = T))) %>%
+  filter(!is.na(nmolmetab_perC_cul_med)) 
+dat5cul <-  dat3cul %>%
+  group_by(CultureID, Identification) %>%
+  summarise(nmolmetab_perC_cul = mean(nmolmetab_perC, na.rm = T)) %>%
+  group_by(Identification) %>%
+  summarise(nmolmetab_perC_cul_med = median(nmolmetab_perC_cul, na.rm = T),
+            nmolmetab_perC_cul_max = ifelse(is.na(nmolmetab_perC_cul_med), NA, max(nmolmetab_perC_cul, na.rm = T)), 
+            nmolmetab_perC_cul_min = ifelse(is.na(nmolmetab_perC_cul_med), NA, min(nmolmetab_perC_cul, na.rm = T))) %>%
+  filter(!is.na(nmolmetab_perC_cul_med)) 

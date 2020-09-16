@@ -1,64 +1,64 @@
-CultureID,CultureID_short,Org_Name,Org_Type,Org_Type_Specific,BioVol_perFilter_uL,Species,strain,volume_reconst,HILIC_injectVol,RP_injectVolume,DateRun_HILIC,DateRun_RP,RP_stdVolpersmpVol,Cells filtered,nmolC_filtered_final,Method,Cell_size_um3
-1314_A,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.56953488,Amphidinium carterae,1314,400,2,,170821,170828,3,"898,320",5898,"Ribalet et al. 2019, direct",634
-1314_B,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.5827728,Amphidinium carterae,1314,400,2,,170821,170828,3,"919,200",6455,"Ribalet et al. 2019, direct",634
-1314_C,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.66859104,Amphidinium carterae,1314,400,2,,170821,170828,3,"1,054,560",5871,"Ribalet et al. 2019, direct",634
-1314P_A,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.3185,Prochlorococcus marinus,1314,400,2,,170821,170828,3,1769468850,33039.88864,"Ribalet et al. 2019, direct",0.18
-1314P_B,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.34858,Prochlorococcus marinus,1314,400,2,,170821,170828,3,1936571770,35225.87859,"Ribalet et al. 2019, direct",0.18
-1314P_C,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.31701,Prochlorococcus marinus,1314,400,2,,170821,170828,3,1761162141,47768.85007,"Ribalet et al. 2019, direct",0.18
-1545_A,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.557926221,Micromonas pusilla,1545,400,2,,170821,170828,3,139481555.3,47434.36605,"Ribalet et al. 2019, direct",4
-1545_B,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.571037924,Micromonas pusilla,1545,400,2,,170821,170828,3,142759481,15772.8465,"Dron et al. 2012, direct",4
-1545_C,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.536432713,Micromonas pusilla,1545,400,2,,170821,170828,3,134108178.4,22741.88524,"Dron et al. 2012, direct",4
-1771_A,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.45029728,Alexandrium tamarense ,1771,400,2,,170821,170828,3,26080,14940.99643,"Dron et al. 2012, direct",17266
-1771_B,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.39780864,Alexandrium tamarense ,1771,400,2,,170821,170828,3,23040,10475.84048,"Ribalet et al. 2019, direct",17266
-1771_C,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.23205504,Alexandrium tamarense ,1771,400,2,,170821,170828,3,13440,11284.40329,"Ribalet et al. 2019, direct",17266
-2021_A,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,2.75917726,Lingulodinium polyedra,2021,400,2,,170821,170828,3,134260,10812.14267,"Ribalet et al. 2019, direct",20551
-2021_B,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,5.11555492,Lingulodinium polyedra,2021,400,2,,170821,170828,3,248920,5428.935323,"Ribalet et al. 2019, direct",20551
-2021_C,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,1.53228256,Lingulodinium polyedra,2021,400,2,,170821,170828,3,74560,4812.492493,"Ribalet et al. 2019, direct",20551
-2090_A,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.29131,Emiliania huxleyi,2090,400,2,,161107,161110,3,"7,282,845",5487.093558,"Ribalet et al. 2019, direct",40
-2090_B,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.33255,Emiliania huxleyi,2090,400,2,,161107,161110,3,"8,313,750",1886.648745,"Ribalet et al. 2019, direct",40
-2090_C,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.381324,Emiliania huxleyi,2090,400,2,,161107,161110,3,"9,533,100",1632.15,"Ribalet et al. 2019, direct",40
-3430_A,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.169351485,Ostreococcus lucimarinus,3430,400,2,,180227,180302,1.5,169351485.1,1647.764655,"Ribalet et al. 2019, direct",1
-3430_B,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.172402985,Ostreococcus lucimarinus,3430,400,2,,180227,180302,1.5,172402985.1,1202.477746,"Menden-Deuer and Lessard 2000, estimate",1
-3430_C,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.175519802,Ostreococcus lucimarinus,3430,400,2,,180227,180302,1.5,175519802,391.4504357,"Menden-Deuer and Lessard 2000, estimate",1
-371_A,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.365805,Emiliania huxleyi,371,400,2,,161107,161110,3,9145125,16931.81692,"Menden-Deuer and Lessard 2000, estimate",40
-371_B,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.380920909,Emiliania huxleyi,371,400,2,,161107,161110,3,9523022.727,60685.0542,"Ribalet et al. 2019, direct",40
-371_C,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.294256364,Emiliania huxleyi,371,400,2,,161107,161110,3,7356409.091,69553.941,"Ribalet et al. 2019, direct",40
-449_A,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.33903,Heterocapsa triquetra,449,400,2,,170821,170828,3,170880,78058.353,"Ribalet et al. 2019, direct",1984
-449_B,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.48124,Heterocapsa triquetra,449,400,2,,170821,170828,3,242560,28181.45319,"Menden-Deuer and Lessard 2000, estimate",1984
-449_C,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.55139,Heterocapsa triquetra,449,400,2,,170821,170828,3,277920,29411.82849,"Menden-Deuer and Lessard 2000, estimate",1984
-7803_B,7803,Synechococcus sp. 7803,Cyanobacteria,Synechococcus,2.20472,Synechococcus sp.,7803,400,2,,161114,161118,1.5,707997613.8,37.95515672,"Menden-Deuer and Lessard 2000, estimate",1
-7803_F,7803,Synechococcus sp. 7803,Cyanobacteria,Synechococcus,2.18928,Synechococcus sp.,7803,400,2,,161114,161118,1.5,754840255.6,125668.428,"Ribalet et al. 2019, direct",1
-8102_A,8102,Synechococcus sp. 8102,Cyanobacteria,Synechococcus,0.708,Synechococcus sp.,8102,400,2,,161114,161118,1.5,2204716157,132885.8715,"Ribalet et al. 2019, direct",1
-8102_F,8102,Synechococcus sp. 8102,Cyanobacteria,Synechococcus,0.75484,Synechococcus sp.,8102,400,2,,161114,161118,1.5,2189278433,1616.062046,"Menden-Deuer and Lessard 2000, estimate",1
-8501_B,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,3.711258,Crocosphaera watsonii,8501,400,2,,161114,161118,1.5,92781450,42250.12476,"Menden-Deuer and Lessard 2000, estimate",40
-8501_C,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,5.351031818,Crocosphaera watsonii,8501,400,2,,161114,161118,1.5,133775795.5,38861.64358,"Menden-Deuer and Lessard 2000, estimate",40
-8501_D,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,3.515528571,Crocosphaera watsonii,8501,400,2,,161114,161118,1.5,87888214.29,133534.0977,"Ribalet et al. 2019, direct",40
-As9601_A,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.452556309,Prochlorococcus marinus,AS9601,400,2,,170821,170828,3,2514201714,95224.584,"Ribalet et al. 2019, direct",0.18
-As9601_B,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.487486222,Prochlorococcus marinus,AS9601,400,2,,170821,170828,3,2708256789,193031.5296,"Ribalet et al. 2019, direct",0.18
-As9601_C,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.467084563,Prochlorococcus marinus,AS9601,400,2,,170821,170828,3,2594914240,7.547537286,"Menden-Deuer and Lessard 2000, estimate",0.18
-Cy_A,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,7.0207956,Cyclotella meneghiniana,338,400,2,,161107,161110,3,50148540,2429.312543,"Menden-Deuer and Lessard 2000, estimate",140
-Cy_B,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,2.285525455,Cyclotella meneghiniana,338,400,2,,161107,161110,3,16325181.82,2787.049429,"Menden-Deuer and Lessard 2000, estimate",140
-Cy_C,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,4.9629762,Cyclotella meneghiniana,338,400,2,,161107,161110,3,35449830,68.92566483,"Menden-Deuer and Lessard 2000, estimate",140
-MED4_D,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.390883343,Prochlorococcus marinus,MED4,400,2,,161114,161118,1.5,2171574129,0.193578301,"Menden-Deuer and Lessard 2000, estimate",0.18
-MED4_E,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.346499459,Prochlorococcus marinus,MED4,400,2,,161114,161118,1.5,1924996997,0.112920675,"Menden-Deuer and Lessard 2000, estimate",0.18
-MED4_F,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.395070736,Prochlorococcus marinus,MED4,400,2,,161114,161118,1.5,2194837423,1.128030497,"Menden-Deuer and Lessard 2000, estimate",0.18
-Nat_A,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.062888292,Prochlorococcus marinus,NATL2A,400,2,,170821,170828,3,"251,553,166",2.777785546,"Menden-Deuer and Lessard 2000, estimate",0.25
-Nat_B,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.054405,Prochlorococcus marinus,NATL2A,400,2,,170821,170828,3,"217,620,000",0.832041179,"Menden-Deuer and Lessard 2000, estimate",0.25
-Nat_C,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.054925488,Prochlorococcus marinus,NATL2A,400,2,,170821,170828,3,"219,701,954",1.906909827,"Menden-Deuer and Lessard 2000, estimate",0.25
-Np_A,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,4.429566,Navicula pelliculosa,543,400,2,,170213,170216,3,88591320,263.3589134,"Menden-Deuer and Lessard 2000, estimate",50
-Np_C,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.07693,Navicula pelliculosa,543,400,2,,170213,170216,3,101538600,301.750945,"Menden-Deuer and Lessard 2000, estimate",50
-Np_F,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.69769,Navicula pelliculosa,543,400,2,,170213,170216,3,113953800,4661.158326,"Menden-Deuer and Lessard 2000, estimate",50
-Pc55x_A,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,3.980689655,Pseudo-nitzschia pungens,Pc55x,400,2,,170213,170216,3,2487931.034,119982.962,"Menden-Deuer and Lessard 2000, estimate",1600
-Pc55x_B,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,4.154482759,Pseudo-nitzschia pungens,Pc55x,400,2,,170213,170216,3,2596551.724,137580.4631,"Menden-Deuer and Lessard 2000, estimate",1600
-Pc55x_C,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,2.532631579,Pseudo-nitzschia pungens,Pc55x,400,2,,170213,170216,3,1582894.737,131981.2582,"Menden-Deuer and Lessard 2000, estimate",1600
-Pt_C,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,52.49856,Phaeodactylum tricornutum,2561,400,2,,170213,170216,3,131246400,39522.6,"Menden-Deuer and Lessard 2000, estimate",400
-Pt_F,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,55.51368,Phaeodactylum tricornutum,2561,400,2,,170213,170216,3,138784200,30530.68571,"Menden-Deuer and Lessard 2000, estimate",400
-To_A,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,10.10952,Thalassiosira oceanica,1005,400,2,,161107,161110,3,67396800,65905.03488,"Ribalet et al. 2019, direct",150
-To_B,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,13.26875,Thalassiosira oceanica,1005,400,2,,161107,161110,3,88458300,67453.85477,"Ribalet et al. 2019, direct",150
-To_C,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,12.20459,Thalassiosira oceanica,1005,400,2,,161107,161110,3,81363900,63366.11429,"Ribalet et al. 2019, direct",150
-Tp_A,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,4.40222,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,73370383.33,9878.836631,"Ribalet et al. 2019, estimate",60
-Tp_E,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,3.13927,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,52321200,10056.8408,"Ribalet et al. 2019, estimate",60
-Tp_F,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,6.36368,Thalassiosira pseudonana,1335,400,2,,161107,161110,3,106061280,10238.65512,"Ribalet et al. 2019, estimate",60
-Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.11362,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"4,940,000,000",41.16666667,"Zhang et al. 2020, direct",0.023
-Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.10396,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"4,520,000,000",37.66666667,"Zhang et al. 2020, direct",0.023
-Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.09982,Nitrosopumilus maritimus,SCM1,400,2,,180130,180131,1.5,"4,340,000,000",36.16666667,"Zhang et al. 2020, direct",0.023
+CultureID,CultureID_short,Org_Name,Org_Type,Org_Type_Specific,BioVol_perFilter_uL,Species,strain,volume_reconst,HILIC_injectVol,RP_injectVolume,DateRun_HILIC,DateRun_RP,RP_stdVolpersmpVol,Cells filtered,Cell_size_um3,Method,nmolC_filtered_final
+1314_A,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.56953488,Amphidinium carterae,1314,400,2,NA,170821,170828,3,898320,634,"Menden-Deuer and Lessard 2000, estimate",8754.975631
+1314_B,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.5827728,Amphidinium carterae,1314,400,2,NA,170821,170828,3,919200,634,"Menden-Deuer and Lessard 2000, estimate",8958.470924
+1314_C,1314,Amphidinium carterae CCMP1314,Dinoflagellate,Dinoflagellate,0.66859104,Amphidinium carterae,1314,400,2,NA,170821,170828,3,1054560,634,"Menden-Deuer and Lessard 2000, estimate",10277.68179
+1314P_A,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.3185,Prochlorococcus marinus,1314,400,2,NA,170821,170828,3,1769468850,0.18,"Ribalet et al. 2019, direct",5898.2295
+1314P_B,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.34858,Prochlorococcus marinus,1314,400,2,NA,170821,170828,3,1936571770,0.18,"Ribalet et al. 2019, direct",6455.239233
+1314P_C,1314P,Prochlorococcus marinus MIT1314,Cyanobacteria,Prochlorococcus,0.31701,Prochlorococcus marinus,1314,400,2,NA,170821,170828,3,1761162141,0.18,"Ribalet et al. 2019, direct",5870.54047
+1545_A,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.557926221,Micromonas pusilla,1545,400,2,NA,170821,170828,3,139481555.3,4,"Ribalet et al. 2019, direct",65905.03488
+1545_B,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.571037924,Micromonas pusilla,1545,400,2,NA,170821,170828,3,142759481,4,"Ribalet et al. 2019, direct",67453.85477
+1545_C,1545,Micromonas pusilla CCMP1545,Prasinophyte,Prasinophyte,0.536432713,Micromonas pusilla,1545,400,2,NA,170821,170828,3,134108178.4,4,"Ribalet et al. 2019, direct",63366.11429
+1771_A,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.45029728,Alexandrium tamarense,1771,400,2,NA,170821,170828,3,26080,17266,"Menden-Deuer and Lessard 2000, estimate",4416.314582
+1771_B,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.39780864,Alexandrium tamarense,1771,400,2,NA,170821,170828,3,23040,17266,"Menden-Deuer and Lessard 2000, estimate",3901.529447
+1771_C,1771,Alexandrium tamarense CCMP1771,Dinoflagellate,Dinoflagellate,0.23205504,Alexandrium tamarense,1771,400,2,NA,170821,170828,3,13440,17266,"Menden-Deuer and Lessard 2000, estimate",2275.892177
+2021_A,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,2.75917726,Lingulodinium polyedra,2021,400,2,NA,170821,170828,3,134260,20551,"Menden-Deuer and Lessard 2000, estimate",26427.31696
+2021_B,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,5.11555492,Lingulodinium polyedra,2021,400,2,NA,170821,170828,3,248920,20551,"Menden-Deuer and Lessard 2000, estimate",48996.63145
+2021_C,2021,Lingulodinium polyedra CCMP2021,Dinoflagellate,Dinoflagellate,1.53228256,Lingulodinium polyedra,2021,400,2,NA,170821,170828,3,74560,20551,"Menden-Deuer and Lessard 2000, estimate",14676.15636
+2090_A,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.29131,Emiliania huxleyi,2090,400,2,NA,161107,161110,3,7282845,40,"Menden-Deuer and Lessard 2000, estimate",3813.921528
+2090_B,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.33255,Emiliania huxleyi,2090,400,2,NA,161107,161110,3,8313750,40,"Menden-Deuer and Lessard 2000, estimate",4353.791699
+2090_C,2090,Emiliania huxleyi CCMP2090,Haptophyte,Haptophyte,0.381324,Emiliania huxleyi,2090,400,2,NA,161107,161110,3,9533100,40,"Menden-Deuer and Lessard 2000, estimate",4992.347815
+3430_A,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.169351485,Ostreococcus lucimarinus,3430,400,2,NA,180227,180302,1.5,169351485.1,1,"Ribalet et al. 2019, estimate",33870
+3430_B,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.172402985,Ostreococcus lucimarinus,3430,400,2,NA,180227,180302,1.5,172402985.1,1,"Ribalet et al. 2019, estimate",34481
+3430_C,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.175519802,Ostreococcus lucimarinus,3430,400,2,NA,180227,180302,1.5,175519802,1,"Ribalet et al. 2019, estimate",35104
+371_A,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.365805,Emiliania huxleyi,371,400,2,NA,161107,161110,3,9145125,40,"Menden-Deuer and Lessard 2000, estimate",4789.170869
+371_B,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.380920909,Emiliania huxleyi,371,400,2,NA,161107,161110,3,9523022.726999998,40,"Menden-Deuer and Lessard 2000, estimate",4987.070491
+371_C,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.294256364,Emiliania huxleyi,371,400,2,NA,161107,161110,3,7356409.091,40,"Menden-Deuer and Lessard 2000, estimate",3852.445988
+449_A,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.33903,Heterocapsa triquetra,449,400,2,NA,170821,170828,3,170880,1984,"Menden-Deuer and Lessard 2000, estimate",4462.579749
+449_B,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.48124,Heterocapsa triquetra,449,400,2,NA,170821,170828,3,242560,1984,"Menden-Deuer and Lessard 2000, estimate",6334.523314
+449_C,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.55139,Heterocapsa triquetra,449,400,2,NA,170821,170828,3,277920,1984,"Menden-Deuer and Lessard 2000, estimate",7257.95976
+7803_B,7803,Synechococcus sp. 7803,Cyanobacteria,Synechococcus,2.20472,Synechococcus sp.,7803,400,2,NA,161114,161118,1.5,707997613.8,1,"Ribalet et al. 2019, direct",33039.88864
+7803_F,7803,Synechococcus sp. 7803,Cyanobacteria,Synechococcus,2.18928,Synechococcus sp.,7803,400,2,NA,161114,161118,1.5,754840255.6,1,"Ribalet et al. 2019, direct",35225.87859
+8102_A,8102,Synechococcus sp. 8102,Cyanobacteria,Synechococcus,0.708,Synechococcus sp.,8102,400,2,NA,161114,161118,1.5,2204716157,1,"Ribalet et al. 2019, direct",47768.85007
+8102_F,8102,Synechococcus sp. 8102,Cyanobacteria,Synechococcus,0.75484,Synechococcus sp.,8102,400,2,NA,161114,161118,1.5,2189278433,1,"Ribalet et al. 2019, direct",47434.36605
+8501_B,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,3.711258,Crocosphaera watsonii,8501,400,2,NA,161114,161118,1.5,92781450,40,"Dron et al. 2012, direct",15773
+8501_C,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,5.351031818,Crocosphaera watsonii,8501,400,2,NA,161114,161118,1.5,133775795.5,40,"Dron et al. 2012, direct",22742
+8501_D,8501,Crocosphaera watsonii WH8501,Cyanobacteria,Crocosphaera,3.515528571,Crocosphaera watsonii,8501,400,2,NA,161114,161118,1.5,87888214.29,40,"Dron et al. 2012, direct",14941
+As9601_A,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.452556309,Prochlorococcus marinus,AS9601,400,2,NA,170821,170828,3,2514201714,0.18,"Ribalet et al. 2019, direct",10475.84048
+As9601_B,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.487486222,Prochlorococcus marinus,AS9601,400,2,NA,170821,170828,3,2708256789,0.18,"Ribalet et al. 2019, direct",11284.40329
+As9601_C,As9601,Prochlorococcus marinus AS9601,Cyanobacteria,Prochlorococcus,0.467084563,Prochlorococcus marinus,AS9601,400,2,NA,170821,170828,3,2594914240,0.18,"Ribalet et al. 2019, direct",10812.14267
+Cy_A,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,7.0207956,Cyclotella meneghiniana,338,400,2,NA,161107,161110,3,50148540,140,"Menden-Deuer and Lessard 2000, estimate",66158.68808
+Cy_B,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,2.285525455,Cyclotella meneghiniana,338,400,2,NA,161107,161110,3,16325181.82,140,"Menden-Deuer and Lessard 2000, estimate",21537.06991
+Cy_C,Cy,Cyclotella meneghiniana CCMP 338,Diatom,Diatom,4.9629762,Cyclotella meneghiniana,338,400,2,NA,161107,161110,3,35449830,140,"Menden-Deuer and Lessard 2000, estimate",46767.34847
+MED4_D,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.390883343,Prochlorococcus marinus,MED4,400,2,NA,161114,161118,1.5,2171574129,0.18,"Ribalet et al. 2019, direct",5428.935323
+MED4_E,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.346499459,Prochlorococcus marinus,MED4,400,2,NA,161114,161118,1.5,1924996997,0.18,"Ribalet et al. 2019, direct",4812.492493
+MED4_F,MED4,Prochlorococcus marinus MED4,Cyanobacteria,Prochlorococcus,0.395070736,Prochlorococcus marinus,MED4,400,2,NA,161114,161118,1.5,2194837423,0.18,"Ribalet et al. 2019, direct",5487.093558
+Nat_A,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.062888292,Prochlorococcus marinus,NATL2A,400,2,NA,170821,170828,3,251553166,0.25,"Ribalet et al. 2019, direct",1886.648745
+Nat_B,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.054405,Prochlorococcus marinus,NATL2A,400,2,NA,170821,170828,3,217620000,0.25,"Ribalet et al. 2019, direct",1632.15
+Nat_C,Nat,Prochlorococcus marinus NATL2A,Cyanobacteria,Prochlorococcus,0.054925488,Prochlorococcus marinus,NATL2A,400,2,NA,170821,170828,3,219701954,0.25,"Ribalet et al. 2019, direct",1647.764655
+Np_A,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,4.429566,Navicula pelliculosa,543,400,2,NA,170213,170216,3,88591320,50,"Menden-Deuer and Lessard 2000, estimate",50707.78032
+Np_C,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.07693,Navicula pelliculosa,543,400,2,NA,170213,170216,3,101538600,50,"Menden-Deuer and Lessard 2000, estimate",58118.52699
+Np_F,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.69769,Navicula pelliculosa,543,400,2,NA,170213,170216,3,113953800,50,"Menden-Deuer and Lessard 2000, estimate",65224.72243
+Pc55x_A,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,3.980689655,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,2487931.034,1600,"Menden-Deuer and Lessard 2000, estimate",23670.0076
+Pc55x_B,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,4.154482759,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,2596551.7240000004,1600,"Menden-Deuer and Lessard 2000, estimate",24703.4175
+Pc55x_C,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,2.532631579,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,1582894.737,1600,"Menden-Deuer and Lessard 2000, estimate",15059.55348
+Pt_C,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,52.49856,Phaeodactylum tricornutum,2561,400,2,NA,170213,170216,3,131246400,400,"Menden-Deuer and Lessard 2000, estimate",405673.6567
+Pt_F,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,55.51368,Phaeodactylum tricornutum,2561,400,2,NA,170213,170216,3,138784200,400,"Menden-Deuer and Lessard 2000, estimate",428972.4816
+To_A,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,10.10952,Thalassiosira oceanica,1005,400,2,NA,161107,161110,3,67396800,150,"Menden-Deuer and Lessard 2000, estimate",94030.34765
+To_B,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,13.26875,Thalassiosira oceanica,1005,400,2,NA,161107,161110,3,88458300,150,"Menden-Deuer and Lessard 2000, estimate",123414.8313
+To_C,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,12.20459,Thalassiosira oceanica,1005,400,2,NA,161107,161110,3,81363900,150,"Menden-Deuer and Lessard 2000, estimate",113516.9
+Tp_A,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,4.40222,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,73370383.33,60,"Ribalet et al. 2019, direct",133534.0977
+Tp_E,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,3.13927,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,52321200,60,"Ribalet et al. 2019, direct",95224.584
+Tp_F,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,6.36368,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,106061280,60,"Ribalet et al. 2019, direct",193031.5296
+Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.11362,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4940000000,0.023,"Zhang et al. 2020, direct",41.16666667
+Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.10396,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4520000000,0.023,"Zhang et al. 2020, direct",37.66666667
+Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.09982,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4340000000,0.023,"Zhang et al. 2020, direct",36.16666667
