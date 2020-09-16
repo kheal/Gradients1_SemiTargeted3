@@ -106,7 +106,7 @@ meta.dat.culture <- read_csv(meta.dat.culture.file)
 quan_dat_cultures <- read_csv(Quan.dat.file) %>%
   filter(Identification == "Homarine") %>%
  # select(Identification, ID_rep, Org_Name, Org_Type, C, Org_Type_Specific,nmolmetab_perC) %>%
-  mutate(moleFractionHomarine = nmolmetab_perC/1000*100)
+  mutate(percentHomarine = nmolmetab_perC/1000*100)
 
 quan_dat_cultures2 <- quan_dat_cultures %>%
   rename(CultureID  = ID_rep) %>%

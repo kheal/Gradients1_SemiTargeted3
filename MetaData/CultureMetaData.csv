@@ -21,7 +21,7 @@ CultureID,CultureID_short,Org_Name,Org_Type,Org_Type_Specific,BioVol_perFilter_u
 3430_B,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.172402985,Ostreococcus lucimarinus,3430,400,2,NA,180227,180302,1.5,172402985.1,1,"Ribalet et al. 2019, estimate",34481
 3430_C,3430,Ostreococcus lucimarinus CCMP3430,Prasinophyte,Prasinophyte,0.175519802,Ostreococcus lucimarinus,3430,400,2,NA,180227,180302,1.5,175519802,1,"Ribalet et al. 2019, estimate",35104
 371_A,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.365805,Emiliania huxleyi,371,400,2,NA,161107,161110,3,9145125,40,"Menden-Deuer and Lessard 2000, estimate",4789.170869
-371_B,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.380920909,Emiliania huxleyi,371,400,2,NA,161107,161110,3,9523022.726999998,40,"Menden-Deuer and Lessard 2000, estimate",4987.070491
+371_B,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.380920909,Emiliania huxleyi,371,400,2,NA,161107,161110,3,9523022.727,40,"Menden-Deuer and Lessard 2000, estimate",4987.070491
 371_C,371,Emiliania huxleyi CCMP371,Haptophyte,Haptophyte,0.294256364,Emiliania huxleyi,371,400,2,NA,161107,161110,3,7356409.091,40,"Menden-Deuer and Lessard 2000, estimate",3852.445988
 449_A,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.33903,Heterocapsa triquetra,449,400,2,NA,170821,170828,3,170880,1984,"Menden-Deuer and Lessard 2000, estimate",4462.579749
 449_B,449,Heterocapsa triquetra CCMP449,Dinoflagellate,Dinoflagellate,0.48124,Heterocapsa triquetra,449,400,2,NA,170821,170828,3,242560,1984,"Menden-Deuer and Lessard 2000, estimate",6334.523314
@@ -49,7 +49,7 @@ Np_A,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,4.429566,Navicula pelliculosa
 Np_C,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.07693,Navicula pelliculosa,543,400,2,NA,170213,170216,3,101538600,50,"Menden-Deuer and Lessard 2000, estimate",58118.52699
 Np_F,Np,Navicula pelliculosa CCMP543,Diatom,Diatom,5.69769,Navicula pelliculosa,543,400,2,NA,170213,170216,3,113953800,50,"Menden-Deuer and Lessard 2000, estimate",65224.72243
 Pc55x_A,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,3.980689655,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,2487931.034,1600,"Menden-Deuer and Lessard 2000, estimate",23670.0076
-Pc55x_B,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,4.154482759,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,2596551.7240000004,1600,"Menden-Deuer and Lessard 2000, estimate",24703.4175
+Pc55x_B,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,4.154482759,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,2596551.724,1600,"Menden-Deuer and Lessard 2000, estimate",24703.4175
 Pc55x_C,Pc55x,Pseudo-nitzschia pungens Pc55x,Diatom,Diatom,2.532631579,Pseudo-nitzschia pungens,Pc55x,400,2,NA,170213,170216,3,1582894.737,1600,"Menden-Deuer and Lessard 2000, estimate",15059.55348
 Pt_C,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,52.49856,Phaeodactylum tricornutum,2561,400,2,NA,170213,170216,3,131246400,400,"Menden-Deuer and Lessard 2000, estimate",405673.6567
 Pt_F,Pt,Phaeodactylum tricornutum CCMP2561,Diatom,Diatom,55.51368,Phaeodactylum tricornutum,2561,400,2,NA,170213,170216,3,138784200,400,"Menden-Deuer and Lessard 2000, estimate",428972.4816
@@ -59,6 +59,6 @@ To_C,To,Thalassiosira oceanica CCMP 1005,Diatom,Diatom,12.20459,Thalassiosira oc
 Tp_A,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,4.40222,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,73370383.33,60,"Ribalet et al. 2019, direct",133534.0977
 Tp_E,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,3.13927,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,52321200,60,"Ribalet et al. 2019, direct",95224.584
 Tp_F,Tp,Thalassiosira pseudonana CCMP1335,Diatom,Diatom,6.36368,Thalassiosira pseudonana,1335,400,2,NA,161107,161110,3,106061280,60,"Ribalet et al. 2019, direct",193031.5296
-Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.11362,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4940000000,0.023,"Zhang et al. 2020, direct",41.16666667
-Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.10396,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4520000000,0.023,"Zhang et al. 2020, direct",37.66666667
-Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.09982,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4340000000,0.023,"Zhang et al. 2020, direct",36.16666667
+Nmar_1,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.11362,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4940000000,0.023,"Zhang et al. 2020, direct",4116.666667
+Nmar_2,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.10396,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4520000000,0.023,"Zhang et al. 2020, direct",3766.666667
+Nmar_3,Nmar,Nitrosopumilus maritimus SCM1,Archaea,Archaea,0.09982,Nitrosopumilus maritimus,SCM1,400,2,NA,180130,180131,1.5,4340000000,0.023,"Zhang et al. 2020, direct",3616.666667

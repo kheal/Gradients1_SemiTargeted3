@@ -80,7 +80,6 @@ remove(list = ls())
 ```
 
 #Quantify compounds that we are able to
-#TO DO: Check NMar results, these look bonkers!!
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')
@@ -88,7 +87,7 @@ remove(list = ls())
 
 #Use RF and RF ratios to calculate concentrations in organisms
 source('SourceCode/Quantification_Cultures.R')
-gremove(list = ls())
+remove(list = ls())
 
 #Use RF and RF ratios to calculate concentrations in environmental samples 
 source('SourceCode/Quantification_EnvironSamples.R')
