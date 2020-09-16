@@ -88,7 +88,7 @@ remove(list = ls())
 
 #Use RF and RF ratios to calculate concentrations in organisms
 source('SourceCode/Quantification_Cultures.R')
-remove(list = ls())
+gremove(list = ls())
 
 #Use RF and RF ratios to calculate concentrations in environmental samples 
 source('SourceCode/Quantification_EnvironSamples.R')
