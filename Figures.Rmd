@@ -85,7 +85,6 @@ remove(list = ls())
 ```
 
 #Plot homarine and trigonolline
-Still very prelim
 #TO DO: make it so the organisms' contributions are
 ```{r}
 source("Figures/Code/Homarine.R")
@@ -93,7 +92,6 @@ remove(list = ls())
 ```
 
 #Plot of stacked bars in cultures
-Still very prelim, writes out some to presentations
 ```{r}
 source("Figures/Code/Orgs_stackedbars.R")
 remove(list = ls())
@@ -103,7 +101,6 @@ remove(list = ls())
 ```{r}
 source("Figures/Code/DSS3_growthcurves.R")
 remove(list = ls())
-
 ```
 
 
