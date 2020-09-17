@@ -82,15 +82,16 @@ supp.tables <-
     "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv", 
     "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv",
     "Tables/Manuscript_tables/SuppTables/Full_Quan_Culture_Results.csv",
-    "Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv",
-    "RawOutput/QC_parameters.csv")
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv" )
 
-files.nms <- basename(supp.tables) %>% str_remove(".csv") %>%
+files.nms <- basename(supp.tables) %>% 
+  str_remove(".csv") %>%
   str_remove("Tables/Manuscript_tables/SuppTables/") %>%
-  str_remove("RawOutput/")
+  str_remove("RawOutput/") %>%
+  str_remove("_") 
 
 files.nms.2 <- files.nms %>% as.data.frame() %>%
-  mutate(try = paste0("Table S", row_number()+3))
+  mutate(sheet_ID = paste0("S", row_number()+3, "_", .))
 
 f.out <- "Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx"
 wb <- loadWorkbook(f.out, create=TRUE)
@@ -100,7 +101,7 @@ for (i in 1:length(supp.tables)) {
   temp_DT <- read_csv(supp.tables[[i]])
 
   ## Create the sheet where the file will be outputed to 
-  createSheet(wb, name=files.nms[i])
+  createSheet(wb, name=files.nms.2$sheet_ID[i])
 
   ## output the csv contents
   writeWorksheet(object=wb, data=temp_DT, sheet=i, header=TRUE, rownames=NULL)

@@ -14,9 +14,11 @@ samp.info.short <- samp.info %>%
             Longitude = round(mean(longitude), digits = 2), 
             Volume = round(mean (Volume), digits = 0)) %>% ungroup() %>%
   mutate(`\\makecell{Collection \\\\ method}` = ifelse(SampType == "U", "underway", "niskin")) %>%
-  rename(`Vol (L)` = Volume) %>%
+  rename(`Vol (L)` = Volume, 
+         `Cruise ID` = Cruise,
+         `Depth (m)` = Depth) %>%
   select(-Station) %>%
-  arrange(Cruise, Latitude, Depth) %>%
+  arrange(`Cruise ID`, Latitude, `Depth (m)`) %>%
   rename(`\\textit{n}` = n) %>%
   select(-`\\makecell{Collection \\\\ method}`, everything(), -SampType)
 
