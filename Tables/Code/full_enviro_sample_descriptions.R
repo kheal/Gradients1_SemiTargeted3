@@ -20,7 +20,7 @@ dat.clean <- dat %>%
   left_join(dat.lat.bin) %>%
   mutate(SampType2 = ifelse(SampType == "S", "niskin", "underway"))%>%
   select(SampID,  cruise, latitude, longitude, binned_lat, Depth, UTC_real, 
-         SampType2, Volume) %>%
+         SampType2, Volume, MetabolomicsWorkBenchID) %>%
   rename(`Sample ID` = SampID,
          `Cruise ID` = cruise,
          Latitude = latitude, 
@@ -29,7 +29,8 @@ dat.clean <- dat %>%
          `Depth (m)` = Depth,
          `Time (UTC)` = UTC_real,
          `Sampling Method` = SampType2,
-         `Volume (L)` = Volume) %>%
+         `Volume (L)` = Volume,
+         `Metabolomics Workbench ID` = MetabolomicsWorkBenchID) %>%
   filter(`Sample ID` %in% colnames(dat.names))
 
 write_csv( dat.clean, "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv")
