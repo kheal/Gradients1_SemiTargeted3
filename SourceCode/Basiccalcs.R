@@ -122,3 +122,16 @@ quan_dat_enviro_summary <- quan_dat_enviro %>%
   group_by(Identification, zone) %>%
   summarise(averagepercent = mean(percentMetab),
             averageConcentration =  mean(nmolinEnviroave))
+
+
+#Glycine betaine below 125 m in NPTZ
+dat.quan.file <- read_csv(Quan.dat.file) %>%
+  filter(Identification == "Betaine") 
+
+NPTZ_deep_samps <- unique(dat.quan.file$SampID)[55:58]
+
+dat.quan.file.2 <- read_csv(Quan.dat.file) %>%
+  filter(Identification == "Betaine")  %>%
+  filter(SampID %in% NPTZ_deep_samps) 
+
+mean(dat.quan.file.2$molFractionC)

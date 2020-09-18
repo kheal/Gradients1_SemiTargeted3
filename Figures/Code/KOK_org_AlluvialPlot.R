@@ -217,12 +217,13 @@ g.tile.org
 
 #Make another tile plot to smash together with colored names-----
 pal <- park_palette("Redwoods", 5)
-#pal2 <- c("deepskyblue4", pal[5], pal[2:4], pal[1])
-g.tile.org.key <- ggplot(data = order.of.org.df %>% filter(CultureID_short != "Nmar"), 
+pal2 <- c("deepskyblue4", pal[5], pal[2:4], pal[1])[2:6]
+g.tile.org.key <- ggplot(data = order.of.org.df %>% 
+                           filter(CultureID_short != "Nmar"), 
                          aes(x = factor(CultureID_short), y = 1, fill = Org_Type), colour = "black") +
   geom_tile() +
   geom_text(aes(label = CultureID_short), angle = -90, size = 1.7, fontface = "italic")+
-  scale_fill_manual(values = pal)+
+  scale_fill_manual(values = pal2)+
   xlab("Organisms (colored by broad classification)")+
   theme(axis.line.y = element_blank(),
         axis.line = element_blank(),
@@ -252,7 +253,7 @@ g.all <- plot_grid(g.left.two, g.tile.org.combo,
                    rel_widths = c(3, 3),
                    rel_heights =  c(1, 2),
                    ncol = 2, scale = 1)
-g.all
+g.all 
 
 
 save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial.pdf", g.all, base_height = 16, base_width = 16, units="cm")
