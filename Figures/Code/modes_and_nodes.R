@@ -25,6 +25,7 @@ KOK.dat.file <- "Intermediates/KOK_wide_stand_withclusters.csv"
 Meta.dat.file <- "MetaData/SampInfo_wMetaData_withUTC.csv"
 MF.dat.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 bootstrap.files <- list.files("Intermediates/BootstrapResults/", full.names = TRUE)
+PC.dat.file <- "MetaData/PCPN/DepthProfilesPCPN.csv"
 
 #Load files
 MGL.dat <- read_csv(MGL.dat.file) 
@@ -70,6 +71,23 @@ MGL.dat.ave.mode.2 <- MGL.dat.ave.mode %>%
   left_join(MGL.count, by = "cluster_letters") %>%
   filter(MF.percent > 5) 
 
+#add in the PC data-----
+PC.dat <- read_csv(PC.dat.file) %>% head(12) %>%
+  filter(str_detect(Cruise, "MGL")) 
+#grad the max values for the std clusters
+MGL.cluster.maxes <- MGL.dat.ave.mode.2 %>%
+  filter(Depth < 35) %>%
+  select(cluster_letters, mean_std_area) 
+PC.dat.MGL <- list()
+for (i in 1:length(MGL.cluster.maxes$cluster_letters)){
+  PC.dat.MGL[[i]]<- PC.dat %>%
+  mutate(cluster_letters = MGL.cluster.maxes$cluster_letters[i]) %>%
+  left_join(MGL.cluster.maxes, by = "cluster_letters") %>%
+  mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
+}
+PC.dat.MGL2 <- do.call(rbind, PC.dat.MGL)
+
+
 #make the MGL mode plot -----
 g.mode.MGL <- ggplot()+
   geom_ribbon(data = MGL.dat.ave.mode.2, 
@@ -77,6 +95,7 @@ g.mode.MGL <- ggplot()+
                                            ymax = ifelse(mean_std_area + stdev_std_area < 1, 
                                                          mean_std_area + stdev_std_area, 1),
                                            x = Depth), fill = MGL.color) +
+  geom_point(data = PC.dat.MGL2, aes (x = Depth, y = PC_toPlot))+
   geom_text(data = MGL.count %>% filter(MF.percent > 5), 
             aes(x = 100, y = 0.5, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = MGL.count %>% filter(MF.percent > 5), 
@@ -139,6 +158,22 @@ KM.count.id <- KM.dat %>%  left_join(MF.dat %>% select(MassFeature_Column, Confi
 KM.count <- left_join(KM.count, KM.count.id) %>%
   mutate(n = ifelse(is.na(n), 0, n))
 
+#add in the PC data-----
+PC.dat <- read_csv(PC.dat.file) %>% head(12) %>%
+  filter(str_detect(Cruise, "KM")) 
+#grad the max values for the std clusters
+KM.cluster.maxes <- KM.dat.ave.mode %>%
+  filter(Depth < 35) %>%
+  select(cluster_letters, mean_std_area) 
+PC.dat.KM <- list()
+for (i in 1:length(KM.cluster.maxes$cluster_letters)){
+  PC.dat.KM[[i]]<- PC.dat %>%
+    mutate(cluster_letters = KM.cluster.maxes$cluster_letters[i]) %>%
+    left_join(KM.cluster.maxes, by = "cluster_letters") %>%
+    mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
+}
+PC.dat.KM2 <- do.call(rbind, PC.dat.KM)
+
 #plot KM dat-----
 KM.cols.needed <- length(unique(KM.dat.ave.mode$cluster_letters))
 pal.KM <- c(colorRampPalette(wes_palette("Cavalcanti1"))(KM.cols.needed))
@@ -149,6 +184,7 @@ g.mode.KM <- ggplot()+
                   ymax = ifelse(mean_std_area + stdev_std_area < .4,
                                 mean_std_area + stdev_std_area, .4),
                   x = Depth), fill =  KM.color) +
+  geom_point(data = PC.dat.KM2, aes (x = Depth, y = PC_toPlot))+
   geom_text(data = KM.count, 
             aes(x = 50, y = 0.25, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = KM.count, 
@@ -306,5 +342,5 @@ nodes.with.map <- plot_grid(KOK.map, g.net.2, ncol = 2, rel_widths = c(1, 2), la
 modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
 modes.with.nodes
 
-save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+save_plot("Figures/Manuscript_figures/Modes_Nodes_Map_withPC.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
 
