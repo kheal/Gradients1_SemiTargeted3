@@ -85,7 +85,8 @@ for (i in 1:length(MGL.cluster.maxes$cluster_letters)){
   left_join(MGL.cluster.maxes, by = "cluster_letters") %>%
   mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
 }
-PC.dat.MGL2 <- do.call(rbind, PC.dat.MGL)
+PC.dat.MGL2 <- do.call(rbind, PC.dat.MGL) %>%
+  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std)
 
 
 #make the MGL mode plot -----
@@ -95,11 +96,17 @@ g.mode.MGL <- ggplot()+
                                            ymax = ifelse(mean_std_area + stdev_std_area < 1, 
                                                          mean_std_area + stdev_std_area, 1),
                                            x = Depth), fill = MGL.color) +
-  geom_point(data = PC.dat.MGL2, aes (x = Depth, y = PC_toPlot))+
+  geom_point(data = PC.dat.MGL2, aes (x = Depth, y = PC_toPlot), 
+             color = 'grey40', size = 1)+
+  geom_errorbar(data = PC.dat.MGL2, 
+                aes (x = Depth, ymin = PC_toPlot-PC_toPlot_stdev, 
+                     ymax = PC_toPlot+PC_toPlot_stdev), 
+                color = 'grey40',
+                width = 0)+
   geom_text(data = MGL.count %>% filter(MF.percent > 5), 
-            aes(x = 100, y = 0.5, label = cluster_letters), size = 4, fontface = "italic")+
+            aes(x = 110, y = 0.5, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = MGL.count %>% filter(MF.percent > 5), 
-            aes(x = 150, y = 0.5, 
+            aes(x = 160, y = 0.5, 
                 label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
   scale_y_continuous(sec.axis = dup_axis(), 
                      limits = c(0, 1.1), expand = c(0,0), breaks = c(0,  0.5,  1.0))+
@@ -172,7 +179,8 @@ for (i in 1:length(KM.cluster.maxes$cluster_letters)){
     left_join(KM.cluster.maxes, by = "cluster_letters") %>%
     mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
 }
-PC.dat.KM2 <- do.call(rbind, PC.dat.KM)
+PC.dat.KM2 <- do.call(rbind, PC.dat.KM) %>%
+  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std)
 
 #plot KM dat-----
 KM.cols.needed <- length(unique(KM.dat.ave.mode$cluster_letters))
@@ -184,11 +192,17 @@ g.mode.KM <- ggplot()+
                   ymax = ifelse(mean_std_area + stdev_std_area < .4,
                                 mean_std_area + stdev_std_area, .4),
                   x = Depth), fill =  KM.color) +
-  geom_point(data = PC.dat.KM2, aes (x = Depth, y = PC_toPlot))+
+  geom_point(data = PC.dat.KM2, aes (x = Depth, y = PC_toPlot), 
+             color = 'grey40', size = 1)+
+  geom_errorbar(data = PC.dat.KM2, 
+                aes (x = Depth, ymin = PC_toPlot-PC_toPlot_stdev, 
+                     ymax = PC_toPlot+PC_toPlot_stdev), 
+                color = 'grey40',
+                width = 0)+
   geom_text(data = KM.count, 
-            aes(x = 50, y = 0.25, label = cluster_letters), size = 4, fontface = "italic")+
+            aes(x = 60, y = 0.30, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = KM.count, 
-            aes(x = 85, y = 0.25, 
+            aes(x = 95, y = 0.30, 
                 label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, .45), expand = c(0,0), breaks = c(0, 0.2, 0.4))+
   scale_x_reverse(limits = c(126,0), expand = c(0,0), breaks = c(0, 50, 100)) +
@@ -331,7 +345,7 @@ g.net.2 <- ggdraw() +
   draw_image(cloud.file.1,  x = -.37, y = 0.27, scale = .35) + #cloud for rare metabs
   draw_plot(g.net)+
   draw_label("Core \nMetabolites", x = 0.65, y = 0.3, hjust = 0, fontface = "bold", size = 8) +
-  draw_label("Rare \nMetabolites", x = 0.15, y = 0.6, hjust = 0, fontface = "bold", size = 8) +
+  draw_label("Rare \nMetabolites", x = 0.25, y = 0.6, hjust = 0, fontface = "bold", size = 8) +
   draw_label("Dinoflagellate-\nassociated \nMetabolites", x = 0.5, y = 0.75, hjust = 0, fontface = "bold", size = 8) 
 g.net.2
 
@@ -342,5 +356,5 @@ nodes.with.map <- plot_grid(KOK.map, g.net.2, ncol = 2, rel_widths = c(1, 2), la
 modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
 modes.with.nodes
 
-save_plot("Figures/Manuscript_figures/Modes_Nodes_Map_withPC.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
 
