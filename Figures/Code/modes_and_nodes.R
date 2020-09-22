@@ -345,7 +345,7 @@ g.net.2 <- ggdraw() +
   draw_image(cloud.file.1,  x = -.37, y = 0.27, scale = .35) + #cloud for rare metabs
   draw_plot(g.net)+
   draw_label("Core \nMetabolites", x = 0.65, y = 0.3, hjust = 0, fontface = "bold", size = 8) +
-  draw_label("Rare \nMetabolites", x = 0.25, y = 0.6, hjust = 0, fontface = "bold", size = 8) +
+  draw_label("Rare \nMetabolites", x = 0.20, y = 0.6, hjust = 0, fontface = "bold", size = 8) +
   draw_label("Dinoflagellate-\nassociated \nMetabolites", x = 0.5, y = 0.75, hjust = 0, fontface = "bold", size = 8) 
 g.net.2
 
