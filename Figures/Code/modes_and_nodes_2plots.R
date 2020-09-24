@@ -286,8 +286,7 @@ g.mode.KOK <- ggplot()+
         legend.position = "none")
 g.mode.KOK
 
-modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.7), labels = c("A", "B", "C"))
-modes.combined
+
 
 
 
@@ -321,7 +320,7 @@ node.dat.2 <- node.dat %>%
 #make an igraph object
 net <- graph_from_data_frame(d=edges.dat.2, vertices=node.dat.2, directed=FALSE) 
 
-#plot up the network
+#plot up the network-----
 set.seed(33)
 g.net <- ggraph(net, layout = 'fr') + #gem, dh, graphopt, fr, kk, lgl all look decent
   geom_edge_fan(color="gray60", aes()) + 
@@ -351,12 +350,20 @@ g.net.2
 
 
 #load the map?
+modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.7), labels = c("A", "B", "C"))
+modes.combined
+
 nodes.with.map <- plot_grid(KOK.map, g.net.2, ncol = 2, rel_widths = c(1, 2), labels = c("D", "E"))
 
 modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
 modes.with.nodes
 
-save_plot("Figures/Manuscript_figures/Modes_Nodes_Map.pdf", modes.with.nodes, base_height = 8, base_width = 7, units = "in")
+#Save out the map as its own thing
+save_plot("Figures/Manuscript_figures/network.pdf", g.net.2, base_height = 3.5, base_width = 5, units = "in")
 
-
+#Arrange the modes with the map all nice like
+modes.combined.2.top <- plot_grid(KOK.map, g.mode.KOK, ncol = 2, rel_widths = c(1, 2.5), labels = c("A", "B"))
+modes.combined.2.botom <- plot_grid(g.mode.MGL, g.mode.KM, ncol = 2, rel_widths = c(1.6, 1), labels = c("C", "D"))
+modes.combined <- plot_grid(modes.combined.2.top, modes.combined.2.botom, ncol = 1)
+save_plot("Figures/Manuscript_figures/map_and_modes.pdf", modes.combined, base_height = 8, base_width = 6, units = "in")
 

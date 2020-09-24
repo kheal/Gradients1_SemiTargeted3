@@ -66,10 +66,10 @@ KOK.map<-
         legend.background= element_blank(),
         legend.key = element_rect(colour = NA,fill=NA),
         legend.key.size = unit(0.5, "cm"),
-        legend.key.width=unit(0.3,"cm"),
+        legend.key.width=unit(0.5,"cm"),
         legend.text = element_text(size = 6),
         legend.title = element_text(size = 7),
-        legend.position = "right",
+        legend.position = "bottom",
         aspect.ratio=3,
         plot.margin = margin(0, .1, 0, .1, "cm")) +
   labs(fill = c(expression(paste("Chla \n(mg/m"^"3", ")")))) + 
