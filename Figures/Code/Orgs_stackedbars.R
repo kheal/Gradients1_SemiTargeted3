@@ -1,6 +1,7 @@
 library(tidyverse)
 library(here)
 library(RColorBrewer)
+library(nationalparkcolors)
 
 #TO DO: make a second plot that is the total, not stacked and stretched
 
@@ -14,7 +15,8 @@ meta.dat <- read_csv(Meta.dat.file)
 dat.mean <- dat %>% ungroup () %>%
   group_by(Identification, ID, Org_Name, Org_Type_Specific, Org_Type) %>%
   mutate(intracell_conc_umolCL = ifelse(is.na(intracell_conc_umolCL), 0 , intracell_conc_umolCL)) %>%
-  summarise(intracell_conc_umolCL = mean(intracell_conc_umolCL))
+  summarise(intracell_conc_umolCL = mean(intracell_conc_umolCL))%>%
+  filter(Identification != "DMSP")
 
 dat.total <- dat.mean %>%
   group_by(ID) %>%
@@ -71,7 +73,7 @@ dat.mean.combo$ID = factor(dat.mean.combo$ID,
                            levels = (order.of.org))
 
 #Plot to highlight top 20ish in the samples----
-pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:16], rep("grey", 1))
+pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:15], rep("grey", 1))
 
 b.all <- ggplot()+
   geom_bar(stat = "identity", position = "fill", data = dat.mean.combo, 

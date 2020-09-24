@@ -4,6 +4,7 @@ library(cowplot)
 theme_set(theme_cowplot())
 require(RColorBrewer)
 library(colorRamps)
+library(RCurl)
 
 #Get list of better names
 std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
@@ -17,7 +18,8 @@ dat <- read_csv("Intermediates/Quantified_LongDat_Enviro.csv") %>%
   left_join(stds.dat, by = "Identification") %>% 
   select(-Identification)
 dat2 <- dat %>%
-  select(BestMatch, SampID, nmolCave, totalCmeasured_nM) 
+  select(BestMatch, SampID, nmolCave, totalCmeasured_nM) %>%
+  filter(BestMatch != "DMSP")
  
 #Get a logical order for the MFs, pull out only the top 20, put in the colors  here?
 AllSmps_Ordered <- dat %>%
@@ -188,8 +190,8 @@ c_d2.big <- plot_grid(c.big, d.big, ncol = 1, labels = c('', ''))
 b_c_d2.big <- plot_grid(b.big, c_d2.big, ncol = 2, labels = c('', ''))
 b_c_d2.big
 
-#cairo_pdf("Figures/Presentation_figures/barplot_nmolC.pdf", family="Arial Unicode MS", 6.5,6)
-#b_c_d2.big
-#dev.off()
+cairo_pdf("Figures/Presentation_figures/barplot_nmolC.pdf", family="Arial Unicode MS", 6.5,6)
+b_c_d2.big
+dev.off()
 
 

@@ -18,7 +18,8 @@ dat <- read_csv("Intermediates/Quantified_LongDat_Enviro.csv") %>%
   left_join(stds.dat, by = "Identification") %>% 
   select(-Identification)
 dat2 <- dat %>%
-  select(BestMatch, SampID, molFractionC)
+  select(BestMatch, SampID, molFractionC)%>%
+  filter(BestMatch != "DMSP")
 
 #Get a logical order for the MFs, pull out only the top 20
 AllSmps_Ordered <- dat %>%
