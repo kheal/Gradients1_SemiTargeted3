@@ -75,13 +75,13 @@ file.remove("Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx")
 
 #write out the order of the tables you want
 supp.tables <- 
-  c("Tables/Manuscript_tables/SuppTables/Culture_descriptions_full.csv",
-    "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv",
-    "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv",
-    "Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv",
+  c("Tables/Manuscript_tables/SuppTables/Full_Enviro_Samp_Descriptions.csv",
     "Tables/Manuscript_tables/SuppTables/Full_EnviroCulture_PeakAreas.csv", 
-    "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv",
+    "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv",
+    "Tables/Manuscript_tables/SuppTables/Culture_descriptions_full.csv",
     "Tables/Manuscript_tables/SuppTables/Full_Quan_Culture_Results.csv",
+    "Tables/Manuscript_tables/SuppTables/Total_QuanMetabandPC.csv",
+    "Tables/Manuscript_tables/SuppTables/Full_Quan_Enviro_Results.csv",
     "Tables/Manuscript_tables/SuppTables/Full_Quan_Methods.csv" )
 
 files.nms <- basename(supp.tables) %>% 
