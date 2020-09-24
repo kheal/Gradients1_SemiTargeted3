@@ -122,7 +122,7 @@ g.tile.KOK <- ggplot(dat = KOK.dat.long.med %>%
         strip.text.y.left = element_text(size = 8, face = "italic", angle=0),
         panel.spacing.y=unit(0, "lines"),
         legend.position = "top",
-        legend.justification="center",
+        legend.justification="left",
         legend.margin=margin(0, 0 ,-15,0),
         legend.box.margin=margin(0,0,0,0),
         legend.text = element_text(size = 6),
@@ -243,11 +243,11 @@ g.clus.2 <- gclus + theme(plot.margin = margin(0, -.5, 1.6, -.2, "cm")) #trbl ch
 g.tile.org.combo <- plot_grid(g.tile.org, g.tile.org.key, 
                               align = "v", axis = "lr",
                               rel_heights = c(1,0.11),
-                              ncol = 1, scale = 1, labels = c("C", ""))
+                              ncol = 1, scale = 1)
 g.left.two <- plot_grid(g.tile.KOK, g.clus.2, 
                         align = "h", axis = "bt",
                         rel_widths = c(2, 0.7),
-                        ncol = 2, scale = 1, labels = c("A", "B"))
+                        ncol = 2, scale = 1)
 g.all <- plot_grid(g.left.two, g.tile.org.combo,
                   # align = "h", axis = "t",
                    rel_widths = c(3, 3),
