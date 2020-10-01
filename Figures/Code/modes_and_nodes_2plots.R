@@ -305,7 +305,9 @@ node.dat <- edges.dat %>% select(node1, weight) %>%
   group_by(node1) %>%
   summarise(count = sum(weight)) %>%
   separate(node1, into = c("dataset", "cluster"), sep = "_", remove = FALSE) %>%
-  mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" ))
+  mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" )) 
+  mutate(dataset = factor(dataset, levels = c("KOK", "MGL", "KM", "Org")))
+
 
 big.nodes <- node.dat %>%
   filter(count > 5)
@@ -324,11 +326,13 @@ net <- graph_from_data_frame(d=edges.dat.2, vertices=node.dat.2, directed=FALSE)
 set.seed(33)
 g.net <- ggraph(net, layout = 'fr') + #gem, dh, graphopt, fr, kk, lgl all look decent
   geom_edge_fan(color="gray60", aes()) + 
-  geom_node_point(aes(color = dataset,
-                      shape = dataset), size = 3)+
+  geom_node_point(aes(color = dataset, shape = dataset), 
+                  size = 3)+
   geom_node_text(aes(label = cluster), size=2, color="black", repel=T, fontface = "italic") +
-  scale_color_manual(values = c(KM.color, KOK.color, MGL.color, Org.color), labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
-  scale_shape_manual(values = c(15,16,17,18), labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
+  scale_color_manual(values = c(KM.color, KOK.color, MGL.color, Org.color), 
+                     labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
+  scale_shape_manual(values = c(15,16,17,18), 
+                     labels = c("NPSG depth profile", "Meridional transect", "NPTZ depth profile", "Organisms"))+
   theme(legend.position = c(0.1, 0.1), 
         legend.title = element_blank(),
         legend.text = element_text(size = 7))

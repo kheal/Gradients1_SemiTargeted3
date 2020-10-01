@@ -60,9 +60,10 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2,
         axis.text.x = element_text(size = 6),
         legend.text = element_text(size = 6),
         legend.title = element_blank(),
-        legend.background = element_blank())
+        legend.background = element_blank(), 
+        aspect.ratio=1)
 
 d.raw  
 
 print(d.raw)
-save_plot("Figures/Preliminary/NMDS_Organisms.pdf", d.raw, base_height = 5, base_width = 6)
+save_plot("Figures/Manuscript_figures/NMDS_Organisms.pdf", d.raw, base_height = 5, base_width = 6)

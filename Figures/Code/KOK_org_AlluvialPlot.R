@@ -254,9 +254,16 @@ g.all <- plot_grid(g.left.two, g.tile.org.combo,
                    rel_heights =  c(1, 2),
                    ncol = 2, scale = 1)
 g.all 
+g.all_2<- ggdraw() +
+  draw_plot(g.all)+
+  draw_label("A", x = 0.05, y = 0.91, hjust = 0.5, fontface = "bold", size = 10) +
+  draw_label("B", x = 0.38, y = 0.91, hjust = 0.5, fontface = "bold", size = 10, color = "white") +
+  draw_label("C", x = 0.52, y = 0.91, hjust = 0.5, fontface = "bold", size = 10)
+
+g.all_2
 
 
-save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial.pdf", g.all, base_height = 16, base_width = 16, units="cm")
+save_plot("Figures/Manuscript_figures/Clusters_and_Alluvial.pdf", g.all_2, base_height = 16, base_width = 16, units="cm")
 
 
 

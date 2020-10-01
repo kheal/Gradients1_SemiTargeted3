@@ -15,7 +15,7 @@ transform_factor = 50
 #Name your files -----
 quandat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
 culture.dat.long.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
-culture.meta.dat.filename <- "MetaData/CultureMetaData_Ccalcs.csv"
+culture.meta.dat.filename <- "MetaData/CultureMetaData.csv"
 field.meta.dat.filename <- "MetaData/SampInfo_wMetaData_withUTC.csv"
 chromat.filename <- "RawOutput/Homarine_EICs.csv"
 

@@ -91,7 +91,7 @@ AllSmps_long_Summary_nDP <- AllSmps_long_Summary_withOthers %>%
 c <- ggplot()+
   geom_bar(data = AllSmps_long_Summary_nDP %>% filter(Depth == "40"), aes(x = as.numeric(Depth), y = molFractionC, fill = MF_Frac), stat = "identity", color = "black", width = 15, size = 0.2) +
   geom_bar(data = AllSmps_long_Summary_nDP %>% filter(Depth != "40"), aes(x = as.numeric(Depth), y = molFractionC, fill = MF_Frac), stat = "identity", color = "black", width = 15, size = 0.2) +
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_nDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_nDP$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+
@@ -108,7 +108,7 @@ AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 d <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = molFractionC, fill = MF_Frac))+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_sDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
@@ -150,8 +150,9 @@ AllSmps_long_Summary_nDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 c.big <- ggplot(AllSmps_long_Summary_nDP, aes(x = as.numeric(Depth), y = molFractionC, fill = MF_Frac))+
-  scale_x_reverse() +
-  scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_nDP$Depth)))) +
+  scale_y_continuous(expand = c(0, 0), 
+                     limits = c(0,1))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_nDP$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+
@@ -160,6 +161,7 @@ c.big <- ggplot(AllSmps_long_Summary_nDP, aes(x = as.numeric(Depth), y = molFrac
   theme(axis.title = element_text(size = 9),
         axis.text = element_text(size = 8))+
   coord_flip() 
+c.big
 
 #Plotting up the South Depth Profile -----
 AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
@@ -167,7 +169,7 @@ AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 d.big <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = molFractionC, fill = MF_Frac))+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_sDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
@@ -181,8 +183,8 @@ d.big <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = molFrac
 #Combine the plots 
 c_d2.big <- plot_grid(c.big, d.big, ncol = 1, labels = c('', ''), label_fontface = "bold")
 b_c_d.big <- plot_grid(b.big, c_d2.big, ncol = 2, labels = c('', ''), label_fontface = "bold")
-#save_plot("Figures/Manuscript_figures/molPerCent_C.pdf", b_c_d2, base_height = 6, base_width = 6.5, units = "in")  
+#save_plot("Figures/Manuscript_figures/molPerCent_C.pdf", b_c_d.big, base_height = 6, base_width = 6.5, units = "in")  
 
-cairo_pdf("Figures/Presentation_figures/molPerCent_C.pdf", family="Arial Unicode MS", 6.5,6)
-b_c_d.big
-dev.off()
+#cairo_pdf("Figures/Manuscript_figures/molPerCent_C2.pdf", family="Arial Unicode MS", 6.5,6)
+#b_c_d.big
+#dev.off()
