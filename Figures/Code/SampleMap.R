@@ -4,6 +4,8 @@ library(raster)
 library(maps)
 library(mapdata)
 
+#Data from here: https://oceandata.sci.gsfc.nasa.gov/MODIS-Aqua/Mapped/8-Day/9km/chlor_a/2016/
+
 #Get Chla data and mean it up
 Chla2<- raster("MetaData/ChlaData/A20160892016096.L3m_8D_CHL_chlor_a_9km.nc", var="chlor_a", band =1)
 Chla3<- raster("MetaData/ChlaData/A20161052016112.L3m_8D_CHL_chlor_a_9km.nc", var="chlor_a", band =1)
