@@ -1,12 +1,9 @@
 library(tidyverse)
 library(cowplot) 
 theme_set(theme_cowplot())
-library(RColorBrewer)
-library(beyonce)
 library(RCurl)
-library(magick)
+#library(magick)
 
-#TO DO: Make a plot of homarine and tri with structures, latitudinal patterns, organism patterns
 
 #Name your compounds of interest
 cmpds <- c("Homarine", "Trigonelline")
@@ -90,7 +87,9 @@ g.dpnorth <- ggplot(data = dat2 %>% filter(Cruise == "MGL1704") %>%
   scale_color_manual(values = c("#1B9E77", "#B7469B"))+
   coord_flip()+
   labs(y= "nM Homarine", x = "Depth (m)") +
-  theme(axis.title = element_text(size = 7),
+  theme(axis.title.x.top = element_text(size = 7, color = "#B7469B"),
+        axis.title.x.bottom = element_text(size = 7, color = "#1B9E77"),
+        axis.title.y = element_text(size = 7),
         axis.text = element_text(size = 6),
         legend.position = "none")
 
@@ -111,7 +110,9 @@ g.dpsouth <- ggplot(data = dat2 %>% filter(Cruise == "KM1513") %>%
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
   coord_flip() +
   labs(y= "nM Homarine", x = "Depth (m)") +
-  theme(axis.title = element_text(size = 7),
+  theme(axis.title.x.top = element_text(size = 7, color = "#B7469B"),
+        axis.title.x.bottom = element_text(size = 7, color = "#1B9E77"),
+        axis.title.y = element_text(size = 7),
         axis.text = element_text(size = 6),
         legend.position = "none")
 
@@ -130,7 +131,9 @@ g.dptransect <- ggplot(data = dat2 %>% filter(Cruise == "KOK1606") %>%
   scale_color_manual(values = c("#1B9E77", "#B7469B"))+
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
   labs(y= "nM Homarine", x = "Latitude") +
-  theme(axis.title = element_text(size = 7),
+  theme(axis.title.y.right = element_text(size = 7, color = "#B7469B"),
+        axis.title.y.left = element_text(size = 7, color = "#1B9E77"),
+        axis.title.x = element_text(size = 7),
         axis.text = element_text(size = 6),
         legend.position = c(0.3, 0.8),
         legend.title = element_blank(),
@@ -152,7 +155,8 @@ g.chromat <- ggplot(data =chromat.dat2,
   annotate("text", x = c(6.3,8.5), y = c(2.2E8,6E7), label = c("homarine","trigonelline"), 
            fontface = "italic", size = 2.5)+
   theme(axis.title = element_text(size = 7),
-        axis.text = element_text(size = 6),
+        axis.text.x = element_text(size = 6),
+        axis.text.y = element_blank(),
         legend.position = c(0.1, 0.8),
         legend.title = element_blank(),
         legend.text = element_text(size = 7))
@@ -172,8 +176,8 @@ cul.dat3 <- cul.dat2 %>%
 cul.dat3$Species <- factor(cul.dat3$Species, 
                             levels = (unique(cul.dat3$Species)))
 
-my_x_titles <- c(expression(paste(italic("Synechococcus"),'WH7803')),
-                 expression(paste(italic("Synechococcus"),'WH8102')),
+my_x_titles <- c(expression(paste(italic("Synechococcus ")~'WH7803')),
+                 expression(paste(italic("Synechococcus ")~'WH8102')),
                  expression(paste(italic("Cyclotella meneghiniana"))),
                   expression(paste(italic("Pseudo-nitzschia pungens"))),
                   expression(paste(italic("Phaeodactylum tricornutum"))),
@@ -183,8 +187,8 @@ my_x_titles <- c(expression(paste(italic("Synechococcus"),'WH7803')),
                   expression(paste(italic("Alexandrium tamarense"))),
                  expression(paste(italic("Lingulodinium polyedra"))),
                  expression(paste(italic("Heterocapsa triquetra"))),
-                  expression(paste(italic("Emiliania huxleyi")~'CCMP2090')),
-                  expression(paste(italic("Emiliania huxleyi")~'CCMP371')),
+                  expression(paste(italic("Emiliania huxleyi ")~'CCMP2090')),
+                  expression(paste(italic("Emiliania huxleyi ")~'CCMP371')),
                   expression(paste(italic("Micromonas pusilla"))))
 
 
@@ -196,12 +200,11 @@ g.cul <- ggplot(data = cul.dat3 %>%
                            ifelse(Identification == cmpds[1], intracell_conc_mmolL, intracell_conc_mmolL*100)),
                 aes(y = Org_Name, x = intracell_conc_mmolL, fill = Identification)) +
   geom_bar(stat= "identity", position = "dodge")+
-#  geom_point(position = position_dodge(width = 0.2))+
   scale_y_discrete(labels = my_x_titles)+
-  scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), expand = c(0, 0), limits = c(0, 5E2),
+  scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), 
+                     expand = c(0, 0), limits = c(0, 5E2),
                      breaks = c(0, 1E2, 2E2, 3E2,  4E2))+
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
-#  scale_x_log10( sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"))+
   labs(x= "mM intracellular Homarine") +
   theme(axis.title.x = element_text(size = 7),
         axis.title.y = element_blank(),
@@ -211,6 +214,31 @@ g.cul <- ggplot(data = cul.dat3 %>%
   
 g.cul
 
+cul.dat4 <- cul.dat3 %>%
+  filter(intracell_conc_mmolL > 0) %>%
+  filter(!is.na(intracell_conc_mmolL)) %>%
+  unique()
+   mutate(intracell_conc_mmolL = 
+           ifelse(Identification == cmpds[1], intracell_conc_mmolL, intracell_conc_mmolL*100))
+
+
+g.cul.2 <- ggplot(data = cul.dat4,
+                  aes(y = Org_Name, x = Identification, fill = Identification, 
+                      label = signif(intracell_conc_mmolL, digits = 2))) +
+  geom_tile(aes(alpha = log10(intracell_conc_mmolL)))+
+  geom_text(size = 2.5) +
+  scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
+  scale_y_discrete(labels = my_x_titles,
+                   expand = c(0, 0))+
+  scale_x_discrete(position = "top", name="Intraceulluar concentrations (mM)",
+                   expand = c(0, 0))+
+  theme(axis.title.x = element_text(size = 8),
+        axis.line = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_text(size = 7),
+        axis.text.y = element_text(size = 6),
+        legend.position = "none")
 
 
 
@@ -226,7 +254,7 @@ g.combo2 <- ggdraw(g.combo) +
   draw_image(molecule_file2, x = 0.2, y = 0.8, hjust = 1, vjust = 1, width = 0.13, height = 0.2)
 g.combo2
 
-g.combo3 <- plot_grid(g.chromat, g.cul, ncol = 2, rel_widths = c(1,1.6), labels = c("D", "E"))
+g.combo3 <- plot_grid(g.chromat, g.cul.2, ncol = 2, rel_widths = c(1,1.6), labels = c("D", "E"))
 g.combo4 <- plot_grid(g.combo2, g.combo3, ncol = 1, labels = c("", ""))
 g.combo4
 
