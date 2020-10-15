@@ -1,6 +1,7 @@
 library(tidyverse)
 library(chron)
 library(cowplot)
+library(ghibli)
 theme_set(theme_cowplot())
 
 #Get your layout info here
@@ -86,7 +87,8 @@ g <- ggplot(dat = dat_averaged_toPlot, aes(x = averageTime, y = AveOD, fill = ID
                   ymax = AveOD + sdOD), alpha = 0.5) + 
   scale_x_continuous(expand = c(0, 0)) + 
   scale_y_continuous(expand = c(0, 0)) +
-  scale_fill_discrete(labels = c("no additional \ncarbon", "Acetate", "Trigonelline", "Homarine"))+
+  scale_fill_manual(labels = c("no additional \ncarbon", "Acetate", "Trigonelline", "Homarine"),
+                      values = c("#657060FF", "#EAD890FF", "#CD4F38FF", "#E48C2AFF"))+
   labs(x = "Time after inoculation (hr)", 
        y = "Optical Density (OD)", 
        fill= "Carbon source") +

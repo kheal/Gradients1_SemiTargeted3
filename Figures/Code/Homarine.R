@@ -172,6 +172,23 @@ cul.dat3 <- cul.dat2 %>%
 cul.dat3$Species <- factor(cul.dat3$Species, 
                             levels = (unique(cul.dat3$Species)))
 
+my_x_titles <- c(expression(paste(italic("Synechococcus"),'WH7803')),
+                 expression(paste(italic("Synechococcus"),'WH8102')),
+                 expression(paste(italic("Cyclotella meneghiniana"))),
+                  expression(paste(italic("Pseudo-nitzschia pungens"))),
+                  expression(paste(italic("Phaeodactylum tricornutum"))),
+                  expression(paste(italic("Thalassiosira oceanica"))),
+                 expression(paste(italic("Thalassiosira pseudonana"))),
+                  expression(paste(italic("Amphidinium carterae"))),
+                  expression(paste(italic("Alexandrium tamarense"))),
+                 expression(paste(italic("Lingulodinium polyedra"))),
+                 expression(paste(italic("Heterocapsa triquetra"))),
+                  expression(paste(italic("Emiliania huxleyi")~'CCMP2090')),
+                  expression(paste(italic("Emiliania huxleyi")~'CCMP371')),
+                  expression(paste(italic("Micromonas pusilla"))))
+
+
+
 g.cul <- ggplot(data = cul.dat3 %>%
                   mutate(intracell_conc_mmolL = 
                            ifelse(intracell_conc_mmolL == 0, NA, intracell_conc_mmolL)) %>%
@@ -180,6 +197,7 @@ g.cul <- ggplot(data = cul.dat3 %>%
                 aes(y = Org_Name, x = intracell_conc_mmolL, fill = Identification)) +
   geom_bar(stat= "identity", position = "dodge")+
 #  geom_point(position = position_dodge(width = 0.2))+
+  scale_y_discrete(labels = my_x_titles)+
   scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), expand = c(0, 0), limits = c(0, 5E2),
                      breaks = c(0, 1E2, 2E2, 3E2,  4E2))+
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
@@ -192,6 +210,9 @@ g.cul <- ggplot(data = cul.dat3 %>%
         legend.position = "none")
   
 g.cul
+
+
+
 
 #Combine all the plots -----
 g.combo <- plot_grid(g.dptransect, g.dpnorth, g.dpsouth, ncol = 3, rel_widths = c(2,1,1), labels = c("A", "B", "C"))

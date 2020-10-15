@@ -63,7 +63,7 @@ g.dpnorth <- ggplot(data = dat2 %>% filter(Cruise == "MGL1704") %>%
   labs(y= expression("nM "*beta*"-glutamic acid"), x = "Depth (m)") +
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6),
-        legend.position = "none")
+        legend.position = "none") 
 g.dpnorth
 
-save_plot("Figures/Manuscript_figures/BetaGlu_and_Arseno.pdf", g.dpnorth, base_height = 4.5, base_width = 4.5, units = "in")
+save_plot("Figures/Manuscript_figures/BetaGlu_and_Arseno.pdf", g.dpnorth, base_height = 4.5, base_width = 3, units = "in")

@@ -265,13 +265,14 @@ g.mode.KOK <- ggplot()+
               aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
                                           ymax = ifelse(mean_std_area + stdev_std_area < 0.22, 
                                                         mean_std_area + stdev_std_area, 0.22),
-                                          x = latitude), fill = KOK.color) +
+                                          x = latitude), fill = KOK.color, alpha = 0.7) +
   geom_text(data = KOK.count, 
             aes(x = 30, y = .15, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = KOK.count, 
             aes(x = 30, y = 0.07, 
                 label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
     scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), expand = c(0,0), breaks = c(0, 0.1, 0.2))+
+  geom_hline(yintercept = 0)+
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Latitude") +
   ylab("Standardized peak area")+

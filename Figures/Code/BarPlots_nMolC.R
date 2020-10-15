@@ -75,7 +75,7 @@ b <- ggplot(AllSmps_long_Summary_Tran, aes(x = Latitude, y = nmolCave, fill = MF
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
                     guide = guide_legend(nrow=5, keyheight = 1, keywidth = 1 ,
                                          label.hjust = 0))+
-  labs(y= "nMole C")+
+  labs(y= "nMole C / L")+
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6, margin = margin(l = -5)),
         legend.position="bottom",
@@ -96,11 +96,11 @@ c <- ggplot()+
   geom_bar(data= AllSmps_long_Summary_nDP %>%  filter(Depth != "40"), 
            aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac),
            stat = "identity", color = "black", width = 15, size = 0.2)+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_nDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1000))+
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_nDP$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+
-  labs(y= "nMole C", x = "Depth (m)")+
+  labs(y= "nMole C / L", x = "Depth (m)")+
   guides(fill=FALSE) +
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6))+
@@ -112,12 +112,12 @@ AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 d <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac))+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_sDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,150))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+
-  labs(y= "nMole C", x = "Depth (m)")+
+  labs(y= "nMole C / L", x = "Depth (m)")+
   guides(fill=FALSE) +
   theme(axis.title = element_text(size = 7),
         axis.text = element_text(size = 6))+
@@ -157,7 +157,7 @@ AllSmps_long_Summary_nDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 c.big <- ggplot(AllSmps_long_Summary_nDP, aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac))+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_nDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,1000))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_nDP$Colors)),
@@ -174,7 +174,7 @@ AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
   unique()
 
 d.big <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac))+
-  scale_x_reverse() +
+  scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_sDP$Depth)))) +
   scale_y_continuous(expand = c(0, 0), limits = c(0,150))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),

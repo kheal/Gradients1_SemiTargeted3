@@ -2,7 +2,7 @@ library(tidyverse)
 library(cowplot) 
 theme_set(theme_cowplot())
 library(RColorBrewer)
-library(beyonce)
+library(viridis)
 library(RCurl)
 
 #Name your files -----
@@ -128,7 +128,7 @@ c2 <- ggplot(data = dat3cul, aes(factor(Identification), intracell_conc_umolCL/1
 d <- ggplot(data = CombinedSumm, aes(x = Type_specific, y = factor(MF_Frac), fill = Obvs)) +
   geom_tile() +
   facet_grid(~ Type, scales = "free_x", space = "free_x")+
-  scale_fill_gradientn(colors=pal, na.value="grey", 
+  scale_fill_viridis(option = 1, na.value="grey", 
                        breaks = c(0, 0.5, 1.0)) +
   guides(fill = guide_colourbar(barwidth = 3, barheight = 0.7, ticks.colour = "black"))+
   theme(axis.title = element_blank(),
