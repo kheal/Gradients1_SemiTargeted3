@@ -5,11 +5,23 @@ date: "January 10 2020"
 output: html_document
 ---
 Figures for Gradients 1.0 metabolomics manuscript and associated presentations
-
-TO DO: fix the names!!
+In general order that they appear in the manuscript
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+```
+
+
+# Mode plot with map, network plot
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source('Figures/Code/modes_and_nodes_2plots.R')
+remove(list = ls())
+```
+
+# Tile alluvial plot for KOK and orgs :) 
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source("Figures/Code/KOK_org_AlluvialPlot.R")
+remove(list = ls())
 ```
 
 
@@ -53,21 +65,7 @@ detach("package:vegan", unload=TRUE)
 detach("package:MASS", unload=TRUE)
 ```
 
-#Mode plots for each of the sample sets
-```{r, error = FALSE, warning=FALSE, message=FALSE}
-source('Figures/Code/multi_panel_mode.R')
-remove(list = ls())
 
-source('Figures/Code/multi_panel_culture.R')
-remove(list = ls())
-```
-
-#Tile alluvial plot for KOK and orgs :) 
-TO DO: fix up the colors
-```{r, error = FALSE, warning=FALSE, message=FALSE}
-source("Figures/Code/KOK_org_AlluvialPlot.R")
-remove(list = ls())
-```
 
 #PC plot 
 ```{r, error = FALSE, warning=FALSE, message=FALSE}

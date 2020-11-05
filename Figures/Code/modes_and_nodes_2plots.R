@@ -3,9 +3,7 @@
 #might need an older version of igraph
 source("Figures/Code/SampleMap.R")
 
-library(tidyverse) 
-library(ggplot2) 
-library(plotly)
+# Load up libraries ----
 library(igraph)
 library(intergraph)
 library(ggnetwork)
@@ -16,9 +14,9 @@ library(vroom)
 library(ggraph)
 options(readr.num_columns = 0)
 
-#TO DO: add clouds with description
 
-#File names
+
+# Set your file names ----
 MGL.dat.file <- "Intermediates/MGL_wide_stand_withclusters.csv"
 KM.dat.file <- "Intermediates/KM_wide_stand_withclusters.csv"
 KOK.dat.file <- "Intermediates/KOK_wide_stand_withclusters.csv"
@@ -27,7 +25,7 @@ MF.dat.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 bootstrap.files <- list.files("Intermediates/BootstrapResults/", full.names = TRUE)
 PC.dat.file <- "MetaData/PCPN/DepthProfilesPCPN.csv"
 
-#Load files
+# Load files ----
 MGL.dat <- read_csv(MGL.dat.file) 
 KM.dat <- read_csv(KM.dat.file) 
 KOK.dat <- read_csv(KOK.dat.file) 
@@ -35,15 +33,15 @@ Meta.dat <- read_csv(Meta.dat.file)
 MF.dat <- read_csv(MF.dat.file)
 bootstrap.results <- vroom(bootstrap.files)
 
-#Set colors-----
+# Set colors-----
 MGL.color <- "#DCA258"
 KM.color <- "#80A0C7"
 KOK.color <- "brown4"
 Org.color <- "#00295D"
 
 
-#Make some mode plots-----
-#munge data for MGL mode plot -----
+# Make some mode plots-----
+# munge data for MGL mode plot -----
 MGL.dat.ave.mode <- MGL.dat %>%
   group_by(cluster, cluster_letters, Depth) %>%
   summarise(mean_std_area = as.numeric(mean(std_area, na.rm = TRUE)),
@@ -86,7 +84,8 @@ for (i in 1:length(MGL.cluster.maxes$cluster_letters)){
   mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
 }
 PC.dat.MGL2 <- do.call(rbind, PC.dat.MGL) %>%
-  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std)
+  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std) %>% 
+  filter(cluster_letters != "g")
 
 
 #make the MGL mode plot -----
@@ -95,7 +94,16 @@ g.mode.MGL <- ggplot()+
               aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
                                            ymax = ifelse(mean_std_area + stdev_std_area < 1, 
                                                          mean_std_area + stdev_std_area, 1),
-                                           x = Depth), fill = MGL.color) +
+                                           x = Depth), fill = MGL.color, alpha = 0.4) +
+  geom_point(data = MGL.dat.ave.mode.2, 
+                aes (y = mean_std_area, x = Depth), 
+                color = MGL.color, shape = 3)+
+  geom_errorbar(data = MGL.dat.ave.mode.2, 
+                aes (ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
+                     ymax = ifelse(mean_std_area + stdev_std_area < 1, 
+                                   mean_std_area + stdev_std_area, 1),
+                     x = Depth), 
+                color = MGL.color, width = 0, lwd=0.8)+
   geom_point(data = PC.dat.MGL2, aes (x = Depth, y = PC_toPlot), 
              color = 'grey40', size = 1)+
   geom_errorbar(data = PC.dat.MGL2, 
@@ -107,14 +115,14 @@ g.mode.MGL <- ggplot()+
             aes(x = 110, y = 0.5, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = MGL.count %>% filter(MF.percent > 5), 
             aes(x = 160, y = 0.5, 
-                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
+                label = paste0(MF.number, " (", MF.percent, "%) ", "metabs; \n", n, " IDd")), size = 2.5)+
   scale_y_continuous(sec.axis = dup_axis(), 
                      limits = c(0, 1.1), expand = c(0,0), breaks = c(0,  0.5,  1.0))+
   scale_x_reverse(limits = c(260,0), expand = c(0,0), breaks = c(0, 100, 200)) +
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Depth (m)") +
-  ylab("Standardized peak area")+
+  ylab("Mean normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
@@ -180,18 +188,28 @@ for (i in 1:length(KM.cluster.maxes$cluster_letters)){
     mutate(PC_toPlot = Pcaverage_Std*mean_std_area)
 }
 PC.dat.KM2 <- do.call(rbind, PC.dat.KM) %>%
-  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std)
+  mutate(PC_toPlot_stdev = PC_toPlot*Pcstdev_Std/Pcaverage_Std)%>% 
+  filter(cluster_letters != "d")
+
 
 #plot KM dat-----
-KM.cols.needed <- length(unique(KM.dat.ave.mode$cluster_letters))
-pal.KM <- c(colorRampPalette(wes_palette("Cavalcanti1"))(KM.cols.needed))
 g.mode.KM <- ggplot()+
   geom_ribbon(data = KM.dat.ave.mode, 
               aes(ymin = ifelse(mean_std_area - stdev_std_area > 0,
                                 mean_std_area - stdev_std_area, 0),
                   ymax = ifelse(mean_std_area + stdev_std_area < .4,
                                 mean_std_area + stdev_std_area, .4),
-                  x = Depth), fill =  KM.color) +
+                  x = Depth), fill =  KM.color, alpha = 0.4) +
+  geom_point(data = KM.dat.ave.mode, 
+             aes (y = mean_std_area, x = Depth), 
+             color = KM.color, shape = 3)+
+  geom_errorbar(data = KM.dat.ave.mode, 
+                aes (ymin = ifelse(mean_std_area - stdev_std_area > 0,
+                                   mean_std_area - stdev_std_area, 0),
+                     ymax = ifelse(mean_std_area + stdev_std_area < .4,
+                                   mean_std_area + stdev_std_area, .4),
+                     x = Depth), 
+                color = KM.color, width = 0, lwd=0.8)+
   geom_point(data = PC.dat.KM2, aes (x = Depth, y = PC_toPlot), 
              color = 'grey40', size = 1)+
   geom_errorbar(data = PC.dat.KM2, 
@@ -203,13 +221,13 @@ g.mode.KM <- ggplot()+
             aes(x = 60, y = 0.30, label = cluster_letters), size = 4, fontface = "italic")+
   geom_text(data = KM.count, 
             aes(x = 95, y = 0.30, 
-                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
+                label = paste0(MF.number, " (", MF.percent, "%) ", "metabs; \n", n, " IDd")), size = 2.5)+
   scale_y_continuous(sec.axis = dup_axis(), limits = c(0, .45), expand = c(0,0), breaks = c(0, 0.2, 0.4))+
   scale_x_reverse(limits = c(126,0), expand = c(0,0), breaks = c(0, 50, 100)) +
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 1) +
   xlab("Depth (m)") +
-  ylab("Standardized peak area")+
+  ylab("Mean normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
@@ -224,7 +242,7 @@ g.mode.KM <- ggplot()+
 g.mode.KM
 
 
-#KOK mode plot  ---- 
+# KOK data munge  ---- 
 KOK.dat.MF.ave <- KOK.dat %>%
   left_join(Meta.dat %>% select(SampID, Station_1, latitude))%>%
   group_by(cluster, Station_1, MassFeature_Column, cluster_letters) %>%
@@ -254,28 +272,52 @@ KOK.count.id <- KOK.dat %>%  left_join(MF.dat %>% select(MassFeature_Column, Con
   select(cluster_letters, MassFeature_Column, Confidence) %>% filter(Confidence == 1) %>% unique() %>%
   group_by(cluster_letters) %>% summarise(n = n())
 
-KOK.count <- left_join(KOK.count, KOK.count.id) %>%
-  mutate(n = ifelse(is.na(n), 0, n))
+KOK.count.nog <- left_join(KOK.count, KOK.count.id) %>%
+  mutate(n = ifelse(is.na(n), 0, n)) %>%
+  filter(cluster_letters != "g")
 
-#plot KOK dat-----
-KOK.cols.needed <- length(unique(KOK.dat.ave.mode$cluster_letters))
-pal.KOK <- c(colorRampPalette(brewer.pal(7,"Dark2"))(KOK.cols.needed)[1:KOK.cols.needed])
+KOK.count.g <- left_join(KOK.count, KOK.count.id) %>%
+  mutate(n = ifelse(is.na(n), 0, n)) %>%
+  filter(cluster_letters == "g")
+
+# plot KOK dat-----
 g.mode.KOK <- ggplot()+
   geom_ribbon(data = KOK.dat.ave.mode, 
-              aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, mean_std_area - stdev_std_area, 0),
-                                          ymax = ifelse(mean_std_area + stdev_std_area < 0.22, 
-                                                        mean_std_area + stdev_std_area, 0.22),
-                                          x = latitude), fill = KOK.color, alpha = 0.7) +
-  geom_text(data = KOK.count, 
-            aes(x = 30, y = .15, label = cluster_letters), size = 4, fontface = "italic")+
-  geom_text(data = KOK.count, 
-            aes(x = 30, y = 0.07, 
-                label = paste0(MF.number, " (", MF.percent, "%) ", "MFs; \n", n, " IDd")), size = 2.5)+
-    scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), expand = c(0,0), breaks = c(0, 0.1, 0.2))+
+              aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, 
+                                mean_std_area - stdev_std_area, 0),
+                  ymax = ifelse(mean_std_area + stdev_std_area < 0.22,
+                                mean_std_area + stdev_std_area, 0.22),
+                  x = latitude), fill = KOK.color, alpha = 0.4) +
+  geom_point(data = KOK.dat.ave.mode, 
+             aes (y = mean_std_area, x = latitude), 
+             color = KOK.color, shape = 3)+
+  geom_errorbar(data = KOK.dat.ave.mode, 
+                aes(ymin = ifelse(mean_std_area - stdev_std_area > 0, 
+                                  mean_std_area - stdev_std_area, 0),
+                    ymax = ifelse(mean_std_area + stdev_std_area < 0.22, 
+                                  mean_std_area + stdev_std_area, 0.22),
+                    x = latitude), 
+                color = KOK.color, width = 0, lwd=0.8)+
+  geom_text(data = KOK.count.nog, 
+            aes(x = 30, y = .17, label = cluster_letters), 
+            size = 4, fontface = "italic")+
+  geom_text(data = KOK.count.nog, 
+            aes(x = 30, y = 0.11, 
+                label = paste0(MF.number, " (", MF.percent, "%) ",
+                               "metabs; \n", n, " IDd")), size = 2.5)+
+ geom_text(data = KOK.count.g, 
+            aes(x = 34, y = .17, label = cluster_letters),
+            size = 4, fontface = "italic")+
+  geom_text(data = KOK.count.g,
+            aes(x = 34, y = 0.11,
+                label = paste0(MF.number, " (", MF.percent, "%) ",
+                               "metabs; \n", n, " IDd")), size = 2.5)+
+  scale_y_continuous(sec.axis = dup_axis(), limits = c(0, 0.22), 
+                       expand = c(0,0), breaks = c(0, 0.1, 0.2))+
   geom_hline(yintercept = 0)+
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Latitude") +
-  ylab("Standardized peak area")+
+  ylab("Mean normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y.left = element_text(size = 8),
@@ -286,8 +328,6 @@ g.mode.KOK <- ggplot()+
         axis.text.x = element_text(size = 7),
         legend.position = "none")
 g.mode.KOK
-
-
 
 
 
@@ -306,7 +346,7 @@ node.dat <- edges.dat %>% select(node1, weight) %>%
   group_by(node1) %>%
   summarise(count = sum(weight)) %>%
   separate(node1, into = c("dataset", "cluster"), sep = "_", remove = FALSE) %>%
-  mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" )) 
+  mutate(cluster = cluster %>% str_replace("NA", "not \nobserved" )) %>%
   mutate(dataset = factor(dataset, levels = c("KOK", "MGL", "KM", "Org")))
 
 
@@ -356,17 +396,7 @@ g.net.2 <- ggdraw() +
 
 g.net.2
 
-
-#load the map?
-modes.combined <- plot_grid(g.mode.KOK, g.mode.MGL, g.mode.KM, ncol = 3, rel_widths = c(1.3, 1, 0.7), labels = c("A", "B", "C"))
-modes.combined
-
-nodes.with.map <- plot_grid(KOK.map, g.net.2, ncol = 2, rel_widths = c(1, 2), labels = c("D", "E"))
-
-modes.with.nodes <- plot_grid(modes.combined, nodes.with.map, ncol = 1, rel_heights = c(1, 0.9), labels = c("", "D"))
-modes.with.nodes
-
-#Save out the map as its own thing
+# Save out the network ---
 save_plot("Figures/Manuscript_figures/network.pdf", g.net.2, base_height = 3.5, base_width = 5, units = "in")
 
 #Arrange the modes with the map all nice like
