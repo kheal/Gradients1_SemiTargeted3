@@ -44,3 +44,21 @@ dat.combo.MS2 <- dat.combo %>%
   left_join(dat.ms2, by = c("MassFeature_Column", "Identification", "Confidence", "mz", "rt", "Column", "z"))
 
 write_csv(dat.combo.MS2, "Tables/Manuscript_tables/SuppTables/MFCluster_Assignments.csv")
+
+# Get some assignment cutoff info etc
+dat.combo.summary <- read_csv(Org.clusterfilename) %>%
+  mutate(cluster_letters = ifelse(is.na(cluster_letters), 
+                                  "Not observed", cluster_letters )) %>%
+  separate(SampID, sep = "_", into = c("species", "replicate")) %>%
+  filter(species != "Nmar") %>%
+  group_by(MassFeature_Column, species, cluster_letters) %>%
+  summarise(std_area = mean(std_area)) %>%
+  mutate(PA = ifelse(std_area > 0, 1, 0)) %>% ungroup() %>%
+  group_by(MassFeature_Column, cluster_letters) %>%
+  summarise(species = sum(PA))
+
+dat.combo.summary.a <- dat.combo.summary %>%
+  filter(cluster_letters == 'g') %>% 
+  arrange(species)
+
+
