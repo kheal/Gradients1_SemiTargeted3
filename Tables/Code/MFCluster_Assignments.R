@@ -17,18 +17,18 @@ dat <- read_csv(dat.filename) %>%
   select(MassFeature_Column, Identification:z)
 MGL.dat <- read_csv(MGL.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique() %>%
-  rename(`NPTZ depth profile cluster` = cluster_letters)
+  rename(`NPTZ depth profile mode` = cluster_letters)
 KM.dat <- read_csv(KM.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique() %>%
-  rename(`NPSG depth profile cluster` = cluster_letters)
+  rename(`NPSG depth profile mode` = cluster_letters)
 KOK.dat <- read_csv(KOK.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique()%>%
-  rename(`Transect cluster` = cluster_letters)
+  rename(`Transect mode` = cluster_letters)
 Org.dat <- read_csv(Org.clusterfilename) %>%
   select(MassFeature_Column, cluster_letters) %>% unique()%>%
-  rename(`Culture cluster` = cluster_letters)
+  rename(`Culture mode` = cluster_letters)
 metacluster.dat <- read_csv(Metacluster.filename) %>% select(MassFeature_Column, MetaClusterAssignment) %>%
-  rename(`Metacluster assignment` = MetaClusterAssignment)
+  rename(`Meta-cluster assignment` = MetaClusterAssignment)
 
 dat.combo <- dat %>%
   left_join(MGL.dat, by = "MassFeature_Column") %>%
