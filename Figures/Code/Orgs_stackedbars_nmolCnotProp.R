@@ -2,6 +2,9 @@ library(tidyverse)
 library(here)
 library(RColorBrewer)
 library(nationalparkcolors)
+library(cowplot)
+theme_set(theme_cowplot())
+
 
 #TO DO: make a second plot that is the total, not stacked and stretched
 
@@ -76,11 +79,11 @@ dat.mean.combo$ID = factor(dat.mean.combo$ID,
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:15], rep("grey", 1))
 
 b.all <- ggplot()+
-  geom_bar(stat = "identity", position = "fill", data = dat.mean.combo, 
-           aes(x = ID, y = intracell_conc_umolCL, fill = Identification), color = "black", size = 0.2, alpha = 01)+
+  geom_bar(stat = "identity",  data = dat.mean.combo, 
+           aes(x = ID, y = intracell_conc_umolCL/1000, fill = Identification), color = "black", size = 0.2, alpha = 01)+
   scale_y_continuous(expand = c(0, 0))+
   scale_fill_manual(values = pal)+
-  labs(y = "mmol C in metaboltes / L \n(intracellular, proportional)" )+
+  labs(y = "mmol C in metaboltes / L \n(intracellular)" )+
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6),
         legend.position="top",
@@ -114,22 +117,5 @@ g.tile.org.key
 b.all.both <- plot_grid(b.all, g.tile.org.key, ncol = 1, rel_heights = c(1, 0.1), align = "v")
 b.all.both
 
-save_plot("Figures/Manuscript_figures/stackedbar_org.pdf", b.all.both, base_height = 4, base_width = 6.5)
-
-#Plot the total amount 
-b.all.sum <- ggplot()+
-  geom_bar(stat = "identity", data = dat.mean.combo, 
-           aes(x = ID, y = intracell_conc_umolCL/1000, fill = Org_Type, color = Org_Type), size = 0.2)+
-  scale_y_continuous(expand = c(0, 0))+
-  scale_fill_manual(values = pal3)+
-  scale_color_manual(values = pal3)+
-  labs(y = "mmol C in metaboltes / L \n(intracellular)" )+
-  theme(legend.title = element_blank(),
-        legend.text = element_text(size = 6),
-        legend.position = c(0.85, 0.7),
-        axis.title.y = element_text(size = 7),
-        axis.title.x = element_blank(),
-        axis.text.y = element_text(size = 6), 
-        axis.text.x = element_text(size = 6))
-b.all.sum
+save_plot("Figures/Presentation_figures/stackedbar_org_nmolCTotal.pdf.pdf", b.all.both, base_height = 4, base_width = 6.5)
 
