@@ -80,10 +80,15 @@ dat.with.Quan3 <- dat.with.Quan2 %>%
   mutate(molFractionC = intracell_conc_umolCL/totalCmeasured_uM, 
          molFractionN = intracell_conc_umolNL/totalNmeasured_uM)
 
+#dat.with.Quan4 <- dat.with.Quan3 %>% 
+#  left_join(meta.dat2, by = "ID_rep") %>%
+#  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final) %>%
+#  mutate(umolCmetab = intracell_conc_umolCL*BioVol_perFilter_uL/10^6)
+
 dat.with.Quan4 <- dat.with.Quan3 %>% 
   left_join(meta.dat2, by = "ID_rep") %>%
-  mutate(nmolmetab_perC = intracell_conc_umolCL*BioVol_perFilter_uL/nmolC_filtered_final) %>%
-  mutate(umolCmetab = intracell_conc_umolCL*BioVol_perFilter_uL/10^6)
+  mutate(molFractionC_pertotalC = intracell_conc_umolCL*BioVol_perFilter_uL/(10^6)*10^3/nmolC_filtered_final) %>%
+  mutate(umolCmetab_onfilter = intracell_conc_umolCL*BioVol_perFilter_uL/10^6)
 
 quanDatSum <- dat.with.Quan4 %>%
   group_by(MassFeature_Column, Identification) %>%

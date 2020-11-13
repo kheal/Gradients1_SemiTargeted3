@@ -112,8 +112,8 @@ dat.with.Quan3 <- dat.with.Quan2 %>%
          molFractionN = nmolNave/totalNmeasured_nM)
 
 dat.with.Quan4  <- dat.with.Quan3 %>%
-  left_join(meta.dat2, by = "SampID") %>%
-  mutate(nmolmetab_perC = nmolCave/PC_ave)
+  left_join(meta.dat2, by = "SampID")%>%
+  mutate(molFractionC_pertotalC = nmolCave/(PC_ave*10^3))
 
 #Summarize and make wide -------
 quanDatSum <- dat.with.Quan4 %>%
