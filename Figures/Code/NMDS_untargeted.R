@@ -33,7 +33,9 @@ meta.dat.sub2 <- read_csv(meta.dat.file) %>%
 enviro.names.sub2 <- meta.dat.sub2$SampID
 
 # Make the combo.file into a matrix, replace all NAs with 0s
-combo.wide.matrix.sub2<- combo.wide %>% select(c(enviro.names.sub2)) %>% as.data.frame()
+combo.wide.matrix.sub2<- combo.wide %>% 
+  select(c(enviro.names.sub2)) %>% 
+  as.data.frame()
 row.names(combo.wide.matrix.sub2) <- combo.wide$MassFeature_Column
 combo.wide.matrix.sub2[is.na(combo.wide.matrix.sub2)] <- 0
 
@@ -49,22 +51,25 @@ pointlocation.sub2 <- nmds.sub2[['points']] %>% as.data.frame() %>%
   mutate(SampID = rownames(nmds.sub2[['points']])) %>%
   left_join(meta.dat, by = "SampID") %>%
   mutate(lat_round = round(latitude, digits = 1)) %>%
-  mutate(Zone = ifelse(Zone == 1, 1, 2))
+  mutate(Zone = factor(ifelse(Zone == 1, 1, 2)))
 
 #Plot out the point location for the NMDS----
 d<- ggplot(data = pointlocation.sub2, aes(x =MDS1, y =  MDS2, group = lat_round,
                                           colour = temp1,
                                           fill = temp1,
-                                          label = SampID))+
+                                          label = SampID,
+                                          shape = Zone))+
   scale_fill_gradientn(colours = pal, limits = c(11.5,23.5), breaks = c(12, 17, 22), 
                        name = expression(paste("Temp (", degree*C, ")")))+
   scale_colour_gradientn(colours = pal, limits = c(11.5,23.5), breaks = c(12, 17, 22),
                          name = expression(paste("Temp (", degree*C, ")")))+
-  annotate("text", x = -12, y = 12, label = paste0("Stress = ", round(nmds.sub2[['stress']], digits = 2)), size = 2.2)+
+  annotate("text", x = -12, y = 12, 
+           label = paste0("Stress = ", round(nmds.sub2[['stress']], digits = 2)), size = 2.2)+
   geom_polygon(fill = NA, color = "grey") +
  # stat_ellipse(aes(group = Zone), color = "grey", level = 0.95, alpha = 0.3, size = 2)+
  # geom_density2d(alpha=.5)+
   geom_point(size = 3) +
+  guides(shape = FALSE)+
   theme(axis.title.x = element_text(size = 7),
         axis.title.y = element_text(size = 7),
         axis.text.y = element_text(size = 6),

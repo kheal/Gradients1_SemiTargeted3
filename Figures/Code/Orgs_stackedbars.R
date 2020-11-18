@@ -2,6 +2,11 @@ library(tidyverse)
 library(here)
 library(RColorBrewer)
 library(nationalparkcolors)
+library(cowplot)
+theme_set(theme_cowplot())
+library(ggpattern)
+library(colorspace)
+
 
 #TO DO: make a second plot that is the total, not stacked and stretched
 
@@ -74,12 +79,25 @@ dat.mean.combo$ID = factor(dat.mean.combo$ID,
 
 #Plot to highlight top 20ish in the samples----
 pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:15], rep("grey", 1))
+pal2 <- c(colorspace::lighten(brewer.pal(8,"Dark2"), 0.2), brewer.pal(8,"Dark2")[1:7], "grey70")
+pattern_pal <- c(rep("none", 8), rep("stripe", 4), rep("crosshatch", 3),"none")
 
-b.all <- ggplot()+
-  geom_bar(stat = "identity", position = "fill", data = dat.mean.combo, 
-           aes(x = ID, y = intracell_conc_umolCL, fill = Identification), color = "black", size = 0.2, alpha = 01)+
+b.all <- ggplot(data = dat.mean.combo, 
+                aes(x = ID, y = intracell_conc_umolCL, 
+                    fill = Identification,
+                    pattern = Identification))+
+  geom_col_pattern(position = "fill",
+                   color = "black", size = 0.2, 
+                   pattern_fill = "black",
+                   pattern_color = "black",
+                   pattern_alpha = 0.3,
+                   pattern_angle = 45,
+                   pattern_density = .01,
+                   pattern_spacing = 0.02)+
+                   #pattern_key_scale_factor = 0.6)+
   scale_y_continuous(expand = c(0, 0))+
-  scale_fill_manual(values = pal)+
+  scale_fill_manual(values = pal2)+
+  scale_pattern_manual(values = pattern_pal)+
   labs(y = "mmol C in metaboltes / L \n(intracellular, proportional)" )+
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6),

@@ -22,7 +22,7 @@ b<- ggplot()+
   geom_bar(data = dat.quan, aes(x = latitude, y = totalCmeasured_nM/1000*10, fill = AMorPM), stat = "identity", width = 0.2, 
            position = position_dodge2(preserve = "single"))+
   scale_fill_manual(labels = c("Day", "Night"), values = c("grey","black")) +
-  scale_y_continuous(bquote("Total particulate carbon (\U003BCM L" ^-1*')'), limits = c(0, 10), expand = c(0,0),
+  scale_y_continuous(bquote("Total particulate carbon (\U003BCM C L" ^-1*')'), limits = c(0, 10), expand = c(0,0),
                      sec.axis = sec_axis(~ (./10), name = bquote("Total quantifiable metabolites (\U003BCM C L" ^-1*')')))+
   scale_x_continuous(limits = c(23, 37.5))+
   labs(fill = "Time of collection for \n metabolite samples")+
@@ -42,7 +42,7 @@ c<- ggplot()+
   geom_bar(data = dat.quan, aes(x = latitude, y = totalNmeasured_nM/1000*10, fill = AMorPM), stat = "identity", width = 0.2, 
            position = position_dodge2(preserve = "single"))+
   scale_fill_manual(labels = c("Day", "Night"), values = c("grey","black")) +
-  scale_y_continuous(bquote("Total particulate nitrogen (\U003BCM L" ^-1*')'), limits = c(0, 2), expand = c(0,0),
+  scale_y_continuous(bquote("Total particulate nitrogen (\U003BCM N L" ^-1*')'), limits = c(0, 2), expand = c(0,0),
                      sec.axis = sec_axis(~ (./10), name = bquote("Total quantifiable metabolites (\U003BCM N L" ^-1*')')))+
   scale_x_continuous(limits = c(23, 37.5))+
   labs(fill = "Time of collection for \n metabolite samples")+
