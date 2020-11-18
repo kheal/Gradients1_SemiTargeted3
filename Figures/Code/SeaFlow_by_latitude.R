@@ -16,7 +16,7 @@ dat2 <- dat %>%
   mutate(NBorSB = ifelse(X1 > 16514, "SB", "NB"),
          BinLat = round_any(latitude, 0.01)) %>%
   group_by(pop, NBorSB, BinLat) %>%
-  summarise(n_count = median(n_count, na.rm = TRUE), 
+  summarise(abundance = median(abundance, na.rm = TRUE), 
             temp1 = mean(temp1, na.rm = TRUE)) %>%
   filter(temp1>10 & temp1 < 25) %>% filter(NBorSB == "NB") %>%
   filter(pop != "beads")%>%
@@ -24,7 +24,7 @@ dat2 <- dat %>%
   mutate(pop2 = ifelse(pop == "picoeuks", "Picoeukaryotes", 
                        ifelse(pop == "prochloro", "Prochlorococcus", "Synechococcus")))
 
-g <- ggplot(data = dat2, aes(x = BinLat, y = n_count)) +
+g <- ggplot(data = dat2, aes(x = BinLat, y = abundance)) +
   geom_point()+
   geom_line()+
   facet_wrap(pop2 ~ ., ncol = 1, scales = "free_y") +
