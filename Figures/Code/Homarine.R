@@ -254,7 +254,7 @@ g.combo2 <- ggdraw(g.combo) +
   draw_image(molecule_file2, x = 0.2, y = 0.8, hjust = 1, vjust = 1, width = 0.13, height = 0.2)
 g.combo2
 
-g.combo3 <- plot_grid(g.chromat, g.cul.2, ncol = 2, rel_widths = c(1,1.6), labels = c("D", "E"))
+g.combo3 <- plot_grid(g.cul.2, g.chromat, ncol = 2, rel_widths = c(1.6 ,1), labels = c("D", "E"))
 g.combo4 <- plot_grid(g.combo2, g.combo3, ncol = 1, labels = c("", ""))
 g.combo4
 

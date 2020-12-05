@@ -6,6 +6,7 @@ theme_set(theme_cowplot())
 library(here)
 library(ggalluvial)
 library(nationalparkcolors)
+
 #library(patchwork)
 
 options(readr.num_columns = 0)
@@ -54,7 +55,7 @@ clusters.combined.KOK.org.3 <- clusters.combined.KOK.org.2 %>%
 #Make the alluvial plot------
 #at some point, this worked, now its not :(
 gclus<- ggplot(data = clusters.combined.KOK.org.2,
-               aes(y = Freq, axis1 = cluster.KOK, axis2 = cluster.org)) +
+               aes(y = Freq, axis2 = cluster.KOK, axis1 = cluster.org)) +
   geom_alluvium(aes(alpha = psig), 
                 fill = "black", width = 1/12,  lode.guidance = "forward") +
  #  geom_stratum(width = 1/12, fill = "grey", color = "black") +
@@ -104,7 +105,7 @@ g.tile.KOK <- ggplot(dat = KOK.dat.long.med %>%
                      aes(x = (latitude), y = MassFeature_Column, fill = std_area, colour="")) +
   geom_tile(fill = NA) +
   geom_tile(colour = NA) +
-  facet_grid(cluster_letters ~ ., scales="free_y", space="free_y", switch = "y")+
+  facet_grid(cluster_letters ~ ., scales="free_y", space="free_y")+
   geom_hline(data= lindat, aes(yintercept=x), col="black", size = 0.5) +
   annotate("point", x = 4.5, y = 0, fill = "black", shape =24, size = 3)+
   scale_fill_gradient2(low="cornsilk1", mid="brown4", high="brown4",
@@ -117,17 +118,18 @@ g.tile.KOK <- ggplot(dat = KOK.dat.long.med %>%
         axis.title.x = element_text(size = 7),
         axis.ticks.y = element_blank(), 
         axis.text.y = element_blank(), 
-    #    strip.text.placement = "outside",
         strip.background = element_blank(), 
-        strip.text.y.left = element_text(size = 8, face = "italic", angle=0),
+        strip.text.y = element_text(size = 8, face = "italic", angle=0),
         panel.spacing.y=unit(0, "lines"),
         legend.position = "top",
-        legend.justification="left",
-        legend.margin=margin(0, 0 ,-15,0),
+        legend.justification="right",
+        legend.margin=margin(0,0,-15,0),
         legend.box.margin=margin(0,0,0,0),
+        #legend.justification="left",
+        #legend.margin=margin(0, 0 ,-15,0),
+        #legend.box.margin=margin(0,0,0,0),
         legend.text = element_text(size = 6),
         legend.title = element_text(size = 6),
-        
         plot.margin = margin(.25, 0, 0, 0, "cm"))+
   labs(x ="Latitude", y = "Mass Feature", fill = "Standardized \n peak area")
 g.tile.KOK
@@ -184,14 +186,18 @@ orgs.dat.long.med$CultureID_short <- factor(orgs.dat.long.med$CultureID_short,
 org.cluster.labs <- c("a", "b", "c", "d", "e", "f", "g", "")
 names(org.cluster.labs) <- c("a", "b", "c", "d", "e", "f", "g", "not observed")
 
-not.observe.label <-  data.frame(text.x = 18,text.y = 5,lab = "not observed", cluster_letters = factor("not observed",levels = names(org.cluster.labs)))
+not.observe.label <-  data.frame(text.x = 3,text.y = 5,lab = "not observed", 
+                                 cluster_letters = factor("not observed",levels = names(org.cluster.labs)))
 
-g.tile.org <- ggplot(data = orgs.dat.long.med %>% filter(CultureID_short != "Nmar"), aes(x = factor(CultureID_short), y = MassFeature_Column, fill = std_area, colour = "")) +
+g.tile.org <- ggplot(data = orgs.dat.long.med %>% filter(CultureID_short != "Nmar"),
+                     aes(x = factor(CultureID_short), y = MassFeature_Column, fill = std_area, colour = "")) +
   geom_tile(fill = NA) +
   geom_tile(colour = NA) +
-  facet_grid(cluster_letters ~ ., scales="free_y", space="free_y", labeller = labeller(cluster_letters = org.cluster.labs))+
+  facet_grid(cluster_letters ~ ., scales="free_y", space="free_y", 
+             labeller = labeller(cluster_letters = org.cluster.labs), switch = 'y')+
   geom_hline(data= lindat, aes(yintercept=x), col="black", size = 0.5) +
-  geom_text(data = not.observe.label, inherit.aes = FALSE, aes(x = text.x, y =text.y, label = lab), fontface = "italic", size = 2)+
+  geom_text(data = not.observe.label, inherit.aes = FALSE, aes(x = text.x, y =text.y, label = lab), 
+            fontface = "italic", size = 2)+
   scale_fill_gradient2(low="slateblue4", mid="cornsilk1", high="#00295D",
                        midpoint=0, limits = c(0.0, 1), na.value = "grey90", breaks = c(0.0, 0.5, 1.0))+
   scale_colour_manual(values=c("grey80")) +  
@@ -200,17 +206,20 @@ g.tile.org <- ggplot(data = orgs.dat.long.med %>% filter(CultureID_short != "Nma
         axis.title = element_blank(),
         axis.ticks = element_blank(), 
         axis.text = element_blank(), 
-       # strip.text.placement = "outside",
         strip.background = element_blank(), 
-        strip.text.y = element_text(size = 8, face = "italic", angle=0),
+        strip.text.y.left = element_text(size = 8, face = "italic", angle=0),
         panel.spacing.y=unit(0, "lines"),
-        legend.position = "top",
-        legend.justification="right",
-        legend.margin=margin(0,0,-15,0),
-        legend.box.margin=margin(0,0,0,0),
+       legend.position = "top",
+       legend.justification="left",
+       legend.margin=margin(0, 0 ,-15,0),
+       legend.box.margin=margin(0,0,0,0),
+      #  legend.justification="right",
+      #  legend.margin=margin(0,0,-15,0),
+      #  legend.box.margin=margin(0,0,0,0),
         legend.text = element_text(size = 6),
         legend.title = element_text(size = 6),
-        plot.margin = margin(.25, .25, 0, -.1, "cm"))+
+        plot.margin = margin(.25, 0, 0, 0, "cm"))+
+      #  plot.margin = margin(.25, .25, 0, -.1, "cm"))+
   labs(x ="Organism", y = "Mass Feature", fill = "Standardized \n peak area") 
 g.tile.org
 
@@ -239,26 +248,30 @@ g.tile.org.key
 
 #Try to put the plots together!-----
 g.clus.2 <- gclus + theme(plot.margin = margin(0, -.5, 1.6, -.2, "cm")) #trbl change bottom to match better!
-
+g.clus.2
 g.tile.org.combo <- plot_grid(g.tile.org, g.tile.org.key, 
                               align = "v", axis = "lr",
                               rel_heights = c(1,0.11),
                               ncol = 1, scale = 1)
-g.left.two <- plot_grid(g.tile.KOK, g.clus.2, 
+g.right.two <- plot_grid(g.clus.2, g.tile.KOK, 
                         align = "h", axis = "bt",
-                        rel_widths = c(2, 0.7),
+                        rel_widths = c(0.7, 2),
                         ncol = 2, scale = 1)
-g.all <- plot_grid(g.left.two, g.tile.org.combo,
+
+
+g.all <- plot_grid(g.tile.org.combo,g.right.two,
                   # align = "h", axis = "t",
                    rel_widths = c(3, 3),
                    rel_heights =  c(1, 2),
                    ncol = 2, scale = 1)
-g.all 
+labels_file <- "Figures/Manuscript_figures/Alluvial_OrgLabels.pdf"
+
 g.all_2<- ggdraw() +
   draw_plot(g.all)+
   draw_label("A", x = 0.05, y = 0.91, hjust = 0.5, fontface = "bold", size = 10) +
-  draw_label("B", x = 0.38, y = 0.91, hjust = 0.5, fontface = "bold", size = 10, color = "white") +
-  draw_label("C", x = 0.52, y = 0.91, hjust = 0.5, fontface = "bold", size = 10)
+  draw_label("B", x = 0.51, y = 0.91, hjust = 0.5, fontface = "bold", size = 10, color = "white") +
+  draw_label("C", x = 0.65, y = 0.91, hjust = 0.5, fontface = "bold", size = 10)+
+  draw_image(magick::image_read_pdf(labels_file), x = 0.48, y = 0.28, hjust = 1, vjust = 1, width = 0.13, height = 0.2)
 
 g.all_2
 

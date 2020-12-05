@@ -388,9 +388,9 @@ g.net.2 <- ggdraw() +
   draw_image(cloud.file.3,  x = -.04, y =0.17, scale = .3) + #cloud for dino metabs
   draw_image(cloud.file.1,  x = -.37, y = 0.27, scale = .35) + #cloud for rare metabs
   draw_plot(g.net)+
-  draw_label("Core \nmetabolites \nmeta-cluster", x = 0.75, y = 0.3, hjust = 0.5, fontface = "bold", size = 8) +
-  draw_label("Rare \nmetabolites \nmeta-cluster", x = 0.25, y = 0.6, hjust = 0.5, fontface = "bold", size = 8) +
-  draw_label("Dinoflagellate-\nassociated \nmetabolites \nmeta-cluster", x = 0.58, y = 0.78, hjust = 0.5, fontface = "bold", size = 8)+
+  draw_label("Core \nmetabolites", x = 0.75, y = 0.3, hjust = 0.5, fontface = "bold", size = 8) +
+  draw_label("Rare \nmetabolites", x = 0.25, y = 0.6, hjust = 0.5, fontface = "bold", size = 8) +
+  draw_label("Dinoflagellate-\nassociated \nmetabolites", x = 0.58, y = 0.78, hjust = 0.5, fontface = "bold", size = 8)+
   draw_label("diatom-\nassociated \nmetabolites", x = 0.885, y = 0.5, hjust = 0.5, size = 6)+
   draw_line(x = c(0.883, 0.883),y = c(0.46, 0.42), color = "black", size = 0.2)
 
