@@ -4,6 +4,7 @@
 source("Figures/Code/SampleMap.R")
 
 # Load up libraries ----
+library(tidyverse)
 library(igraph)
 library(intergraph)
 library(ggnetwork)
@@ -122,7 +123,7 @@ g.mode.MGL <- ggplot()+
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Depth (m)") +
-  ylab("Mean normalized peak area")+
+  ylab("Total normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
@@ -227,7 +228,7 @@ g.mode.KM <- ggplot()+
   coord_flip() +
   facet_wrap(cluster_letters ~ ., ncol = 1) +
   xlab("Depth (m)") +
-  ylab("Mean normalized peak area")+
+  ylab("Total normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y = element_text(size = 8),
@@ -317,7 +318,7 @@ g.mode.KOK <- ggplot()+
   geom_hline(yintercept = 0)+
   facet_wrap(cluster_letters ~ ., ncol = 2) +
   xlab("Latitude") +
-  ylab("Mean normalized peak area")+
+  ylab("Total normalized peak area")+
   theme(strip.background = element_blank(), 
         strip.text.x = element_blank(),
         axis.title.y.left = element_text(size = 8),

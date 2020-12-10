@@ -46,7 +46,7 @@ monte.pvalue <-nmds.monte(t(datwidestd.sub2), distance='euclidean', k=2, autotra
 monte.pvalue.result <- monte.pvalue[[2]]
 print(paste(monte.pvalue.result, "= pvalue of nmds"))
 
-pal <- (beyonce_palette(41, 160, type = "continuous"))
+pal <- rev((beyonce_palette(41, 160, type = "continuous")))
 pointlocation.sub2 <- nmds.sub2[['points']] %>% as.data.frame() %>%
   mutate(SampID = rownames(nmds.sub2[['points']])) %>%
   left_join(meta.dat, by = "SampID") %>%
@@ -55,19 +55,17 @@ pointlocation.sub2 <- nmds.sub2[['points']] %>% as.data.frame() %>%
 
 #Plot out the point location for the NMDS----
 d<- ggplot(data = pointlocation.sub2, aes(x =MDS1, y =  MDS2, group = lat_round,
-                                          colour = temp1,
-                                          fill = temp1,
+                                          colour = latitude,
+                                          fill = latitude,
                                           label = SampID,
                                           shape = Zone))+
-  scale_fill_gradientn(colours = pal, limits = c(11.5,23.5), breaks = c(12, 17, 22), 
-                       name = expression(paste("Temp (", degree*C, ")")))+
-  scale_colour_gradientn(colours = pal, limits = c(11.5,23.5), breaks = c(12, 17, 22),
-                         name = expression(paste("Temp (", degree*C, ")")))+
+  scale_fill_gradientn(colours = pal, limits = c(23,37), breaks = c(24, 28, 32, 36), 
+                       name = "Latitude")+
+  scale_colour_gradientn(colours = pal, limits = c(23,37), breaks = c(24, 28, 32, 36), 
+                         name = "Latitude")+
   annotate("text", x = -12, y = 12, 
            label = paste0("Stress = ", round(nmds.sub2[['stress']], digits = 2)), size = 2.2)+
   geom_polygon(fill = NA, color = "grey") +
- # stat_ellipse(aes(group = Zone), color = "grey", level = 0.95, alpha = 0.3, size = 2)+
- # geom_density2d(alpha=.5)+
   geom_point(size = 3) +
   guides(shape = FALSE)+
   theme(axis.title.x = element_text(size = 7),
