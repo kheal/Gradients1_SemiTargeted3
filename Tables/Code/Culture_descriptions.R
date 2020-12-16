@@ -17,6 +17,6 @@ samp.info.short <- samp.info %>%
   rename(`\\textit{n}` = n)
 
 table.latex <- xtable(samp.info.short, sanitize.text.function = identity)
-caption(table.latex) <- "\\label{CultureSampleDescriptions}Summary of cultured organisms analyzed in this study. More information (including culturing conditions for all except the Archaea) can be found in \\cite{Durham2019}. More detailed information are in Table \ref{FullCultureSampleDescriptions}. Short ID is how the organism is labeled throughout the figures."
+caption(table.latex) <- "\\label{CultureSampleDescriptions}Summary of cultured organisms analyzed in this study. More information (including culturing conditions for all except the Archaea) can be found in \\cite{Durham2019}. Cyanobacteria and archaea were obtained from individual lab culture collections and eukaryotic phytoplankton were obtained from the NCMA culture collection. More detailed information are in Table S7. Short ID is how the organism is labeled throughout the figures."
 
 print(table.latex, type="latex", file="Tables/Manuscript_tables/CultureSampleDescriptions.tex",  sanitize.text.function = identity, include.rownames=FALSE)
