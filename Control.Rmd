@@ -146,12 +146,5 @@ source('SourceCode/Summary_forAnitra.R')
 ```
 
 
-TO DO: extract and plot up Gln/Glu in cultures
-TO DO: extract and plot SAM/SAH in G1, G2; cultures
-TO DO: extract and plot cystathionine in G1, G2; cultures
-TO DO: extract and plot the phosphate one that Liz shows with 
-TO DO: look at stoichiometry of metabolites
-TO DO: make a generic wrapper for making plots of individual compounds that look really nice :)
-
 
 
