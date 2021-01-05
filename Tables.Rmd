@@ -11,7 +11,7 @@ library(cowplot)
 library(here)
 ```
 
-#Supp tables (LATEX files)
+# Supp tables (LATEX files)
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Enviro Sample Descriptions
 source('Tables/Code/Sample_Descriptions.R')
@@ -26,7 +26,7 @@ source('Tables/Code/Enviro_Description.R')
 remove(list = ls())
 ```
 
-#Supplemental Tables (CSVs)
+# Supplemental Tables (CSVs)
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Full culture sample descriptions
 source('Tables/Code/Culture_descriptions_full.R')
@@ -60,15 +60,10 @@ remove(list = ls())
 source('Tables/Code/full_quan_culture_results_table.R')
 remove(list = ls())
 
-#Summary of quantification methods used
-source('Tables/Code/full_quan_methods_table.R')
-remove(list = ls())
-
-####Checked up to here
 
 ```
 
-#Merge all the csv files into one big xcel file here
+# Merge all the csv files into one big xcel file here
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 library(XLConnect) #requires Java between 8 and 11
 file.remove("Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx")

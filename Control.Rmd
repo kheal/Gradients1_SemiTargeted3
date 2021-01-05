@@ -18,8 +18,8 @@ theme_set(theme_cowplot())
 library(here)
 ```
 
-#QC and tidy up culture samples
-Run the QC for each fraction, combine and make tidy to compare with environmental samples
+# Quality control and tidy up culture samples
+Run the qualtiy contorl (QC) for each analytical fraction for the culture samples, combine and make tidy to compare with environmental samples
 ```{r, message=FALSE, error=FALSE, warning=FALSE, }
 source("SourceCode/QC_HILICPos_Cultures.R")
 remove(list = ls())
@@ -34,7 +34,7 @@ source("SourceCode/Combine_and_tidy_cultures.R")
 remove(list = ls())
 ```
 
-#BMIS on the HILIC output from Skyline, save output in BMISReports Folder, remove the intermediate output
+# BMIS on the HILIC output from Skyline, save output in BMISReports Folder, remove the intermediate output
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/BMIS_QEHILIC.R')
 ggsave("Intermediates/BMISReports/BMIS_IS_StandardsRep_HILIC.pdf", plot = BMISlist[[1]], device = "pdf", width = 10, height = 10, units = "in")
@@ -44,7 +44,7 @@ write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_HILIC.csv")
 rm(BMISlist)
 ```
 
-#BMIS on the CyanoAq output from Skyline, save output in BMISReports Folder, remove the intermediate output
+# BMIS on the CyanoAq output from Skyline, save output in BMISReports Folder, remove the intermediate output
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/BMIS_QECyano.R')
 ggsave("Intermediates/BMISReports/BMIS_IS_StandardsRep_Cyano.pdf", plot = BMISlist[[1]], device = "pdf", width = 10, height = 10, units = "in")
@@ -55,7 +55,7 @@ write_csv(BMISlist[[4]], "Intermediates/BMISReports/BMISd_Areas_long_Cyano.csv")
 rm(BMISlist)
 ```
 
-#Combine and Tidy environmental data, add in culture data
+# Combine and Tidy environmental data, add in culture data
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Combine_Clean_nofunction.R')
 
@@ -67,7 +67,7 @@ write_csv(combo.wide, "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.c
 remove(list = ls())
 ```
 
-#Grab MS2 data to report
+# Grab MS2 data to report
 This isn't working through the rmd file, but works fine as an .R script
 Takes a while and isn't necessary to run unless the specific Mass Features have changed
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
@@ -79,7 +79,9 @@ detach("package:S4Vectors", unload=TRUE)
 remove(list = ls())
 ```
 
-#Quantify compounds that we are able to
+# Quantify compounds that we are able to
+1. Calculate response factor (RF) and response factor ratio (RFratio) for each compound in each data set using integrated standards. 
+2.  Apply these response factors and get the concentrations in vial, then in environment for each compound in each data set
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #Calculate RF and RF ratios for all our quantifiable compounds
 source('SourceCode/CalculateRF_andRFratios.R')
@@ -94,10 +96,9 @@ source('SourceCode/Quantification_EnvironSamples.R')
 remove(list = ls())
 ```
 
-#Cluster the mass features using a K-means approach 
+# Cluster the mass features using a K-means approach 
 Assign each MF:dataset a cluster, save out cluster diagnostics for each sample set.  
 Bootstrap the clusters to see if there is overexpressed overlap between clusters
-TO DO: add a "significant under-overlap variable"?
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #seeds are set so should be reproducible
 source("SourceCode/clustering_all_seperate.R") 
@@ -111,27 +112,24 @@ source("SourceCode/bootstrap_clusters.R")
 remove(list = ls())
 ```
 
-#Clean up the cluster results
+# Clean up the cluster results
 ```{r}
 source("SourceCode/metaClusterNamer.R")
 remove(list = ls())
 ```
 
-
-#Get basic stats for results section
+# Get basic stats for results section
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source("SourceCode/Basiccalcs.R")
 ```
 
-
-####Non essential work
-#Write out files for Metabolomics Workbench
+# Write out files for Metabolomics Workbench
 ```{r}
 source('SourceCode/Metab_WorkBench_Prepper.R')
 remove(list = ls())
 ```
 
-#Write out a file for CMAP export
+# Write out a file for CMAP export
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/CMAP_maker.R')
 cmap.results <- CMAPPER(quan.dat.file = "Intermediates/Quantified_LongDat.csv", metaG1.file = "MetaData/SampInfo_wMetaData_withUTC.csv")
@@ -140,7 +138,7 @@ cmap.results <- CMAPPER(quan.dat.file = "Intermediates/Quantified_LongDat.csv", 
 remove(list = ls())
 ```
 
-#Make some output for Anitra to peruse
+# Make some output for Anitra to peruse
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source('SourceCode/Summary_forAnitra.R')
 ```

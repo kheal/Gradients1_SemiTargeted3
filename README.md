@@ -14,7 +14,7 @@ The **Control.Rmd** file is the data analysis notebook, which performs quality c
 The **Figures.Rmd** file is the figure creation notebook. Main text and supplemental figures are both made and not separated in the output.
 
 * Sources scripts from 'Figures/Code' folder
-* Sources files from 'Intermediates' folder and 'Figures/Annotations' folder
+* Sources files from 'Intermediates', 'Figures/Annotations', and 'Figures/Molecules' folders
 * Writes products figures into the 'Manuscript_figures' and 'Presentation_figures' folders
 
 #### **Tables.Rmd**
