@@ -59,9 +59,9 @@ d<- ggplot(data = pointlocation.sub2, aes(x =MDS1, y =  MDS2, group = lat_round,
                                           fill = latitude,
                                           label = SampID,
                                           shape = Zone))+
-  scale_fill_gradientn(colours = pal, limits = c(23,37), breaks = c(24, 28, 32, 36), 
+  scale_fill_gradientn(colours = pal, limits = c(23,38), breaks = c(24, 28, 32, 36), 
                        name = "Latitude")+
-  scale_colour_gradientn(colours = pal, limits = c(23,37), breaks = c(24, 28, 32, 36), 
+  scale_colour_gradientn(colours = pal, limits = c(23,38), breaks = c(24, 28, 32, 36), 
                          name = "Latitude")+
   annotate("text", x = -12, y = 12, 
            label = paste0("Stress = ", round(nmds.sub2[['stress']], digits = 2)), size = 2.2)+

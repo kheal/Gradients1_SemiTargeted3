@@ -6,6 +6,11 @@ require(RColorBrewer)
 library(colorRamps)
 library(RCurl)
 
+#load up and save the inset plot
+source("Figures/Code/Beta-glutamic.R")
+rm(list=setdiff(ls(), c("g.dpnorth", "transform_factor")))
+
+
 #Get list of better names
 std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
@@ -124,10 +129,17 @@ d <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = nmolCave, f
   coord_flip() 
 
 #Combine the plots 
-c_d2 <- plot_grid(c, d, ncol = 1, labels = c('B', 'C'))
+c_d2 <- plot_grid(c, d, ncol = 1, labels = c('B', 'C'), rel_heights = c(1, 0.7))
 b_c_d2 <- plot_grid(b, c_d2, ncol = 2, labels = c('A', ''))
 
-save_plot("Figures/Manuscript_figures/barplot_nmolC.pdf", b_c_d2, base_height = 6, base_width = 6.5, units = "in")  
+plot.with.inset <-
+  ggdraw() +
+  draw_plot(b_c_d2) +
+  draw_plot(g.dpnorth, x = 0.67, y = .46, width = 0.28, height = .44)
+plot.with.inset
+
+
+save_plot("Figures/Manuscript_figures/barplot_nmolC_withInset.pdf", plot.with.inset, base_height = 7, base_width = 6.5, units = "in")  
 
 
 
@@ -190,8 +202,9 @@ c_d2.big <- plot_grid(c.big, d.big, ncol = 1, labels = c('', ''))
 b_c_d2.big <- plot_grid(b.big, c_d2.big, ncol = 2, labels = c('', ''))
 b_c_d2.big
 
-cairo_pdf("Figures/Presentation_figures/barplot_nmolC.pdf", family="Arial Unicode MS", 6.5,6)
-b_c_d2.big
+
+cairo_pdf("Figures/Presentation_figures/barplot_nmolC_wInset.pdf", family="Arial Unicode MS", 6.5,6)
+plot.with.inset
 dev.off()
 
 

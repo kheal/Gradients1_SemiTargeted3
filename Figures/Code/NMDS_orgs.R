@@ -65,5 +65,5 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2,
 
 d.raw  
 
-print(d.raw)
-save_plot("Figures/Manuscript_figures/NMDS_Organisms.pdf", d.raw, base_height = 5, base_width = 6)
+#print(d.raw)
+#save_plot("Figures/Manuscript_figures/NMDS_Organisms.pdf", d.raw, base_height = 5, base_width = 6)

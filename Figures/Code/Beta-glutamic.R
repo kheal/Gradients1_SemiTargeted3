@@ -66,4 +66,4 @@ g.dpnorth <- ggplot(data = dat2 %>% filter(Cruise == "MGL1704") %>%
         legend.position = "none") 
 g.dpnorth
 
-save_plot("Figures/Manuscript_figures/BetaGlu_and_Arseno.pdf", g.dpnorth, base_height = 4.5, base_width = 3, units = "in")
+#save_plot("Figures/Manuscript_figures/BetaGlu_and_Arseno.pdf", g.dpnorth, base_height = 4.5, base_width = 3, units = "in")
