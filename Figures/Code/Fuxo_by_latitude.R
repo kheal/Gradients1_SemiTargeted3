@@ -39,11 +39,12 @@ dat.long.surface.summary <- dat.long %>%
 fuco <- ggplot(data = dat.long.surface %>% filter(pigment == "Fucox"), 
                aes(x =latitude, y =  ngperL))+
   geom_point(size = 2)+
+  scale_x_continuous(limits = c(23, 37.5))+
   theme(axis.title.y = element_text(size = 8),
         axis.title.x = element_text(size = 8),
         axis.text.y = element_text(size = 7),
         axis.text.x = element_text(size = 7))+
-  labs(x = "Latitude", y = "ng Fucoxanthin per L")
+  labs(x = "Latitude", y = "ng Fucoxanthin \nper L")
 fuco
 
-save_plot("Figures/Manuscript_figures/Fucoxanthin.pdf", fuco, base_height = 4, base_width = 4, units = "in")
+#save_plot("Figures/Manuscript_figures/Fucoxanthin.pdf", fuco, base_height = 4, base_width = 4, units = "in")

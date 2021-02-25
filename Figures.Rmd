@@ -22,12 +22,6 @@ source("Figures/Code/KOK_org_AlluvialPlot.R")
 remove(list = ls())
 ```
 
-# Plot of arsenobetaine and beta-glutamic acid over depth
-```{r}
-source("Figures/Code/Beta-glutamic.R")
-remove(list = ls())
-```
-
 # Quantifiable compounds in environmental sampls, stacked bar plot
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #mol fraction C (main text figure)
@@ -35,17 +29,33 @@ source('Figures/Code/BarPlots_molPerCent_C.R')
 remove(list = ls())
 ```
 
-# Combine stacked bar nMolC with arsenobetaine with insetb
-https://stackoverflow.com/questions/5219671/it-is-possible-to-create-inset-graphs
+# Plot of homarine and trigonolline over space and in organisms
+```{r}
+source("Figures/Code/Homarine.R")
+remove(list = ls())
+```
+
+# Plot of stacked bars in cultures
+```{r}
+source("Figures/Code/Orgs_stackedbars.R")
+remove(list = ls())
+```
+
+
+
+
+
+
+
+
+
+# Combine stacked bar nMolC with arsenobetaine with inset
 ```{r}
 #nmole C (supplemental figure)
 source('Figures/Code/BarPlots_nMolC.R')
 remove(list = ls())
 
 ```
-
-
-
 
 # Summary box plot
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
@@ -69,41 +79,13 @@ remove(list = ls())
 ```
 
 
+
+
+##To do combine these:
 # PC plot (PC over transect, with total quantifiable metabolites)
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #PC plot
 source("Figures/Code/PCPN_latitude.R")
-remove(list = ls())
-```
-
-# Plot of ug/ug C field vs organisms
-```{r, error = FALSE, warning=FALSE, message=FALSE}
-source("Figures/Code/FieldvsCulture_CComparison.R")
-remove(list = ls())
-```
-
-# Plot of homarine and trigonolline over space and in organisms
-```{r}
-source("Figures/Code/Homarine.R")
-remove(list = ls())
-```
-
-# Plot of DMS-Ac and gonyol over space and in organisms
-```{r}
-source("Figures/Code/Gonyol_DMSAc.R")
-remove(list = ls())
-```
-
-
-# Plot of stacked bars in cultures
-```{r}
-source("Figures/Code/Orgs_stackedbars.R")
-remove(list = ls())
-```
-
-# Plot of DSS-3 growth curves
-```{r}
-source("Figures/Code/DSS3_growthcurves.R")
 remove(list = ls())
 ```
 
@@ -115,12 +97,32 @@ remove(list = ls())
 
 # Seaflow by latitude (numbers and carbon)
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
-source("Figures/Code/SeaFlow_by_latitude.R")
-remove(list = ls())
-
 source("Figures/Code/SeaFlowC_byLat.R")
 remove(list = ls())
 ```
+
+
+
+
+## These are good to go
+# Plot of ug/ug C field vs organisms
+```{r, error = FALSE, warning=FALSE, message=FALSE}
+source("Figures/Code/FieldvsCulture_CComparison.R")
+remove(list = ls())
+```
+
+# Plot of DMS-Ac and gonyol over space and in organisms
+```{r}
+source("Figures/Code/Gonyol_DMSAc.R")
+remove(list = ls())
+```
+
+# Plot of DSS-3 growth curves
+```{r}
+source("Figures/Code/DSS3_growthcurves.R")
+remove(list = ls())
+```
+
 
 
 

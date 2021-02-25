@@ -1,3 +1,10 @@
+source("Figures/Code/PCPN_latitude.R")
+rm(list=setdiff(ls(), c("b.metabs")))
+
+source("Figures/Code/Fuxo_by_latitude.R")
+rm(list=setdiff(ls(), c("b.metabs", "fuco")))
+
+
 library(tidyverse)
 library(cowplot)
 theme_set(theme_cowplot())
@@ -5,6 +12,8 @@ library(here)
 library(fuzzyjoin)
 round_any = function(x, accuracy, f=round){f(x/ accuracy) * accuracy}
 library(ggrepel)
+library(patchwork)
+
 
 # Name your inputs ----
 sf_dat_file  <- "MetaData/SeaFlow/SeaFlow_cmap_v1.3_datOnly.csv"
@@ -31,7 +40,7 @@ PC_dat_summ <- PC_dat %>%
 
 # Get OG SF dat
 #Load Seaflow dat
-dat_og <- read_csv(OG_datfile)
+#dat_og <- read_csv(OG_datfile)
 
 # Mungde SF data, pull out only KM1606 PC data ---
 # raw SF data biomass is in ug/L, count is cel/uL
@@ -82,23 +91,88 @@ dat_summ_combo <- dat_summ_syn %>%
 
 
 # Plot each group by lat bin
-g <- ggplot(data = dat_summ_combo, aes(y = biomass_mean, x = lat_bin))+
+g_total <- ggplot(data = dat_summ_combo %>% 
+                    filter(phyto_group == "Total PC"), 
+                  aes(y = biomass_mean, x = lat_bin))+
   geom_line()+
   geom_ribbon(aes(ymax =  biomass_mean + biomass_sd, 
-                    ymin = biomass_mean - biomass_sd), alpha = 0.3) +
-  facet_wrap(~  phyto_group, nrow = 4, scales = "free") +
-  scale_y_continuous(bquote("Total particulate carbon (\U003BCM L" ^-1*')'),
+                  ymin = biomass_mean - biomass_sd), alpha = 0.3) +
+ # facet_wrap(~  phyto_group, nrow = 4, scales = "free") +
+  scale_y_continuous(bquote("Total PC"),
                      expand = c(0,0)) +
+  scale_x_continuous(limits = c(23, 37.5))+
   labs( x = "Latitude") +
   theme(strip.background = element_blank(), 
         strip.text.x = element_text(size = 8),
         axis.title.y = element_text(size = 8),
-        axis.title.x = element_text(size = 8),
+        axis.title.x = element_blank(),
         axis.text.y = element_text(size = 7),
         axis.text.x = element_text(size = 7),
         legend.position = "none")
-g
+
+g_Syn <- ggplot(data = dat_summ_combo %>% 
+                    filter(phyto_group == "Synechococcus"), 
+                  aes(y = biomass_mean, x = lat_bin))+
+  geom_line()+
+  geom_ribbon(aes(ymax =  biomass_mean + biomass_sd, 
+                  ymin = biomass_mean - biomass_sd), alpha = 0.3) +
+  # facet_wrap(~  phyto_group, nrow = 4, scales = "free") +
+  scale_y_continuous(bquote("Synechococcus \nPC"),
+                     expand = c(0,0)) +
+  scale_x_continuous(limits = c(23, 37.5))+
+  labs( x = "Latitude") +
+  theme(strip.background = element_blank(), 
+        strip.text.x = element_text(size = 8),
+        axis.title.y = element_text(size = 8),
+        axis.title.x = element_blank(),
+        axis.text.y = element_text(size = 7),
+        axis.text.x = element_text(size = 7),
+        legend.position = "none")
+g_Pro <- ggplot(data = dat_summ_combo %>% 
+                  filter(phyto_group == "Prochlorococcus"), 
+                aes(y = biomass_mean, x = lat_bin))+
+  geom_line()+
+  geom_ribbon(aes(ymax =  biomass_mean + biomass_sd, 
+                  ymin = biomass_mean - biomass_sd), alpha = 0.3) +
+  # facet_wrap(~  phyto_group, nrow = 4, scales = "free") +
+  scale_y_continuous(bquote("Prochlorococcus \nPC"),
+                     expand = c(0,0)) +
+  scale_x_continuous(limits = c(23, 37.5))+
+  labs( x = "Latitude") +
+  theme(strip.background = element_blank(), 
+        strip.text.x = element_text(size = 8),
+        axis.title.y = element_text(size = 8),
+        axis.title.x = element_blank(),
+        axis.text.y = element_text(size = 7),
+        axis.text.x = element_text(size = 7),
+        legend.position = "none")
+g_PicE <- ggplot(data = dat_summ_combo %>% 
+                  filter(phyto_group == "Picoeukaryotes"), 
+                aes(y = biomass_mean, x = lat_bin))+
+  geom_line()+
+  geom_ribbon(aes(ymax =  biomass_mean + biomass_sd, 
+                  ymin = biomass_mean - biomass_sd), alpha = 0.3) +
+  # facet_wrap(~  phyto_group, nrow = 4, scales = "free") +
+  scale_y_continuous(bquote("Picoeukaryotes \nPC"),
+                     expand = c(0,0)) +
+  scale_x_continuous(limits = c(23, 37.5))+
+  labs( x = "Latitude") +
+  theme(strip.background = element_blank(), 
+        strip.text.x = element_text(size = 8),
+        axis.title.y = element_text(size = 8),
+        axis.title.x = element_blank(),
+        axis.text.y = element_text(size = 7),
+        axis.text.x = element_text(size = 7),
+        legend.position = "none")
 
 
+g2 <- (g_total + labs(tag = 'A')) / 
+  (b.metabs + labs(tag = 'B')) / 
+  (g_Syn + labs(tag = 'C'))/
+  (g_Pro + labs(tag = 'D'))/
+  (g_PicE + labs(tag = 'E'))/
+  (fuco + labs(tag = 'F')) 
+g2
 
-save_plot("Figures/Manuscript_figures/Seaflow_lat_withC.pdf", g, base_height = 7, base_width = 6, device=cairo_pdf)
+
+save_plot("Figures/Manuscript_figures/Seaflow_lat_withC_withfuco.pdf", g2, base_height = 9.5, base_width = 7, device=cairo_pdf)
