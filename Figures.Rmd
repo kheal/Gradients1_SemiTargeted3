@@ -41,16 +41,8 @@ source("Figures/Code/Orgs_stackedbars.R")
 remove(list = ls())
 ```
 
-
-
-
-
-
-
-
-
 # Combine stacked bar nMolC with arsenobetaine with inset
-```{r}
+```{r, error = FALSE, warning=FALSE, message=FALSE}
 #nmole C (supplemental figure)
 source('Figures/Code/BarPlots_nMolC.R')
 remove(list = ls())

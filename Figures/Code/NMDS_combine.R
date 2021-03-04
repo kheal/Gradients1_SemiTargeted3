@@ -3,9 +3,6 @@ library(cowplot)
 theme_set(theme_cowplot())
 library(patchwork)
 
-p1+ labs(subtitle:"A") + p2 +labs(subtitle = "B")
-
-
 d3 <- (d + labs(tag = 'A'))/ (d.raw  +labs(tag = 'B'))
 d3
 

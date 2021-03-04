@@ -34,7 +34,7 @@ enviro.names.sub2 <- meta.dat.sub2$SampID
 
 # Make the combo.file into a matrix, replace all NAs with 0s
 combo.wide.matrix.sub2<- combo.wide %>% 
-  select(c(enviro.names.sub2)) %>% 
+  dplyr::select(c(enviro.names.sub2)) %>% 
   as.data.frame()
 row.names(combo.wide.matrix.sub2) <- combo.wide$MassFeature_Column
 combo.wide.matrix.sub2[is.na(combo.wide.matrix.sub2)] <- 0
@@ -73,12 +73,11 @@ d<- ggplot(data = pointlocation.sub2, aes(x =MDS1, y =  MDS2, group = lat_round,
         axis.text.y = element_text(size = 6),
         axis.text.x = element_text(size = 6),
         legend.text = element_text(size = 6),
-        legend.title = element_text(size = 7),
-        legend.box.margin = margin(0,0,0,-45))
+        legend.title = element_text(size = 7))
 
 d  
 
-save_plot("Figures/Manuscript_figures/NMDS_area.pdf", d, base_height = 4.25, base_width = 4.5)
+#save_plot("Figures/Manuscript_figures/NMDS_area.pdf", d, base_height = 4.25, base_width = 4.5)
 
 
 #Get and write out vector info, write out CSV into the correct folder Not sure this is necessary right now,  it's slow, but it works.  Commenting out for the time being.-----

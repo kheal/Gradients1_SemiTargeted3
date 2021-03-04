@@ -51,9 +51,7 @@ d.raw <- ggplot(data = pointlocation.nmds.raw, aes(x =MDS1, y =  MDS2,
   scale_color_manual(values = pal)+
   annotate("text", x = -3.4, y = 2.8, 
            label = paste0("Stress = ", 
-                          round(nmds.raw[['stress']], digits = 2), 
-                          "\n p < ", 
-                          round(monte.pvalue.result.raw, digits = 3)), size = 2.2)+
+                          round(nmds.raw[['stress']], digits = 2)), size = 2.2)+
     theme(axis.title.x = element_text(size = 7),
         axis.title.y = element_text(size = 7),
         axis.text.y = element_text(size = 6),
