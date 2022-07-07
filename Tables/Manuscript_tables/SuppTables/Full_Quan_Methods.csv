@@ -88,7 +88,7 @@ Methylthioadenosine,external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","7803
 N-acetyltaurine,external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
 N(e)-Acetyl-Lysine,external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
 N(e)-Acetyl-Lysine,relative RF and RF ratio,Arginine,NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
-NAD,external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
+"NAD",external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","7803, 8102, 8501, MED4, 1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt, 3430"
 Ornithine,external RF and RF ratio,NA,"KM1513, KOK1606, MGL1704","1314P, As9601, Nat, 1314, 1545, 1771, 2021, 449, 3430"
 Ornithine,relative RF and RF ratio,Glutamine,NA,"7803, 8102, 8501, MED4, 2090, 371, Cy, To, Tp, Pc55x, Np, Pt"
 Phenylalanine,isotopologue,NA,"KM1513, KOK1606, MGL1704",NA

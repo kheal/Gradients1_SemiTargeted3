@@ -12,10 +12,10 @@ rm(list=setdiff(ls(), c("g.dpnorth", "transform_factor")))
 
 
 #Get list of better names
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         BestMatch = Compound.Name_figure) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch =Compound_Name_Figure) %>%
   select(BestMatch, Identification) %>% unique()
 
 num_toplot <- 19
@@ -76,14 +76,15 @@ AllSmps_long_Summary_Tran <- AllSmps_long_Summary_withOthers %>%
 b <- ggplot(AllSmps_long_Summary_Tran, aes(x = Latitude, y = nmolCave, fill = MF_Frac))+
   geom_bar(stat = "identity", color = "black", size = 0.2)+
   annotate("segment", x = 4.5, xend = 4.5,y = 0, yend = 250, size = 1.5, linetype=2)+ 
-  scale_y_continuous(expand = c(0, 0), limits = c(0,250))+
+  scale_y_continuous(expand = c(0, 0), limits = c(0,175))+
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
                     guide = guide_legend(nrow=5, keyheight = 1, keywidth = 1 ,
                                          label.hjust = 0))+
   labs(y= "nMole C / L")+
   theme(legend.title = element_blank(),
-        legend.text = element_text(size = 6, margin = margin(l = -5)),
+        legend.text = element_text(size = 5, margin = margin(l = -5)),
         legend.position="bottom",
+        legend.margin =margin(l = -0.5, unit='cm'),
         axis.title = element_text(size = 7),
         axis.text = element_text(size = 6))+
   coord_flip() 
@@ -102,7 +103,7 @@ c <- ggplot()+
            aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac),
            stat = "identity", color = "black", width = 15, size = 0.2)+
   scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_nDP$Depth)))) +
-  scale_y_continuous(expand = c(0, 0), limits = c(0,1000))+
+  scale_y_continuous(expand = c(0, 0), limits = c(0,750))+
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_nDP$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+
   labs(y= "nMole C / L", x = "Depth (m)")+
@@ -118,7 +119,7 @@ AllSmps_long_Summary_sDP <- AllSmps_long_Summary_withOthers %>%
 
 d <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = nmolCave, fill = MF_Frac))+
   scale_x_reverse(breaks = rev(unique(as.numeric(AllSmps_long_Summary_sDP$Depth)))) +
-  scale_y_continuous(expand = c(0, 0), limits = c(0,150))+
+  scale_y_continuous(expand = c(0, 0), limits = c(0,125))+
   geom_bar(stat = "identity", color = "black", width = 15, size = 0.2) +
   scale_fill_manual(values = as.character(unique(AllSmps_long_Summary_Tran$Colors)),
                     guide = guide_legend(nrow=5,keyheight = 0.8, keywidth = 0.8 ))+

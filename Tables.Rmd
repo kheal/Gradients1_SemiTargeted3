@@ -65,7 +65,7 @@ remove(list = ls())
 
 # Merge all the csv files into one big xcel file here
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
-library(XLConnect) #requires Java between 8 and 11
+library(openxlsx) #requires Java between 8 and 11
 file.remove("Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx")
 
 #write out the order of the tables you want
@@ -89,20 +89,21 @@ files.nms.2 <- files.nms %>% as.data.frame() %>%
   mutate(sheet_ID = paste0("S", row_number()+3, "_", .))
 
 f.out <- "Tables/Manuscript_tables/SuppTables/Combined_SuppTables.xlsx"
-wb <- loadWorkbook(f.out, create=TRUE)
+wb <- createWorkbook()
 
 for (i in 1:length(supp.tables)) {
   ## ingest the CSV file
   temp_DT <- read_csv(supp.tables[[i]])
 
   ## Create the sheet where the file will be outputed to 
-  createSheet(wb, name=files.nms.2$sheet_ID[i])
+  addWorksheet(wb, sheetName=files.nms.2$sheet_ID[i])
 
   ## output the csv contents
-  writeWorksheet(object=wb, data=temp_DT, sheet=i, header=TRUE, rownames=NULL)
+  writeData(wb, sheet = files.nms.2$sheet_ID[i], x=temp_DT)
+  #, sheet=i, header=TRUE, rownames=NULL)
 }
 
-saveWorkbook(wb)
+saveWorkbook(wb, f.out)
 remove(list = ls())
 
 ```

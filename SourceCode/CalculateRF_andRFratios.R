@@ -136,6 +136,11 @@ stds.dat.rfratio3 <- stds.dat.rfratio2 %>%
 RFs.combo.withRels.withRFratio <- RFs.combo.withRels %>%
   left_join(stds.dat.rfratio3, by = "Identification") 
 
+#Correct for homarine calculation issue
+RFs.combo.withRels.withRFratio <- RFs.combo.withRels.withRFratio %>%
+  mutate(RFmax = ifelse(Identification == "Homarine", RFmax*25, RFmax),
+         RFmin = ifelse(Identification == "Homarine", RFmin*25, RFmin), 
+         RF = ifelse(Identification == "Homarine", RF*25, RF))
 
 #Write out your results-----
 write_csv(RFs.combo.withRels.withRFratio, "Intermediates/RFsandRFratios.csv")

@@ -11,10 +11,10 @@ culture.dat.long.filename <- "Intermediates/Culture_Intermediates/Quantified_Lon
 culture.meta.dat.filename <- "MetaData/CultureMetaData.csv"
 
 #Get list of better names
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         BestMatch = Compound.Name_figure) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch =Compound_Name_Figure) %>%
   select(BestMatch, Identification) %>% unique()
 
 #Load up the quan enviro data-----

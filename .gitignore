@@ -5,3 +5,5 @@
 .Rproj.user
 .Rproj.user/
 Intermediates/Raw_18S/
+renv/library/
+renv/staging/

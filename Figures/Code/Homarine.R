@@ -2,25 +2,27 @@ library(tidyverse)
 library(cowplot) 
 theme_set(theme_cowplot())
 library(RCurl)
-#library(magick)
+library(magick)
 
 
 #Name your compounds of interest
 cmpds <- c("Homarine", "Trigonelline")
-transform_factor = 50
+transform_factor = 1
 
 #Name your files -----
 quandat.file <- "Intermediates/Quantified_LongDat_Enviro.csv"
-culture.dat.long.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
+#culture.dat.long.filename <- "Intermediates/Culture_Intermediates/combined_long_withquan.csv"
+culture.dat.long.filename <- "Intermediates/Culture_Intermediates/Quantified_LongDat_Cultures.csv"
+
 culture.meta.dat.filename <- "MetaData/CultureMetaData.csv"
 field.meta.dat.filename <- "MetaData/SampInfo_wMetaData_withUTC.csv"
 chromat.filename <- "RawOutput/Homarine_EICs.csv"
 
 #Get list of better names-----
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         BestMatch = Compound.Name_figure) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch =Compound_Name_Figure) %>%
   select(BestMatch, Identification) %>% unique()
 
 #Load up metadata-----
@@ -201,9 +203,9 @@ g.cul <- ggplot(data = cul.dat3 %>%
                 aes(y = Org_Name, x = intracell_conc_mmolL, fill = Identification)) +
   geom_bar(stat= "identity", position = "dodge")+
   scale_y_discrete(labels = my_x_titles)+
-  scale_x_continuous(sec.axis = sec_axis(~ . / 100, name = "mM intracellular Trigonelline"), 
-                     expand = c(0, 0), limits = c(0, 5E2),
-                     breaks = c(0, 1E2, 2E2, 3E2,  4E2))+
+  scale_x_continuous(sec.axis = sec_axis(~ . / 1, name = "mM intracellular Trigonelline"), 
+                     expand = c(0, 0), limits = c(0, 5),
+                     breaks = c(0, 1, 2, 3,  4))+
   scale_fill_manual(values = c("#1B9E77", "#B7469B"))+
   labs(x= "mM intracellular Homarine") +
   theme(axis.title.x = element_text(size = 7),
@@ -218,8 +220,6 @@ cul.dat4 <- cul.dat3 %>%
   filter(intracell_conc_mmolL > 0) %>%
   filter(!is.na(intracell_conc_mmolL)) %>%
   unique()
-   mutate(intracell_conc_mmolL = 
-           ifelse(Identification == cmpds[1], intracell_conc_mmolL, intracell_conc_mmolL*100))
 
 
 g.cul.2 <- ggplot(data = cul.dat4,
@@ -239,13 +239,13 @@ g.cul.2 <- ggplot(data = cul.dat4,
         axis.text.x = element_text(size = 7),
         axis.text.y = element_text(size = 6),
         legend.position = "none")
-
+g.cul.2
 
 
 #Combine all the plots -----
 g.combo <- plot_grid(g.dptransect, g.dpnorth, g.dpsouth, ncol = 3, rel_widths = c(2,1,1), labels = c("A", "B", "C"))
 
-logo_file <- system.file("extdata", "logo.png", package = "cowplot")
+#logo_file <- system.file("extdata", "logo.png", package = "cowplot")
 molecule_file <- "Figures/Molecules/Homarine.pdf"
 molecule_file2 <- "Figures/Molecules/Trigonelline.pdf"
 

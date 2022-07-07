@@ -42,12 +42,12 @@ order.of.org.df$ID <- factor(order.of.org.df$ID,
 
 
 #Get good compounds and set order of compounds to highlight.  This highlights the top of each, ordered by the cumulative rank-----
-#Top 4 gives 19 compounds
+#Top 4 gives 19 compounds♠
 order.of.compounds <- dat.mean %>% ungroup %>% 
   arrange(ID, desc(intracell_conc_umolCL)) %>%
   group_by(ID) %>%
   mutate(ID_rank = rank(desc(intracell_conc_umolCL))) %>%
-  mutate(top_ten = ifelse(ID_rank < 3, 1, NA))
+  mutate(top_ten = ifelse(ID_rank < 3 | Identification == "Homarine", 1, NA))
 
 order.of.compounds.2 <- order.of.compounds %>%
   ungroup() %>%
@@ -78,12 +78,13 @@ dat.mean.combo$ID = factor(dat.mean.combo$ID,
                            levels = (order.of.org))
 
 #Plot to highlight top 20ish in the samples----
-pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(16)[1:15], rep("grey", 1))
-pal2 <- c(colorspace::lighten(brewer.pal(8,"Dark2"), 0.2), brewer.pal(8,"Dark2")[1:7], "grey70")
-pattern_pal <- c(rep("none", 8), rep("stripe", 4), rep("crosshatch", 3),"none")
+pal <- c(colorRampPalette(brewer.pal(8,"Dark2"))(17)[1:16], rep("grey", 1))
+pal2 <- c(colorspace::lighten(brewer.pal(8,"Dark2"), 0.2), brewer.pal(8,"Dark2"), "grey70")
+pattern_pal <- c(rep("none", 8), rep("stripe", 4), rep("crosshatch", 4),"none")
 
 b.all <- ggplot(data = dat.mean.combo, 
-                aes(x = ID, y = intracell_conc_umolCL, 
+                aes(x = ID, 
+                    y = intracell_conc_umolCL, 
                     fill = Identification,
                     pattern = Identification))+
   geom_col_pattern(position = "fill",

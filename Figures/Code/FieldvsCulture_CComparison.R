@@ -16,10 +16,10 @@ metacluster.file <- "Intermediates/metacluster_assignments.csv"
 full.dat.file <- "Intermediates/WideArea_withIDinfo_withCultureLogBioArea.csv"
 
 #Get list of better names------
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         BestMatch = Compound.Name_figure) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch =Compound_Name_Figure) %>%
   select(BestMatch, Identification) %>% unique()
 
 #Mundge metaclusterdat-------

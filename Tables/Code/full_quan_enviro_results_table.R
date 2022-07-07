@@ -7,11 +7,11 @@ library(RCurl)
 dat.filename <- "Intermediates/Quantified_LongDat_Enviro.csv"
 
 #Get better names for standards
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
-stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         `Compound name in figures` = Compound.Name_figure,
-         `Complete compound name` = Compound.Name) %>%
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
+stds.dat <- read.csv(text = getURL(std.url), header = T)%>%
+  rename(Identification = Compound_Name_Original,
+         `Compound name in figures` = Compound_Name_Figure,
+         `Complete compound name` =Compound_Name) %>%
   select(`Compound name in figures`, `Complete compound name`, Identification) %>% unique()
 
 #Check out data

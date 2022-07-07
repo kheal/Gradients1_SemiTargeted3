@@ -7,14 +7,14 @@ library(colorRamps)
 library(RCurl)
 
 #Get list of better names
-std.url <- "https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards_NEW.csv"
+std.url <- 'https://raw.githubusercontent.com/IngallsLabUW/Ingalls_Standards/master/Ingalls_Lab_Standards.csv'
 stds.dat <- read.csv(text = getURL(std.url), header = T) %>%
-  rename(Identification = Compound.Name_old,
-         BestMatch = Compound.Name_figure) %>%
+  rename(Identification = Compound_Name_Original,
+         BestMatch =Compound_Name_Figure) %>%
   select(BestMatch, Identification) %>% unique()
 
 num_toplot <- 19
-dat <- read_csv("Intermediates/Quantified_LongDat_Enviro.csv") %>% 
+dat <- read_csv("Intermediates/Quantified_LongDat_Enviro.csv")%>% 
   left_join(stds.dat, by = "Identification") %>% 
   select(-Identification)
 dat2 <- dat %>%

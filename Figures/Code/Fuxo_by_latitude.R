@@ -1,9 +1,9 @@
 library(tidyverse)
 library(cowplot)
 library(here)
-library(plotly)
+#library(plotly)
 library(Cairo)
-library(limSolve)
+#library(limSolve)
 
 #Name your inputs
 hplc.dat.file <- "MetaData/HPLCData/KOK1606_HPLC_editted.csv"

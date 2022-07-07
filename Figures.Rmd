@@ -23,6 +23,7 @@ remove(list = ls())
 ```
 
 # Quantifiable compounds in environmental sampls, stacked bar plot
+Remade for corrected homarine concentrations
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 #mol fraction C (main text figure)
 source('Figures/Code/BarPlots_molPerCent_C.R')
@@ -30,12 +31,14 @@ remove(list = ls())
 ```
 
 # Plot of homarine and trigonolline over space and in organisms
+Remade for corrected homarine concentrations
 ```{r}
 source("Figures/Code/Homarine.R")
 remove(list = ls())
 ```
 
 # Plot of stacked bars in cultures
+Remade for corrected homarine concentrations
 ```{r}
 source("Figures/Code/Orgs_stackedbars.R")
 remove(list = ls())
@@ -88,6 +91,8 @@ remove(list = ls())
 ```
 
 # Seaflow by latitude (numbers and carbon)
+# PC plot (PC over transect, with total quantifiable metabolites)
+# Fucoxanthin over space
 ```{r, error = FALSE, warning=FALSE, message=FALSE}
 source("Figures/Code/SeaFlowC_byLat.R")
 remove(list = ls())
@@ -111,8 +116,8 @@ remove(list = ls())
 
 # Plot of DSS-3 growth curves
 ```{r}
-source("Figures/Code/DSS3_growthcurves.R")
-remove(list = ls())
+#source("Figures/Code/DSS3_growthcurves.R")
+#remove(list = ls())
 ```
 
 
