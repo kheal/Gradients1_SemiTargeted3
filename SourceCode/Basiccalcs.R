@@ -14,14 +14,14 @@ meta.dat.culture.file <- "MetaData/CultureMetaData.csv"
 PC.dat.file <- "MetaData/PCPN/KOK1606_PCPN_UW_Preliminary_OSU_KRH.csv"
 
 #Number of "quality mass features"----
-kok.dat <- read_csv(KOK.dat.file) 
+kok.dat <- read_csv(KOK.dat.file, show_col_types = FALSE) 
 MF.count <- kok.dat %>% select(MassFeature_Column) %>%
   unique()
 print(paste0("Total number quality mass features = ", length(MF.count$MassFeature_Column)))
 
 
 #Number of compounds quantified----
-quan.dat <- read_csv(Quan.dat.file) 
+quan.dat <- read_csv(Quan.dat.file, show_col_types = FALSE) 
 quan.compounds.count <- quan.dat %>% 
   select(Identification, nmolinEnviroave) %>% 
   mutate(quantified = ifelse(is.na(nmolinEnviroave), "no", "yes")) %>%
@@ -48,7 +48,7 @@ quan.KM <- quan.dat %>%
 print(paste0("Range of quantified metabolites from KM samples = ", round(min(quan.KM$totalCmeasured_nM), digits = 1), " nM to ", round(max(quan.KM$totalCmeasured_nM), digits = 1), " nM"))
 
 #Percent of particulate carbon across the KOK gradient----
-meta.dat <- read_csv(Meta.dat.file) %>%
+meta.dat <- read_csv(Meta.dat.file, show_col_types = FALSE) %>%
   select(SampID, Station_1, latitude)
 
 quan.dat.KOK.summ <- quan.KOK %>%
@@ -62,7 +62,7 @@ quan.dat.KOK.summ <- quan.KOK %>%
   mutate(nmolstd.metabC = ifelse(is.na(nmolstd.metabC), 0, nmolstd.metabC)) %>%
   mutate(nmolstd.metabN = ifelse(is.na(nmolstd.metabN), 0, nmolstd.metabN))
 
-PC.dat <- read_csv(PC.dat.file)
+PC.dat <- read_csv(PC.dat.file, show_col_types = FALSE)
 
 PC.dat.summary <- PC.dat %>%
   mutate(latitude.round = round(Latitude, digits = 0)) %>%
@@ -86,7 +86,15 @@ mesh.KOK.PC <- quan.dat.KOK.summ %>%
   mutate(fraction.PN.sd = fraction.PN*(nmolstd.metabN/nmolave.PN+nmolstd.PN/nmolave.PN)) %>%
   mutate(percent.PN = fraction.PN*100, 
          sd.percent.PN = fraction.PN.sd*100) %>%
-  select(Station_1, latitude.x, percent.PC, sd.percent.PC, percent.PN, sd.percent.PN)
+  select(Station_1, latitude.x, percent.PC, sd.percent.PC, percent.PN, sd.percent.PN) %>%
+  arrange(percent.PC)
+head(mesh.KOK.PC)
+tail(mesh.KOK.PC)
+
+mesh.KOK.PC <- mesh.KOK.PC %>%
+  arrange(percent.PN)
+head(mesh.KOK.PC)
+tail(mesh.KOK.PC)
 
 g.pc <- ggplot() +
   geom_line(data = mesh.KOK.PC, aes(x = latitude.x, y =  percent.PC)) +
@@ -102,18 +110,19 @@ g.pn <- ggplot() +
 print(g.pn)
 
 #Homarine calculations-----
-meta.dat.culture <- read_csv(meta.dat.culture.file)
-quan_dat_cultures <- read_csv(Quan.dat.file.culture) %>%
- # filter(Identification == "Homarine") %>%
- # select(Identification, ID_rep, Org_Name, Org_Type, C, Org_Type_Specific,nmolmetab_perC) %>%
-  mutate(percentMetab = nmolmetab_perC/1000*100)
+meta.dat.culture <- read_csv(meta.dat.culture.file, show_col_types = FALSE)
+quan_dat_cultures <- read_csv(Quan.dat.file.culture, show_col_types = FALSE) %>%
+ filter(Identification == "Homarine") %>%
+  select(Identification, ID_rep, Org_Name, Org_Type, C, Org_Type_Specific,intracell_conc_umolL,molFractionC_pertotalC) %>%
+  mutate(percentMetab = molFractionC_pertotalC*100)
 
-meta.dat.enviro <- read_csv(Meta.dat.file) %>%
+meta.dat.enviro <- read_csv(Meta.dat.file, show_col_types = FALSE) %>%
   select(SampID, latitude, Cruise)
-quan_dat_enviro <- read_csv(Quan.dat.file) %>%
+quan_dat_enviro <- read_csv(Quan.dat.file, show_col_types = FALSE) %>%
   filter(Identification == "Homarine" |  Identification == "Trigonelline" ) %>%
   # select(Identification, ID_rep, Org_Name, Org_Type, C, Org_Type_Specific,nmolmetab_perC) %>%
-  mutate(percentMetab = nmolmetab_perC/1000*100) %>%
+  mutate(percentMetab =molFractionC_pertotalC*100) %>%
+  select(Identification, SampID, nmolinEnviroave, percentMetab)
   left_join(meta.dat.enviro, by = "SampID")
 
 quan_dat_enviro_summary <- quan_dat_enviro %>%
