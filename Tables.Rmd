@@ -99,7 +99,7 @@ for (i in 1:length(supp.tables)) {
   addWorksheet(wb, sheetName=files.nms.2$sheet_ID[i])
 
   ## output the csv contents
-  writeData(wb, sheet = files.nms.2$sheet_ID[i], x=temp_DT)
+  writeData(wb, sheet = files.nms.2$sheet_ID[i], x=temp_DT, keepNA = T, na.string = "NA")
   #, sheet=i, header=TRUE, rownames=NULL)
 }
 

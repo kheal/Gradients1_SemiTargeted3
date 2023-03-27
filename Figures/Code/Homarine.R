@@ -258,4 +258,5 @@ g.combo3 <- plot_grid(g.cul.2, g.chromat, ncol = 2, rel_widths = c(1.6 ,1), labe
 g.combo4 <- plot_grid(g.combo2, g.combo3, ncol = 1, labels = c("", ""))
 g.combo4
 
-save_plot("Figures/Manuscript_figures/Homarine.pdf", g.combo4, base_height = 5, base_width = 6.5, units = "in")
+save_plot("Figures/Manuscript_figures/Fig_6_Homarine.pdf", g.combo4, base_height = 5, base_width = 6.5, units = "in")
+save_plot("Figures/Manuscript_figures/Fig_6_Homarine.jpg", g.combo4, base_height = 5, base_width = 6.5, units = "in")

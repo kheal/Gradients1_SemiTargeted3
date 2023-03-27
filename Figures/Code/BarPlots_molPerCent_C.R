@@ -79,6 +79,7 @@ b <- ggplot(AllSmps_long_Summary_Tran, aes(x = Latitude, y = molFractionC, fill 
   theme(legend.title = element_blank(),
         legend.text = element_text(size = 6, margin = margin(l = -5)),
         legend.position="bottom",
+        legend.margin=margin(l=-30),
         axis.title = element_text(size = 7),
         axis.text = element_text(size = 6))+
   coord_flip() 
@@ -123,7 +124,8 @@ d <- ggplot(AllSmps_long_Summary_sDP, aes(x = as.numeric(Depth), y = molFraction
 c_d2 <- plot_grid(c, d, ncol = 1, labels = c('B', 'C'), label_fontface = "bold")
 b_c_d2 <- plot_grid(b, c_d2, ncol = 2, labels = c('A', ''), label_fontface = "bold")
 b_c_d2
-save_plot("Figures/Manuscript_figures/molPerCent_C.pdf", b_c_d2, base_height = 6, base_width = 6.5, units = "in")  
+save_plot("Figures/Manuscript_figures/Fig_4_molPerCent_C.pdf", b_c_d2, base_height = 6, base_width = 6.5, units = "in")  
+save_plot("Figures/Manuscript_figures/Fig_4_molPerCent_C.jpg", b_c_d2, base_height = 6, base_width = 6.5, units = "in")  
 
 
 #Making another set with bigger fonts for presentations-----

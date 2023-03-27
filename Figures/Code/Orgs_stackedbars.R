@@ -108,7 +108,7 @@ b.all <- ggplot(data = dat.mean.combo,
         axis.text.y = element_text(size = 6), 
         axis.text.x = element_text(size = 6),
         plot.margin = margin(.5, .5, 0, .2, "cm"))
-b.all
+# b.all
 
 #Color key-----
 pal2 <- park_palette("Redwoods", 5)
@@ -128,12 +128,13 @@ g.tile.org.key <- ggplot(data = order.of.org.df,
         legend.position = "none",
         plot.margin = margin(-.4, 0, .5, -.5, "cm"))
 
-g.tile.org.key
+# g.tile.org.key
 
 b.all.both <- plot_grid(b.all, g.tile.org.key, ncol = 1, rel_heights = c(1, 0.1), align = "v")
-b.all.both
+# b.all.both
 
-save_plot("Figures/Manuscript_figures/stackedbar_org.pdf", b.all.both, base_height = 4, base_width = 6.5)
+save_plot("Figures/Manuscript_figures/Fig5_stackedbar_org.pdf", b.all.both, base_height = 4, base_width = 6.5)
+save_plot("Figures/Manuscript_figures/Fig5_stackedbar_org.jpg", b.all.both, base_height = 4, base_width = 6.5)
 
 #Plot the total amount 
 b.all.sum <- ggplot()+
