@@ -2,6 +2,8 @@
 
 This github repository is the data analysis portion associated with the [preprint](https://www.biorxiv.org/content/10.1101/2020.12.22.424086v1) and subsequent [manuscript](https://journals.asm.org/doi/full/10.1128/mSystems.01334-20) by Heal *et. al* "Marine community metabolomes carry fingerprints of phytoplankton community composition". Published in mSystems, DOI: 10.1128/mSystems.01334-20.
 
+Note that these scripts, figures, and tables have been corrected according to the [author correction](https://journals.asm.org/doi/10.1128/msystems.01086-22) for Heal *et. al* "Marine community metabolomes carry fingerprints of phytoplankton community composition". Published in mSystems. Correction DOI: 10.1128/msystems.01086-22.
+
 
 #### **Control.Rmd**
 The **Control.Rmd** file is the data analysis notebook, which performs quality control, B-MIS normalization, identification, k-means clustering and bootstrapping.
